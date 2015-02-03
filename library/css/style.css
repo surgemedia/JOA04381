@@ -924,7 +924,7 @@ body {
 
 }
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: 'Open Sans', sans-serif; 
   font-weight: 300;
   font-size: 90%;
   line-height: 1.5;
@@ -1181,10 +1181,10 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: 'Bitter', serif;
   text-rendering: optimizelegibility;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: Capitalize;
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
@@ -1207,7 +1207,7 @@ h5 a,
 }
 h1,
 .h1 {
-  color: #000;
+  color: #3D3D3D;
   font-size: 2em;
   font-weight: bold;
   line-height: 1.333em;
@@ -1403,7 +1403,7 @@ and more scalable.
     /* highlight current page */
   
     /* end current highlighters */
-    background: #85D2E4; /* Old browsers */
+    background: #DB4190; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
  /* FF3.6+ */
@@ -1414,7 +1414,10 @@ and more scalable.
  /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', endColorstr='#5ca2ba',GradientType=0 ); /* IE6-8 */
   
-  }
+  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
   .nav li {
     float: left;
     position: relative;
@@ -1427,7 +1430,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
   
   }
   .nav li + li {
-    border-left: 1px solid #fff;
+    border-left: 2px solid #FFF;
   }
   .nav li a {
     border-bottom: 0;
@@ -1439,13 +1442,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
   /*background-color: #eee;*/
   
     border-bottom: 0px;
-  font-family: 'Merriweather', serif;
+  
+    font-family: 'Open Sans', sans-serif;
   
     font-size: 13px;
   letter-spacing: 1px;
   
     font-weight: bold;
-  color: #58585b;
+  
+    color: #FFFFFF;
   text-transform: uppercase;
   
   
@@ -1461,7 +1466,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
   .nav li a:focus,
   .nav li a:active,
   .nav li.current_page_item {
-    background: #85D2E4; /* Old browsers */
+    background-color: #85D2E4; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
  /* FF3.6+ */
@@ -1472,7 +1477,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
  /* W3C */
  /* IE6-8 */
 
-  }
+  
+    color: #DB4190;
+}
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -1483,10 +1490,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
     z-index: 8999;
     /* highlight sub-menu current page */
   
-  }
+  
+}
   .nav li ul.sub-menu li,
   .nav li ul.children li {
-    background: rgb(184,228,245);
+    background: #pink;
     border: 0;
   
   }
@@ -1496,7 +1504,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
     border-right: 0;
     display: block;
     width: 180px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #fff;
   }
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
@@ -1505,16 +1513,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
   .nav li:hover ul {
     top: auto;
     display: block;
-  }
+  
+    background: #DB4190;
+}
 
 
 .nav li#menu-item-17 a, .nav li#menu-item-17.current_page_item {
 }
 .nav li#menu-item-24 a, .nav li#menu-item-1509 a, .nav li#menu-item-1530 a {
-  -moz-border-radius: 0 10px 0 0;
-  -webkit-border-radius: 0 10px 0 0;
-  -khtml-border-radius: 0 10px 0 0;
-  border-radius: 0 10px 0 0;
   padding: 9px 23px;
 }
 .nav li#menu-item-1530.current_page_item {
@@ -1577,10 +1583,11 @@ a.top-sub-nav-link {
 #content {
   margin-top: -15px;
   background-color: #fff;
-  -moz-box-shadow:    0px -3px 5px 0px #ccc;
-  -webkit-box-shadow: 0px -3px 5px 0px #ccc;
-  box-shadow:         0px -3px 5px 0px #ccc;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   padding-top: 1px;
+  border-top: 1px solid #E5E5E5;
 }
 #content-home {
   background-color: #fff;
@@ -2041,7 +2048,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadcd6', end
 *********************/
 .footer {
   clear: both;
-  background-image: url(../images/footer-bg.png);
   height: 245px;
 }
 .push {
@@ -4308,7 +4314,7 @@ ul.modules_fields li{
 }
 
 li:nth-child(2) {
-    color: #FF92FF;
+    color: #DB4190;
 }
 
 /*==========  category page (each modules)  ==========*/
@@ -4342,6 +4348,8 @@ section.entry-content.clearfix p {
 section#single-content p {
   width:100%;
   float: none;
+  line-height: 2em;
+  font-size: 1.2em;
 }
 
 /*==========  embed lesson video  ==========*/
@@ -4390,3 +4398,40 @@ nav.navigation.post-navigation {
     color: #fff;
     text-decoration: none;
 }
+
+
+/*========================================
+=            Buddy Press Info            =
+========================================*/
+div#current-user .display-img {
+    width: 100%;
+    text-align: center;
+}
+
+div#current-user .display-img img {
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid #85D2E4;
+    box-shadow: 0 0 5px #85D2E4;
+}
+
+#current-user .current_info {
+    border: 1px solid #85D2E4;
+    padding: 0em 0 1em 0em;
+    text-align: center;
+    margin: -2em 0 0 0;
+    color: #DF4292;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 1px 0px #3C99AE;
+}
+div#current-user .royal {
+    position: absolute;
+    padding: 1em;
+    left: 1em;
+    background: yellow;
+}
+
+
+
+
