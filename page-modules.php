@@ -1,7 +1,7 @@
 <?php
 /**
  *
- *Template Name: modules
+ *Template Name: Learn Modules
  * 
  */
 
@@ -46,9 +46,6 @@ $modules = get_terms( $taxonomies, $args);
 
   <h2> <a href="<?php echo site_url(); ?>/modules/<?php echo $modules[$i]->slug; ?>"> <?php echo $modules[$i]->name; ?></a></h2>
   <p><?php echo $modules[$i]->description; ?></p>
-
-
-
     <ul class="modules_fields">
       <li><span class="dashicons dashicons-video-alt"></span><?php the_field('video', $modules[$i]); ?></li>
       <li><span class="dashicons dashicons-book-alt"></span><?php the_field('text_book', $modules[$i]); ?></li>
@@ -62,7 +59,7 @@ $modules = get_terms( $taxonomies, $args);
 
 </div>
 </div>
-<?php get_sidebar(); ?>
+<?php get_sidebar('learn'); ?>
 </div>
 </div>
     
