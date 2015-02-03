@@ -5,8 +5,8 @@ function modules_taxonomy() {
 
 	$labels = array(
 		'name'                       => _x( 'modules', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'module', 'Taxonomy Singular Name', 'text_domain' ),
-		'menu_name'                  => __( 'Taxonomy', 'text_domain' ),
+		'singular_name'              => _x( 'Module', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Lesson Modules', 'text_domain' ),
 		'all_items'                  => __( 'All Items', 'text_domain' ),
 		'parent_item'                => __( 'Parent Item', 'text_domain' ),
 		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
@@ -29,7 +29,7 @@ function modules_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'modules', array( 'post' ), $args );
+	register_taxonomy( 'modules', array( 'lessons_post' ), $args );
 
 }
 
@@ -41,12 +41,12 @@ function lessons_post() {
 
 	$labels = array(
 		'name'                => _x( 'lessons', 'Post Type General Name', 'text_domain' ),
-		'singular_name'       => _x( 'lesson', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'           => __( 'lesson', 'text_domain' ),
+		'singular_name'       => _x( 'Lesson', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Lessons', 'text_domain' ),
 		'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
 		'all_items'           => __( 'All Items', 'text_domain' ),
 		'view_item'           => __( 'View Item', 'text_domain' ),
-		'add_new_item'        => __( 'Add New Item', 'text_domain' ),
+		'add_new_item'        => __( 'Add New Lesson', 'text_domain' ),
 		'add_new'             => __( 'Add New', 'text_domain' ),
 		'edit_item'           => __( 'Edit Item', 'text_domain' ),
 		'update_item'         => __( 'Update Item', 'text_domain' ),
@@ -67,6 +67,7 @@ function lessons_post() {
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 5,
+		'menu_icon'           => 'dashicons-welcome-learn-more',
 		'can_export'          => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
