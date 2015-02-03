@@ -108,6 +108,15 @@ function jbb_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
+	register_sidebar(array(
+		'id' => 'learn',
+		'name' => __('Learn', 'jbbtheme'),
+		'description' => __('Learn Section Sidebar', 'jbbtheme'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
 
 	/*
 	to add more sidebars or widgetized areas, just copy
