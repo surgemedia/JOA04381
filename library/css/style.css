@@ -1403,7 +1403,7 @@ and more scalable.
     /* highlight current page */
   
     /* end current highlighters */
-    background: #DB4190; /* Old browsers */
+    background: #85D2E4; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
  /* FF3.6+ */
@@ -1466,7 +1466,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
   .nav li a:focus,
   .nav li a:active,
   .nav li.current_page_item {
-    background-color: #85D2E4; /* Old browsers */
+    background-color: #DB4190; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
  /* FF3.6+ */
@@ -1478,7 +1478,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99d8f0', end
  /* IE6-8 */
 
   
-    color: #DB4190;
+    color: #fff;
 }
   .nav li ul.sub-menu,
   .nav li ul.children {
