@@ -5,7 +5,7 @@ $user_id = bp_loggedin_user_id();
 $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
  ?>
 	<div id="current-user">
-	<?php //if royal member ?>
+	<?php //if royal member [eyesonly level="royal"][/eyesonly] ?>
 		 <i class="royal"></i>
 	<?php //endif; ?>
 		<div class="display-img">
