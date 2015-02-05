@@ -1,3 +1,3 @@
 <div class="message green">
-	<?php _e('Congratulation, You are now enrolled') ?>
+	<i class="dashicons dashicons-yes"></i> <span><?php _e('Congratulation, You are now enrolled') ?></span>
 </div>

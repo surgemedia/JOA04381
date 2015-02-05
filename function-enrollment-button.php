@@ -4,6 +4,7 @@ function getEnrollment($user){
 	return $current_course;
 }
 
+
 function enrollmentButton($course){
 	if(isset($_GET['enroll'])){
 	$url_var = $_GET['enroll'];

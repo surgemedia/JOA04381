@@ -114,4 +114,4 @@ function next_post_button() {
 }
 
 ?>
-<?php  ?>
+<?php  add_theme_support( 'post-thumbnails' ); ?>
