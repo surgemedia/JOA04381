@@ -19,7 +19,7 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 	</div>
 
 	<div id="current-product">
-	<h3>Recommened Books</h3>
+	<h2>Recommened Books</h2>
 	
 	<?php echo do_shortcode('[product sku="111"]') ?>
 
