@@ -4449,3 +4449,26 @@ div#current-user .royal {
   color:#DF4292;
   text-align: center;
 }
+/*=========================================
+=            Enrollment Styles            =
+=========================================*/
+.message {
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 0px;
+  font-size: 1.2em;
+  margin: 1em 0;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: block;
+  clear: both;
+
+}
+.green { background: #B4D576; color: #62743E; }
+.yellow { background: #FDCA4B; color: #FDCA4B;}
+.blue { background: #85D2E4; color: #85D2E4; }
+.pink {background: #DF4292; color: #A51F63; }
+
+
+
+

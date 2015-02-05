@@ -1,0 +1,1 @@
+<button class="button enrollnow" onClick="location.href = window.location+'?enroll=true'">Enroll Now!</button>
