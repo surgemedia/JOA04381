@@ -24,6 +24,7 @@ sidebars, comments, ect.
 	- adding custom fields to user profiles
 */
 require_once('action-page-type-modules.php');
+require_once('function-enrollment-button.php');
 require_once('library/jbb.php'); // if you remove this, jbb will break
 /*
 2. library/custom-post-type.php
@@ -269,4 +270,7 @@ print_r($data);
 echo "</pre>";
 }
 
-?>
+
+
+
+
