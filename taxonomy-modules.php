@@ -54,7 +54,7 @@
 							<?php endwhile; ?>
 							<?php endif; ?>
 							</div> <!-- end #main -->
-							<?php get_sidebar(); ?>
+							<?php get_sidebar('learn'); ?>
 							</div> <!-- end #inner-content -->
 							</div> <!-- end #content -->
 							<?php get_footer(); ?>

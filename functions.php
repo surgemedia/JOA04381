@@ -23,7 +23,8 @@ sidebars, comments, ect.
 	- custom google+ integration
 	- adding custom fields to user profiles
 */
-require_once('action-page-type-modules.php');
+include_once('action-page-type-modules.php');
+include_once('function-getuserrole.php');
 require_once('function-enrollment-button.php');
 require_once('library/jbb.php'); // if you remove this, jbb will break
 /*

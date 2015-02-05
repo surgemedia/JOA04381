@@ -5,8 +5,9 @@ $user_id = bp_loggedin_user_id();
 $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
  ?>
 	<div id="current-user">
-
-	<?php do_shortcode('[eyesonly level="royal"]<i class="royal"></i>[/eyesonly]'); ?>
+	<?php  if (get_user_role()=='administrator') {  ?>
+			<i></i>
+	<?php } ?>
 
 	
 		<div class="display-img">
@@ -16,8 +17,12 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 			<a href="">Beginner</a>
 		</div>
 	</div>
+
 	<div id="current-product">
-	<?php //do_shortcode ?>
+	<h3>Recommened Books</h3>
+	
+	<?php echo do_shortcode('[product sku="111"]') ?>
+
 	</div>
 	<div id="module-extras">
 	<?php 
