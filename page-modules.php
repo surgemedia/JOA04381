@@ -14,7 +14,8 @@ get_header(); ?>
               <div class="breadcrumbs">
 
 
-<article id="lessons">
+<article>
+<ul id="module_list">
 <?php
   $taxonomies =  array( 
     'modules');
@@ -43,17 +44,12 @@ get_header(); ?>
 $modules = get_terms( $taxonomies, $args);
 
  for ($i=0; $i < sizeof($modules); $i++) {?>
-
-  <h2> <a href="<?php echo site_url(); ?>/modules/<?php echo $modules[$i]->slug; ?>"> <?php echo $modules[$i]->name; ?></a></h2>
-  <p><?php echo $modules[$i]->description; ?></p>
-    <ul class="modules_fields">
-      <li><span class="dashicons dashicons-video-alt"></span><?php the_field('video', $modules[$i]); ?></li>
-      <li><span class="dashicons dashicons-book-alt"></span><?php the_field('text_book', $modules[$i]); ?></li>
-      <li><span class="dashicons dashicons-desktop"></span><?php the_field('text', $modules[$i]); ?></li>
-      <li><span class="dashicons dashicons-universal-access"></span><?php the_field('forum', $modules[$i]); ?></li>
-    </ul>
-  <hr>
+ <?php  $GLOBALS['current_course_obj'] = $modules[$i]; ?>
+  <?php get_template_part('enrollment/content', 'module-loop' ); ?>
+  <?php unset($GLOBALS['current_course_obj']); ?>
 <?php } ?>
+
+</ul>
 </article>
     
 

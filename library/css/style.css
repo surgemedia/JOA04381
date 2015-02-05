@@ -1223,7 +1223,6 @@ h2,
   font-size: 1.4em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
-  color: ;
   letter-spacing: 2px;
   font-weight: bold;
   text-transform: none;
@@ -4314,7 +4313,6 @@ ul.modules_fields li{
 }
 
 li:nth-child(2) {
-    color: #DB4190;
 }
 
 /*==========  category page (each modules)  ==========*/
@@ -4327,11 +4325,16 @@ li:nth-child(2) {
 
 ul.each_modules_fields li {
     display: inline-block;
-    margin: 0px 30px 0px 0px;
+    background: #efefef;
+    padding: 0.4em;
+    border: 1px solid #d1d1d1;
+    border-radius: 0.3em;
 }
 
 ul.each_modules_fields{
     margin: 0px auto;
+    padding: 0em 0 1em 0em;
+    border-bottom: 1px solid #efefef;
 }
 
 section.entry-content.clearfix img {
@@ -4411,19 +4414,19 @@ div#current-user .display-img {
 div#current-user .display-img img {
     border-radius: 100%;
     overflow: hidden;
-    border: 1px solid #85D2E4;
-    box-shadow: 0 0 5px #85D2E4;
+    border: 1px solid #B8B8B8;
+    box-shadow: 0 0 5px #939393;
 }
 
 #current-user .current_info {
-    border: 1px solid #85D2E4;
+    border: 1px solid #DFDFDF;
     padding: 0em 0 1em 0em;
     text-align: center;
     margin: -2em 0 0 0;
     color: #DF4292;
-    background: #fff;
     position: relative;
-    box-shadow: 0 1px 0px #3C99AE;
+    border-radius: 0.3em;
+    background: #F7F7F7;
 }
 div#current-user .royal {
     position: absolute;
@@ -4446,6 +4449,137 @@ div#current-user .royal {
 }
 
 #current-product h3{
-  color:#DF4292;
+  color:#DF4292; 
   text-align: center;
+}
+#current-user .current_info a {
+    font-weight: bold;
+    color: #AEAEAE;
+}
+
+#current-user .current_info h2 {
+}
+/*=========================================
+=            Enrollment Styles            =
+=========================================*/
+.message {
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 0px;
+  font-size: 1.2em;
+  margin: 1em 0;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: block;
+  clear: both;
+
+}
+.message i {
+  margin: 0 0.5em;
+}
+.green { background: #B4D576; color: #62743E; }
+.yellow { background-color: #FDCA4B !important; color: #FFE8AF;}
+.blue { background: #85D2E4; color: #FFFFFF; }
+.pink {background: #DF4292; color: #A51F63; }
+
+.enrollnow {
+  padding: 1em;
+  margin: 4em 0em 2em 0;
+  width: 100%;
+}
+ul.each_modules_fields p {
+    margin: 0 0.4em 0 0.5em;
+    float: none;
+    clear: none;
+    display: inline-block;
+}
+
+ul.each_modules_fields li span {
+    display: inline-block;
+    float: left;
+    line-height: 1.3;
+}
+
+div#module-lessons .lesson img {
+    border-radius: 100%;
+    border: 3px solid #85D2E4;
+}
+
+div#module-lessons .lesson {
+    margin: 0em 0em;
+    padding: 2em 1em;
+    border-bottom: 1px solid #efefef;
+    transition: 0.5s all ease;
+}
+
+div#module-lessons .lesson h2 {
+    margin: 0 0 1em 0;
+    margin 0 0 1em 0;
+}
+
+
+div#module-lessons .lesson p {
+    line-height: 1.8em;
+}
+.lesson .placeholder {
+    display: inline-block;
+    width: 135px;
+    float: left;
+    height: 135px;
+    border-radius: 100%;
+    background-color: #d1d1d1;
+}
+
+.lesson .placeholder span {
+    text-align: center;
+    width: 100%;
+    line-height: 135px;
+    font-size: 5em;
+    /* color: #fff; */
+}
+div#module-lessons .lesson:hover {
+    padding: 2.5em 1em;
+    background: #FFF8DE;
+    border-radius: 0.3em;
+}
+ul#module_list .module-loop {
+    padding: 1em 1em;
+    transition: 0.3s all ease;
+    border-bottom: 1px solid #efefef;
+    color: #282828;
+}
+
+ul#module_list .module-loop a {
+    text-decoration: none;
+    font-size: 1.05em;
+}
+
+ul#module_list .module-loop p {
+    line-height: 1.8em;
+}
+
+ul#module_list .module-loop:hover {
+    background: #FDCA4B;
+    padding: 1.5em 1em;
+    border-radius: 0.5em;
+}
+
+ul#module_list .module-loop ul {
+    border: 0px;
+    line-height: 1em;
+}
+
+ul#module_list .module-loop h2 {
+    color: #4D4D4D;
+    font-size: 1.7em;
+}
+
+ul#module_list .module-loop:hover p {
+    color: #4D4D4D;
+}
+
+ul#module_list .module-loop:hover ul li {
+    background: #fff;
+    color: #4d4d4d;
+    border: 1px solid #FDCA4B;
 }
