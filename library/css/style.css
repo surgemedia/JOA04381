@@ -4433,5 +4433,19 @@ div#current-user .royal {
 }
 
 
+#current-user i{
+  background-image: url('../images/crown.png');
+  padding: 1em 2.45em;
+  position: absolute;
+  width: 14%;
+  height: 33px;
+  background-repeat: no-repeat;
+  top: -19px;
+  left: 34px;
+  background-size: auto 100%;
+}
 
-
+#current-product h3{
+  color:#DF4292;
+  text-align: center;
+}
