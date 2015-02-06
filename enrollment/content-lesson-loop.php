@@ -1,6 +1,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 	<header class="article-header">
-		<h2 class="h2 news-heading"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		<h2 class="h2 news-heading">
+		<?php the_title(); ?>
+		</h2>
 		</header> <!-- end article header -->
 		<section class="entry-content clearfix">
 			
@@ -19,6 +22,7 @@
 			?>
 			</p>
 			</section> <!-- end article section -->
+			</a>
 			<footer class="article-footer">
 				<p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jbbtheme') . '</span> ', ', ', ''); ?></p>
 				</footer> <!-- end article footer -->
