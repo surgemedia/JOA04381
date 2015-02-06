@@ -21,7 +21,7 @@
 		<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Bitter|Rokkitt|Bree+Serif|Slabo+27px' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>	
-		<link rel="stylesheet" href="/wp-content/themes/joan-butts/style.css">
+	
 		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
