@@ -7,7 +7,7 @@
       "label":"Text Book",
       "name":"text_book",
       "prefix":"",
-      "type":"text",
+      "type":"post_object",
       "instructions":"eg: Text Book: \u201cPlay Bridge: A Workbook for the Absolute Beginner\u201d Joan Butts (includes free teacher\u2019s manual) ",
       "required":0,
       "conditional_logic":0,
@@ -16,13 +16,14 @@
         "class":"",
         "id":""
       },
-      "default_value":"",
-      "placeholder":"",
-      "prepend":"",
-      "append":"",
-      "maxlength":"",
-      "readonly":0,
-      "disabled":0
+      "post_type":[
+        "product"
+      ],
+      "taxonomy":"",
+      "allow_null":0,
+      "multiple":1,
+      "return_format":"object",
+      "ui":1
     },
     {
       "key":"field_54bde55cbf646",
@@ -106,5 +107,5 @@
   "label_placement":"top",
   "instruction_placement":"label",
   "hide_on_screen":"",
-  "modified":1423101085
+  "modified":1423179177
 }

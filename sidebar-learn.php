@@ -19,15 +19,18 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 	</div>
 
 	<div id="current-product">
-	<h2>Recommened Books</h2>
-	
-	<?php echo do_shortcode('[product sku="111"]') ?>
+		<h2>Recommened Books</h2>
+		<?php  ?>
 
+		<?php debug($field) ?>
+		<?php echo do_shortcode('[product sku="111"]') ?>
 	</div>
+
 	<div id="module-extras">
+		<h2>Course Activites</h2>
 	<?php 
-	// Group Link 
-	// Royal Member Link
+	// Group Link text
+	// Royal Member Link upgrade
 	//Rate
 	?>
 	</div>

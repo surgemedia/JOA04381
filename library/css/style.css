@@ -4583,3 +4583,30 @@ ul#module_list .module-loop:hover ul li {
     color: #4d4d4d;
     border: 1px solid #FDCA4B;
 }
+/*==========  sidebar - products  ==========*/
+
+#current-product ul.products {
+    display: inline-block;
+    border: 1px solid #DFDFDF;
+    border-radius: 0.3em;
+}
+
+#current-product li.product{
+      float: left;
+    margin: 0 3.8% 2.992em 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+}
+
+#current-product h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#module-extras h2{
+    font-size: 1.2em;
+    text-align: center;
+}
