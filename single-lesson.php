@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php get_header(); 
+$terms = wp_get_post_terms( $post->ID, 'modules');
+$GLOBALS['current_course_obj'] = $terms[0]->ID;
+?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="eightcol first clearfix float-right" role="main">
@@ -34,9 +37,7 @@
 						<?php }?>
 						</section> <!-- end article section -->
 						</article> <!-- end article -->
-						<?php 
-						//Goes back to module from lesson
-						$terms = wp_get_post_terms( $post->ID, 'modules'); ?>
+						
 						<div class="two_buttons">
 							<a id="button1" class="button" href="<?php echo site_url(); ?>/modules/<?php echo $terms[0]->slug; ?>">Back to Current Modules</a>
 							<?php next_post_button(); ?>
