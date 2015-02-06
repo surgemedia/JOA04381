@@ -1,7 +1,7 @@
 <?php get_header();
 $term_name = get_query_var('modules');
 $GLOBALS['current_course_obj'] = get_term_by('slug',$term_name,'modules');
-?> 
+?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="eightcol first clearfix float-right" role="main">
