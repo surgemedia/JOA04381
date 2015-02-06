@@ -18,16 +18,21 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 		</div>
 	</div>
 
+
+
+
+<?php if (!is_page('learn')) { ?>
 	<div id="current-product">
 		<h2>Recommened Books</h2>
-		
-
 		<?php  
-		$field = get_field('text_book',$GLOBALS['current_course_obj']);
-		$ID = $field[0]->ID; 
-		echo do_shortcode('[product id="'.$ID.'"]') ?>
+		$field = get_field('text_book', $GLOBALS['current_course_obj']);
 		
+		$ID = $field[0]->ID; 
+		echo do_shortcode('[product id="'.$ID.'"]')?>	
 	</div>
+
+
+	
 
 	<div id="module-extras">
 		<h2>Course Activites</h2>
@@ -37,6 +42,7 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 	//Rate
 	?>
 	</div>
+	<?Php } ?>
 	<?php /* ?>
 	<?php if ( is_active_sidebar( 'learn' ) ) : ?>
 	<?php dynamic_sidebar( 'learn' ); ?>
