@@ -4374,18 +4374,19 @@ section#single-content p {
     height: 100%;
 
   }
-
-a#button2 {
-    float: right;
+.lesson #single-content .actions p {
+  margin: 0px;
+  display: inline-block;
+  width: auto;
+  float: right;
 }
-
-a#button2 {
-    float: right;
-}
-
-.two_button a {
-    margin-top: 29px;
+.lesson #single-content .actions a {
+     margin-top: 29px;
     margin-bottom: 10px;
+    display: inline-block;
+}
+.lesson #single-content .actions p:first-child {
+  float:left;
 }
 
 nav.navigation.post-navigation {
@@ -4456,8 +4457,16 @@ div#current-user .royal {
     font-weight: bold;
     color: #AEAEAE;
 }
+div#current-product img {
+    margin: 0 auto 1em auto;
+}
 
-#current-user .current_info h2 {
+div#current-product h3 {
+    display: block;
+    float: left;
+    height: auto;
+    min-height: 0;
+    padding: 0.9em;
 }
 /*=========================================
 =            Enrollment Styles            =
@@ -4473,6 +4482,11 @@ div#current-user .royal {
   display: block;
   clear: both;
 
+}
+.badge {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
 }
 .message i {
   margin: 0 0.5em;
@@ -4593,7 +4607,8 @@ ul#module_list .module-loop:hover ul li {
 
 #current-product li.product{
       float: left;
-    margin: 0 3.8% 2.992em 0;
+    
+      margin: 0 3.8% 2em 0;
     padding: 0;
     position: relative;
     width: 100%;
@@ -4604,6 +4619,7 @@ ul#module_list .module-loop:hover ul li {
 #current-product h2 {
     font-size: 1.2em;
     text-align: center;
+    margin: 2em 0 1em 0;
 }
 
 #module-extras h2{

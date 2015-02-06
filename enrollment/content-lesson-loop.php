@@ -1,6 +1,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+
 	<header class="article-header">
+	<?php 
+	$user_id = bp_loggedin_user_id();
+		 ?>
 		<h2 class="h2 news-heading">
 		<?php the_title(); ?>
 		</h2>
@@ -24,6 +28,8 @@
 			</section> <!-- end article section -->
 			</a>
 			<footer class="article-footer">
+
 				<p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jbbtheme') . '</span> ', ', ', ''); ?></p>
 				</footer> <!-- end article footer -->
+				<?php getProgress( $GLOBALS['current_course_obj'],$user_id,trim(get_the_title()) ); ?>
 				</article> <!-- end article -->

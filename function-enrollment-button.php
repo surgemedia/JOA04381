@@ -3,7 +3,19 @@ function getEnrollment($user){
 	$current_course = xprofile_get_field_data( 'Current Course', $user, $multi_format = 'comma' );
 	return $current_course;
 }
-
+function getProgress($module,$user_id,$current_post){
+	$status = xprofile_get_field_data( 'Completed lessons', $user_id, $module->name, $is_required = false );
+	for ($i=0; $i < sizeof($status); $i++) { 
+		$clean_cp = strip_tags(str_replace(" ", "-", $current_post));
+		$clean_stat = strip_tags(str_replace(" ", "-", $status[$i]));
+		if($clean_stat == $clean_cp){
+			get_template_part('enrollment/badge', 'completed' );
+		} else {
+			//echo $clean_cp." ".$clean_stat;	
+		}
+	}
+	
+}
 
 function enrollmentButton($course){
 	if(isset($_GET['enroll'])){

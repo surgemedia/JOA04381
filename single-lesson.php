@@ -21,20 +21,15 @@ $terms = wp_get_post_terms( $post->ID, 'modules');
 							<?php echo $rows[$i]['lesson_video']; ?>
 						</div>
 						<?php endif; ?>
-						<div class="two_button">
+						<div class="actions">
 							<?php
 							$hands = $rows[$i]["lesson_hand"];
 							// Trouble shoot why this isnt working.
-							echo do_shortcode($hands);
-							//echo apply_filters( 'the_content',$hands); 
+							//echo do_shortcode($hands);
+							echo apply_filters( 'the_content',$hands); 
 							?>
-							<?php 
-							//Get Product infomation out of the object 
-							// Button2 is a pretty bad name, make it someing like lesson-product
 							
-							
-							?>
-							<a id="button2" class="button" href="<?php echo get_permalink($book_id); ?>">Purchase book for more help</a>
+							<p><a class="button" href="<?php echo get_permalink($book_id); ?>">Purchase book for more help</a></p>
 						</div>
 						<?php echo $rows[$i]['lesson_content'];  ?>
 						<?php }?>
