@@ -5,7 +5,7 @@
 				<li><span class="dashicons dashicons-book-alt"></span>
 				<?php 
 				$book_id =  get_field('text_book', $GLOBALS['current_course_obj']);
-				$book_id = $book_id[0]->ID
+				
 				 ?>
 				<p><a href="<?php get_permalink($book_id[0]->ID); ?>">Buy the book for this lesson</a> </p>
 				</li>

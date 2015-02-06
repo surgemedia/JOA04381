@@ -1,6 +1,5 @@
 <?php get_header(); 
 $terms = wp_get_post_terms( $post->ID, 'modules');
-$GLOBALS['current_course_obj'] = $terms[0]->ID;
 ?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
@@ -12,6 +11,7 @@ $GLOBALS['current_course_obj'] = $terms[0]->ID;
 					</header> <!-- end article header -->
 					<section id="single-content" class="entry-content clearfix" itemprop="articleBody">
 						
+						<?php $book_id =  get_field('text_book',$terms[0])[0]->ID; ?>
 						<?php $rows = get_field('lessons_repeater');
 						for ($i=0; $i <sizeof($rows) ; $i++) {
 						// Should wrapped in a tag?
@@ -25,13 +25,16 @@ $GLOBALS['current_course_obj'] = $terms[0]->ID;
 							<?php
 							$hands = $rows[$i]["lesson_hand"];
 							// Trouble shoot why this isnt working.
-							echo apply_filters( 'the_content',$hands); 
+							echo do_shortcode($hands);
+							//echo apply_filters( 'the_content',$hands); 
 							?>
 							<?php 
 							//Get Product infomation out of the object 
 							// Button2 is a pretty bad name, make it someing like lesson-product
+							
+							
 							?>
-							<a id="button2" class="button" href="">Purchase book for more help</a>
+							<a id="button2" class="button" href="<?php echo get_permalink($book_id); ?>">Purchase book for more help</a>
 						</div>
 						<?php echo $rows[$i]['lesson_content'];  ?>
 						<?php }?>
