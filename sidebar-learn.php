@@ -26,6 +26,7 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 		$field = get_field('text_book',$GLOBALS['current_course_obj']);
 		$ID = $field[0]->ID; 
 		echo do_shortcode('[product id="'.$ID.'"]') ?>
+		
 	</div>
 
 	<div id="module-extras">

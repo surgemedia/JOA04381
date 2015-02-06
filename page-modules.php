@@ -40,7 +40,7 @@ get_header(); ?>
                         for ($i=0; $i < sizeof($modules); $i++) {?>
                         <?php  $GLOBALS['current_course_obj'] = $modules[$i]; ?>
                         <?php get_template_part('enrollment/content', 'module-loop' ); ?>
-                        <?php unset($GLOBALS['current_course_obj']); ?>
+                        
                         <?php } ?>
                     </ul>
                 </article>
@@ -48,6 +48,7 @@ get_header(); ?>
             </div>
         </div>
         <?php get_sidebar('learn'); ?>
+        <?php unset($GLOBALS['current_course_obj']); ?>
     </div>
 </div>
 
