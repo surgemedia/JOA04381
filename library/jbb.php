@@ -354,6 +354,7 @@ function jbb_page_navi($before = '', $after = '') {
 			echo '<li><a href="'.get_pagenum_link($i).'">'.$i.'</a></li>';
 		}
 	}
+	// next button
 	echo '<li class="bpn-next-link">';
 	next_posts_link('>>');
 	echo '</li>';
