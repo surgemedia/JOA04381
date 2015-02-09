@@ -357,6 +357,9 @@ function jbb_page_navi($before = '', $after = '') {
 	// next button
 	echo '<li class="bpn-next-link">';
 	next_posts_link('>>');
+//add progress
+	addProgress(getUser());
+
 	echo '</li>';
 	if ($end_page < $max_page) {
 		$last_page_text = __( "Last", 'jbbtheme' );
