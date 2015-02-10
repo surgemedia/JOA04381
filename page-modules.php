@@ -5,6 +5,7 @@
 *
 */
 get_header(); ?>
+
 <div id="content">
     <div id="inner-content" class="wrap clearfix">
         <div id="main" class="eightcol clearfix float-right" role="main">

@@ -1,10 +1,22 @@
 <?php 
+function getUser(){
+$user = bp_loggedin_user_id();
+	return $user;
+}
+
 function getEnrollment($user){
 	$current_course = xprofile_get_field_data( 'Current Course', $user, $multi_format = 'comma' );
 	return $current_course;
 }
+function addProgress($user_id,$module)
+{
+	$currentProgress = xprofile_get_field_data( 'Completed Lessons', $user_id, $module->name, $is_required = false );
+	//add a lesson completion to the table
+	xprofile_set_field_data( 'Completed Lessons', $usert_id, $currentProgress + 1);
+}
+
 function getProgress($module,$user_id,$current_post){
-	$status = xprofile_get_field_data( 'Completed lessons', $user_id, $module->name, $is_required = false );
+	$status = xprofile_get_field_data( 'Completed Lessons', $user_id, $module->name, $is_required = false );
 	for ($i=0; $i < sizeof($status); $i++) { 
 		$clean_cp = strip_tags(str_replace(" ", "-", $current_post));
 		$clean_stat = strip_tags(str_replace(" ", "-", $status[$i]));

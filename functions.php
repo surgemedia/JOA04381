@@ -111,15 +111,23 @@ function jbb_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 	register_sidebar(array(
+		'id' => 'learnsingle',
+		'name' => __('learnsingle', 'jbbtheme'),
+		'description' => __('Learn Single Sidebar', 'jbbtheme'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+    register_sidebar(array(
 		'id' => 'learn',
-		'name' => __('Learn', 'jbbtheme'),
+		'name' => __('learn', 'jbbtheme'),
 		'description' => __('Learn Section Sidebar', 'jbbtheme'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call
@@ -270,6 +278,17 @@ echo "<pre>";
 print_r($data);
 echo "</pre>";
 }
+
+
+/////////////////////////////////////
+// USER LESSONS FUNCTIONS///////////
+////////////////////////////////////
+
+
+
+
+
+
 
 
 
