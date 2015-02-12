@@ -52,7 +52,7 @@
       "label":"Forum(Discuss this)",
       "name":"forum",
       "prefix":"",
-      "type":"relationship",
+      "type":"text",
       "instructions":"",
       "required":0,
       "conditional_logic":0,
@@ -61,16 +61,13 @@
         "class":"",
         "id":""
       },
-      "post_type":"",
-      "taxonomy":"",
-      "filters":[
-        "search",
-        "post_type",
-        "taxonomy"
-      ],
-      "elements":"",
-      "max":"",
-      "return_format":"object"
+      "default_value":"",
+      "placeholder":"",
+      "prepend":"",
+      "append":"",
+      "maxlength":"",
+      "readonly":0,
+      "disabled":0
     },
     {
       "key":"field_54bdeb1ed51bd",
@@ -110,5 +107,5 @@
   "label_placement":"top",
   "instruction_placement":"label",
   "hide_on_screen":"",
-  "modified":1423194875
+  "modified":1423702947
 }
