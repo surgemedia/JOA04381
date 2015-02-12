@@ -38,7 +38,13 @@ $terms = wp_get_post_terms( $post->ID, 'modules');
 						
 						<div class="two_buttons">
 							<a id="button1" class="button" href="<?php echo site_url(); ?>/modules/<?php echo $terms[0]->slug; ?>">Back to Current Modules</a>
-							<?php next_post_button(); ?>
+							<?php next_post_button();
+
+								// debug(get_the_title());
+								completeLesson(getUser(),get_the_title());
+								//$debug_var = xprofile_get_field_data( 'Completed Lessons', getUser(), $is_required = false );
+								//debug($debug_var);
+							 ?>
 						</div>
 						<?php endwhile;?>
 						<?php endif;?>
