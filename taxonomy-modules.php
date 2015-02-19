@@ -6,6 +6,7 @@ $GLOBALS['current_course_obj'] = get_term_by('slug',$term_name,'modules');
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="eightcol first clearfix float-right" role="main">
 			<h1 class=""><?php single_cat_title(); ?></h1>
+
 			<?php get_template_part('enrollment/content', 'module-meta' ); ?>
 			<p id="each_module_desc"><?php echo category_description(); ?></p>
 			<?php enrollmentButton($GLOBALS['current_course_obj']); ?>
@@ -35,10 +36,14 @@ $GLOBALS['current_course_obj'] = get_term_by('slug',$term_name,'modules');
 					),);
 				$loop = new WP_Query( $args );
 				if (have_posts()) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
 				<?php get_template_part('enrollment/content', 'lesson-loop' ); ?>
 				<?php endwhile; ?>
 				<?php endif; ?>
 			</div>
+
+
+
 			</div> <!-- end #main -->
 			<?php get_sidebar('learn'); ?>
 			</div> <!-- end #inner-content -->

@@ -12,13 +12,10 @@
 		<section class="entry-content clearfix">
 			
 			<?php 
-			
 			echo '<div class="placeholder yellow"><span class="dashicons dashicons-welcome-learn-more"></span></div>';
-			
 			?>
 			<p>
 			<?php $rows = get_field('lessons_repeater');
-			
 			$row = $rows[0]['lesson_content'];
 			$b4trunk = implode(' ', array_slice(explode(' ', $row), 0, 50)). '... ';
 			$trunk = strip_tags($b4trunk);
@@ -31,5 +28,5 @@
 
 				<p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'jbbtheme') . '</span> ', ', ', ''); ?></p>
 				</footer> <!-- end article footer -->
-				<?php getProgress( $GLOBALS['current_course_obj'],$user_id,trim(get_the_title()) ); ?>
+				<?php getProgress( get_the_title() ); ?>
 				</article> <!-- end article -->

@@ -1,3 +1,4 @@
+
 <?php get_header(); 
 $terms = wp_get_post_terms( $post->ID, 'modules');
 ?>
@@ -11,7 +12,8 @@ $terms = wp_get_post_terms( $post->ID, 'modules');
 					</header> <!-- end article header -->
 					<section id="single-content" class="entry-content clearfix" itemprop="articleBody">
 						
-						<?php $book_id =  get_field('text_book',$terms[0])[0]->ID; ?>
+						<?php $book_id =  get_field('text_book',$terms[0]);
+						$book_id_id = $book_id[0]->ID; ?>
 						<?php $rows = get_field('lessons_repeater');
 						for ($i=0; $i <sizeof($rows) ; $i++) {
 						// Should wrapped in a tag?
@@ -38,18 +40,14 @@ $terms = wp_get_post_terms( $post->ID, 'modules');
 						
 						<div class="two_buttons">
 							<a id="button1" class="button" href="<?php echo site_url(); ?>/modules/<?php echo $terms[0]->slug; ?>">Back to Current Modules</a>
-							<?php next_post_button();
-
-								// debug(get_the_title());
-								completeLesson(getUser(),get_the_title());
-								//$debug_var = xprofile_get_field_data( 'Completed Lessons', getUser(), $is_required = false );
-								//debug($debug_var);
-							 ?>
+							<?php next_post_button(); 
+							completeLessonButton(get_the_title());
+							?>
 						</div>
 						<?php endwhile;?>
 						<?php endif;?>
 						</div> <!-- end #main -->
-						<?php get_sidebar('learn'); ?>
+						<?php get_sidebar('learnsingle'); ?>
 						</div> <!-- end #inner-content -->
 						</div> <!-- end #content -->
 						<?php get_footer(); ?>

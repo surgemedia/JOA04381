@@ -4584,6 +4584,7 @@ ul#module_list .module-loop ul {
 ul#module_list .module-loop h2 {
     color: #4D4D4D;
     font-size: 1.7em;
+    display: inline;
 }
 
 ul#module_list .module-loop:hover p {
@@ -4623,4 +4624,10 @@ ul#module_list .module-loop:hover ul li {
 #module-extras h2{
     font-size: 1.2em;
     text-align: center;
+}
+
+#module_list .badge {
+    display: inline;
+    float: right;
+    margin-right: 91px;
 }
