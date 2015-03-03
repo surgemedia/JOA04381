@@ -1,4 +1,5 @@
 <div id="sidebar1" class="sidebar fourcol first clearfix sidebar-layout" role="complementary">
+<?php  if ( is_user_logged_in() ) {  ?>
 <?php 
 $user = wp_get_current_user();
 $user_id = bp_loggedin_user_id();
@@ -17,7 +18,7 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 			<a href="">Beginner</a>
 		</div>
 	</div>
-
+<?php } ?>
 	<div id="current-product">
 		<h2>Recommened Books</h2>
 		<?php  

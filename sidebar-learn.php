@@ -1,4 +1,5 @@
 <div id="sidebar1" class="sidebar fourcol first clearfix sidebar-layout" role="complementary">
+<?php  if ( is_user_logged_in() ) {  ?>
 <?php 
 $user = wp_get_current_user();
 $user_id = bp_loggedin_user_id();
@@ -13,12 +14,18 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 		<div class="display-img">
 		<?php echo $avatarurl; ?></div>
 		<div class="current_info">
-			<h2><?php echo $user->display_name; ?></h2>
-			<a href="">Beginner</a>
+		<?php  ?>
+			<h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></h2></a>
+			<a href="<?php echo site_url().'/members/'.$user->user_login; ?>">Beginner</a>
 		</div>
 	</div>
+<?php }  else { ?>
+<?php if ( is_active_sidebar( 'sidebar1' ) ) { ?>
 
+						<?php dynamic_sidebar( 'sidebar1' ); ?>
 
+					<?php } ?>
+<?php } ?>
 <?php if (!is_page('learn')) { ?>
 	<div id="current-product">
 		<h2>Recommened Books</h2>
@@ -45,22 +52,8 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 			<a>Rate This</a>
 			</li>
 		</ul>
-	<?php 
-	// Group Link text
-	// Royal Member Link upgrade
-    //Rate
-	 ?>
-
-	
-
 	</div>
 	<?Php } ?>
-	<?php /* ?>
-	<?php if ( is_active_sidebar( 'learn' ) ) : ?>
-	<?php dynamic_sidebar( 'learn' ); ?>
-	<?php else : ?>
-	<!-- DO Nothing -->
-	<?php endif;  */ 
-	?>
+	
 
 </div>
