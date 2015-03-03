@@ -480,9 +480,10 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   background: transparent;
 }
 select {
-  border: none;
-  padding: 6px 10px;
-  color: #58585b;
+ border: 1px solid #D1D1D1;
+padding: 1em;
+color: #58585B;
+min-height: 1em;
 }
 .form-ul .form-select {
   width: 300px;
@@ -723,9 +724,12 @@ BOX SHADOW
 *********************/
 /* .boxShadow(0,0,4px,0,#444); */
 /* .boxShadow(none); */
+
 /*********************
 BUTTONS
 *********************/
+#buddypress div.activity-comments form input,
+#buddypress form#whats-new-form #whats-new-submit input,
 .bp-login-widget-register-link a,
 #bp-login-widget-submit,
 .bp-login-widget-user-logout a,
@@ -741,7 +745,7 @@ BUTTONS
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: 'Bitter', serif;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -1291,6 +1295,7 @@ h5,
 *********************/
 .header {
   background: #85D2E4;
+  margin-bottom: 3em;
 }
 #header-bg-icon {
   width: 1140px;
@@ -1348,12 +1353,13 @@ a.social-media-icon-twitter:hover {
 .logo-bar #searchform input[type="text"] {
   /*background: url(../images/search-dark.png) no-repeat 160px 6px #fff;*/
   border: 1px solid #fff;
-  padding: 1em 2em;
-  padding: 6px 10px;
-  color: #d7d8d2;
-  width: 185px;
+  padding: 0.7em 2em;
+  
+  color: #282828;
+  width: 285px;
   border-radius: 0px;
-  box-shadow: 0px;
+  box-shadow: none;
+
 
 }
 .logo-bar #searchform .searchbtn {
@@ -1578,13 +1584,13 @@ a.top-sub-nav-link {
 08. POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: -15px;
+ 
   background-color: #fff;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  padding-top: 1px;
-  border-top: 1px solid #E5E5E5;
+  padding-top: 1em;
+  /*border-top: 1px solid #E5E5E5;*/
 }
 #content-home {
   background-color: #fff;
@@ -4339,14 +4345,14 @@ section.entry-content.clearfix img {
     display: inline;
     float:left;
 }
-section.entry-content.clearfix p {
+.lesson section.entry-content.clearfix p {
     display: inline-block;
     float: right;
     width: 73%;
     margin-top: 0px;
 }
 
-section#single-content p {
+.lesson section#single-content p {
   width:100%;
   float: none;
   line-height: 2em;
@@ -4631,3 +4637,42 @@ ul#module_list .module-loop:hover ul li {
     float: right;
     margin-right: 91px;
 }
+/*==================================
+=            Buddypress            =
+==================================*/
+#buddypress div.activity-comments form .ac-textarea {
+  box-shadow: none;
+  border:1px solid #d1d1d1;
+}
+
+
+#buddypress #reply-title small a span, #buddypress a.bp-primary-action span {
+  display: none;
+}
+#buddypress .comment-reply-link, #buddypress a.button, #buddypress button, #buddypress div.generic-button a, #buddypress input[type=button], #buddypress input[type=reset], #buddypress input[type=submit], #buddypress ul.button-nav li a, a.bp-title-button {
+  background:#85D2E4;
+  border:0px;
+}
+#buddypress .comment-reply-link:hover, #buddypress a.button:focus, #buddypress a.button:hover, #buddypress button:hover, #buddypress div.generic-button a:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress input[type=submit]:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a {
+   background:#DB4190;
+}
+#buddypress div.item-list-tabs#object-nav {
+    border-bottom: 1px solid #d1d1d1;
+    padding: 1em 0em;
+}
+#buddypress form#whats-new-form #whats-new-submit {
+  display: block;
+  overflow: hidden;
+  height: auto;
+}
+#buddypress #whats-new-options {
+  overflow: hidden;
+}
+#buddypress form#whats-new-form textarea {
+  border-radius: 0px;
+  border:1px solid #d1d1d1;
+  min-height: 2em;
+  box-shadow: none;
+}
+
+
