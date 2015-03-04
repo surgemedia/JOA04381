@@ -3,7 +3,7 @@
 <?php 
 $user = wp_get_current_user();
 $user_id = bp_loggedin_user_id();
-$avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
+$avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type' => 'full', ) );
  ?>
 	<div id="current-user">
 	<?php  if (get_user_role()=='administrator') {  ?>
@@ -14,9 +14,14 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 		<div class="display-img">
 		<?php echo $avatarurl; ?></div>
 		<div class="current_info">
+<<<<<<< HEAD
 		<?php  ?>
 			<h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></h2></a>
 			<a href="<?php echo site_url().'/members/'.$user->user_login; ?>">Beginner</a>
+=======
+			<a href="<?php echo site_url(); ?>/members/<?php echo $user->user_login; ?>"><h2><?php echo $user->display_name; ?></h2></a> 
+			<a href="">Beginner</a>
+>>>>>>> origin/master
 		</div>
 	</div>
 <?php }  else { ?>
@@ -28,17 +33,21 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 <?php } ?>
 	<div id="current-product">
 		<h2>Recommened Books</h2>
-		<?php  
-		
-		echo do_shortcode('[product id="'.$GLOBALS['book_id_id'].'"]')?>	
+		<?php echo do_shortcode('[product id="'.$GLOBALS['book_id_id'].'"]')?>	
 	</div>
 	
 
 	<div id="module-extras">
 		<h2>Course Activites</h2>
 		<ul>
+<<<<<<< HEAD
 			<li class="pink button"><span class="dashicons dashicons-groups"></span>
 			<a>Discuss This</a>
+=======
+			<li><span class="dashicons dashicons-groups"></span>
+			<?php $groupslug = $GLOBALS['current_course_obj']->slug ?>
+			<a href="<?php echo site_url(); ?>/groups/<?php echo $GLOBALS['group_single_slug'] ?>">Discuss This</a>
+>>>>>>> origin/master
 			</li>
 				
 			<li class="pink button"><span class="dashicons dashicons-awards"></span>

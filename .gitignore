@@ -6,3 +6,7 @@ Bones.esproj/Project.espressostorage
 .project
 
 .DS_Store
+
+library/css/style.css
+
+sidebar-learn.php

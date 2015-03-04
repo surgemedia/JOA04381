@@ -62,4 +62,9 @@ function enrollmentButton($course){
 		get_template_part('enrollment/message', 'please-login' );
 	}
 }
+
+
+function DefineSkillLevel(){
+
+}
 ?>
