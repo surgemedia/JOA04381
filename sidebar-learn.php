@@ -40,17 +40,15 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 	<div id="module-extras">
 		<h2>Course Activites</h2>
 		<ul>
-			<li><span class="dashicons dashicons-groups"></span>
+			<li class="pink button"><span class="dashicons dashicons-groups"></span>
 			<a>Discuss This</a>
 			</li>
 				
-			<li class="yellow button"><span class="dashicons dashicons-awards"></span>
+			<li class="pink button"><span class="dashicons dashicons-awards"></span>
 			<a href="<?php echo site_url(); ?>/upgrade ">Get Royal</a>
 			</li>
 
-			<li><span class="dashicons dashicons-heart"></span>
-			<a>Rate This</a>
-			</li>
+			
 		</ul>
 	</div>
 	<?Php } ?>

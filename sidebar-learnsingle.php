@@ -14,10 +14,17 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 		<div class="display-img">
 		<?php echo $avatarurl; ?></div>
 		<div class="current_info">
-			<h2><?php echo $user->display_name; ?></h2>
-			<a href="">Beginner</a>
+		<?php  ?>
+			<h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></h2></a>
+			<a href="<?php echo site_url().'/members/'.$user->user_login; ?>">Beginner</a>
 		</div>
 	</div>
+<?php }  else { ?>
+<?php if ( is_active_sidebar( 'sidebar1' ) ) { ?>
+
+						<?php dynamic_sidebar( 'sidebar1' ); ?>
+
+					<?php } ?>
 <?php } ?>
 	<div id="current-product">
 		<h2>Recommened Books</h2>
@@ -30,25 +37,14 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 	<div id="module-extras">
 		<h2>Course Activites</h2>
 		<ul>
-			<li><span class="dashicons dashicons-groups"></span>
+			<li class="pink button"><span class="dashicons dashicons-groups"></span>
 			<a>Discuss This</a>
 			</li>
 				
-			<li><span class="dashicons dashicons-awards"></span>
-			<a href="<?php echo site_url(); ?>/upgrade">Get Royal</a>
+			<li class="pink button"><span class="dashicons dashicons-awards"></span>
+			<a href="<?php echo site_url(); ?>/upgrade ">Get Royal</a>
 			</li>
 
-			<li><span class="dashicons dashicons-heart"></span>
-			<a>Rate This</a>
-			</li>
+			
 		</ul>
-
-	<?php /* ?>
-	<?php if ( is_active_sidebar( 'learn' ) ) : ?>
-	<?php dynamic_sidebar( 'learn' ); ?>
-	<?php else : ?>
-	<!-- DO Nothing -->
-	<?php endif;  */ 
-	?>
-
-</div>
+	</div>

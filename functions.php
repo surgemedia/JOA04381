@@ -284,6 +284,8 @@ echo "</pre>";
 // USER LESSONS FUNCTIONS///////////
 ////////////////////////////////////
 
+add_filter( 'bp_registration_needs_activation', '__return_false' );
+
 
 
 

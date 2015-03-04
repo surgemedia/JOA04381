@@ -358,8 +358,9 @@ function jbb_page_navi($before = '', $after = '') {
 	echo '<li class="bpn-next-link">';
 	next_posts_link('>>');
 //add progress
+	if(get_post_type() == 'lessons_post'){
 	addProgress(getUser());
-
+	}
 	echo '</li>';
 	if ($end_page < $max_page) {
 		$last_page_text = __( "Last", 'jbbtheme' );
@@ -387,7 +388,7 @@ return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '"
 /*
  * This is a modified the_author_posts_link() which just returns the link.
  *
- * This is necessary to allow usage of the usual l10n process with printf().
+ * This is necessary to allow usage of the  usual l10n process with printf().
  */
 function jbb_get_the_author_posts_link() {
 	global $authordata;

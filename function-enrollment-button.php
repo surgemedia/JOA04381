@@ -9,6 +9,7 @@ function getEnrollment($user){
 }
 
 function completeLessonButton($lesson) {
+	if(is_user_logged_in()){
 	if(isset($_GET['finished-lesson'])){
 	$url_var = $_GET['finished-lesson'];
 	} else { $url_var = false;}
@@ -27,6 +28,9 @@ function completeLessonButton($lesson) {
 	if( true != $url_var && strpos($completedlesson,$lesson) !== false){
 		get_template_part('enrollment/message', 'already-completed' ); //"You have already completed the lesson"
 		}
+	} else {
+		get_template_part('enrollment/message', 'please-login' );
+	}
 }
 
 function getProgress($lesson){
