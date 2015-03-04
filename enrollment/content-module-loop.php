@@ -6,7 +6,8 @@ getEnrollment($user_id);
 <li class="module-loop">
 <a href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['current_course_obj']->slug; ?>">
  
-  <h2>  <?php echo $GLOBALS['current_course_obj']->name; ?></h2>
+  <h2>  <?php $currentModuleName = $GLOBALS['current_course_obj']->name; 
+  				echo $currentModuleName; ?></h2>
   
 	<?php $module_lessons = array();
 	$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id, $is_required = false);
@@ -37,6 +38,11 @@ getEnrollment($user_id);
 				//echo $count;
 				if ($count == $GLOBALS['current_course_obj']->count) { 
 					get_template_part('enrollment/badge', 'completed' ); //get 'Completed' badage, Full star
+
+					
+					$GLOBALS['completeModule'] = $GLOBALS['completeModule'].",".$currentModuleName;
+					echo $GLOBALS['completeModule'];
+
 				 }else{ 
 				 	if ($count < $GLOBALS['current_course_obj']->count && $count > 0 && getEnrollment($user_id) == $GLOBALS['current_course_obj']->name) {
 				 		get_template_part('enrollment/badge', 'uncomplete' ); } //get 'half-Compl' badage, half star

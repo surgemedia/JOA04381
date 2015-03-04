@@ -1,6 +1,7 @@
 
 <?php get_header(); 
 $terms = wp_get_post_terms( $post->ID, 'modules');
+debug($terms[0]->slug);
 ?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
@@ -39,7 +40,8 @@ $terms = wp_get_post_terms( $post->ID, 'modules');
 						</article> <!-- end article -->
 						
 						<div class="two_buttons">
-							<a id="button1" class="button" href="<?php echo site_url(); ?>/modules/<?php echo $terms[0]->slug; ?>">Back to Current Modules</a>
+							<?php $GLOBALS['group_single_slug'] = $terms[0]->slug ; ?>
+							<a id="button1" class="button" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Modules</a>
 							<?php next_post_button(); 
 							completeLessonButton(get_the_title());
 							?>
