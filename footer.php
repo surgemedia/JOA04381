@@ -47,6 +47,7 @@
 										</div>
 									</div>
 								</div>
+								<?PHP /* ?>
 								<div class="threecol">
 									<div id="card-deck">
 										<div class="card-deck-card card-deck-one">
@@ -74,6 +75,7 @@
 											</a>
 										</div>
 									</div>
+								<?PHP */ ?>
 									<!--<img src="<?php bloginfo('template_directory'); ?>/library/images/footer-nav-temp.png">-->
 								</div>
 							</div>
