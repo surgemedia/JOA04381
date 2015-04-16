@@ -25,29 +25,29 @@ if ( is_user_logged_in() ) {
 				<div id="home-box-nav">
 				<div class="inner">
 												<div class="threecol-home first">
-												<a href="<?php the_field( 'home_box_1_link', 'option' ); ?>">
-													<h2><?php the_field( 'home_box_1', 'option' ); ?></h2>
+												<a href="/learn">
+													<h2>Learn Bridge</h2>
 													<small>Find out more...</small>
 													<span class="placeholder yellow"><span class="dashicons dashicons-welcome-learn-more"></span></span>
 													</a>
 												</div>
 												<div class="threecol-home">
-												<a href="<?php the_field( 'home_box_2_link', 'option' ); ?>">
-													<h2><?php the_field( 'home_box_2', 'option' ); ?></h2>
+												<a href="play-bridge-online">
+													<h2>Pratice Online</h2>
 													<small>Find out more...</small>
 													<span class="placeholder yellow"><span class="dashicons dashicons-awards"></span></span>
 													</a>
 												</div>
 												<div class="threecol-home">
 												<a href="<?php the_field( 'home_box_3_link', 'option' ); ?>">
-													<h2><?php the_field( 'home_box_3', 'option' ); ?></h2> 
+													<h2>Joan's Club</h2> 
 													<small>Find out more...</small>
 													<span class="placeholder yellow"><span class="dashicons dashicons-store"></span></span>
 													</a>
 												</div>
 												<div class="threecol-home">
 												<a href="<?php the_field( 'home_box_4_link', 'option' ); ?>">
-													<h2><?php the_field( 'home_box_4', 'option' ); ?></h2>
+													<h2>Events On</h2>
 													<small>	Find out more...</small>
 													<span class="placeholder yellow"><span class="dashicons dashicons-calendar"></span></span>
 													</a>
@@ -66,9 +66,6 @@ if ( is_user_logged_in() ) {
 								<header class="article-header">
 
 									<h1 class="page-title"><?php the_title(); ?></h1>
-									
-
-
 								</header> <!-- end article header -->
 
 								<section class="entry-content clearfix site-intro" itemprop="articleBody">
@@ -76,7 +73,7 @@ if ( is_user_logged_in() ) {
 									<p>Welcome to Joan Butts Bridge, We offer a great selection of tool to get you into bridge fast and have fun.</p>
 									<p>If you are just starting out or a seasoned bridge player, 
 									Joan Butts Bridge offers <a href="/learn">Lessons</a> for beginners and <a href="/play-bridge-online">Online Practice</a> for skilled players.</p>
-									
+									<br>
 									</div>
 									
 								</section> <!-- end article section -->
@@ -84,10 +81,12 @@ if ( is_user_logged_in() ) {
 								<section class="entry-content clearfix about-joan" itemprop="articleBody">
 								<?php the_post_thumbnail( 'single-post-thumbnail', array('class' => 'home-intro-img')); ?>
 								<div class="content">
+								<h2 class="page-title">About Joan</h2>
+
 									<?php the_content(); ?>
 									</div>
 									<div class="actions">
-									<a class="button button-margin" href="/about-joan/">About Joan</a>
+									
 									<?php 
 								if (!is_user_logged_in() ) {
 								echo	'<a class="button" href="/register/">Register</a>';
@@ -125,6 +124,7 @@ if ( is_user_logged_in() ) {
 							<div class="twelvecol ">
 								<iframe width="100%" height="515" src="//www.youtube.com/embed/TWcd76cG3-M" frameborder="0" allowfullscreen></iframe>
 							</div>
+							<?php /* ?>
 							<div class="twelvecol first home-feed">
 								<div class="fourcol first home-feed-border">
 									<h2>Latest News</h2>
@@ -163,10 +163,10 @@ if ( is_user_logged_in() ) {
 									<a href="/learn/videos/" class="excerpt-read-more">View All Videos</a>
 								</div>
 							</div>
-							
+								<?php */ ?>
 							<div class="twelvecol first home-feature">
 								<h2>Learn From The Experts</h2>
-								
+								<hr>
 								<?php echo do_shortcode('[featured_products per_page="4" columns="4"]'); ?>
 							</div>
 						</div> <!-- end #main -->
