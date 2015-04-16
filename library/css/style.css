@@ -1234,6 +1234,35 @@ h1.news-heading {
 .tribe_events .article-header .page-title {
   text-transform: none;
 }
+#home-box-nav a {
+    text-decoration: none;
+}
+
+#home-box-nav a:hover {
+    text-decoration: none;
+}
+
+#home-box-nav a small {
+    font-size: 1em;
+    margin: 0.5em 0 .5em 0;
+    display: block;
+}
+
+#home-box-nav a:hover .yellow {
+    background: #DF4292 !important;
+}
+
+#home-box-nav a:hover {}
+
+#home-box-nav a:hover {
+    color: #DF4292 !important;
+    transition: 0.5s all ease;
+}
+
+#home-box-nav a:hover h2 {
+    color: #DF4292 !important;
+    transition: 0.5s all ease;
+}
 #home-box-nav h2 {
   color: #db4190;
   text-transform: none;
@@ -1557,16 +1586,61 @@ a.top-sub-nav-link {
   display: block;
 }
 #home-box-nav {
-  height: 210px;
   margin: 0 auto;
   position: relative;
   width: 920px;
   padding: 30px 0px;
+
 }
-#home-box-nav div {
+#home-box-nav .inner {
+    display: block;
+
+    float: left;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    min-height: 255px;
+    margin: 0 0 2em 0;
+}
+#home-box-nav .threecol-home {
   height: 150px;
   padding: 10px;
+  display: inline-block;
+  text-align: center
+;transition: 0.3s all ease;
 }
+#home-box-nav h2 {
+  display: block;
+  clear: both;
+  margin: 0.5em 0 0 0;
+  color:#FDCA4B !important;
+}
+#home-box-nav a {
+  display: block;
+  clear: both;
+  margin: 0.5em 0 1em 0;
+  text-decoration: none;
+}
+#home-box-nav div .placeholder {
+  display:block;
+  width:150px;
+  border-radius: 100%;
+  line-height: 150px;
+  color:#fff;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+
+  transition: 0.3s all ease;
+}
+#home-box-nav .threecol-home .placeholder span {
+font-size:4em !important;
+width:150px;
+height:150px;
+line-height: 150px;
+transition: 1s all ease;
+}
+
 #home-box-nav img {
   border: 1px solid #fff;
   height: 75px;
@@ -1583,6 +1657,32 @@ a.top-sub-nav-link {
 /*********************
 08. POSTS & CONTENT STYLES
 *********************/
+
+.page-template-page-home .content {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+article#post-2 {
+    width: 100%;
+}
+
+.page-template-page-home .content p {
+    margin: 0 0 1em 0;
+}
+.page-template-page-home .entry-content img {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+}
+.page-template-page-home .actions {
+  float: left;
+}
+.page-template-page-home .about-joan {
+  float:left;
+  display: block;
+  width:100%;
+}
+
 #content {
  
   background-color: #fff;
@@ -4346,7 +4446,6 @@ ul.each_modules_fields{
 }
 
 section.entry-content.clearfix img {
-    display: inline;
     float:left;
 }
 .lesson section.entry-content.clearfix p {

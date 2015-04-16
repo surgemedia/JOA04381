@@ -23,33 +23,42 @@ if ( is_user_logged_in() ) {
 			
 			<div id="content-home">
 				<div id="home-box-nav">
-							<div class="threecol-home first">
-								<h2><?php the_field( 'home_box_1', 'option' ); ?></h2><br>
-								<a href="<?php the_field( 'home_box_1_link', 'option' ); ?>">Find out more...</a>
-								<img src="<?php the_field( 'home_box_1_img', 'option' ); ?>">
-							</div>
-							<div class="threecol-home">
-								<h2><?php the_field( 'home_box_2', 'option' ); ?></h2>
-								<a href="<?php the_field( 'home_box_2_link', 'option' ); ?>"><br />Find out more...</a>
-								<img src="<?php the_field( 'home_box_2_img', 'option' ); ?>">
-							</div>
-							<div class="threecol-home">
-								<h2><?php the_field( 'home_box_3', 'option' ); ?></h2> 
-								<a href="<?php the_field( 'home_box_3_link', 'option' ); ?>"><br />Find out more...</a>
-								<img src="<?php the_field( 'home_box_3_img', 'option' ); ?>">
-							</div>
-							<div class="threecol-home">
-								<h2><?php the_field( 'home_box_4', 'option' ); ?></h2>
-								<a href="<?php the_field( 'home_box_4_link', 'option' ); ?>">Find out more...</a>
-								<img src="<?php the_field( 'home_box_4_img', 'option' ); ?>">
-							</div>
-							<div class="twelvecol first home-box-shadow"></div>
-						
+				<div class="inner">
+												<div class="threecol-home first">
+												<a href="<?php the_field( 'home_box_1_link', 'option' ); ?>">
+													<h2><?php the_field( 'home_box_1', 'option' ); ?></h2>
+													<small>Find out more...</small>
+													<span class="placeholder yellow"><span class="dashicons dashicons-welcome-learn-more"></span></span>
+													</a>
+												</div>
+												<div class="threecol-home">
+												<a href="<?php the_field( 'home_box_2_link', 'option' ); ?>">
+													<h2><?php the_field( 'home_box_2', 'option' ); ?></h2>
+													<small>Find out more...</small>
+													<span class="placeholder yellow"><span class="dashicons dashicons-awards"></span></span>
+													</a>
+												</div>
+												<div class="threecol-home">
+												<a href="<?php the_field( 'home_box_3_link', 'option' ); ?>">
+													<h2><?php the_field( 'home_box_3', 'option' ); ?></h2> 
+													<small>Find out more...</small>
+													<span class="placeholder yellow"><span class="dashicons dashicons-store"></span></span>
+													</a>
+												</div>
+												<div class="threecol-home">
+												<a href="<?php the_field( 'home_box_4_link', 'option' ); ?>">
+													<h2><?php the_field( 'home_box_4', 'option' ); ?></h2>
+													<small>	Find out more...</small>
+													<span class="placeholder yellow"><span class="dashicons dashicons-calendar"></span></span>
+													</a>
+												</div>
+												
+											</div>
+
 						</div>
 				<div id="inner-content" class="wrap clearfix">
 						
 						<div id="main" class="twelvecol first clearfix" role="main">
-								<?php the_post_thumbnail( 'single-post-thumbnail', array('class' => 'home-intro-img')); ?>
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix eightcol-home'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -62,8 +71,22 @@ if ( is_user_logged_in() ) {
 
 								</header> <!-- end article header -->
 
-								<section class="entry-content clearfix" itemprop="articleBody">
+								<section class="entry-content clearfix site-intro" itemprop="articleBody">
+								<div class="content">
+									<p>Welcome to Joan Butts Bridge, We offer a great selection of tool to get you into bridge fast and have fun.</p>
+									<p>If you are just starting out or a seasoned bridge player, 
+									Joan Butts Bridge offers <a href="/learn">Lessons</a> for beginners and <a href="/play-bridge-online">Online Practice</a> for skilled players.</p>
+									
+									</div>
+									
+								</section> <!-- end article section -->
+
+								<section class="entry-content clearfix about-joan" itemprop="articleBody">
+								<?php the_post_thumbnail( 'single-post-thumbnail', array('class' => 'home-intro-img')); ?>
+								<div class="content">
 									<?php the_content(); ?>
+									</div>
+									<div class="actions">
 									<a class="button button-margin" href="/about-joan/">About Joan</a>
 									<?php 
 								if (!is_user_logged_in() ) {
@@ -73,6 +96,7 @@ if ( is_user_logged_in() ) {
 								}
 
 									?>
+									</div>
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
@@ -150,6 +174,5 @@ if ( is_user_logged_in() ) {
 
 				</div> <!-- end #inner-content -->
 
+<?php get_footer();					 ?>
 			</div> <!-- end #content -->
-
-<?php get_footer(); ?>
