@@ -21,7 +21,7 @@
 									<p><span class="light-blue">E</span> <a href="mailto:joan@joanbuttsbridge.com">joan@joanbuttsbridge.com</a></p>
 									<p><span class="light-blue">P</span> <a href="tel:0413772650">0413 772 650</a></p>
 									<p><a class="big-pink-button inline" href="#inline_content">Sign up for my newsletter ></a></p>
-									<span id="footer-tag">Website design <a href="http://www.marginmedia.com.au">Margin Media</a></span>
+									<!-- <span id="footer-tag">Made by hand by <a href="http://www.marginmedia.com.au">Margin Media</a></span> -->
 									<!-- This contains the hidden content for inline calls -->
 									<div style="display:none">
 										<div id="inline_content" style="padding:10px; background:#fff;">
