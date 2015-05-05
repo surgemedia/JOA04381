@@ -40,7 +40,7 @@ if ( is_user_logged_in() ) {
 												</div>
 												<div class="threecol-home">
 												<a href="<?php the_field( 'home_box_3_link', 'option' ); ?>">
-													<h2>Joan's Club</h2> 
+													<h2>Bridge Centre</h2> 
 													<small>Find out more...</small>
 													<span class="placeholder yellow"><span class="dashicons dashicons-store"></span></span>
 													</a>
