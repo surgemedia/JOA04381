@@ -16,8 +16,8 @@
 			<?php  ?>
 			<h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></h2></a>
 			<a href="<?php echo site_url().'/members/'.$user->user_login; ?>">Beginner</a>
-			<a href="<?php echo site_url(); ?>/members/<?php echo $user->user_login; ?>"><h2><?php echo $user->display_name; ?></h2></a>
-			<a href="">Beginner</a>
+			<? /*<a href="<?php echo site_url(); ?>/members/<?php echo $user->user_login; ?>"><h2><?php echo $user->display_name; ?></h2></a>
+			<a href="">Beginner</a>*/ ?>
 		</div>
 	</div>
 	<?php }  else { ?>
@@ -35,10 +35,10 @@
 		<ul>
 			<li class="pink button"><span class="dashicons dashicons-groups"></span>
 			<a>Discuss This</a>
-			<li><span class="dashicons dashicons-groups"></span>
+			<!--<li><span class="dashicons dashicons-groups"></span>
 			<?php $groupslug = $GLOBALS['current_course_obj']->slug ?>
 			<a href="<?php echo site_url(); ?>/groups/<?php echo $GLOBALS['group_single_slug'] ?>">Discuss This</a>
-		</li>
+		</li> -->
 		
 		<li class="pink button"><span class="dashicons dashicons-awards"></span>
 		<a href="<?php echo site_url(); ?>/upgrade ">Get Royal</a>

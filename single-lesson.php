@@ -1,6 +1,6 @@
 
 <?php get_header(); 
-$terms = wp_get_post_terms( $post->ID, 'modules');
+//$terms = wp_get_post_terms( $post->ID, 'modules');
 debug($terms[0]->slug);
 ?>
 <div id="content">

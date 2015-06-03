@@ -42,11 +42,11 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 		<ul>
 			<li class="pink button"><span class="dashicons dashicons-groups"></span>
 			<a>Discuss This</a>
-			</li>
+			</li> 
 				
 			<li class="pink button"><span class="dashicons dashicons-awards"></span>
 			<a href="<?php echo site_url(); ?>/upgrade ">Get Royal</a>
-			</li>
+			</li> 
 
 			
 		</ul>
