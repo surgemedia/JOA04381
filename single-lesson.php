@@ -11,7 +11,7 @@ debug($terms[0]->slug);
 				<header class="article-header">
 					<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 					
-					<?php get_field('lesson_overview'); ?>
+					<?php get_field('lesson_overview'); 
 			
 					</header> <!-- end article header -->
 					<section id="single-content" class="entry-content clearfix" itemprop="articleBody">

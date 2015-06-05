@@ -25,31 +25,31 @@ if ( is_user_logged_in() ) {
 				<div id="home-box-nav">
 				<div class="inner">
 												<div class="threecol-home first">
-												<a href="/learn">
+												<a href="learn">
 													<h2>Learn Bridge</h2>
 													<small>Find out more...</small>
-													<span class="placeholder yellow"><span class="dashicons dashicons-welcome-learn-more"></span></span>
+													<span class="placeholder pink"><span class="dashicons dashicons-welcome-learn-more"></span></span>
 													</a>
 												</div>
 												<div class="threecol-home">
 												<a href="play-bridge-online">
 													<h2>Pratice Online</h2>
 													<small>Find out more...</small>
-													<span class="placeholder yellow"><span class="dashicons dashicons-awards"></span></span>
+													<span class="placeholder pink"><span class="dashicons dashicons-awards"></span></span>
 													</a>
 												</div>
 												<div class="threecol-home">
 												<a href="<?php the_field( 'home_box_3_link', 'option' ); ?>">
 													<h2>Bridge Centre</h2> 
 													<small>Find out more...</small>
-													<span class="placeholder yellow"><span class="dashicons dashicons-store"></span></span>
+													<span class="placeholder pink"><span class="dashicons dashicons-store"></span></span>
 													</a>
 												</div>
 												<div class="threecol-home">
 												<a href="<?php the_field( 'home_box_4_link', 'option' ); ?>">
 													<h2>Events On</h2>
 													<small>	Find out more...</small>
-													<span class="placeholder yellow"><span class="dashicons dashicons-calendar"></span></span>
+													<span class="placeholder pink"><span class="dashicons dashicons-calendar"></span></span>
 													</a>
 												</div>
 												
