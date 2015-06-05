@@ -34,11 +34,9 @@
 		<h2>Course Activites</h2>
 		<ul>
 			<li class="pink button"><span class="dashicons dashicons-groups"></span>
-			<a>Discuss This</a>
-			<!--<li><span class="dashicons dashicons-groups"></span>
 			<?php $groupslug = $GLOBALS['current_course_obj']->slug ?>
 			<a href="<?php echo site_url(); ?>/groups/<?php echo $GLOBALS['group_single_slug'] ?>">Discuss This</a>
-		</li> -->
+		</li>
 		
 		<li class="pink button"><span class="dashicons dashicons-awards"></span>
 		<a href="<?php echo site_url(); ?>/upgrade ">Get Royal</a>

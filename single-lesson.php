@@ -10,6 +10,9 @@ debug($terms[0]->slug);
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 				<header class="article-header">
 					<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+					
+					<?php get_field('lesson_overview'); ?>
+			
 					</header> <!-- end article header -->
 					<section id="single-content" class="entry-content clearfix" itemprop="articleBody">
 						
