@@ -1248,8 +1248,8 @@ h1.news-heading {
     display: block;
 }
 
-#home-box-nav a:hover .yellow {
-    background: #DF4292 !important;
+#home-box-nav a:hover .pink {
+    background: #FDCA4B !important;
 }
 
 #home-box-nav a:hover {}
@@ -2379,12 +2379,12 @@ you can add resource intensive styles.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
-  .wrap {
+  /*.wrap {
     width: 895px;
   }
   .sidebar-layout {
     margin: 0em 1.8em 0 0;
-  }
+  }*/
   /*********************
   HEADER SYTLES
   *********************/

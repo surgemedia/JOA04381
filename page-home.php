@@ -61,7 +61,7 @@ if ( is_user_logged_in() ) {
 						<div id="main" class="twelvecol first clearfix" role="main">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix eightcol-home'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix twelvcol-home'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
 
