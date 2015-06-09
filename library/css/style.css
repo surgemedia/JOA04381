@@ -4744,6 +4744,10 @@ ul#module_list .module-loop:hover ul li {
     margin-left: 0;
     text-align: center;
 }
+#current-product li.product a {
+  float:left;
+  clear: both;
+}
 
 #current-product h2 {
     font-size: 1.2em;
