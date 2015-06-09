@@ -38,6 +38,7 @@
 			<a href="<?php echo site_url(); ?>/groups/<?php echo $GLOBALS['group_single_slug'] ?>">Discuss This</a>
 		</li>
 		
+
 		<li class="pink button"><span class="dashicons dashicons-awards"></span>
 		<a href="<?php echo site_url(); ?>/upgrade ">Get Royal</a>
 	</li>
