@@ -1,4 +1,7 @@
 
+<?php get_header(); 
+$terms = wp_get_post_terms( $post->ID, 'modules');
+?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="eightcol first clearfix float-right" role="main">
