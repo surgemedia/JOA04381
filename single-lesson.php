@@ -1,8 +1,4 @@
 
-<?php get_header(); 
-//$terms = wp_get_post_terms( $post->ID, 'modules');
-debug($terms[0]->slug);
-?>
 <div id="content">
 	<div id="inner-content" class="wrap clearfix">
 		<div id="main" class="eightcol first clearfix float-right" role="main">
@@ -11,7 +7,7 @@ debug($terms[0]->slug);
 				<header class="article-header">
 					<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 					
-					<?php get_field('lesson_overview'); 
+					<?php get_field('lesson_overview'); ?>
 			
 					</header> <!-- end article header -->
 					<section id="single-content" class="entry-content clearfix" itemprop="articleBody">
