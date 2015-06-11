@@ -44,6 +44,7 @@ $terms = wp_get_post_terms( $post->ID, 'modules');
 						<div class="two_buttons">
 							<?php $GLOBALS['group_single_slug'] = $terms[0]->slug ; ?>
 							<a id="button1" class="button" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Modules</a>
+							
 							<?php next_post_button(); 
 							completeLessonButton(get_the_title());
 							?>

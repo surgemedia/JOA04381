@@ -106,7 +106,7 @@ function next_post_button() {
 		
 		<div class="nav-links">
 			<?php				
-				next_post_link( '<div class="nav-next button">%link</div>',_x( 'Next <span class="meta-nav">&rarr;</span>', 'Next post link',     'base' ) );
+				previous_post_link( '<div class="nav-next button">%link</div>',_x( 'Next <span class="meta-nav">&rarr;</span>', 'Next post link',     'base' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
