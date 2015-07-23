@@ -3,7 +3,7 @@
 Template Name: Game Screen
 */
 ?>
-
+<?php get_header(); ?>
 <?
 require_once('wp-config.php');
 require_once('wp-includes/wp-db.php');
@@ -74,7 +74,30 @@ print $txt;
 <html>
 <head>
 
+<link rel="stylesheet" type="text/css" href="http://bridge2go.com/Live/JavaScripts/Game/Game-develop.php?thismydomain=joanbuttsbridge&GAMEBG=httpCOLONPLUSPLUSjoanbuttsbridge.comPLUSwp-contentPLUSthemesPLUSjoan-buttsPLUSgame_graphicsPLUSplay-screen.png&CARDSTYLE=none&CHAR=httpCOLONPLUSPLUSjoanbuttsbridge.comPLUSwp-contentPLUSthemesPLUSjoan-buttsPLUSgame_graphicsPLUSplay-screen.png&">
 
+<style>
+  body.customize-support {
+    background-color: rgb(114, 190, 221);
+    margin: 0px;
+}
+
+div#playscreen_handinfo_home {
+    display: none !important;
+}
+div#actions {
+    text-align: center;
+}
+.header {
+ margin:0px !important; 
+}
+.card {
+  height: 1.7em !important;
+}
+.logo-bar {
+  display: none !important;
+}
+</style>
 
 </head>
 <body>
@@ -114,10 +137,15 @@ print $txt;
 
 <div id='gamebody'>Please wait a moment...</div>
 
-<div id='saveshare'>.</div>
+<div id='saveshare'></div>
 
-<div id='gamecomments'>.</div>
+<div id='gamecomments'></div>
 
+<div id="actions">
+  <a href="javascript:history.go(-1);" class="button">
+    Exit Game
+  </a>
+</div>
 <?
 /*
     

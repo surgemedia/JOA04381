@@ -6,7 +6,7 @@ $user_id = bp_loggedin_user_id();
 $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
  ?>
 	<div id="current-user">
-	<?php  if (get_user_role()=='administrator') {  ?>
+	<?php  if (get_user_role()=='royal') {  ?>
 			<i></i>
 	<?php } ?>
 
@@ -28,12 +28,18 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 <?php } ?>
 <?php if (!is_page('learn')) { ?>
 	<div id="current-product">
-		<h2>Recommended Books</h2>
-		<?php  
-		$field = get_field('text_book',$GLOBALS['current_course_obj']);
-		$ID = $field[0]->ID;
-		
-		echo do_shortcode('[product id="'.$ID.'"]')?>	
+		<h2>Recommended books</h2>
+		<?php
+		$terms = get_the_terms( get_the_ID(), 'modules');
+		if( !empty($terms) ) {
+			$term = array_pop($terms);
+			$custom_field = get_field('text_book', $term );
+			for ($i=0; $i < count($custom_field); $i++) { 
+				echo do_shortcode('[product id="'.$custom_field[$i].'"]');
+			}
+			
+		}
+	?>	
 	</div>
 
 
@@ -45,7 +51,7 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 			</li> 
 				
 			<li class="pink button"><span class="dashicons dashicons-awards"></span>
-			<a href="<?php echo site_url(); ?>/upgrade ">Get Royal</a>
+			<a href="<?php echo site_url(); ?>/upgrade ">Upgrade</a>
 			</li> 
 
 			

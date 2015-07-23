@@ -23,7 +23,7 @@
 				?>
 				<p>
 					<?php $rows = get_field('lessons_repeater');
-					$row = $rows[0]['lesson_content'];
+					$row = $rows[0]['lesson_overview'];
 					$b4trunk = implode(' ', array_slice(explode(' ', $row), 0, 50)). '... ';
 					$trunk = strip_tags($b4trunk);
 					echo $trunk;

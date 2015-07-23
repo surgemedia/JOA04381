@@ -22,6 +22,7 @@ function completeLessonButton($lesson) {
 		} 
 	if($url_var){	
 		$completedlesson .= $lesson.",";
+		
 		xprofile_set_field_data( 'Completed Lessons', $user_id, $completedlesson, $is_required = false );
 		get_template_part('enrollment/message', 'currently-completed' ); //"Congrats,You completed the lesson";
 	}
@@ -29,7 +30,7 @@ function completeLessonButton($lesson) {
 		get_template_part('enrollment/message', 'already-completed' ); //"You have already completed the lesson"
 		}
 	} else {
-		get_template_part('enrollment/message', 'please-login' );
+		// get_template_part('enrollment/message', 'please-login' );
 	}
 }
 

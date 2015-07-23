@@ -93,25 +93,5 @@ echo $trunk;
 
 
 
-function next_post_button() {
-	// Don't print empty markup if there's nowhere to navigate.
-
-	$next= get_adjacent_post( true, '', false,'modules');
-
-	if ( ! $next ) {
-		return;
-	}
-	?>
-	<nav class="navigation post-navigation" role="navigation">
-		
-		<div class="nav-links">
-			<?php				
-				previous_post_link( '<div class="nav-next button">%link</div>',_x( 'Next <span class="meta-nav">&rarr;</span>', 'Next post link',     'base' ) );
-			?>
-		</div><!-- .nav-links -->
-	</nav><!-- .navigation -->
-	<?php
-}
-
 ?>
 <?php  add_theme_support( 'post-thumbnails' ); ?>

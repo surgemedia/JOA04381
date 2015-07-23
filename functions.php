@@ -274,9 +274,9 @@ add_theme_support( 'woocommerce' );
 = Pretty Meta Debug =
 =========================================*/
 function debug($data) {
-echo "<pre>";
+echo "<!--<pre>DEBUG";
 print_r($data);
-echo "</pre>";
+echo "</pre>-->";
 }
 
 

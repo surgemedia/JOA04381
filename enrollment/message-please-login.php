@@ -1,3 +1,4 @@
 <div class="message pink">
-	<i class="dashicons dashicons-migrate"></i> <span><?php _e('You must login to enroll') ?></span> <a href="/joanbutts/register/">Sign In</a>
+	<i class="dashicons dashicons-migrate"></i>
+	<span><?php _e('Sign in now to track your progress') ?></span> <a href="/register/">Sign In</a>
 </div>
