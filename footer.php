@@ -1,5 +1,5 @@
 			
-			<!-- <div class="push"></div> -->
+			<div class="push"></div>
 		</div> <!-- end #container -->
 		
 		<footer class="footer" role="contentinfo">
