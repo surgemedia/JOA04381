@@ -16,8 +16,8 @@
 		
 			<h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></h2></a>
 			<a href="<?php echo site_url().'/members/'.$user->user_login; ?>">Beginner</a>
-			<? /*<a href="<?php echo site_url(); ?>/members/<?php echo $user->user_login; ?>"><h2><?php echo $user->display_name; ?></h2></a>
-			<a href="">Beginner</a>*/ ?>
+			<? <a href="<?php echo site_url(); ?>/members/<?php echo $user->user_login; ?>"><h2><?php echo $user->display_name; ?></h2></a>
+			<a href=""><?php echo $GLOBALS['level']; ?></a> ?>
 		</div>
 	</div>
 	<?php }  else { ?>

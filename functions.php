@@ -25,8 +25,11 @@ sidebars, comments, ect.
 */
 include_once('action-page-type-modules.php');
 include_once('function-getuserrole.php');
+include_once('function-get_id_from_slug.php');
+
 require_once('function-enrollment-button.php');
 require_once('library/jbb.php'); // if you remove this, jbb will break
+
 /*
 2. library/custom-post-type.php
 	- an example custom post type
@@ -274,9 +277,9 @@ add_theme_support( 'woocommerce' );
 = Pretty Meta Debug =
 =========================================*/
 function debug($data) {
-echo "<!--<pre>DEBUG";
+echo "<pre>";
 print_r($data);
-echo "</pre>-->";
+echo "</pre>";
 }
 
 

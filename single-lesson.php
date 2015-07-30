@@ -18,7 +18,6 @@ function next_module_button(){
 
 <?php 
 $custom_terms = get_terms('modules');
-
 foreach($custom_terms as $custom_term) {
     wp_reset_query();
     $args = array('post_type' => 'lesson',
@@ -41,7 +40,16 @@ foreach($custom_terms as $custom_term) {
      }
      }
 }
-debug(array_search($post->post_name,$included_lessons));
+$postion_in_module = array_search($post->post_name,$included_lessons);
+$next_in_module = $included_lessons[$postion_in_module+1];
+if($postion_in_module+1 <= count($included_lessons)){
+	$next_in_module_link =  '/lesson/'.$next_in_module;
+	$next_in_module_text =  'Next Lesson';
+} 
+if(strlen($next_in_module) <= 1){
+	$next_in_module_link = '/learn/';
+	$next_in_module_text =  'Choose another Module';
+}
  ?>
 
 
@@ -73,7 +81,7 @@ debug(array_search($post->post_name,$included_lessons));
 							<?php
 							$hands = $rows[$i]["lesson_hand"];
 							if((get_user_role()=='administrator') || (get_user_role()=='royal')){
-							echo apply_filters( 'the_content',$hands); 
+								echo apply_filters( 'the_content',$hands); 
 							} else {
 								get_template_part('enrollment/message', 'please-login-hands' );
 							}
@@ -87,10 +95,12 @@ debug(array_search($post->post_name,$included_lessons));
 						
 						<div class="two_buttons">
 							<?php $GLOBALS['group_single_slug'] = $terms[0]->slug ; ?>
-							<a id="button1" class="button" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
-							
+							<a id="button1" class="button float-left" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
+							<?php ?>
+							<a id="nav-next-button" class="button nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
+							<?php  ?>
 							<?php 
-							next_post_button(); 
+							//next_post_button(); 
 							// next_module_button();
 							 $the_title = get_the_title();
 							// $the_tile1 = str_replace('&#8217;', "'", $the_title);
