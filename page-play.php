@@ -3,7 +3,7 @@
 Template Name: Game Screen
 */
 ?>
-<?php get_header(); ?>
+<?php // get_header(); ?>
 <?
 require_once('wp-config.php');
 require_once('wp-includes/wp-db.php');
@@ -68,70 +68,22 @@ $txt = '<script>var confirmation = "' . $confirmation . '"; var role = "' . $myR
 print $txt;
 
 ?>
-
-
-
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="http://bridge2go.com/Live/JavaScripts/Game/Game-develop.php?thismydomain=joanbuttsbridge&GAMEBG=httpCOLONPLUSPLUSjoanbuttsbridge.comPLUSwp-contentPLUSthemesPLUSjoan-buttsPLUSgame_graphicsPLUSplay-screen.png&CARDSTYLE=none&CHAR=httpCOLONPLUSPLUSjoanbuttsbridge.comPLUSwp-contentPLUSthemesPLUSjoan-buttsPLUSgame_graphicsPLUSplay-screen.png&">
+<link rel="stylesheet" type="text/css" href="http://bridge2go.com/Live/JavaScripts/Game/GameCss.php?thismydomain=joanbuttsbridge&GAMEBG=httpCOLONPLUSPLUSjoanbuttsbridge.comPLUSwp-contentPLUSthemesPLUSjoan-buttsPLUSgame_graphicsPLUSplay-screen.png&CARDSTYLE=none&CHAR=httpCOLONPLUSPLUSjoanbuttsbridge.comPLUSwp-contentPLUSthemesPLUSjoan-buttsPLUSgame_graphicsPLUSplay-screen.png&">
 
 <style>
+html,
   body.customize-support {
     background-color: rgb(114, 190, 221);
-    margin: 0px;
-}
-
-div#playscreen_handinfo_home {
-    display: none !important;
-}
-div#actions {
-    text-align: center;
-}
-.header {
- margin:0px !important; 
-}
-.card {
-  height: 1.7em !important;
-}
-.logo-bar {
-  display: none !important;
+    /*margin: 0px;*/
 }
 </style>
 
 </head>
 <body>
 	
-
-<?
-/*
-    print $confirmation . "<br>";
-    foreach($current_user->role as $role => $Role) {
-        print $Role . ",";
-    }
-*/
-?>
-
-<?
-/*
-    $current_user = wp_get_current_user();	
-    echo 'Username: ' . $current_user->user_login . '<br />';
-    echo 'User email: ' . $current_user->user_email . '<br />';
-    echo 'User first name: ' . $current_user->user_firstname . '<br />';
-    echo 'User last name: ' . $current_user->user_lastname . '<br />';
-    echo 'User display name: ' . $current_user->display_name . '<br />';
-    echo 'User ID: ' . $current_user->ID . '<br />';
-    
-<form action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" method="post">
-    <input type="text" name="user_login" value="Username" id="user_login" class="input" />
-    <input type="text" name="user_email" value="E-Mail" id="user_email" class="input"  />
-    <?php do_action('register_form'); ?>
-    <input type="submit" value="Register" id="register" />
-</form>
-*/
-
-
-?>
 
 
 
@@ -141,11 +93,11 @@ div#actions {
 
 <div id='gamecomments'></div>
 
-<div id="actions">
+<!-- <div id="actions">
   <a href="javascript:history.go(-1);" class="button">
     Exit Game
   </a>
-</div>
+</div> -->
 <?
 /*
     

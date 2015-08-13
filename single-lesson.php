@@ -50,6 +50,9 @@ if(strlen($next_in_module) <= 1){
 	$next_in_module_link = '/learn/';
 	$next_in_module_text =  'Choose another Module';
 }
+// debug("FSID".xprofile_get_field_data( 'fsid', $user_id, $is_required = false));
+// debug(get_role('administrator'));
+
  ?>
 
 
@@ -86,7 +89,7 @@ if(strlen($next_in_module) <= 1){
 								get_template_part('enrollment/message', 'please-login-hands' );
 							}
 							?>
-							<!-- <p><a class="button" href="<?php echo get_permalink($book_id); ?>">Purchase book for more help</a></p> -->
+							<!-- <p><a class="button" href="<?php //echo get_permalink($book_id); ?>">Purchase book for more help</a></p> -->
 						</div>
 						<?php echo $rows[$i]['lesson_content'];  ?>
 						<?php }?>
@@ -100,12 +103,7 @@ if(strlen($next_in_module) <= 1){
 							<a id="nav-next-button" class="button nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
 							<?php  ?>
 							<?php 
-							//next_post_button(); 
-							// next_module_button();
 							 $the_title = get_the_title();
-							// $the_tile1 = str_replace('&#8217;', "'", $the_title);
-							// $the_tile2 = str_replace('’',"'", $the_title1);
-
 							completeLessonButton( $the_title );
 							?>
 						</div>

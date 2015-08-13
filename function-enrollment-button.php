@@ -14,32 +14,48 @@ function completeLessonButton($lesson) {
 	$url_var = $_GET['finished-lesson'];
 	} else { $url_var = false;}
 	$user_id = getUser();
+	$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id, $is_required = false);	
 
-	$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id, $is_required = false);
+	//echo "<br><br><hr>";
+	$texture_title = wptexturize($lesson);
+	$texture_list = wptexturize($completedlesson);
 
-	if(true != $url_var && -1 >= strpos($completedlesson,$lesson)){
-		get_template_part('enrollment/part', 'lesson-button' ); //"Complete Lesson";
-		} 
-	if($url_var){	
-		$completedlesson .= $lesson.",";
-		
-		xprofile_set_field_data( 'Completed Lessons', $user_id, $completedlesson, $is_required = false );
-		get_template_part('enrollment/message', 'currently-completed' ); //"Congrats,You completed the lesson";
-	}
-	if( true != $url_var && strpos($completedlesson,$lesson) !== false){
+	//debug("texturize ".wptexturize($lesson));
+	//debug("texturize ".wptexturize($completedlesson));
+	//debug($encoded_list);
+
+	// debug(urlencode($completedlesson));
+	//var_dump( strpos($texture_list,$texture_title) );
+
+	if( true != $url_var && false != strpos($texture_list,$texture_title)){
 		get_template_part('enrollment/message', 'already-completed' ); //"You have already completed the lesson"
 		}
 	} else {
 		// get_template_part('enrollment/message', 'please-login' );
 	}
+	if(true != $url_var && false == strpos($texture_list,$texture_title)){
+		get_template_part('enrollment/part', 'lesson-button' ); //"Complete Lesson";
+		} 
+	if($url_var){	
+		$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id, $is_required = false);	
+		$completedlesson .= $lesson.",";
+		debug($completedlesson);
+		xprofile_set_field_data( 'Completed Lessons', $user_id, $completedlesson, $is_required = false );
+		get_template_part('enrollment/message', 'currently-completed' ); //"Congrats,You completed the lesson";
+	}
+	
 }
 
 function getProgress($lesson){
 	$user_id = getUser();
 	$status = xprofile_get_field_data( 'Completed Lessons', $user_id, $is_required = false );
+	//sanitized
+	$texture_title = wptexturize($lesson);
+	$texture_list = wptexturize($status);
 	$GLOBALS['count_complete'] = 1;
-	if (strpos($status, $lesson) !== false) {
-		get_template_part('enrollment/badge', 'completed' ); }}
+	if (false != strpos($texture_list,$texture_title)) {
+		get_template_part('enrollment/badge', 'completed' ); }
+	}
 
 function enrollmentButton($course){
 	if(is_user_logged_in()){
@@ -65,7 +81,7 @@ function enrollmentButton($course){
 }
 
 
-function DefineSkillLevel(){
-
+function getSkillLevel(){
+	return xprofile_get_field_data( 'Bridge Skill', getUser(), $is_required = false );
 }
 ?>

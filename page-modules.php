@@ -48,30 +48,40 @@ get_header(); ?>
                 </article>
                 <?php 
                 $user_id = getUser();
-                xprofile_set_field_data( 'Completed Modules', $user_id, $GLOBALS['completeModule'], $is_required = false );
-                $completedmodules = xprofile_get_field_data( 'Completed Modules', $user_id, $is_required = false);
+
+                 xprofile_set_field_data( 'Completed Modules', $user_id, "", $is_required = false );
+                 xprofile_set_field_data( 'Completed Lessons', $user_id, "", $is_required = false );
+                 xprofile_set_field_data( 'Bridge Skill', $user_id, "New Player", $is_required = false );
+
                 
-                if (strpos($completedmodules, $modules[0]->name) !== false &&
-                    strpos($completedmodules, $modules[1]->name) !== false &&
-                    strpos($completedmodules, $modules[2]->name) !== false) {
-                    
+                $completedmodules = xprofile_get_field_data( 'Completed Modules', $user_id, $is_required = false);
+                if (in_array($modules[0]->name,$completedmodules) !== false &&
+                    in_array($modules[1]->name,$completedmodules) !== false &&
+                    in_array($modules[2]->name,$completedmodules) !== false) {
                     xprofile_set_field_data( 'Bridge Skill', $user_id, "Beginner", $is_required = false );
                 }
 
-                if(strpos($completedmodules, $modules[3]->name) !== false &&
-                        strpos($completedmodules, $modules[4]->name) !== false &&
-                        strpos($completedmodules, $modules[5]->name) !== false){
+                if(in_array($modules[3]->name,$completedmodules) !== false &&
+                        in_array($modules[4]->name,$completedmodules) !== false &&
+                        in_array($modules[5]->name,$completedmodules) !== false){
                     
-                    xprofile_set_field_data( 'Bridge Skill', $user_id, "Mid level", $is_required = false );
+                    xprofile_set_field_data( 'Bridge Skill', $user_id, "intermediate", $is_required = false );
                 }
 
-                if(strpos($completedmodules, $modules[6]->name) !== false &&
-                        strpos($completedmodules, $modules[7]->name) !== false &&
-                        strpos($completedmodules, $modules[8]->name) !== false &&
-                        strpos($completedmodules, $modules[9]->name) !== false){
-                    xprofile_set_field_data( 'Bridge Skill', $user_id, "Advanced level", $is_required = false );
+                if( in_array($modules[0]->name,$completedmodules) &&
+                    in_array($modules[1]->name,$completedmodules) &&
+                    in_array($modules[2]->name,$completedmodules) &&
+                    in_array($modules[3]->name,$completedmodules) &&
+                    in_array($modules[4]->name,$completedmodules) &&
+                    in_array($modules[5]->name,$completedmodules) &&
+                    in_array($modules[6]->name,$completedmodules) &&
+                    in_array($modules[7]->name,$completedmodules) &&
+                    in_array($modules[8]->name,$completedmodules) &&
+                    in_array($modules[9]->name,$completedmodules) ){
+                    xprofile_set_field_data( 'Bridge Skill', $user_id, "Advanced Player", $is_required = false );
                 }
                 $GLOBALS['level'] = xprofile_get_field_data( 'Bridge Skill', $user_id, $is_required = false );
+                
                 ?>
                 
             </div>

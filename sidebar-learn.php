@@ -16,7 +16,7 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 		<div class="current_info">
 		<?php  ?>
 			<h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></h2></a>
-			<a href="<?php echo site_url().'/members/'.$user->user_login; ?>">Beginner</a>
+			<a><?php  echo getSkillLevel(); ?></a>
 		</div>
 	</div>
 <?php }  else { ?>
@@ -57,7 +57,7 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 			
 		</ul>
 	</div>
-	<?Php } ?>
-	
-
+	<?Php } else {
+			// get_template_part('enrollment/message', 'user-levels' );	
+		}?>
 </div>
