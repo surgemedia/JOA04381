@@ -58,6 +58,6 @@ $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'f
 		</ul>
 	</div>
 	<?Php } else {
-			// get_template_part('enrollment/message', 'user-levels' );	
+			 get_template_part('enrollment/message', 'user-levels' );	
 		}?>
 </div>
