@@ -4914,3 +4914,12 @@ ul#module_list .module-loop:hover ul li {
 #nav-next-button {
   float:right;
 }
+
+.field_current-module,.field_membership,.field_bridge-skill,.field_completed-modules, .field_completed-lessons {
+    display: none;
+}
+
+
+div#security-section {
+    float: left;
+}
