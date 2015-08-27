@@ -1,0 +1,375 @@
+#playmehb {
+	clear:both;
+	float:left;
+	width:100%;
+}
+#playmehb p {
+	margin-left:2%;
+	padding-right:2%;
+}
+
+.spadesuit {
+    color: #26397a;
+}
+
+.heartsuit {
+    color: #ff0000;
+}
+
+.diamondsuit {
+    color: #f56f0c;
+}
+
+.clubsuit {
+    color: #007437;
+}
+
+.mMainDisplay {
+    position: relative;
+}
+
+.mMainDisplaySimple {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+        background-color: #ffffff;
+
+}
+
+.mMainDisplayAllSimple {
+	float:left;
+	width:100%;
+	position:relative;
+	right:50%;
+}
+
+.mMainDisplayTableSimple
+{
+	float:left;
+	width:46%;
+	position:relative;
+	left:52%;
+	overflow:hidden;
+}
+
+.mMainDisplayAuctionSimple {
+	float:left;
+	width:46%;
+	position:relative;
+	left:56%;
+	overflow:hidden;
+}
+.mMainDisplayAuctionNoHand {
+	float:left;
+	width:46%;
+	position:relative;
+	left:56%;
+	overflow:hidden;
+}
+
+.mMainDisplaySimplehandew {
+    float: left;
+    width: 100px;
+}
+.mMainDisplayhandw {
+    float: left;
+}
+.mMainDisplayhande {
+    float: right;
+}
+.cards_ew_suit {
+    padding-top: 3px;
+    clear: left;
+}
+.sbcline {
+    width: 100%;
+    display: block;
+}
+.mMainDisplayAuctionBid {
+    float: left;
+    width: 45px;
+    font-size: 1em;
+    text-align: center;
+    color: #000000;
+}
+.mMainDisplayAuctionSuitBtnImgPos {
+    height: 12px;
+    width: 12px;
+    display: inline-block; 
+}
+#main img.mMainDisplayAuctionSuitBtnImgPos {
+    padding: 0px;
+    background-color: #ffffff;
+    margin: 0px 0px;
+    border: none;
+    height: 12px;
+    width: 12px;
+    display: inline-block; 
+}
+
+.mMainDisplayAuctionSuitBtnImgPosDiv {
+    float: left;
+}
+
+.auctionnewline {
+    padding-top: 1px;
+    clear: left;
+}
+
+a.playme-blue {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: normal;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 105px;
+    height: 30px;
+    padding: 0 0 0 0px;
+    letter-spacing: 0.06em;
+    background-image: url("http://skybridgeclub.com/img/playme-blue.png");
+    background-position: 0px 0px;
+    margin: 10px;
+}
+a:hover.playme-blue {
+    text-decoration: none;
+    background-position: 0px -30px;
+    color: #26397A;
+}
+
+
+.mMainDisplayAll {
+    position: relative;
+    border: 1px solid red;
+    padding: 10px;
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*width: 449px;*/
+    /*height: 250px;*/
+    min-width: 470px;
+    min-height: 260px;
+}
+
+.mMainDisplayTable
+{
+    position: relative;
+    display: table;
+}
+.mMainDisplayNorth
+{
+    display: table-row;
+}
+.mMainDisplaySouth
+{
+    display: table-row;
+    border: dashed;
+}
+.mMainDisplayEastWest
+{
+    display: table-row;
+}
+
+
+
+.mMainDisplayCardsEastWest {
+    display: table-cell;
+    vertical-align: middle;
+}
+.mMainDisplayCardsCenter {
+    position: absolute;
+    top: 80px;
+    left: 160px;
+}
+
+.nsspace {
+    height: 20px;
+}
+.ewspace {
+    height: 140px;
+}
+.CenterNorth {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 20px;
+}
+.CenterSouth {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 20px;
+}
+.CenterWest {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    font-size: 20px;
+}
+.CenterEast {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    font-size: 20px;
+}
+
+.mMainDisplayAuction {
+    position: absolute;
+    top: 65px;
+    left: 140px;
+    color: #000000;
+    background-color:#ffffff;
+}
+
+
+.mMainDisplayAll {
+    width: 450px;
+}
+
+.mMainDisplayTable
+{
+    width: 440px;
+    
+}
+
+
+/*
+.mMainDisplayAuction {
+    top: 90px;
+    left: 120px;
+}
+*/
+
+#table_n {
+    display: table-row;
+}
+
+#table_ew {
+    display: table-row;
+}
+
+#table_s {
+    display: table-row;
+}
+
+#cards_n {
+    display: table-cell;
+    text-align: center;
+}
+
+#cards_ew {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#cards_s {
+    display: table-cell;
+    text-align: center;
+}
+
+#table_m {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+.cardstack, .hand {
+    position: relative;
+    height: 1.7em;
+    width: 14em;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.gamecard {
+    background: #ffffff;
+    height: 1.6em;
+    width: 1.2em;
+    border: 1px solid #695d39;
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    border-radius: .2em;
+    -webkit-box-shadow: 0 0 .5em -.15em #000;
+    -moz-box-shadow: 0 0 .5em -.15em #000;
+    box-shadow: 0 0 .5em -.15em #000;
+    font-family: 'Arial';
+    text-align: left;
+    line-height: .8em;
+    padding-top: .25em;
+    padding-left: .1em;
+    letter-spacing: -.2em;
+    position: absolute;
+}
+
+.hiddenCard {
+    opacity: 0;
+}
+
+.cardfont {
+    font-size: .8em;
+    line-height: .7em;
+    color: #000000;
+}
+
+
+.hand .card:nth-of-type(1) {
+    left: 0;
+}
+
+.hand .card:nth-of-type(2) {
+    left: 1em;
+}
+
+.hand .card:nth-of-type(3) {
+    left: 2em;
+}
+
+.hand .card:nth-of-type(4) {
+    left: 3em;
+}
+
+.hand .card:nth-of-type(5) {
+    left: 4em;
+}
+
+.hand .card:nth-of-type(6) {
+    left: 5em;
+}
+
+.hand .card:nth-of-type(7) {
+    left: 6em;
+}
+
+.hand .card:nth-of-type(8) {
+    left: 7em;
+}
+
+.hand .card:nth-of-type(9) {
+    left: 8em;
+}
+
+.hand .card:nth-of-type(10) {
+    left: 9em;
+}
+
+.hand .card:nth-of-type(11) {
+    left: 10em;
+}
+
+.hand .card:nth-of-type(12) {
+    left: 11em;
+}
+
+.hand .card:nth-of-type(13) {
+    left: 12em;
+}
+
+.divplaybutton{
+    padding: 5px;
+    /*text-align: center;*/
+    margin-left: 165px;
+}
+
