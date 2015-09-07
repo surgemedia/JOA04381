@@ -83,10 +83,12 @@ if(strlen($next_in_module) <= 1){
 						<div class="actions">
 							<?php
 							$hands = $rows[$i]["lesson_hand"];
-							if((get_user_role()=='administrator') || (get_user_role()=='royal')){
+							if((get_user_role()=='administrator') || (get_user_role()=='royal') ){
 								echo apply_filters( 'the_content',$hands); 
 							} else {
+								if(strlen($rows[$i]["lesson_hand"]) > 0){
 								get_template_part('enrollment/message', 'please-login-hands' );
+								}
 							}
 							?>
 							<!-- <p><a class="button" href="<?php //echo get_permalink($book_id); ?>">Purchase book for more help</a></p> -->
