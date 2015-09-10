@@ -5,7 +5,7 @@ Template Name: Home Page
 ?>
 <?php get_header(); ?>
 
-<div id="home-banner-container" class="wrap">
+<div id="home-banner-container" class="container">
     <img src="<?php bloginfo('template_directory'); ?>/library/images/welcome-to-joan-butts.png">
     <?
     if ( is_user_logged_in() ) {
@@ -16,31 +16,31 @@ Template Name: Home Page
     ?>
 </div>
 
-<div id="content-home">
+<div id="content-home" class="container">
     <div id="home-box-nav">
         <div class="inner">
-            <div class="threecol-home first">
+            <div class="threecol-home col-lg-3 first">
                 <a href="learn">
                 <h2>Learn Bridge</h2>
                 <small>Find out more...</small>
                 <span class="placeholder blue"><span class="dashicons dashicons-welcome-learn-more"></span></span>
                 </a>
             </div>
-            <div class="threecol-home">
+            <div class="threecol-home col-lg-3">
                 <a href="play-bridge-online">
                 <h2>Practise Online</h2>
                 <small>Find out more...</small>
                 <span class="placeholder blue"><span class="dashicons dashicons-awards"></span></span>
                 </a>
             </div>
-            <div class="threecol-home">
+            <div class="threecol-home col-lg-3">
                 <a href="/cards-bridge-centre">
                 <h2>Bridge Centre</h2>
                 <small>Find out more...</small>
                 <span class="placeholder blue"><span class="dashicons dashicons-store"></span></span>
                 </a>
             </div>
-            <div class="threecol-home">
+            <div class="threecol-home col-lg-3">
                 <a href="<?php the_field( 'home_box_4_link', 'option' ); ?>">
                 <h2>Events</h2>
                 <small>	Find out more...</small>
