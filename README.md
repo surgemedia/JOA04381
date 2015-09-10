@@ -22,10 +22,10 @@ Joan butts website
 ##Website navigation restructure
 Rename some of the menu items to be more intuitive (see attached PDF with homepage and sitemap)
 
-Homepage restructure
+##Homepage restructure
 Make it more inline with your business requirements (see attached PDF with homepage and sitemap)
 
-Implement the ’theme my login’ plugin. 
+##Implement the ’theme my login’ plugin. 
 At the moment we are redirecting people to your general login page (http://www.joanbuttsbridge.com/wp-login.php) if people exidently login with the wrong details. This is really confusing.
 
 ##Lessons and memberships
