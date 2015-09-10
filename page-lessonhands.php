@@ -10,7 +10,7 @@ Template Name: Lesson Hands
 				<div id="inner-content" class="container clearfix">
 
 						<div id="main" class="eightcol clearfix float-right" role="main">
-							<div class="breadcrumbs">
+							<div class="breadcrumbs"> q
 							    <?php if(function_exists('bcn_display'))
 							    {
 							        bcn_display();

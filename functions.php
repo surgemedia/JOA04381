@@ -30,6 +30,22 @@ include_once('libraryfunction-get_id_from_slug.php');
 require_once('library/function-enrollment-button.php');
 require_once('library/jbb.php'); // if you remove this, jbb will break
 
+function tml_edit_user_profile( $profileuser ) { ?>
+<p>
+<label for="user_phone">Phone Number</label>
+<input id="user_phone" type="text" name="user_phone" value="<?php echo $profileuser->user_phone; ?>" />
+</p>
+<?php
+}
+add_action( 'edit_user_profile', 'tml_edit_user_profile' );
+
+function tml_user_register( $user_id ) {
+	if ( !empty( $_POST['user_phone'] ) )
+		update_user_meta( $user_id, 'user_phone', $_POST['user_phone'] );
+}
+add_action( 'user_register', 'tml_user_register' );
+
+
 
 // require_once('library/translation/translation.php'); // this comes turned off by default
 @ini_set( 'upload_max_size' , '64M' );
