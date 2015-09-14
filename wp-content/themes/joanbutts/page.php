@@ -2,7 +2,7 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="container clearfix">
 
 						<div id="main" class="eightcol clearfix float-right" role="main">
 							<div class="breadcrumbs">

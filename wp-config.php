@@ -27,8 +27,8 @@
 
 
 
-	define('WP_HOME','http://localhost:8888/joanbutts');
-	define('WP_SITEURL','http://localhost:8888/joanbutts');
+	define('WP_HOME','http://joanbutts.localwp');
+	define('WP_SITEURL','http://joanbutts.localwp');
 // Global DB config
 if (!defined('DB_NAME')) {
 	define('DB_NAME', 'joanbutt_jbstagin_wpdb');

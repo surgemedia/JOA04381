@@ -24,6 +24,8 @@ sidebars, comments, ect.
 	- adding custom fields to user profiles
 */
 include_once('library/action-page-type-modules.php');
+include_once('library/action-page-type-account-types.php');
+
 include_once('library/function-getuserrole.php');
 include_once('libraryfunction-get_id_from_slug.php');
 
@@ -286,7 +288,6 @@ echo "</pre>";
 ////////////////////////////////////
 
 add_filter( 'bp_registration_needs_activation', '__return_false' );
-
 
 
 

@@ -4,8 +4,14 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 ?>
-<?php profile_get_field_data('field=display name', $current_user) ?>
-<?php debug($current_user); ?>
+<?php 
+// global $userdata;
+// global $current_user;
+// global $wpdb, $wp_roles;
+// echo "<pre>";
+// print_r($current_user);
+// echo "</pre>";
+ ?>
 <div class="login profile" id="theme-my-login<?php $template->the_instance(); ?>">
 	<?php $template->the_action_template_message( 'profile' ); ?>
 	<?php $template->the_errors(); ?>
@@ -15,12 +21,8 @@ Theme My Login will always look in your theme's directory first, before using th
 			<input type="hidden" name="from" value="profile" />
 			<input type="hidden" name="checkuser_id" value="<?php echo $current_user->ID; ?>" />
 		</p>
-		sdfsdfasd
-			<p>
-<label for="user_phone<?php $template->the_instance(); ?>"><?php _e('Phone'); ?></label>
-<input type="text" name="user_phone" id="user_phone<?php $template->the_instance(); ?>" class="input" value="<?php $template->the_posted_value('fsid'); ?>" size="20" />
-</p>
 
+<?php get_post() ?>
 		<h3><?php _e( 'Personal Options', 'theme-my-login' ); ?></h3>
 
 		<table class="form-table">

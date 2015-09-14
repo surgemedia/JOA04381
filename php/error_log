@@ -1,0 +1,758 @@
+
+[07-Jul-2014 06:58:23] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[07-Jul-2014 06:58:23] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[09-Jul-2014 03:03:43] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[09-Jul-2014 03:03:43] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[11-Jul-2014 03:50:06] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[11-Jul-2014 03:50:06] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[12-Jul-2014 00:21:47] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[12-Jul-2014 00:21:47] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[15-Jul-2014 16:34:16] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[15-Jul-2014 16:34:16] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[16-Jul-2014 16:51:26] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[16-Jul-2014 16:51:26] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[16-Jul-2014 16:56:42] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[16-Jul-2014 16:56:42] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[17-Jul-2014 10:03:09] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[17-Jul-2014 10:03:09] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[17-Jul-2014 21:07:08] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[17-Jul-2014 21:07:08] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[21-Jul-2014 06:18:14] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[21-Jul-2014 06:18:14] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[22-Jul-2014 17:40:47] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[22-Jul-2014 17:40:47] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[24-Jul-2014 13:22:44] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[24-Jul-2014 13:22:44] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[27-Jul-2014 12:29:15] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[27-Jul-2014 12:29:15] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[27-Jul-2014 14:16:56] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[27-Jul-2014 14:16:56] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[28-Jul-2014 21:49:52] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[28-Jul-2014 21:49:52] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[29-Jul-2014 10:50:53] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[29-Jul-2014 10:50:53] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[30-Jul-2014 19:14:18] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[30-Jul-2014 19:14:18] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[31-Jul-2014 16:59:24] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[31-Jul-2014 16:59:24] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[01-Aug-2014 18:58:21] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[01-Aug-2014 18:58:21] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[01-Aug-2014 20:37:07] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[01-Aug-2014 20:37:07] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[03-Aug-2014 16:45:18] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[03-Aug-2014 16:45:18] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[04-Aug-2014 16:54:11] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[04-Aug-2014 16:54:11] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[08-Aug-2014 21:56:50] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[08-Aug-2014 21:56:50] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[16-Aug-2014 15:29:43] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[16-Aug-2014 15:29:43] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[17-Aug-2014 15:30:17] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[17-Aug-2014 15:30:17] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[21-Aug-2014 21:12:25] PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, 'woocommerce_demo_store' was given in /home/joanbutt/public_html/wp-includes/plugin.php on line 470
+[21-Aug-2014 21:12:39] PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, 'woocommerce_demo_store' was given in /home/joanbutt/public_html/wp-includes/plugin.php on line 470
+[26-Aug-2014 20:10:14] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[26-Aug-2014 20:10:14] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[29-Aug-2014 10:34:40] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[29-Aug-2014 10:34:40] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[29-Aug-2014 15:14:03] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[29-Aug-2014 15:14:03] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[31-Aug-2014 17:18:15] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[31-Aug-2014 17:18:15] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[01-Sep-2014 15:47:25] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[01-Sep-2014 15:47:25] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[02-Sep-2014 12:40:17] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[02-Sep-2014 12:40:17] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[10-Sep-2014 11:48:37] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[10-Sep-2014 11:48:37] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[12-Sep-2014 08:57:48] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[12-Sep-2014 08:57:48] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[13-Sep-2014 13:15:52] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[13-Sep-2014 13:15:52] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[14-Sep-2014 13:16:25] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[14-Sep-2014 13:16:25] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[17-Sep-2014 10:36:27] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[17-Sep-2014 10:36:27] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[18-Sep-2014 16:45:32] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[18-Sep-2014 16:45:32] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[21-Sep-2014 14:57:44] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[21-Sep-2014 14:57:44] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[21-Sep-2014 15:08:27] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[21-Sep-2014 15:08:27] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[22-Sep-2014 08:51:19] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[22-Sep-2014 08:51:19] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[22-Sep-2014 15:21:13] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[22-Sep-2014 15:21:13] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[24-Sep-2014 09:36:04] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[24-Sep-2014 09:36:04] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[25-Sep-2014 15:46:23] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[25-Sep-2014 15:46:23] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[25-Sep-2014 17:44:31] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[25-Sep-2014 17:44:31] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[26-Sep-2014 17:34:15] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[26-Sep-2014 17:34:15] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[28-Sep-2014 07:02:43] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[28-Sep-2014 07:02:43] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[28-Sep-2014 11:52:03] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[28-Sep-2014 11:52:03] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[30-Sep-2014 10:34:18] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[30-Sep-2014 10:34:18] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[30-Sep-2014 11:10:00] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[30-Sep-2014 11:10:00] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[30-Sep-2014 15:15:08] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[30-Sep-2014 15:15:08] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[30-Sep-2014 20:02:41] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[30-Sep-2014 20:02:41] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[01-Oct-2014 06:12:22] PHP Fatal error:  Out of memory (allocated 66584576) (tried to allocate 7680 bytes) in /home/joanbutt/public_html/wp-content/plugins/better-wp-security/inc/secure.php(1196) : runtime-created function on line 1
+[01-Oct-2014 12:31:58] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[01-Oct-2014 12:31:58] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[01-Oct-2014 16:34:50] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[01-Oct-2014 16:34:50] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[03-Oct-2014 21:20:57] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[03-Oct-2014 21:20:57] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[04-Oct-2014 06:41:12] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[04-Oct-2014 06:41:12] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[05-Oct-2014 12:10:52] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[05-Oct-2014 12:10:52] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[06-Oct-2014 14:31:27] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[06-Oct-2014 14:31:27] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[07-Oct-2014 20:52:13] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[07-Oct-2014 20:52:13] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[08-Oct-2014 09:32:34] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[08-Oct-2014 09:32:34] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[09-Oct-2014 15:01:51] PHP Fatal error:  Out of memory (allocated 82313216) (tried to allocate 43574 bytes) in /home/joanbutt/public_html/wp-includes/functions.php on line 275
+[09-Oct-2014 15:01:51] PHP Warning:  call_user_func_array() [<a href='function.call-user-func-array'>function.call-user-func-array</a>]: First argument is expected to be a valid callback, 'woocommerce_demo_store' was given in /home/joanbutt/public_html/wp-includes/plugin.php on line 470
+[09-Oct-2014 15:01:51] PHP Fatal error:  Out of memory (allocated 58195968) (tried to allocate 491520 bytes) in /home/joanbutt/public_html/wp-content/plugins/the-events-calendar/lib/tribe-view-helpers.class.php on line 269
+[10-Oct-2014 11:36:54] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[10-Oct-2014 11:36:54] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[12-Oct-2014 14:09:15] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[12-Oct-2014 14:09:15] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[12-Oct-2014 15:58:41] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[12-Oct-2014 15:58:41] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[13-Oct-2014 00:07:32] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[13-Oct-2014 00:07:32] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[15-Oct-2014 09:44:56] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[15-Oct-2014 09:44:56] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[16-Oct-2014 20:34:10] PHP Fatal error:  Out of memory (allocated 11272192) (tried to allocate 7680 bytes) in /home/joanbutt/public_html/wp-includes/post.php on line 2183
+[16-Oct-2014 20:47:40] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[16-Oct-2014 20:47:40] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[18-Oct-2014 08:45:13] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[18-Oct-2014 08:45:13] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[18-Oct-2014 08:48:06] PHP Fatal error:  Out of memory (allocated 35389440) (tried to allocate 122880 bytes) in /home/joanbutt/public_html/wp-content/plugins/better-wp-security/inc/setup.php on line 250
+[19-Oct-2014 10:48:29] PHP Fatal error:  Out of memory (allocated 58195968) (tried to allocate 491520 bytes) in /home/joanbutt/public_html/wp-content/plugins/the-events-calendar/lib/tribe-view-helpers.class.php on line 269
+[20-Oct-2014 19:31:33] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 32
+[20-Oct-2014 19:31:33] PHP Warning:  Invalid argument supplied for foreach() in /home/joanbutt/public_html/php/fastspring-activated-client.php on line 39
+[29-Oct-2014 21:50:17 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[29-Oct-2014 21:50:17 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[29-Oct-2014 21:50:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[03-Nov-2014 05:47:33 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[03-Nov-2014 05:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[03-Nov-2014 05:47:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[05-Nov-2014 07:53:51 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[05-Nov-2014 07:53:51 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[05-Nov-2014 07:53:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[05-Nov-2014 11:53:00 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[05-Nov-2014 11:53:00 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[05-Nov-2014 11:53:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[07-Nov-2014 07:12:10 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[07-Nov-2014 07:12:10 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[07-Nov-2014 07:12:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[08-Nov-2014 03:41:06 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[08-Nov-2014 03:41:06 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[08-Nov-2014 03:41:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[13-Nov-2014 22:44:00 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[13-Nov-2014 22:44:00 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[13-Nov-2014 22:44:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[15-Nov-2014 20:51:30 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[15-Nov-2014 20:51:30 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[15-Nov-2014 20:51:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[18-Nov-2014 01:09:17 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[18-Nov-2014 01:09:17 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[18-Nov-2014 01:09:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[18-Nov-2014 07:40:47 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[18-Nov-2014 07:40:47 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[18-Nov-2014 07:40:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[19-Nov-2014 00:09:45 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[19-Nov-2014 00:09:45 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[19-Nov-2014 00:09:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[21-Nov-2014 21:32:34 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[21-Nov-2014 21:32:34 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[21-Nov-2014 21:32:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[23-Nov-2014 23:37:48 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[23-Nov-2014 23:37:48 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[23-Nov-2014 23:37:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[29-Nov-2014 06:56:17 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[29-Nov-2014 06:56:17 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[29-Nov-2014 06:56:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[30-Nov-2014 00:33:28 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[30-Nov-2014 00:33:28 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[30-Nov-2014 00:33:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[01-Dec-2014 05:26:27 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[01-Dec-2014 05:26:27 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[01-Dec-2014 05:26:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[02-Dec-2014 18:27:53 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[02-Dec-2014 18:27:53 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[02-Dec-2014 18:27:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[05-Dec-2014 07:39:12 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[05-Dec-2014 07:39:12 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[05-Dec-2014 07:39:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[14-Dec-2014 00:48:41 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[14-Dec-2014 00:48:41 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[14-Dec-2014 00:48:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[17-Dec-2014 00:28:23 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[17-Dec-2014 00:28:23 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[17-Dec-2014 00:28:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[17-Dec-2014 09:26:19 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[17-Dec-2014 09:26:19 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[17-Dec-2014 09:26:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[27-Dec-2014 21:54:06 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[27-Dec-2014 21:54:06 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[27-Dec-2014 21:54:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[02-Jan-2015 05:48:18 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[02-Jan-2015 05:48:18 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[02-Jan-2015 05:48:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[02-Jan-2015 23:27:52 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[02-Jan-2015 23:27:52 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[02-Jan-2015 23:27:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[04-Jan-2015 16:57:44 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[04-Jan-2015 16:57:44 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[04-Jan-2015 16:57:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[06-Jan-2015 06:27:42 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[06-Jan-2015 06:27:42 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[06-Jan-2015 06:27:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[07-Jan-2015 23:20:37 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[07-Jan-2015 23:20:37 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[07-Jan-2015 23:20:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[09-Jan-2015 07:17:05 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[09-Jan-2015 07:17:05 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[09-Jan-2015 07:17:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[09-Jan-2015 09:21:08 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[09-Jan-2015 09:21:08 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[09-Jan-2015 09:21:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[10-Jan-2015 00:11:05 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[10-Jan-2015 00:11:05 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[10-Jan-2015 00:11:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[10-Jan-2015 16:37:11 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[10-Jan-2015 16:37:11 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[10-Jan-2015 16:37:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[11-Jan-2015 05:32:34 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[11-Jan-2015 05:32:34 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[11-Jan-2015 05:32:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[15-Jan-2015 00:22:51 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[15-Jan-2015 00:22:51 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[15-Jan-2015 00:22:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[15-Jan-2015 04:33:17 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[15-Jan-2015 04:33:17 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[15-Jan-2015 04:33:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[17-Jan-2015 02:48:41 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[17-Jan-2015 02:48:41 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[17-Jan-2015 02:48:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[17-Jan-2015 21:38:03 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[17-Jan-2015 21:38:03 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[17-Jan-2015 21:38:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[20-Jan-2015 03:41:44 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[20-Jan-2015 03:41:44 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[20-Jan-2015 03:41:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[20-Jan-2015 20:42:57 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[20-Jan-2015 20:42:57 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[20-Jan-2015 20:42:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[21-Jan-2015 06:03:05 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[21-Jan-2015 06:03:05 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[21-Jan-2015 06:03:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[22-Jan-2015 04:42:59 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[22-Jan-2015 04:42:59 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[22-Jan-2015 04:42:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[23-Jan-2015 04:50:58 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[23-Jan-2015 04:50:58 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[23-Jan-2015 04:50:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[24-Jan-2015 22:21:27 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[24-Jan-2015 22:21:27 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[24-Jan-2015 22:21:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[25-Jan-2015 04:51:47 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[25-Jan-2015 04:51:47 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[25-Jan-2015 04:51:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[28-Jan-2015 10:06:04 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[28-Jan-2015 10:06:04 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[28-Jan-2015 10:06:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[29-Jan-2015 04:25:34 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[29-Jan-2015 04:25:34 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[29-Jan-2015 04:25:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[31-Jan-2015 11:01:23 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[31-Jan-2015 11:01:23 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[31-Jan-2015 11:01:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[02-Feb-2015 00:39:47 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[02-Feb-2015 00:39:47 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[02-Feb-2015 00:39:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[02-Feb-2015 04:35:51 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[02-Feb-2015 04:35:51 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[02-Feb-2015 04:35:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[04-Feb-2015 13:21:58 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[04-Feb-2015 13:21:58 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[04-Feb-2015 13:21:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[10-Feb-2015 01:18:14 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[10-Feb-2015 01:18:14 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[10-Feb-2015 01:18:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[10-Feb-2015 19:59:32 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[10-Feb-2015 19:59:32 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[10-Feb-2015 19:59:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[11-Feb-2015 10:28:52 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[11-Feb-2015 10:28:52 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[11-Feb-2015 10:28:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[16-Feb-2015 05:07:26 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[16-Feb-2015 05:07:26 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[16-Feb-2015 05:07:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[16-Feb-2015 22:56:24 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[16-Feb-2015 22:56:24 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[16-Feb-2015 22:56:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[17-Feb-2015 07:06:10 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[17-Feb-2015 07:06:10 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[17-Feb-2015 07:06:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[20-Feb-2015 03:36:02 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[20-Feb-2015 03:36:02 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[20-Feb-2015 03:36:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[22-Feb-2015 12:47:56 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[22-Feb-2015 12:47:56 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[22-Feb-2015 12:47:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[25-Feb-2015 04:08:22 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[25-Feb-2015 04:08:22 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[25-Feb-2015 04:08:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[01-Mar-2015 03:12:44 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[01-Mar-2015 03:12:44 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[01-Mar-2015 03:12:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[02-Mar-2015 03:18:55 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[02-Mar-2015 03:18:55 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[02-Mar-2015 03:18:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[02-Mar-2015 06:34:15 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[02-Mar-2015 06:34:15 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[02-Mar-2015 06:34:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[02-Mar-2015 23:03:07 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[02-Mar-2015 23:03:07 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[02-Mar-2015 23:03:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[03-Mar-2015 20:59:06 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[03-Mar-2015 20:59:06 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[03-Mar-2015 20:59:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[04-Mar-2015 09:42:20 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[04-Mar-2015 09:42:20 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[04-Mar-2015 09:42:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[06-Mar-2015 01:57:11 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[06-Mar-2015 01:57:11 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[06-Mar-2015 01:57:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[07-Mar-2015 09:19:04 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[07-Mar-2015 09:19:04 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[07-Mar-2015 09:19:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[09-Mar-2015 04:36:08 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[09-Mar-2015 04:36:08 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[09-Mar-2015 04:36:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[16-Mar-2015 16:03:54 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[16-Mar-2015 16:03:54 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[16-Mar-2015 16:03:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[17-Mar-2015 06:02:07 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[17-Mar-2015 06:02:07 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[17-Mar-2015 06:02:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[18-Mar-2015 23:53:44 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[18-Mar-2015 23:53:44 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[18-Mar-2015 23:53:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[20-Mar-2015 00:22:14 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[20-Mar-2015 00:22:14 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[20-Mar-2015 00:22:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[20-Mar-2015 01:30:52 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[20-Mar-2015 01:30:52 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[20-Mar-2015 01:30:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[22-Mar-2015 00:11:10 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[22-Mar-2015 00:11:10 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[22-Mar-2015 00:11:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[22-Mar-2015 05:18:28 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[22-Mar-2015 05:18:28 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[22-Mar-2015 05:18:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[24-Mar-2015 01:45:52 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[24-Mar-2015 01:45:52 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[24-Mar-2015 01:45:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[24-Mar-2015 08:12:02 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[24-Mar-2015 08:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[24-Mar-2015 08:12:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[24-Mar-2015 11:15:15 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[24-Mar-2015 11:15:15 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[24-Mar-2015 11:15:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[25-Mar-2015 06:57:29 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[25-Mar-2015 06:57:29 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[25-Mar-2015 06:57:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[25-Mar-2015 11:48:39 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[25-Mar-2015 11:48:39 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[25-Mar-2015 11:48:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[28-Mar-2015 04:06:27 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[28-Mar-2015 04:06:27 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[28-Mar-2015 04:06:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[30-Mar-2015 03:21:26 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[30-Mar-2015 03:21:26 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[30-Mar-2015 03:21:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[01-Apr-2015 04:22:49 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[01-Apr-2015 04:22:49 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[01-Apr-2015 04:22:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[03-Apr-2015 05:05:52 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[03-Apr-2015 05:05:52 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[03-Apr-2015 05:05:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[04-Apr-2015 03:15:56 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[04-Apr-2015 03:15:56 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[04-Apr-2015 03:15:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[04-Apr-2015 23:25:48 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[04-Apr-2015 23:25:48 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[04-Apr-2015 23:25:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[07-Apr-2015 00:10:06 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[07-Apr-2015 00:10:06 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[07-Apr-2015 00:10:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[10-Apr-2015 07:18:47 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[10-Apr-2015 07:18:47 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[10-Apr-2015 07:18:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[11-Apr-2015 21:59:31 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[11-Apr-2015 21:59:31 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[11-Apr-2015 21:59:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[12-Apr-2015 05:01:35 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[12-Apr-2015 05:01:35 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[12-Apr-2015 05:01:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[15-Apr-2015 13:32:15 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[15-Apr-2015 13:32:15 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[15-Apr-2015 13:32:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[19-Apr-2015 10:20:19 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[19-Apr-2015 10:20:19 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[19-Apr-2015 10:20:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[23-Apr-2015 22:39:05 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[23-Apr-2015 22:39:05 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[23-Apr-2015 22:39:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[24-Apr-2015 06:07:31 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[24-Apr-2015 06:07:31 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[24-Apr-2015 06:07:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[24-Apr-2015 22:51:41 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[24-Apr-2015 22:51:41 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[24-Apr-2015 22:51:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[26-Apr-2015 21:50:43 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[26-Apr-2015 21:50:43 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[26-Apr-2015 21:50:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[27-Apr-2015 05:32:06 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[27-Apr-2015 05:32:06 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[27-Apr-2015 05:32:06 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[27-Apr-2015 05:32:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[27-Apr-2015 18:26:49 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[27-Apr-2015 18:26:49 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[27-Apr-2015 18:26:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[27-Apr-2015 20:28:30 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[27-Apr-2015 20:28:30 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[27-Apr-2015 20:28:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[30-Apr-2015 06:18:59 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[30-Apr-2015 06:18:59 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[30-Apr-2015 06:18:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[30-Apr-2015 19:45:27 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[30-Apr-2015 19:45:27 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[30-Apr-2015 19:45:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[07-May-2015 06:00:36 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[07-May-2015 06:00:36 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[07-May-2015 06:00:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[09-May-2015 05:39:08 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[09-May-2015 05:39:08 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[09-May-2015 05:39:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[10-May-2015 06:16:46 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[10-May-2015 06:16:46 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[10-May-2015 06:16:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[11-May-2015 05:13:29 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[11-May-2015 05:13:29 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[11-May-2015 05:13:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[13-May-2015 03:31:25 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[13-May-2015 03:31:25 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[13-May-2015 03:31:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[14-May-2015 02:15:45 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[14-May-2015 02:15:45 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[14-May-2015 02:15:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[14-May-2015 04:55:03 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[14-May-2015 04:55:03 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[14-May-2015 04:55:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[14-May-2015 12:00:50 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[14-May-2015 12:00:50 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[14-May-2015 12:00:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[17-May-2015 05:59:24 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[17-May-2015 05:59:24 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[17-May-2015 05:59:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[22-May-2015 07:55:49 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[22-May-2015 07:55:49 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[22-May-2015 07:55:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[04-Jun-2015 23:02:20 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[04-Jun-2015 23:02:20 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[04-Jun-2015 23:02:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[06-Jun-2015 07:44:42 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[06-Jun-2015 07:44:42 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[06-Jun-2015 07:44:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[09-Jun-2015 12:31:24 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[09-Jun-2015 12:31:24 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[09-Jun-2015 12:31:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[10-Jun-2015 01:25:46 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[10-Jun-2015 01:25:46 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[10-Jun-2015 01:25:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[10-Jun-2015 14:34:29 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[10-Jun-2015 14:34:29 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[10-Jun-2015 14:34:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[12-Jun-2015 02:57:36 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[12-Jun-2015 02:57:36 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[12-Jun-2015 02:57:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[12-Jun-2015 09:21:17 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[12-Jun-2015 09:21:17 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[12-Jun-2015 09:21:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[14-Jun-2015 04:17:55 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[14-Jun-2015 04:17:55 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[14-Jun-2015 04:17:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[15-Jun-2015 08:51:42 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[15-Jun-2015 08:51:42 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[15-Jun-2015 08:51:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[17-Jun-2015 02:31:12 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[17-Jun-2015 02:31:12 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[17-Jun-2015 02:31:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[18-Jun-2015 06:01:48 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[18-Jun-2015 06:01:48 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[18-Jun-2015 06:01:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[18-Jun-2015 23:54:49 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[18-Jun-2015 23:54:49 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[18-Jun-2015 23:54:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[19-Jun-2015 03:35:18 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[19-Jun-2015 03:35:18 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[19-Jun-2015 03:35:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[19-Jun-2015 17:06:35 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[19-Jun-2015 17:06:35 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[19-Jun-2015 17:06:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[20-Jun-2015 03:23:15 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[20-Jun-2015 03:23:15 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[20-Jun-2015 03:23:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[22-Jun-2015 10:42:56 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[22-Jun-2015 10:42:56 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[22-Jun-2015 10:42:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[23-Jun-2015 11:51:56 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[23-Jun-2015 11:51:56 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[23-Jun-2015 11:51:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[27-Jun-2015 07:55:23 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[27-Jun-2015 07:55:23 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[27-Jun-2015 07:55:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[27-Jun-2015 08:10:30 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[27-Jun-2015 08:10:30 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[27-Jun-2015 08:10:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[30-Jun-2015 08:17:02 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[30-Jun-2015 08:17:02 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[30-Jun-2015 08:17:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[30-Jun-2015 08:35:44 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[30-Jun-2015 08:35:44 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[30-Jun-2015 08:35:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[03-Jul-2015 04:13:42 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[03-Jul-2015 04:13:42 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[03-Jul-2015 04:13:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[04-Jul-2015 05:28:13 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[04-Jul-2015 05:28:13 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[04-Jul-2015 05:28:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[05-Jul-2015 00:45:40 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[05-Jul-2015 00:45:40 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[05-Jul-2015 00:45:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[05-Jul-2015 03:35:35 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[05-Jul-2015 03:35:35 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[05-Jul-2015 03:35:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[05-Jul-2015 04:12:33 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[05-Jul-2015 04:12:33 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[05-Jul-2015 04:12:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[06-Jul-2015 04:32:31 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[06-Jul-2015 04:32:31 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[06-Jul-2015 04:32:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[07-Jul-2015 08:45:06 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[07-Jul-2015 08:45:06 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[07-Jul-2015 08:45:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[07-Jul-2015 23:48:06 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[07-Jul-2015 23:48:06 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[07-Jul-2015 23:48:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[08-Jul-2015 04:10:04 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[08-Jul-2015 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[08-Jul-2015 04:10:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[11-Jul-2015 03:50:18 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[11-Jul-2015 03:50:18 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[11-Jul-2015 03:50:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[13-Jul-2015 01:13:28 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, boolean given in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 32
+[13-Jul-2015 01:13:28 UTC] PHP Warning:  Creating default object from empty value in /home/jbbsurge/public_html/wp-includes/capabilities.php on line 669
+[13-Jul-2015 01:13:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jbbsurge/public_html/php/fastspring-activated-client.php on line 39
+[20-Aug-2015 07:08:50 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 07:08:56 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 07:09:09 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 07:09:50 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 07:10:15 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 07:10:20 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 07:10:35 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 08:42:39 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 10:05:02 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 10:29:11 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 10:29:15 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[20-Aug-2015 11:41:26 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 11:59:33 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 12:21:24 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 12:21:56 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 14:06:50 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 17:11:05 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 17:12:02 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 17:19:45 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 21:38:15 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[20-Aug-2015 22:44:53 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[21-Aug-2015 05:57:04 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[21-Aug-2015 09:15:48 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[21-Aug-2015 16:04:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[21-Aug-2015 17:18:03 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[21-Aug-2015 21:04:41 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[21-Aug-2015 23:04:27 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[22-Aug-2015 07:04:33 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[22-Aug-2015 09:55:50 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[22-Aug-2015 22:22:13 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[22-Aug-2015 22:55:34 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[23-Aug-2015 01:10:30 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[23-Aug-2015 06:14:09 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[23-Aug-2015 06:14:33 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[23-Aug-2015 07:13:58 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[23-Aug-2015 10:20:22 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[23-Aug-2015 10:20:22 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[23-Aug-2015 22:43:56 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[23-Aug-2015 22:43:57 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[24-Aug-2015 02:14:49 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[24-Aug-2015 07:03:20 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[24-Aug-2015 08:07:11 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[24-Aug-2015 13:20:38 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[24-Aug-2015 22:20:03 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[25-Aug-2015 02:24:06 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[25-Aug-2015 06:58:26 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[25-Aug-2015 12:24:12 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[25-Aug-2015 15:29:35 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[25-Aug-2015 20:28:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[25-Aug-2015 23:32:29 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[25-Aug-2015 23:38:54 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[25-Aug-2015 23:44:33 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 01:20:26 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 10:31:16 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 10:35:58 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 10:36:27 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 10:39:21 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 10:43:25 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 11:10:14 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 11:10:30 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[26-Aug-2015 22:21:11 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[26-Aug-2015 22:36:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[27-Aug-2015 02:07:07 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[27-Aug-2015 02:41:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[27-Aug-2015 03:03:56 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[27-Aug-2015 05:29:17 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[27-Aug-2015 06:36:01 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[27-Aug-2015 08:51:55 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[27-Aug-2015 12:29:25 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[27-Aug-2015 14:55:10 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[28-Aug-2015 02:56:07 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[28-Aug-2015 03:12:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[28-Aug-2015 03:47:14 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[28-Aug-2015 07:29:58 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[28-Aug-2015 13:43:28 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[29-Aug-2015 02:05:01 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[29-Aug-2015 12:26:48 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 05:21:27 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 06:30:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 07:45:48 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 08:35:40 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 08:36:07 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 08:36:21 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 08:36:40 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 10:00:04 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 10:28:49 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 10:28:50 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[30-Aug-2015 11:07:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[30-Aug-2015 11:07:43 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[31-Aug-2015 05:04:41 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[31-Aug-2015 07:31:52 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[31-Aug-2015 21:41:28 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[31-Aug-2015 22:22:16 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[31-Aug-2015 22:49:49 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[01-Sep-2015 07:58:48 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[01-Sep-2015 08:12:37 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[02-Sep-2015 04:01:53 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[02-Sep-2015 04:20:33 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[02-Sep-2015 05:39:27 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[02-Sep-2015 08:23:24 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[02-Sep-2015 09:28:09 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 02:12:08 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 06:47:20 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 06:55:03 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 09:08:31 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 16:37:21 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 16:38:08 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 16:38:22 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 17:24:29 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 17:26:10 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 21:01:30 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 21:45:57 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 21:47:19 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 23:31:50 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[03-Sep-2015 23:47:39 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 01:53:45 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 02:08:52 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 02:34:12 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 02:43:44 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 05:42:09 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 05:42:24 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 06:11:40 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 06:12:18 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 06:54:47 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 07:11:24 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 07:51:05 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 08:46:57 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[04-Sep-2015 11:46:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 00:37:07 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 02:44:16 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 03:48:12 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 04:39:14 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 04:50:40 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 06:17:20 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 06:22:40 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 09:11:10 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 10:16:33 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 10:16:34 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[05-Sep-2015 11:50:14 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[05-Sep-2015 22:52:47 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 06:29:13 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 06:30:01 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 07:41:52 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 08:27:00 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 09:01:11 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 09:04:18 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 09:07:27 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 10:20:34 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Sep-2015 10:20:35 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[06-Sep-2015 18:03:08 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 01:11:01 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 02:01:30 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 03:22:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 04:13:18 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 06:23:59 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 08:30:07 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 08:55:20 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 09:21:13 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 09:37:11 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 10:39:42 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 15:30:28 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 15:30:36 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 22:37:17 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Sep-2015 23:39:30 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[08-Sep-2015 02:33:14 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[08-Sep-2015 04:11:05 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[08-Sep-2015 05:20:36 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[08-Sep-2015 05:21:10 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[08-Sep-2015 21:59:45 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[08-Sep-2015 22:56:34 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 03:34:43 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 05:58:26 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 06:10:22 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 08:04:21 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 08:06:33 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 08:26:49 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 08:43:03 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 09:14:32 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[09-Sep-2015 09:21:27 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Sep-2015 00:01:19 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Sep-2015 02:29:09 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Sep-2015 09:04:38 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Sep-2015 10:56:45 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[10-Sep-2015 10:56:46 UTC] PHP Fatal error:  Call to a member function remove_role() on a non-object in /home/jbstaging/public_html/php/fastspring-deactivated-jb.php on line 23
+[10-Sep-2015 18:14:06 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[11-Sep-2015 02:00:48 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[11-Sep-2015 02:01:14 UTC] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
