@@ -288,8 +288,21 @@ echo "</pre>";
 ////////////////////////////////////
 
 add_filter( 'bp_registration_needs_activation', '__return_false' );
+/*======================================
+=            Set Front Page            =
+======================================*/
+// Use a static front page
+$about = get_page_by_title( 'Joan Butts Bridge' );
+update_option( 'page_on_front', $about->ID );
+update_option( 'show_on_front', 'page' );
 
-
+/*====================================================
+=            New Member Related Functions            =
+====================================================*/
+include_once('library/function-free-member-management.php');
+create_role_free_role();
+// fix_free_members();
+// woocommerce_user_change();
 
 
 
