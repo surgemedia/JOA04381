@@ -30,6 +30,7 @@ include_once('library/function-getuserrole.php');
 include_once('library/function-get_id_from_slug.php');
 
 require_once('library/function-enrollment-button.php');
+require_once('library/wp_bootstrap_navwalker.php'); //enable bootstrap navigation 
 require_once('library/jbb.php'); // if you remove this, jbb will break
 
 function tml_edit_user_profile( $profileuser ) { ?>

@@ -62,17 +62,28 @@
 		<!-- end of wordpress head -->
                 <script src="http://bridge2go.com/Live/JavaScripts/HandDisplay/HandDisplay.js"></script>
 	</head>
+	<?php
+		$image = get_field('background_image','option');
+		if($image) {
+			$style = 'style="background-image: url('.$image.')"';
+		}
+		else {
+			$style = '';
+		}
+	?>
+	<body <?php echo $style; ?> <?php body_class(); ?>>
 
-	<body <?php body_class(); ?>>
-
-		<div id="container">
+		<div id="container" class="container">
 
 			<header class="header" role="banner">
 				<div id="header-bg-icon">
 				<div id="inner-header" class="wrap clearfix">
 					<div class="logo-bar">
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<a id="topbar-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_directory'); ?>/library/images/joan-butts-logo.png"></a>
+					<?php
+						$image = get_field('logo','option'); 
+					?>
+					<a id="topbar-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo $image['url']; ?>" alt="<?php bloginfo('name'); ?>" width="<?php echo $image['width']; ?>" height="<?php echo $image['height']; ?>"></a>
 					<?php /* ?>
 					<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
 						<div><input type="text" size="put_a_size_here" name="s" id="s" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
@@ -122,11 +133,25 @@
                         </div>
                     </div>
 
+					<nav class="navbar navbar-default main-navigation">
+                
+		                    <div class="navbar-header">
+		                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation" aria-expanded="false">
+		                            <span class="icon-bar"></span>
+		                            <span class="icon-bar"></span>
+		                            <span class="icon-bar"></span>
+		                        </button>
+		                    </div>
 
-
-					<nav role="navigation">
-						<?php jbb_main_nav(); ?>
-					</nav>
+		                    <div class="collapse navbar-collapse" id="primary-navigation" aria-expanded="false">
+		                        <?php
+		                            if (has_nav_menu('main-nav')) :
+		                              wp_nav_menu(['theme_location'  => 'main-nav','menu_class' => 'nav navbar-nav','depth'=> 7,'walker' => new wp_bootstrap_navwalker()]);
+		                            endif;
+		                        ?>
+		                    </div>
+		                
+		            </nav>
 
 				</div> <!-- end #inner-header -->
 				</div>
