@@ -27,7 +27,7 @@ include_once('library/action-page-type-modules.php');
 include_once('library/action-page-type-account-types.php');
 
 include_once('library/function-getuserrole.php');
-include_once('libraryfunction-get_id_from_slug.php');
+include_once('library/function-get_id_from_slug.php');
 
 require_once('library/function-enrollment-button.php');
 require_once('library/jbb.php'); // if you remove this, jbb will break
