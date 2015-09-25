@@ -3,16 +3,29 @@
 	text-align: center;
 	position: relative;
     overflow: hidden;
-    margin: 0;
     height: 100px;
 	.logo-container {
 		a {
 			display: inline-block;
 			float: none;
-			margin-top: 20px;
 			img {
 				max-width: 100%;
 				height: auto;
+			}
+		}
+	}
+	.user-container {
+		.display-img {
+			img {
+				max-width: 100%;
+			    height: auto;
+			    border-radius: 50%;
+			}
+		}
+		.current_info {
+			text-align: left;
+			h2 {
+				margin: 0;
 			}
 		}
 	}

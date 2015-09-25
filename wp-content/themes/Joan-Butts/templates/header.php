@@ -24,8 +24,8 @@
                 <?php 
                   } 
                 ?>
-                  <div class="display-img col-lg-4"><?php echo $avatarurl; ?></div>
-                  <div class="current_info col-lg-8">
+                  <div class="display-img col-md-4"><?php echo $avatarurl; ?></div>
+                  <div class="current_info col-md-8">
                     <h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></a></h2>
                     <span><?php  echo getSkillLevel(); ?></span>
                   </div>
