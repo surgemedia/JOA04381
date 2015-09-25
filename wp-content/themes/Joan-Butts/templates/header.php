@@ -1,6 +1,48 @@
 <header class="banner" role="banner">
   <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <div class="page-header">
+      <div class="logo-container">
+        <a class="brand col-md-4 col-sm-6 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
+          <?php  
+            $image = get_field('logo','option');
+          ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php bloginfo('name'); ?>" width="<?php echo $image['width']; ?>" height="<?php echo $image['height']; ?>">
+        </a>
+      </div>
+      <div class="user-container col-md-4 col-sm-6 col-xs-12">
+        <?php
+          if(is_user_logged_in()) {
+            $user = wp_get_current_user();
+            $user_id = bp_loggedin_user_id();
+            $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
+        ?>
+              <div id="header-user">
+                <?php  
+                  if (get_user_role()=='royal') {  
+                ?>
+                    <i></i>
+                <?php 
+                  } 
+                ?>
+                  <div class="display-img col-lg-4"><?php echo $avatarurl; ?></div>
+                  <div class="current_info col-lg-8">
+                    <h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></a></h2>
+                    <span><?php  echo getSkillLevel(); ?></span>
+                  </div>
+              </div>
+        <?php
+          }
+          else {
+        ?>
+            <div class="login-container">
+              <a class="button pull-right" data-toggle="modal" data-target="#mylogin" >Login <i class="dashicons dashicons-awards"></i></a>
+              <a class="button pull-right pink" href="/register">Sign Up<i class="dashicons dashicons-awards"></i></a>
+            </div>
+        <?php
+          }
+        ?>
+      </div>
+    </div>
     <nav class="navbar navbar-default col-xs-12 ">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation" aria-expanded="false">
@@ -20,3 +62,19 @@
     </nav>
   </div>
 </header>
+
+
+<!-- Login modal box -->
+<div class="modal fade" id="mylogin" tabindex="-1" role="dialog" aria-labelledby="myLoginpopup">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login</h4>
+      </div>
+      <div class="modal-body">
+        <?php echo do_shortcode('[theme-my-login]'); ?>
+      </div>
+    </div>
+  </div>
+</div>

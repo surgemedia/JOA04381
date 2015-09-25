@@ -1,0 +1,21 @@
+/*------------------------------
+		PAGE-HEADER
+-------------------------------*/
+.page-header {
+	.user-container {
+		position: absolute;
+	    top: 0;
+	    right: 0;
+	}
+}
+/*------------------------------
+		NAVIGATION
+-------------------------------*/
+#primary-navigation {
+	.navbar-nav {
+		li:hover {
+			background-color: #fff;
+			opacity: 0.9;
+		}
+	}
+}

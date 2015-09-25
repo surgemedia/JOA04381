@@ -19,6 +19,9 @@ $sage_includes = [
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
   'lib/nav-walker.php',            // Navigation compatible with bootstrap & Sage
+  'lib/acf-option-page.php',       // Options Page
+  'lib/function-getuserrole.php',  // Get User Role
+  'lib/function-enrollment-button.php',  // Get Enrollment
 
 ];
 

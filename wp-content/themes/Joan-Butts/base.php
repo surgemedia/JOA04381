@@ -8,7 +8,13 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
-  <body <?php body_class(); ?>>
+  <?php
+    $image = get_field('background_image','option');
+    if($image) {
+      $styleString = 'style="background-image: url('.$image.')";';
+    }
+  ?>
+  <body <?php echo $styleString ?> <?php body_class(); ?>>
     <!--[if lt IE 9]>
       <div class="alert alert-warning">
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
