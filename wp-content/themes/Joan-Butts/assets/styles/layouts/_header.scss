@@ -1,0 +1,62 @@
+.page-header {
+	border-bottom: 0;
+	text-align: center;
+	position: relative;
+    overflow: hidden;
+    .logo-container {
+		a {
+			display: inline-block;
+			float: none;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.user-container {
+		.display-img {
+			img {
+				max-width: 100%;
+			    height: auto;
+			    border-radius: 50%;
+			}
+		}
+		.current_info {
+			text-align: left;
+			h2 {
+				margin: 0;
+			}
+		}
+	}
+}
+
+//  NAVIGATION
+
+.navbar-default {
+	background-color: $theme-blue; 
+	min-height: auto;
+	border: none;
+    border-radius: 0;
+    #primary-navigation {
+    	text-align: center;
+    	font-size: 0;
+    	&>div {
+    		display: inline-block;
+    		.navbar-nav {
+    			li {
+    				a {
+    					padding: 10px 15px;
+    					font-size: 14px;
+    					color: #000;
+    				}
+    				&.active {
+    					a, a:focus, a:hover {
+    						background-color: #fff;
+    						opacity: 0.9;
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+}

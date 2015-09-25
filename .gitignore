@@ -22,3 +22,4 @@ license.txt
 local-config.php
 readme.html
 wp-activate.php
+wp-content/uploads/*
