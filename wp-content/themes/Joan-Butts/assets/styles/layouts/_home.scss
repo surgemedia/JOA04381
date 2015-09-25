@@ -1,0 +1,42 @@
+.box-nav {
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			height: 250px;
+			text-align: center;
+			padding: 0;
+			background-color: $grey-light;
+			.link-card {
+				color: $font-color;
+				text-decoration: none;
+				position: relative;
+			    display: inline-block;
+			    width: 100%;
+			    .link-text {
+			    	font-weight: normal;
+			    	padding: 0 30px;
+			    	vertical-align: middle;
+				    margin: 0;
+				    display: table-cell;
+				    height: inherit;
+				    transition: color 1s ease;
+				    position: relative;
+			    }
+				.link-color {
+					display: inline-block;
+					height: 10px;
+					width: 100%; 
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					transition: height 1s cubic-bezier(0.01, 0.71, 1, 1);
+				} 
+				&:hover {
+					text-decoration: none; 
+				}
+			}
+			
+		}
+	}
+}

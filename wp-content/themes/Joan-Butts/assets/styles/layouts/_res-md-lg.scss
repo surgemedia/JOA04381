@@ -19,3 +19,26 @@
 		}
 	}
 }
+/*------------------------------
+		HOME PAGE
+-------------------------------*/
+.box-nav {
+	ul {
+		li {
+			.link-card {
+				height: 250px;
+				&:hover {
+					.link-text {
+						color: #fff;
+					}
+					.link-color {
+						height: inherit;
+					}
+				}
+			}
+		}
+		li+li {
+			border-left: 1px solid #fff;
+		}
+	}
+}

@@ -2,7 +2,15 @@ body {
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: $font-color;
     .container {
     	background-color: #fff;
     }
 }
+
+.pink { background-color: $pink;}
+.green { background-color: $green;}
+.yellow { background-color: $yellow;}
+.red { background-color: $red;}
+.blue { background-color: $blue;}
+.black { background-color: $theme-black;}
