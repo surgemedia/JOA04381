@@ -19,6 +19,10 @@ $sage_includes = [
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
   'lib/nav-walker.php',            // Navigation compatible with bootstrap & Sage
+  'lib/woocommerce-support.php',   // Woocommerce Support
+  'lib/jbb/admin.php',             // Admin funcion - legacy
+  'lib/jbb/addition-sizes.php',    // Admin funcion - legacy
+  'post_types/action-post-type-account-types.php',    // Accounts from the home page
 
 ];
 
