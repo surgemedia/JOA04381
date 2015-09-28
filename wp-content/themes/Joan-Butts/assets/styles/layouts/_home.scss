@@ -40,3 +40,32 @@
 		}
 	}
 }
+.events-carousel {
+	clear: both;
+    padding: 30px 0;
+    #events-carousel {
+    	height: 80px;
+    	overflow: hidden;
+    	.carousel-inner {
+    		width: 90%;
+    		margin: 0 auto;
+    		.event-obj {
+    			width: 20%;
+    			float: left;
+    			padding: 10px 20px;
+    			border-right: 1px solid $theme-blue;
+    			&:first-child {
+    				border-left: 1px solid $theme-blue;
+    			}
+    			p {
+    				font-weight: bold;
+    				margin: 0;
+    			}
+    		}
+    	}
+    	.carousel-control {
+    		background: none;
+    		width: 5%;
+    	}
+    }
+}
