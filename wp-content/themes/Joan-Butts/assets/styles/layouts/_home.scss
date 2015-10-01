@@ -58,8 +58,8 @@
     				border-left: 1px solid $theme-blue;
     			}
     			p {
-    				font-weight: bold;
     				margin: 0;
+    				line-height: 16px;
     			}
     		}
     	}
@@ -68,4 +68,32 @@
     		width: 5%;
     	}
     }
+}
+.site-video {
+	background-color: $theme-blue;
+	padding: 20px 0;
+	.row {
+		width: 90%;
+    	margin: 0 auto;
+    	.video-container {
+    		position: relative;
+    		cursor: pointer;
+	    	.video-tag {
+	    		text-transform: uppercase;
+			    color: #FFF;
+			    background-color: #ed4946;
+			    opacity: .95;
+			    display: block;
+			    height: 30px;
+			    text-align: center;
+			    padding-top: 5px;
+			    position: absolute;
+			    width: 94%;
+			    bottom: 30px;
+	    	}
+	    }
+    	.video-title {
+    		color: $red;
+    	}
+	}
 }
