@@ -1,3 +1,6 @@
+/*------------------------------
+		GLOBAL
+-------------------------------*/
 .register-button {
 	&:hover,&:focus {
 		text-decoration: none;
@@ -22,6 +25,26 @@
 		li:hover {
 			background-color: #fff;
 			opacity: 0.9;
+		}
+	}
+}
+/*------------------------------
+		FOOTER
+-------------------------------*/
+.content-info {
+	.container {
+		.contact-details {
+			position: absolute;
+			bottom: 20px;
+			display: inline-block;
+			a:hover, a:active, a:focus {
+				text-decoration: none;
+			}
+		}
+		.social-links {
+			position: absolute;
+			bottom: 20px;
+			display: inline-block;
 		}
 	}
 }

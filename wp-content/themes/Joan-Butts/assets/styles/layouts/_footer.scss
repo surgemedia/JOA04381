@@ -1,0 +1,33 @@
+.content-info {
+	.container {
+		padding-top: 30px;
+		position: relative;
+		.image-container {
+			text-align: center;
+		}
+		.contact-details {
+			a {
+				display: block;
+				color: $font-color;
+				span {
+					display: inline-block;
+					color: $blue-dark;
+					font-weight: bold;
+					margin-right: 5px;
+				}
+			}
+		}
+		.social-links {
+			ul {
+				list-style: none;
+				li {
+					float: left;
+					i {
+						font-size: 25px;
+    					margin: 5px;
+					}
+				}
+			}
+		}
+	}
+}
