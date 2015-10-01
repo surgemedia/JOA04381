@@ -1,15 +1,10 @@
 <?php
 /*
-Template Name: Holiday Page - this is a test
+Template Name: Holiday Page
 */
 ?>
-<?php get_header(); ?>
 
-			<div id="content">
-
-				<div id="inner-content" class="wrap clearfix">
-
-						<div id="main" class="eightcol clearfix float-right" role="main">
+			
 							<div class="breadcrumbs">
 							    <?php if(function_exists('bcn_display'))
 							    {
@@ -81,12 +76,8 @@ Template Name: Holiday Page - this is a test
 
 							<?php endif; ?>
 
-						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
 
-				</div> <!-- end #inner-content -->
+						<?php //get_sidebar(); ?>
 
-			</div> <!-- end #content -->
 
-<?php get_footer(); ?>

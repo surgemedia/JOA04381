@@ -16,6 +16,7 @@ global $wpdb, $wp_roles;
 
 //Get Customer Refer
 $customer_ref 	= $_POST["SubscriptionReferrer"];
+
 //Get Subscription Referance
 $subscription_ref 	= $_POST["SubscriptionReference"];
 

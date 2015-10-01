@@ -5,8 +5,7 @@ Template Name: Results Page
 ?>
 
 
-			<div id="container">
-						<div id="main" class="eightcol clearfix float-right" role="main">
+		
 							<div class="breadcrumbs">
 							    <?php if(function_exists('bcn_display'))
 							    {
@@ -37,9 +36,3 @@ Template Name: Results Page
 							<?php endwhile; else : ?>
 								<pre>No Content</pre>
 							<?php endif; ?>
-
-						</div> <!-- end #main -->
-
-					
-
-				</div> <!-- end #inner-content -->
