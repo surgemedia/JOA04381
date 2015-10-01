@@ -131,13 +131,26 @@
 				margin-bottom: 15px;
 			    padding: 0;
 			}
-			.button {
-				display: block;
-	    		background-color: $red;
-	    		color: #fff;
-	    		text-transform: uppercase;
-	    		padding: 5px 0;
-			}
 		}
+	}
+}
+.practice-compete {
+	background-color: $blue-dark;
+	position: relative;
+	.image-container {
+		padding: 5% 10% 30px;
+		img {
+			max-width: 100%;
+    		height: auto;
+		}
+	}
+	.content {
+		padding: 5% 5% 0 0;
+		h4 {
+			color: #fff;
+		}
+	}
+	.register-button {
+		width: 200px;
 	}
 }

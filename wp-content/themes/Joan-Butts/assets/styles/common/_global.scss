@@ -6,6 +6,20 @@ body {
     .container {
     	background-color: #fff;
     }
+    .register-button {
+	    display: block;
+	    background-color: #ed4946;
+	    color: #fff;
+	    text-transform: uppercase;
+	    padding: 5px 0;
+	    text-align: center;
+	}
+	.register-button {
+	    &:before, &:after {
+		    content: "\2013";
+		    margin: 0 8px;
+		}
+	}
 }
 
 .pink { background-color: $pink;}

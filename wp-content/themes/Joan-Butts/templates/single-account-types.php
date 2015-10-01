@@ -13,6 +13,6 @@
 				} 
 			?> 
 		</ul>
-		<a href="<?php the_field('button_link'); ?>" class="button"><?php the_field('button_text'); ?></a>
+		<a href="<?php the_field('button_link'); ?>" class="button register-button"><?php the_field('button_text'); ?></a>
 	</div>
 </div>

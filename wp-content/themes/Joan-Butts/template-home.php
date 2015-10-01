@@ -9,4 +9,5 @@
 	<?php get_template_part('templates/home', 'events'); ?>
 	<?php get_template_part('templates/home', 'video'); ?>
 	<?php get_template_part('templates/home','loop-account-types'); ?>
+	<?php get_template_part('templates/home','practice-compete'); ?>
 <?php endwhile; ?>
