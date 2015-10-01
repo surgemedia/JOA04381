@@ -99,12 +99,7 @@
 }
 .account-types {
 	margin: 0 auto;
-	padding: 20px 0;
-    .title {
-    	text-align: center;
-    	text-transform: uppercase;
-    }
-    .description {
+	.description {
     	text-align: center;
     }
     .row {
@@ -146,11 +141,90 @@
 	}
 	.content {
 		padding: 5% 5% 0 0;
-		h4 {
+		h4, h3 {
 			color: #fff;
 		}
 	}
-	.register-button {
-		width: 200px;
+}
+.lessons {
+	background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    .content {
+    	padding: 5% 5% 0 0;
+	    h4, h3 {
+	    	color: $red;
+	    }
 	}
+}
+.bridge-holidays {
+	background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    .content {
+    	padding: 5% 0 0 10%;
+	    h4, h3 {
+	    	color: $red;
+	    }
+	    .date {
+	    	margin-top: 0;
+	    }
+	}
+}
+.products-carousel {
+	.product-obj {
+		padding: 0;
+		&+.product-obj {
+			padding-left: 1px;
+		}
+		.image-container {
+			height: 230px;
+			overflow: hidden;
+			width: 85%;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		.title-container {
+			height: 62px;
+		    width: 85%;
+		    margin: 5px auto;
+		}
+		.woocommerce {
+			border: none !important;
+			padding: 0 !important;
+			.amount {
+				display: none;
+			}
+			.add_to_cart_button {
+				display: block;
+			    text-align: center;
+			    border-radius: 0;
+			    background-color: $theme-blue;
+			    color: $font-color;
+			    text-transform: uppercase;
+			    font-weight: normal;
+			}
+		}
+	}
+	.carousel-control {
+    	background: 0 0;
+	    opacity: 1;
+	    width: 16.4%;
+    	.more {
+    		background-color: $theme-black;
+    		color: #fff;
+    		display: block;
+		    position: absolute;
+		    bottom: 10px;
+		    width: 100%;
+		    text-transform: uppercase;
+		    font-weight: normal;
+		    font-size: 14px;
+		    padding: 6px 0;
+    	}
+    }
 }

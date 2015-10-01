@@ -1,6 +1,6 @@
 <section class="clearfix">
 	<div class="account-types">
-		<h3 class="title">Lessons - Online</h3>
+		<h3 class="section-title">Lessons - Online</h3>
 		<div class="description"><?php the_field('lessons-online_text'); ?></div>
 		<div class="row">
 	  	<?php 

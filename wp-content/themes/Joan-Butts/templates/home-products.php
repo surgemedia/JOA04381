@@ -1,10 +1,11 @@
-<section class="events-carousel">
-	<div id="events-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+<h3 class="section-title">Books: Learn from the experts</h3>
+<section class="products-carousel">
+	<div id="products-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 		<div class="carousel-inner" role="listbox">
 			<?php 
 				// WP_Query arguments
 				$args = array (
-					'post_type'              => array( 'tribe_events' ),
+					'post_type'              => array( 'product' ),
 					// 'posts_per_page'         => '6',
 					// 'order'                  => 'ASC',
 					'orderby'                => 'date'
@@ -32,13 +33,14 @@
 							$startCarousel = '';
 							$endCarousel = '';
 						}
-						$the_event = get_post();
-						$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
+						
+						 
 			?>
 							<?php echo $startCarousel; ?>	
-								<div class="event-obj">
-									<p><?php the_title(); ?></p>
-									<p><?php echo $text_date ?></p>
+								<div class="product-obj col-md-2">
+									<div class="image-container"><?php the_post_thumbnail(); ?></div>
+									<div class="title-container"><p class="title"><?php the_title(); ?></p></div>
+									<?php echo do_shortcode('[add_to_cart  id="'.get_the_ID().'"]') ?>
 								</div>
 							<?php echo $endCarousel; ?>	
 						<?php //debug(get_post());
@@ -56,13 +58,10 @@
 			?>
 					</div> <!-- Close of carousel-inner-->
 					<!-- Controls -->
-					<a class="left carousel-control" href="#events-carousel" role="button" data-slide="prev">
-					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#events-carousel" role="button" data-slide="next">
+					<a class="right carousel-control" href="#products-carousel" role="button" data-slide="next">
 					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 					    <span class="sr-only">Next</span>
+					    <span class="more">More</span>
 					</a>
 			<?php
 				} else {

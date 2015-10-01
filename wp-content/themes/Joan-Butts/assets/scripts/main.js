@@ -84,4 +84,5 @@
       $(this).parent().toggleClass('open');
   });
 
+
 })(jQuery); // Fully reference jQuery after this point.

@@ -1,3 +1,9 @@
+.register-button {
+	&:hover,&:focus {
+		text-decoration: none;
+	}
+}
+
 /*------------------------------
 		PAGE-HEADER
 -------------------------------*/
@@ -66,5 +72,21 @@
 		position: absolute;
 		bottom: 0;
 		left: 50%;
+	}
+}
+.lessons {
+    min-height: 370px;
+	.register-button {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+	}
+}
+.bridge-holidays {
+    min-height: 370px;
+	.register-button {
+		position: absolute;
+		bottom: 0;
+		left: 9%;
 	}
 }

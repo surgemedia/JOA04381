@@ -1,3 +1,4 @@
+<h3 class="section-title">Lessons at a bridge club</h3>
 <section class="practice-compete">
 	<div class="row">
 		<div class="col-md-6 image-container">

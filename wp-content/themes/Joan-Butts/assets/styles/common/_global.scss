@@ -11,7 +11,7 @@ body {
 	    background-color: #ed4946;
 	    color: #fff;
 	    text-transform: uppercase;
-	    padding: 5px 0;
+	    padding: 5px 20px;
 	    text-align: center;
 	}
 	.register-button {
@@ -19,6 +19,11 @@ body {
 		    content: "\2013";
 		    margin: 0 8px;
 		}
+	}
+	.section-title {
+		text-align: center;
+    	text-transform: uppercase;
+    	margin: 40px 0 25px;
 	}
 }
 
