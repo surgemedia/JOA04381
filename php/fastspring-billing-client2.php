@@ -1,4 +1,5 @@
 <?php
+// require_once('../wp-config.php');
 function debug($data) {
 //makes debuging easier with clear values
     echo '<pre>';
@@ -18,7 +19,11 @@ $api_username 		= "apiuser";
 $api_password 		= "bustleable";
 /** Vars */
 $customer_ref 		= $_GET["customer_ref"];
+if(isset($_GET["subscription_ref"])){
 $subscription_ref 	= $_GET["subscription_ref"];
+ debug($subscription_ref);
+}
+// debug($customer_ref);
 
 
 function reportEmail($subject){
@@ -28,27 +33,23 @@ function reportEmail($subject){
 	$title 			= "FS BILLING";
 	mail($mailinfo, $title, $subject, $mailheaders);
 }
-reportEmail($customer_ref);
-
+// reportEmail($customer_ref);
 if($customer_ref == null) {
   	echo "missing username";
 } else {
-
-	/** Set $redirectToUrl */
+	echo 'username found';
 	$redirectToUrl = null;
-	if($subscription_ref == null) {
-	  	$redirectToUrl = "http://sites.fastspring.com/$store_id/product/$product_id?referrer=".$customer_ref;
-	} else {
-		 $url =  "https://api.fastspring.com/company/".$company_id."/subscription/".$subscription_ref."?user=".$api_username."&pass=".$api_password;		
-		 $c = curl_init($url);
-		 curl_setopt($c, CURLOPT_RETURNTRANSFER, true); 
-		 $string = curl_exec($c);
-		 $pieces = explode("<customerUrl>", $string);
-		 $pieces1 = $pieces[1];
-		 $pieces2 = explode("</customerUrl>", $pieces1);
-		 $redirectToUrl = $pieces2[0];
-	}
-	/** Redirects to sign-up or subscription page */
+	// if( length($subscription_ref) <= 0 ) {
+	// 	echo 'Returning member found';
+	//   	$redirectToUrl = "http://sites.fastspring.com/$store_id/product/$product_id?referrer=".$customer_ref;
+	// } else {
+		// echo 'Redirecting you now';
+  $subscription_ref = 'JBB150913-7450-86126S';
+  $response = new DOMDocument();
+  $response->load('https://api.fastspring.com/company/skybridgeclub/subscription/JBB150913-7450-86126S?user=apiuser&pass=bustleable');
+  $redirectToUrl = $response->getElementsByTagName("customerUrl")->item(0)->nodeValue;
+  debug($response);
+
 	header("Location: $redirectToUrl");
 }
 ?>

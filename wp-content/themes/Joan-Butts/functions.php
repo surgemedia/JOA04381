@@ -23,10 +23,12 @@ $sage_includes = [
   'lib/jbb/admin.php',             // Admin funcion - legacy
   'lib/jbb/addition-sizes.php',    // Admin funcion - legacy
   'post_types/action-post-type-account-types.php',    // Accounts from the home page
+  'post_types/action-post-type-modules.php',    // Accounts from the home page
   'lib/acf-option-page.php',       // Options Page
   'lib/function-getuserrole.php',  // Get User Role
   'lib/function-enrollment-button.php',  // Get Enrollment
-
+  'lib/function-debug.php',  // Get Enrollment
+  'lib/fastspring.php',  // Fast Spring Class
 ];
 
 foreach ($sage_includes as $file) {

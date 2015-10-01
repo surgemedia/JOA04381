@@ -3,13 +3,7 @@
 Template Name: Lesson Hands
 */
 ?>
-<?php get_header(); ?>
 
-			<div id="content">
-
-				<div id="inner-content" class="container clearfix">
-
-						<div id="main" class="eightcol clearfix float-right" role="main">
 							<div class="breadcrumbs"> q
 							    <?php if(function_exists('bcn_display'))
 							    {
@@ -73,12 +67,5 @@ Template Name: Lesson Hands
 
 							<?php endif; ?>
 
-						</div> <!-- end #main -->
+						<?php //get_sidebar(); ?>
 
-						<?php get_sidebar(); ?>
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
-
-<?php get_footer(); ?>

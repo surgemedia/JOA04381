@@ -1,5 +1,5 @@
 
-<?php get_header(); 
+<?php
 $terms = wp_get_post_terms( $post->ID, 'modules');
 $current_term_slug = $terms[0]->slug;
 $included_lessons = array();
@@ -56,9 +56,7 @@ if(strlen($next_in_module) <= 1){
  ?>
 
 
-<div id="content">
-	<div id="inner-content" class="wrap clearfix">
-		<div id="main" class="eightcol first clearfix float-right" role="main">
+
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 				<header class="article-header">
@@ -111,8 +109,4 @@ if(strlen($next_in_module) <= 1){
 						</div>
 						<?php endwhile;?>
 						<?php endif;?>
-						</div> <!-- end #main -->
-						<?php get_sidebar('learnsingle'); ?>
-						</div> <!-- end #inner-content -->
-						</div> <!-- end #content -->
-						<?php get_footer(); ?>
+						<?php //get_sidebar('learnsingle'); ?>
