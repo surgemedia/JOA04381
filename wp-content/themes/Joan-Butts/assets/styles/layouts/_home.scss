@@ -73,8 +73,7 @@
 	background-color: $theme-blue;
 	padding: 20px 0;
 	.row {
-		width: 90%;
-    	margin: 0 auto;
+		margin: 0 auto;
     	.video-container {
     		position: relative;
     		cursor: pointer;
@@ -94,6 +93,51 @@
 	    }
     	.video-title {
     		color: $red;
+    		margin-top: 50px;
     	}
+	}
+}
+.account-types {
+	margin: 0 auto;
+	padding: 20px 0;
+    .title {
+    	text-align: center;
+    	text-transform: uppercase;
+    }
+    .description {
+    	text-align: center;
+    }
+    .row {
+    	&>div:first-child {
+    		background-image: url('/wp-content/uploads/2015/10/flower_bg.png');
+    	}
+    	&>div:last-child {
+    		background-image: url('/wp-content/uploads/2015/10/spade_bg.png');
+    	}
+    	&>div {
+    		margin-top: 20px;
+    		background-repeat: no-repeat;
+    		background-position: center 0;
+    	}
+	    .account-card {
+			text-align: center;
+			margin: 40px auto 0;
+			.account-title,.account-price {
+				color: $red;
+				margin: 0;
+			}
+			ul {
+				list-style: none;
+				margin-bottom: 15px;
+			    padding: 0;
+			}
+			.button {
+				display: block;
+	    		background-color: $red;
+	    		color: #fff;
+	    		text-transform: uppercase;
+	    		padding: 5px 0;
+			}
+		}
 	}
 }

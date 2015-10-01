@@ -2,14 +2,14 @@
 	<div class="row">
 		<div class="col-md-6 video-container">
 			<?php
-				$image = get_field('site_video_thumbnail','option');
+				$image = get_field('site_video_thumbnail');
 			?>
 			<img class="video-thumbnail" src="<?php echo $image['url']; ?>" alt="Joan Butts Website Tour" height="<?php echo $image['height']; ?>" width="<?php echo $image['width'] ?>" data-toggle="modal" data-target="#site-video-modal">
 			<span class="video-tag">Play video now</span>
 		</div>
 		<div class="col-md-6">
-			<h4 class="video-title"><?php the_field('site_video_title','option'); ?></h4>
-			<p><?php the_field('site_video_introduction','option'); ?></p>
+			<h4 class="video-title"><?php the_field('site_video_title'); ?></h4>
+			<p><?php the_field('site_video_introduction'); ?></p>
 		</div>
 	</div>
 </section>
@@ -22,7 +22,7 @@
 	            <h4 class="modal-title" id="myModalLabel">Website Tour</h4>
 	        </div>
 	        <div class="modal-body">
-	            <iframe width="100%" height="515" src="<?php the_field('site_video','option'); ?>" frameborder="0" allowfullscreen></iframe>
+	            <iframe width="100%" height="515" src="<?php the_field('site_video'); ?>" frameborder="0" allowfullscreen></iframe>
 	        </div>
 	        <div class="modal-footer">
 	            

@@ -42,3 +42,22 @@
 		}
 	}
 }
+.site-video {
+	.row {
+		width: 90%;
+	}
+}
+.account-types {
+	width: 80%;
+	.row {
+		&>div {
+			background-size: 42%;
+		}
+		.account-card {
+			width: 70%; 
+			ul {
+				height: 80px;
+			}
+		}
+	}
+}
