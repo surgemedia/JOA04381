@@ -101,7 +101,7 @@ define('WPLANG', '');
  * in their development environments.
  */
 if (!defined('WP_DEBUG')) {
-	define('WP_DEBUG', FALSE);
+	define('WP_DEBUG', false);
 	define( 'SCRIPT_DEBUG', false );
 }
 

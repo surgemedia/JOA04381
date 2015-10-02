@@ -14,6 +14,7 @@
 			    display: inline-block;
 			    width: 100%;
 			    .link-text {
+			    	font-family: 'Open Sans', sans-serif;
 			    	font-weight: normal;
 			    	padding: 0 30px;
 			    	vertical-align: middle;
@@ -53,9 +54,10 @@
     			width: 20%;
     			float: left;
     			padding: 10px 20px;
-    			border-right: 1px solid $theme-blue;
+    			border-right: 1px solid $border-blue;
+    			height: 70px;
     			&:first-child {
-    				border-left: 1px solid $theme-blue;
+    				border-left: 1px solid $border-blue;
     			}
     			p {
     				margin: 0;
@@ -73,8 +75,7 @@
 	background-color: $theme-blue;
 	padding: 20px 0;
 	.row {
-		width: 90%;
-    	margin: 0 auto;
+		margin: 0 auto;
     	.video-container {
     		position: relative;
     		cursor: pointer;
@@ -94,6 +95,144 @@
 	    }
     	.video-title {
     		color: $red;
+    		margin-top: 50px;
     	}
 	}
+}
+.account-types {
+	margin: 0 auto;
+	.description {
+    	text-align: center;
+    }
+    .row {
+    	&>div:first-child {
+    		background-image: url('/wp-content/uploads/2015/10/flower_bg.png');
+    	}
+    	&>div:last-child {
+    		background-image: url('/wp-content/uploads/2015/10/spade_bg.png');
+    	}
+    	&>div {
+    		margin-top: 20px;
+    		background-repeat: no-repeat;
+    		background-position: center 0;
+    	}
+	    .account-card {
+			text-align: center;
+			margin: 40px auto 0;
+			.account-title,.account-price {
+				color: $red;
+				margin: 0;
+			}
+			ul {
+				list-style: none;
+				margin-bottom: 15px;
+			    padding: 0;
+			}
+		}
+	}
+}
+.practice-compete {
+	background-color: $blue-dark;
+	position: relative;
+	.image-container {
+		padding: 5% 10% 30px;
+		img {
+			max-width: 100%;
+    		height: auto;
+		}
+	}
+	.content {
+		padding: 5% 5% 0 0;
+		h4, h3 {
+			color: #fff;
+		}
+	}
+}
+.lessons {
+	background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    .content {
+    	padding: 5% 5% 0 0;
+	    h4, h3 {
+	    	color: $red;
+	    }
+	}
+}
+.bridge-holidays {
+	background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    .content {
+    	padding: 5% 0 0 10%;
+	    h4, h3 {
+	    	color: $red;
+	    }
+	    .date {
+	    	margin-top: 0;
+	    }
+	}
+}
+.products-carousel {
+	.product-obj {
+		padding: 0;
+		&+.product-obj {
+			padding-left: 1px;
+		}
+		.image-container {
+			height: 210px;
+			overflow: hidden;
+			width: 75%;
+    		margin: 0 auto;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		.title-container {
+			height: 62px;
+		    width: 85%;
+		    margin: 5px auto;
+		}
+		.woocommerce {
+			border: none !important;
+			padding: 0 !important;
+			.amount {
+				display: none;
+			}
+			.add_to_cart_button {
+				display: block;
+			    text-align: center;
+			    border-radius: 0;
+			    background-color: $theme-blue;
+			    color: $font-color;
+			    text-transform: uppercase;
+			    font-weight: normal;
+			}
+		}
+	}
+	.carousel-control {
+    	background: 0 0;
+	    opacity: 1;
+	    width: 16.4%;
+    	.more {
+    		background-color: $theme-black;
+    		color: #fff;
+    		display: block;
+		    position: absolute;
+		    bottom: 10px;
+		    width: 100%;
+		    text-transform: uppercase;
+		    font-weight: normal;
+		    font-size: 14px;
+		    padding: 6px 0;
+    	}
+    	.icon-chevron {
+    		color: $grey;
+		    font-size: 80px;
+		    top: 15%;
+    	}
+    }
 }

@@ -1,4 +1,13 @@
 /*------------------------------
+		GLOBAL
+-------------------------------*/
+.register-button {
+	&:hover,&:focus {
+		text-decoration: none;
+	}
+}
+
+/*------------------------------
 		PAGE-HEADER
 -------------------------------*/
 .page-header {
@@ -6,6 +15,14 @@
 		position: absolute;
 	    top: 0;
 	    right: 0;
+	}
+	.login-container {
+		a {
+			cursor: pointer;
+			&:hover, &:active, &:focus {
+				text-decoration: none; 
+			}
+		}
 	}
 }
 /*------------------------------
@@ -16,6 +33,27 @@
 		li:hover {
 			background-color: #fff;
 			opacity: 0.9;
+		}
+	}
+}
+/*------------------------------
+		FOOTER
+-------------------------------*/
+.content-info {
+	.container {
+		.contact-details {
+			position: absolute;
+			bottom: 20px;
+			display: inline-block;
+			a:hover, a:active, a:focus {
+				text-decoration: none;
+			}
+		}
+		.social-links {
+			position: absolute;
+			bottom: 20px;
+			display: inline-block;
+			right: 0;
 		}
 	}
 }
@@ -40,5 +78,47 @@
 		li+li {
 			border-left: 1px solid #fff;
 		}
+	}
+}
+.site-video {
+	.row {
+		width: 90%;
+	}
+}
+.account-types {
+	width: 80%;
+	.row {
+		&>div {
+			background-size: 42%;
+		}
+		.account-card {
+			width: 70%; 
+			ul {
+				height: 80px;
+			}
+		}
+	}
+}
+.practice-compete {
+	.register-button {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+	}
+}
+.lessons {
+    min-height: 370px;
+	.register-button {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+	}
+}
+.bridge-holidays {
+    min-height: 370px;
+	.register-button {
+		position: absolute;
+		bottom: 0;
+		left: 9%;
 	}
 }
