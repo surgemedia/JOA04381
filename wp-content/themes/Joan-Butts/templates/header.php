@@ -4,8 +4,8 @@
       <div class="logo-container">
         <a class="brand col-md-4 col-sm-6 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
           <?php  
-            // $image = get_field('logo','option');
-            if($image){
+            $image = get_field('logo','option');
+            if(strlen($image) > 0){
           ?>
           <img src="<?php echo $image['url']; ?>" alt="<?php bloginfo('name'); ?>" width="<?php echo $image['width']; ?>" height="<?php echo $image['height']; ?>">
         <?php } else{ ?>
