@@ -17,6 +17,8 @@
 @import "layouts/_pages";
 @import "layouts/_posts";
 @import "layouts/home";
+@import "layouts/_upcoming-events";
+
 
 @media (max-width: $screen-xs-max) {
 	@import "layouts/_res-xs.scss";

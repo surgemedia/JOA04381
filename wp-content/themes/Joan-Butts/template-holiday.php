@@ -4,80 +4,106 @@ Template Name: Holiday Page
 */
 ?>
 
+<div class="breadcrumbs">
+    <?php if(function_exists('bcn_display'))
+    {
+    bcn_display();
+    }?>
+</div>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <?php the_post_thumbnail( 'single-post-thumbnail', array('class' => 'home-intro-img')); ?>
+
+    <header class="article-header">
+
+        <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+
+        </header> <!-- end article header -->
+
+
+ <section id="upcoming-events" class="entry-content clearfix" itemprop="articleBody">
+            <?php the_content(); ?>
+            <ul id="holiday-list">
+            <?php // WP_Query arguments
+				$args = array (
+					'post_type'              => array( 'tribe_events' ),
+					'posts_per_page'         => '-1',
+					// 'order'                  => 'ASC',
+					'orderby'                => 'date'
+					);
+
+				// The Query
+				$event_query = new WP_Query( $args );
 			
-							<div class="breadcrumbs">
-							    <?php if(function_exists('bcn_display'))
-							    {
-							        bcn_display();
-							    }?>
-							</div>
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				
+				// The Loop
+				if ( $event_query->have_posts() ) {
+					while ( $event_query->have_posts() ) {
+						$event_query->the_post();  ?>
+					<?php 
+				$the_event = get_post();
+				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
+				 ?>
+				 <?php if( strtotime($text_date) > strtotime('now') ) { ?>
+                <li>
+                    <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
+                    <h3><?php the_title(); ?></h3>
+                    <h5 class="date-blue"><?php echo $text_date ?></h5>
+                    <p>  <?php the_content(); ?></p>
+                    <div class="holiday-buttons">
+                        <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
+                        <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
+                        <a target="_blank" class="btn pull-right" href="/holidays/register/">Register your interests</a>
+                    </div>
+                </li>
+           
+			<?php
+		}	
+			}
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-								<?php the_post_thumbnail( 'single-post-thumbnail', array('class' => 'home-intro-img')); ?>
-									
-									<header class="article-header">
-	
-										<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-										
-									</header> <!-- end article header -->
-									
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-									
-									<?php if(get_field('holidays')): ?>
- 
-										<ul id="holiday-list">
-									 
-										<?php while(has_sub_field('holidays')): ?>
-									 
-											<li>
-												<img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
-												<h2><?php the_sub_field('holiday_name'); ?></h2>
-												<h3 class="date-blue"><?php the_sub_field('holiday_date'); ?></h3>
-												<p><?php the_sub_field('holiday_description'); ?></p>
-												<div class="holiday-buttons">
-												<a class="gray-button button-margin" href="<?php the_sub_field('flyer_upload'); ?>">Flyer</a>
-												<a class="gray-button" href="<?php the_sub_field('schedule_upload'); ?>">Schedule</a>
-												<a class="button float-right-clean" href="/holidays/register/">Register your interests</a>
-												<?php //the_sub_field('current_past'); ?>
-												</div>
-											</li>
-									 
-										<?php endwhile; ?>
-									 
-										</ul>
-									 
-									<?php endif; ?>
-							</section> <!-- end article section -->
+				} else {
+					// no posts found
+				}
 
-								<footer class="article-footer">
-									<?php the_tags('<span class="tags">' . __('Tags:', 'jbbtheme') . '</span> ', ', ', ''); ?>
+				// Restore original Post Data
+				wp_reset_postdata();
 
-								</footer> <!-- end article footer -->
+			?>
+			 </ul>
+            </section> <!-- end article section -->
+<?php /* ?>
+        <section class="entry-content clearfix" itemprop="articleBody">
+            <?php the_content(); ?>
 
-								<?php comments_template(); ?>
+            <?php if(get_field('holidays')): ?>
 
-							</article> <!-- end article -->
+            <ul id="holiday-list">
 
-							<?php endwhile; else : ?>
+                <?php while(has_sub_field('holidays')): ?>
 
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e("Oops, Post Not Found!", "jbbtheme"); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "jbbtheme"); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e("This is the error message in the page.php template.", "jbbtheme"); ?></p>
-										</footer>
-									</article>
+                <li>
+                    <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
+                    <h2><?php the_sub_field('holiday_name'); ?></h2>
+                    <h3 class="date-blue"><?php the_sub_field('holiday_date'); ?></h3>
+                    <p><?php the_sub_field('holiday_description'); ?></p>
+                    <div class="holiday-buttons">
+                        <a class="gray-button button-margin" href="<?php the_sub_field('flyer_upload'); ?>">Flyer</a>
+                        <a class="gray-button" href="<?php the_sub_field('schedule_upload'); ?>">Schedule</a>
+                        <a class="button float-right-clean" href="/holidays/register/">Register your interests</a>
+                        <?php //the_sub_field('current_past'); ?>
+                    </div>
+                </li>
 
-							<?php endif; ?>
+                <?php endwhile; ?>
 
+            </ul>
 
-
-						<?php //get_sidebar(); ?>
-
-
+            <?php endif; ?>
+            </section> <!-- end article section -->
+<?php */ ?>
+           
+                </article> <!-- end article -->
+                <?php endwhile; else : ?>
+                
+                <?php endif; ?>
+                <?php //get_sidebar(); ?>
