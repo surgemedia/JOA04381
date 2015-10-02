@@ -16,7 +16,7 @@
     				$links = get_field('social_links','option');
     				for($i=0; $i<count($links); $i++) {
     			?>
-    					<li><a href="<?php echo $links[$i][link] ?>"><i class="glyphicon glyphicon-pencil <?php echo $links[$i][icon] ?>"></i></a></li>
+    					<li><a target="_blank" href="<?php echo $links[$i][link] ?>"><i class="<?php echo $links[$i][icon] ?>"></i></a></li>
     			<?php
     				}
     			?>

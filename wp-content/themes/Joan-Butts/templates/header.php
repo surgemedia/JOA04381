@@ -4,7 +4,7 @@
       <div class="logo-container">
         <a class="brand col-md-4 col-sm-6 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
           <?php  
-            // $image = get_field('logo','option');
+            $image = get_field('logo','option');
             if($image){
           ?>
           <img src="<?php echo $image['url']; ?>" alt="<?php bloginfo('name'); ?>" width="<?php echo $image['width']; ?>" height="<?php echo $image['height']; ?>">
@@ -39,9 +39,9 @@
           }
           else {
         ?>
-            <div class="login-container">
-              <a class="button pull-right" data-toggle="modal" data-target="#mylogin" >Login <i class="dashicons dashicons-awards"></i></a>
-              <a class="button pull-right pink" href="/register">Sign Up<i class="dashicons dashicons-awards"></i></a>
+            <div class="login-container text-right">
+              <a class="button" href="/register"><i class="icon-heart"></i>Register</a>
+              <a class="button" data-toggle="modal" data-target="#mylogin" ><i class="icon-spade" ></i> Login</i></a>
             </div>
         <?php
           }

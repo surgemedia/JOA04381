@@ -8,7 +8,7 @@
 			display: inline-block;
 			float: none;
 			img {
-				max-width: 100%;
+				max-width: 95%;
 				height: auto;
 			}
 		}
@@ -25,6 +25,18 @@
 			text-align: left;
 			h2 {
 				margin: 0;
+			}
+		}
+	}
+	.login-container {
+		a {
+			color: $font-color;
+			display: inline-block;
+    		margin-right: 10px;
+    		text-transform: uppercase;
+			i {
+				color: $red;
+				margin-right: 10px;
 			}
 		}
 	}

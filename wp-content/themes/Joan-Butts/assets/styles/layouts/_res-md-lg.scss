@@ -16,6 +16,14 @@
 	    top: 0;
 	    right: 0;
 	}
+	.login-container {
+		a {
+			cursor: pointer;
+			&:hover, &:active, &:focus {
+				text-decoration: none; 
+			}
+		}
+	}
 }
 /*------------------------------
 		NAVIGATION
@@ -45,6 +53,7 @@
 			position: absolute;
 			bottom: 20px;
 			display: inline-block;
+			right: 0;
 		}
 	}
 }

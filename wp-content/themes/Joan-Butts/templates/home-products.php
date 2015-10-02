@@ -59,7 +59,7 @@
 					</div> <!-- Close of carousel-inner-->
 					<!-- Controls -->
 					<a class="right carousel-control" href="#products-carousel" role="button" data-slide="next">
-					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="icon-chevron right" aria-hidden="true"></span>
 					    <span class="sr-only">Next</span>
 					    <span class="more">More</span>
 					</a>

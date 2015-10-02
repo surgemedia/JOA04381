@@ -14,6 +14,7 @@
 			    display: inline-block;
 			    width: 100%;
 			    .link-text {
+			    	font-family: 'Open Sans', sans-serif;
 			    	font-weight: normal;
 			    	padding: 0 30px;
 			    	vertical-align: middle;
@@ -53,9 +54,10 @@
     			width: 20%;
     			float: left;
     			padding: 10px 20px;
-    			border-right: 1px solid $theme-blue;
+    			border-right: 1px solid $border-blue;
+    			height: 70px;
     			&:first-child {
-    				border-left: 1px solid $theme-blue;
+    				border-left: 1px solid $border-blue;
     			}
     			p {
     				margin: 0;
@@ -180,9 +182,10 @@
 			padding-left: 1px;
 		}
 		.image-container {
-			height: 230px;
+			height: 210px;
 			overflow: hidden;
-			width: 85%;
+			width: 75%;
+    		margin: 0 auto;
 			img {
 				max-width: 100%;
 				height: auto;
@@ -225,6 +228,11 @@
 		    font-weight: normal;
 		    font-size: 14px;
 		    padding: 6px 0;
+    	}
+    	.icon-chevron {
+    		color: $grey;
+		    font-size: 80px;
+		    top: 15%;
     	}
     }
 }
