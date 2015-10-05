@@ -31,8 +31,7 @@
 #primary-navigation {
 	.navbar-nav {
 		li:hover {
-			background-color: #fff;
-			opacity: 0.9;
+			background: rgba(255,255,255,0.9);
 		}
 	}
 }
