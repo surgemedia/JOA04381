@@ -39,3 +39,13 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+/*===============================
+=            Support            =
+===============================*/
+add_theme_support('woocommerce');
+
+
+
+
+

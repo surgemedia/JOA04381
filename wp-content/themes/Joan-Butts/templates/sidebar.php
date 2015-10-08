@@ -2,8 +2,15 @@
 
 <?php 
 wp_reset_postdata();
+if(is_page()){
  $template_file = get_post_meta( get_the_ID(), '_wp_page_template', TRUE );
- //echo "Page Template ".$template_file;
+ echo "Page Template ".$template_file;
+
+} elseif(is_single()) {
+$template_file = get_post_type();
+ echo "Single ".$template_file;
+
+}
 //debug( get_post_meta( get_the_id() ));
 ?>
 <?php switch ($template_file) {
