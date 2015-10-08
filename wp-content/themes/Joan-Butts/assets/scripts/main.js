@@ -84,5 +84,14 @@
       $(this).parent().toggleClass('open');
   });
 
-
 })(jQuery); // Fully reference jQuery after this point.
+
+/*=============================================
+= complete lesson confirmation  =
+===============================================*/
+function completeLessonConfirmation() {
+    var res = confirm("Are you sure you want to mark this as completed?");
+    if(res == true) {
+      location.href = window.location+'?finished-lesson=true';
+    }
+}
