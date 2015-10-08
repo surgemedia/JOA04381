@@ -13,8 +13,7 @@
         <?php } ?>
 
         </a>
-      </div>
-      <div class="user-container col-md-4 col-sm-6 col-xs-12">
+         <div class="user-container col-md-4 col-sm-6 col-xs-12">
         <?php
           if(is_user_logged_in()) {
             $user = wp_get_current_user();
@@ -47,6 +46,8 @@
           }
         ?>
       </div>
+      </div>
+     
     </div>
     <nav class="navbar navbar-default col-xs-12 ">
       <div class="navbar-header">

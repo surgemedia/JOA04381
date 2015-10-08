@@ -54,7 +54,11 @@ function display_sidebar() {
       [
         'is_404',
         'is_front_page',
-        ['is_page','shop']
+        'is_product_category',
+        'is_shop',
+        // ['is_page_template', 'template-modules.php']
+
+
       ]
     );
 
