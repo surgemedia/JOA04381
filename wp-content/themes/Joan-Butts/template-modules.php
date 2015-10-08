@@ -5,8 +5,12 @@
 *
 */
 ?>
-  
-            <div class="breadcrumbs">
+<?php while (have_posts()) : the_post(); ?>
+  <?php get_template_part('templates/page', 'header-left'); ?>
+  <?php //get_template_part('templates/content', 'page'); ?>
+
+    
+<?php endwhile; ?>
                 <article>
                     <ul id="module_list">
                         <?php
@@ -80,8 +84,6 @@
                 $GLOBALS['level'] = xprofile_get_field_data( 'Bridge Skill', $user_id, $is_required = false );
                 
                 ?>
-                
-            </div>
-        </div>
+            
      
         <?php unset($GLOBALS['current_course_obj']); ?>

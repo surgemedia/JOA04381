@@ -20,12 +20,12 @@ $editSubscription = $response->getElementsByTagName("customerUrl")->item(0)->nod
 $upgradeSub = 'http://sites.fastspring.com/'.$store_id.'/product/'.$product_id.'?referrer="'.$the_user_id.'"';
  ?>
  <?php if(!(get_user_role()=='administrator') || (get_user_role()=='royal')){ ?>
- <a class="button" href="<?php echo $upgradeSub ?>">Upgrade</a>
+ <a class="btn btn-primary" href="<?php echo $upgradeSub ?>">Upgrade</a>
 <?php }; ?>
 <?php if( (get_user_role()=='administrator') || ( get_user_role()=='royal') ){ ?>
- <a class="button" href="<?php echo $editSubscription; ?>">Manage Subscription</a>
+ <a class="btn btn-primary" href="<?php echo $editSubscription; ?>">Manage Subscription</a>
  <?php }; //is_royal ?>
 <?php } else { ?>
- <a class="button" href="/register/">Register Today!</a>
+ <a class="btn btn-primary" href="/register/">Register Today!</a>
 <?php }; ?>
 

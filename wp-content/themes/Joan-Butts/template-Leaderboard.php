@@ -11,8 +11,8 @@
  get_template_part('templates/button', 'upgrade-user');
  ?>
  <?php if(is_user_logged_in()): ?>
-<a class="button button_red" href="/play/?game=set&amp;val=0">Practice Online</a>
-<a class="button button_red" href="/play/?game=set&amp;val=1">Compete Online</a>
+<a class="btn btn-primary" href="/play/?game=set&amp;val=0">Practice Online</a>
+<a class="btn btn-primary" href="/play/?game=set&amp;val=1">Compete Online</a>
 <?php endif; ?>
 <?php 
 global $bp;
@@ -59,19 +59,7 @@ $subscription_ref = bp_get_profile_field_data('field=fsid&amp;user_id='.$the_use
 <label><input checked="checked" name="field_6" type="radio" value="No" />no</label></div>
 </div>
 </div>
-<div class="submit"><input id="profile-group-edit-submit" name="profile-group-edit-submit" type="submit" value="Save Changes " /></div>
-<h2>Competition Results</h2>
-<strong>Hands played today</strong>
-<div id="resultsdisplay1">loading</div>
-<strong>Today's ladder</strong>
-<div id="resultsdisplay2">loading</div>
-<strong>Yesterday's ladder</strong>
-<div id="resultsdisplay3">loading</div>
-<strong>This week's ladder</strong>
-<div id="resultsdisplay4">loading</div>
-<strong>Overall</strong>
-<div id="resultsdisplay5">loading</div>
-<script src="http://bridge2go.com/Live/JavaScripts/Game/results.js"></script>
+<div class="btn btn-primary"><input id="profile-group-edit-submit" name="profile-group-edit-submit" type="submit" value="Save Changes " /></div>
 
 <?php 
 

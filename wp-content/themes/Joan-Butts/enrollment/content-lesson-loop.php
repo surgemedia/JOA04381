@@ -8,7 +8,7 @@
 			<?php the_title(); ?>
 			</h2>
 			</header> <!-- end article header -->
-			<section class="entry-content clearfix">
+			<section class="entry-content clearfix ">
 				<?php
 				$thumb_id = get_post_thumbnail_id();
 				
@@ -17,11 +17,11 @@
 				if (strpos($thumb_url,'wp-include') < 0) {
 				the_post_thumbnail();
 				} else {
-				echo '<div class="placeholder yellow"><span class="dashicons dashicons-welcome-learn-more"></span></div>';
+				echo '<div class="placeholder yellow col-lg-3 col-md-3 col-xs-3 pull-left hidden-xs"><span class="dashicons dashicons-welcome-learn-more"></span></div>';
 				}
 				
 				?>
-				<p>
+				<p class="col-lg-9 col-md-9 col-xs-12 pull-right">
 					<?php $rows = get_field('lessons_repeater');
 					$row = $rows[0]['lesson_overview'];
 					$b4trunk = implode(' ', array_slice(explode(' ', $row), 0, 50)). '... ';
@@ -36,3 +36,4 @@
 				</footer> <!-- end article footer -->
 				<?php getProgress( get_the_title() ); ?>
 				</article> <!-- end article -->
+			</footer>
