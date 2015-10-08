@@ -11,5 +11,6 @@
 <?php 
 get_template_part('templates/loop','account-types');
  get_template_part('templates/button', 'upgrade-user');
+echo do_shortcode('[theme-my-login login_template="theme-my-login/login-form.php"]');
 ?>
 <?php endwhile; ?>
