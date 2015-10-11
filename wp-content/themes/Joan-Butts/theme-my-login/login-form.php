@@ -23,11 +23,11 @@ Theme My Login will always look in your theme's directory first, before using th
 			<input name="rememberme" type="checkbox" id="rememberme<?php $template->the_instance(); ?>" value="forever" />
 			<label for="rememberme<?php $template->the_instance(); ?>"><?php esc_attr_e( 'Remember Me', 'theme-my-login' ); ?></label>
 		</p>
-		<p class="submit">
-			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Log In', 'theme-my-login' ); ?>" />
-			<input type="hidden" name="redirect_to" value="<?php $template->the_redirect_url( 'login' ); ?>" />
-			<input type="hidden" name="instance" value="<?php $template->the_instance(); ?>" />
-			<input type="hidden" name="action" value="login" />
+		<p id="submit" class="">
+			<input class="" type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Sign In', 'theme-my-login' ); ?>" />
+			<input class="" type="hidden" name="redirect_to" value="<?php $template->the_redirect_url( 'login' ); ?>" />
+			<input class="" type="hidden" name="instance" value="<?php $template->the_instance(); ?>" />
+			<input class="" type="hidden" name="action" value="login" />
 		</p>
 	</form>
 	<?php $template->the_action_links( array( 'login' => false ) ); ?>
