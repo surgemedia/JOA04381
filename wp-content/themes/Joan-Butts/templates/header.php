@@ -5,7 +5,7 @@
         <a class="brand col-md-4 col-sm-6 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
           <?php  
            $image = get_field('logo','option');
-            if(strlen($image) > 0){
+            if(strlen($image['url']) > 0){
           ?>
           <img src="<?php echo $image['url']; ?>" alt="<?php bloginfo('name'); ?>" width="<?php echo $image['width']; ?>" height="<?php echo $image['height']; ?>">
         <?php } else{ ?>
@@ -89,7 +89,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Login</h4>
+        <h4 class="modal-title" id="myModalLabel">Login to Play Bridge</h4>
       </div>
       <div class="modal-body">
         <?php echo do_shortcode('[theme-my-login login_template="theme-my-login/login-form.php"]'); ?>

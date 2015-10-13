@@ -30,6 +30,7 @@ if (!defined('DIST_DIR')) {
 /**
  * Define which pages shouldn't have the sidebar
  */
+
 function display_sidebar() {
   static $display;
 
@@ -55,10 +56,7 @@ function display_sidebar() {
         'is_404',
         'is_front_page',
         'is_product_category',
-        'is_shop',
-        // ['is_page_template', 'template-modules.php']
-
-
+        'is_shop'
       ]
     );
 

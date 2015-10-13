@@ -1,6 +1,11 @@
 .content-info {
+	 display: inline-block;
+    	width: 100%;
+	
+		 margin: 0em 0 0 0;
 	.container {
-		padding-top: 30px;
+		
+		 padding:4em 0 0 0;
 		position: relative;
 		.image-container {
 			text-align: center;
@@ -12,7 +17,7 @@
 				span {
 					display: inline-block;
 					color: $blue-dark;
-					font-weight: bold;
+					font-weight: bold; 
 					margin-right: 5px;
 				}
 			}
@@ -40,4 +45,5 @@
 footer.content-info {
     display: inline-block;
     width: 100%;
+
 }
