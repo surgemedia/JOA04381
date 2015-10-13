@@ -10,7 +10,7 @@
 <?php 
  get_template_part('templates/button', 'upgrade-user');
  ?>
- <?php if(is_user_logged_in()): ?>
+ <?php if((get_user_role() =='administrator' || get_user_role()=='royal') && !empty(get_user_role())): ?>
 <a class="btn btn-primary" href="/play/?game=set&amp;val=0">Practice Online</a>
 <a class="btn btn-primary" href="/play/?game=set&amp;val=1">Compete Online</a>
 <?php endif; ?>

@@ -18,8 +18,8 @@ $response = new DOMDocument();
 $response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$subscription_ref.'?user=apiuser&pass=bustleable');
 $editSubscription = $response->getElementsByTagName("customerUrl")->item(0)->nodeValue;
 $upgradeSub = 'http://sites.fastspring.com/'.$store_id.'/product/'.$product_id.'?referrer="'.$the_user_id.'"';
- ?>
- <?php if(!(get_user_role()=='administrator') || (get_user_role()=='royal')){ ?>
+?>
+ <?php if(get_user_role()=='administrator' || (get_user_role()=='free_member')){ ?>
  <a class="btn btn-primary" href="<?php echo $upgradeSub ?>">Upgrade</a>
 <?php }; ?>
 <?php if( (get_user_role()=='administrator') || ( get_user_role()=='royal') ){ ?>

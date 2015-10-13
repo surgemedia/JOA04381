@@ -2,7 +2,7 @@
 	<?php
 		$userRole = get_user_role();
 		$freeLesson = get_field('free_lesson');
-		if($userRole=='royal' || $freeLesson) {
+		if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {
 			$lessonHref = get_the_permalink();
 		}
 		else {
@@ -17,7 +17,7 @@
 			<h2 class="h2 news-heading">
 				<?php the_title(); ?>
 				<?php
-					if($userRole!='royal' && !$freeLesson) {
+					if(($userRole!='royal' && !$freeLesson) || empty(get_user_role())) {
 				?>
 						<i class="dashicons dashicons-admin-network"></i>
 				<?php

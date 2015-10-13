@@ -69,7 +69,7 @@ if(strlen($next_in_module) <= 1){
 					<?php 
 						$userRole = get_user_role();
 						$freeLesson = get_field('free_lesson');
-						if($userRole=='royal' || $freeLesson) {
+						if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {
 							$rows = get_field('lessons_repeater');
 							for ($i=0; $i <sizeof($rows) ; $i++) {
 								// Should wrapped in a tag?
@@ -114,10 +114,12 @@ if(strlen($next_in_module) <= 1){
 				<?php $GLOBALS['group_single_slug'] = $terms[0]->slug ; ?>
 				<a id="button1" class="button float-left" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
 				<?php 
-					if($userRole=='royal') {
+					if(($userRole =='administrator' || $userRole=='royal') && !empty(get_user_role())) {
 				?>
 						<a id="nav-next-button" class="button nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
 						<?php 
+					}
+					if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {
 							$the_title = get_the_title();
 							completeLessonButton( $the_title );
 						?>
