@@ -10,4 +10,9 @@ if ( is_user_logged_in() ) {
 	}
 }
 }
+function resetUser() {
+	if(get_user_role() !='administrator' && get_user_role()!='royal') {
+        wp_update_user(array('ID'=>getUser(),'role'=>'free_member'));
+    }
+}
 ?>

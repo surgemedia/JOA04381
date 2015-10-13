@@ -1,5 +1,6 @@
 
 <?php
+resetUser();
 $terms = wp_get_post_terms( $post->ID, 'modules');
 $current_term_slug = $terms[0]->slug;
 $included_lessons = array();
