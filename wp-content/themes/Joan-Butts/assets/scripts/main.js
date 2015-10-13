@@ -95,3 +95,12 @@ function completeLessonConfirmation() {
       location.href = window.location+'?finished-lesson=true';
     }
 }
+/*=============================================
+= reset progress confirmation  =
+===============================================*/
+function resetProgressConfirmation() {
+    var res = confirm("Are you sure you want to Reset your Progress? This will reset all your completed lessons & modules");
+    if(res == true) {
+      location.href = window.location+'/?reset';
+    }
+}

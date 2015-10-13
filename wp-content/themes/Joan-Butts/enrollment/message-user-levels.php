@@ -1,4 +1,4 @@
-<p>Welcome New Players to Joan Butts Bridge.</p>
+<p>Welcome <?php echo $GLOBALS['level']; ?> to Joan Butts Bridge.</p>
 <p>See your skill level increase as you complete modules.</p>
 <h4>New Player</h4>
 <p>Everyone has to start somewhere. This means you have completed 0 modules.</p>
@@ -8,3 +8,6 @@
 <p>You have completed more than half the modules.</p>
 <h4>Advanced Player</h4>
 <p>You have completed all the modules!</p>
+<button class="btn btn-primary" onclick="resetProgressConfirmation();">
+    Reset Progress <i class=" dashicons dashicons-update"></i>
+</button>

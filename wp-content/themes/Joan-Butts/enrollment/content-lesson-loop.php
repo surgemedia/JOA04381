@@ -1,11 +1,28 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+	<?php
+		$userRole = get_user_role();
+		$freeLesson = get_field('free_lesson');
+		if($userRole=='royal' || $freeLesson) {
+			$lessonHref = get_the_permalink();
+		}
+		else {
+			$lessonHref = 'javascript:void(0);';
+		}
+	?>
+	<a href="<?php echo $lessonHref ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 		<header class="article-header">
 			<?php
 			$user_id = bp_loggedin_user_id();
 			?>
 			<h2 class="h2 news-heading">
-			<?php the_title(); ?>
+				<?php the_title(); ?>
+				<?php
+					if($userRole!='royal' && !$freeLesson) {
+				?>
+						<i class="dashicons dashicons-admin-network"></i>
+				<?php
+					}
+				?>
 			</h2>
 			</header> <!-- end article header -->
 			<section class="entry-content clearfix ">

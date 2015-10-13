@@ -64,49 +64,68 @@ if(strlen($next_in_module) <= 1){
 					
 					<?php get_field('lesson_overview'); ?>
 			
-					</header> <!-- end article header -->
-					<section id="single-content" class="entry-content clearfix" itemprop="articleBody">
+				</header> <!-- end article header -->
+				<section id="single-content" class="entry-content clearfix" itemprop="articleBody">
+					<?php 
+						$userRole = get_user_role();
+						$freeLesson = get_field('free_lesson');
+						if($userRole=='royal' || $freeLesson) {
+							$rows = get_field('lessons_repeater');
+							for ($i=0; $i <sizeof($rows) ; $i++) {
+								// Should wrapped in a tag?
+								$book_id = $rows[$i]['book_suggest'];
+								echo $rows[$i]['title'];
+								if ($rows[$i]['lesson_video']): ;
+					?>
+									<div class="embed-container">
+										<?php echo $rows[$i]['lesson_video']; ?>
+									</div>
+								<?php endif; ?>
+								<div class="actions">
+								<?php
+									$hands = $rows[$i]["lesson_hand"];
+									if((get_user_role()=='administrator') || (get_user_role()=='royal') ){
+										echo apply_filters( 'the_content',$hands); 
+									} else {
+										if(strlen($rows[$i]["lesson_hand"]) > 0){
+											get_template_part('enrollment/message', 'please-login-hands' );
+										}
+									}
+								?>
+								<!-- <p><a class="button" href="<?php //echo get_permalink($book_id); ?>">Purchase book for more help</a></p> -->
+								</div>
+								<?php echo $rows[$i]['lesson_content'];  ?>
+							<?php }
+						} 
+						else {
+					?>
+							<p>Lesson available only for Royal Members</p>
+							<button class="btn btn-primary" onclick="location.href = '/upgrade'">
+                              	Upgrade Now! <i class=" dashicons dashicons-welcome-learn-more"></i>
+                          	</button>
+					<?php
+						}
+					?>	
 						
-						<?php $rows = get_field('lessons_repeater');
-
-						for ($i=0; $i <sizeof($rows) ; $i++) {
-						// Should wrapped in a tag?
-						$book_id = $rows[$i]['book_suggest'];
-						echo $rows[$i]['title']; ?>
-						<?php	if ($rows[$i]['lesson_video']): ;?>
-						<div class="embed-container">
-							<?php echo $rows[$i]['lesson_video']; ?>
-						</div>
-						<?php endif; ?>
-						<div class="actions">
-							<?php
-							$hands = $rows[$i]["lesson_hand"];
-							if((get_user_role()=='administrator') || (get_user_role()=='royal') ){
-								echo apply_filters( 'the_content',$hands); 
-							} else {
-								if(strlen($rows[$i]["lesson_hand"]) > 0){
-								get_template_part('enrollment/message', 'please-login-hands' );
-								}
-							}
-							?>
-							<!-- <p><a class="button" href="<?php //echo get_permalink($book_id); ?>">Purchase book for more help</a></p> -->
-						</div>
-						<?php echo $rows[$i]['lesson_content'];  ?>
-						<?php }?>
-						</section> <!-- end article section -->
-						</article> <!-- end article -->
+				</section> <!-- end article section -->
+			</article> <!-- end article -->
 						
-						<div class="two_buttons">
-							<?php $GLOBALS['group_single_slug'] = $terms[0]->slug ; ?>
-							<a id="button1" class="button float-left" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
-							<?php ?>
-							<a id="nav-next-button" class="button nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
-							<?php  ?>
-							<?php 
-							 $the_title = get_the_title();
+			<div class="two_buttons">
+				<?php $GLOBALS['group_single_slug'] = $terms[0]->slug ; ?>
+				<a id="button1" class="button float-left" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
+				<?php 
+					if($userRole=='royal') {
+				?>
+						<a id="nav-next-button" class="button nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
+						<?php 
+							$the_title = get_the_title();
 							completeLessonButton( $the_title );
-							?>
-						</div>
+						?>
+				<?php
+					}
+				?>
+				
+			</div>
 						<?php endwhile;?>
 						<?php endif;?>
 						<?php //get_sidebar('learnsingle'); ?>

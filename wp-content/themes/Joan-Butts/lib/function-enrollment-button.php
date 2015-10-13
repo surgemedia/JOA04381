@@ -15,13 +15,13 @@ function completeLessonButton($lesson) {
 	} else { $url_var = false;}
 	$user_id = getUser();
 	$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id, $is_required = false);	
-
+	// debug($completedlesson);
 	//echo "<br><br><hr>";
 	$texture_title = wptexturize($lesson);
 	$texture_list = wptexturize($completedlesson);
 
-	//debug("texturize ".wptexturize($lesson));
-	//debug("texturize ".wptexturize($completedlesson));
+	// debug("texturize ".wptexturize($lesson));
+	// debug("texturize ".wptexturize($completedlesson));
 	//debug($encoded_list);
 
 	// debug(urlencode($completedlesson));
@@ -37,11 +37,24 @@ function completeLessonButton($lesson) {
 		get_template_part('enrollment/part', 'lesson-button' ); //"Complete Lesson";
 		} 
 	if($url_var){	
-		$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id, $is_required = false);	
-		$completedlesson .= $lesson.",";
-		debug($completedlesson);
-		xprofile_set_field_data( 'Completed Lessons', $user_id, $completedlesson, $is_required = false );
+		$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id);
+		// debug($completedlesson)	;
+		$completedlesson = trim($completedlesson,",");
+		// debug($completedlesson)	;
+ 		$completedlesson = explode(",",$completedlesson);
+ 		// debug($completedlesson)	;
+ 	  	if(!in_array($lesson, $completedlesson)) {
+ 	  		$completedlesson = implode(",", $completedlesson);
+ 	  		// debug($completedlesson)	;
+			$completedlesson .= ",".$lesson;
+			// debug($completedlesson)	;
+			xprofile_set_field_data( 'Completed Lessons', $user_id, $completedlesson, $is_required = false );
+			// debug($completedModule)	;
+		}	
+		// debug($completedlesson);
+		updateCompletedModules(); //function to update completed modules in buddypress fields
 		get_template_part('enrollment/message', 'currently-completed' ); //"Congrats,You completed the lesson";
+
 	}
 	
 }
@@ -52,8 +65,13 @@ function getProgress($lesson){
 	//sanitized
 	$texture_title = wptexturize($lesson);
 	$texture_list = wptexturize($status);
+	$texture_list = trim($texture_list,",");
+	$texture_list = explode(",",$texture_list);
+	// debug($texture_list);
+	// debug(in_array($texture_title,$texture_list));
 	$GLOBALS['count_complete'] = 1;
-	if (false != strpos($texture_list,$texture_title)) {
+	// if (false != strpos($texture_list,$texture_title)) {
+	if (in_array($texture_title,$texture_list)) {
 		get_template_part('enrollment/badge', 'completed' ); }
 	}
 

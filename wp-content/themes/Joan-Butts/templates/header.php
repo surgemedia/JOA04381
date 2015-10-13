@@ -24,14 +24,27 @@
                 <?php  
                   if (get_user_role()=='royal') {  
                 ?>
-                    <i></i>
+                    <i></i> <!--For Crown-->
                 <?php 
                   } 
                 ?>
-                  <div class="display-img col-md-4"><?php echo $avatarurl; ?></div>
+                  <div class="display-img col-md-4">
+                      <?php echo $avatarurl; ?>
+                      <a href="<?php echo wp_logout_url(); ?>">Logout</a>
+                  </div>
                   <div class="current_info col-md-8">
-                    <h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></a></h2>
-                    <span><?php  echo getSkillLevel(); ?></span>
+                      <h2><a href="<?php echo site_url().'/members/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></a></h2>
+                      <span><?php  echo getSkillLevel(); ?></span>
+                      <?php  
+                        if(get_user_role()!='royal') {
+                      ?>
+                          <button class="btn btn-primary" onclick="location.href = '/upgrade'">
+                              Upgrade Now! <i class=" dashicons dashicons-welcome-learn-more"></i>
+                          </button>
+                      <?php
+                        } 
+                      ?>
+                    
                   </div>
               </div>
         <?php

@@ -29,6 +29,7 @@ $sage_includes = [
   'lib/function-enrollment-button.php',  // Get Enrollment
   'lib/function-debug.php',  // Get Enrollment
   'lib/fastspring.php',  // Fast Spring Class
+  'lib/function-update-completed-modules.php',  // Update completed modules
 ];
 
 foreach ($sage_includes as $file) {
