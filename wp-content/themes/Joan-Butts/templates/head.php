@@ -5,5 +5,5 @@
   <?php wp_head(); ?>
   <link href='http://fonts.googleapis.com/css?family=Bitter|Rokkitt|Bree+Serif|Slabo+27px' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>	
-
+  <link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=4.3.1" type="text/css" media="all">
 </head>
