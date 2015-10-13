@@ -6,10 +6,14 @@
 */
 ?>
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header-left'); ?>
-  <?php //get_template_part('templates/content', 'page'); ?>
+    <?php get_template_part('templates/page', 'header-left'); ?>
+    <?php //get_template_part('templates/content', 'page'); ?>
 
-    
+    <?php //Resets 'Completed Modules' and 'Completed Lessons' in user extended profile
+        if(isset($_GET['reset'])) {
+            resetProgress();
+        }
+    ?>
 <?php endwhile; ?>
                 <article>
                     <ul id="module_list">

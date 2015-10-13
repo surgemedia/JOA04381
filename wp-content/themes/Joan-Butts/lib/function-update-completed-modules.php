@@ -3,7 +3,7 @@ function updateCompletedModules() {
 	$user_id = getUser();
 	$status = xprofile_get_field_data( 'Completed Lessons', $user_id );
    	$status = wptexturize($status);
-   	$texture_list = rtrim($status,",");
+   	$texture_list = trim($status,",");
 	$texture_list = explode(",",$texture_list);
 	if(strlen($status)>0) {
 		// echo "if loop<br>";
@@ -51,7 +51,7 @@ function updateCompletedModules() {
  			    foreach ($tax_terms['remaining'] as $remaining => $value) {
  			    	if($value==0) {
  			    		$completedModule = xprofile_get_field_data( 'Completed Modules', $user_id);
- 			    		$completedModule = rtrim($completedModule,",");
+ 			    		$completedModule = trim($completedModule,",");
  			    		$completedModule = explode(",",$completedModule);
  			    		if(!in_array($remaining, $completedModule)) {
  			    			$completedModule = implode(",", $completedModule);
@@ -74,4 +74,12 @@ function updateCompletedModules() {
 		// echo "else loop<br>";
 		xprofile_set_field_data( 'Completed Modules', $user_id, '', $is_required = false );
 	}
+}
+
+function resetProgress() {
+	$user_id = getUser();
+	xprofile_set_field_data( 'Completed Modules', $user_id, '', $is_required = false );
+	xprofile_set_field_data( 'Completed Lessons', $user_id, '', $is_required = false );
+    xprofile_set_field_data( 'Bridge Skill', $user_id, 'New Player', $is_required = false );
+    $GLOBALS['level'] = 'New Player';
 }

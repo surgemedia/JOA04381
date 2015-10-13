@@ -39,7 +39,7 @@ function completeLessonButton($lesson) {
 	if($url_var){	
 		$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id);
 		// debug($completedlesson)	;
-		$completedlesson = rtrim($completedlesson,",");
+		$completedlesson = trim($completedlesson,",");
 		// debug($completedlesson)	;
  		$completedlesson = explode(",",$completedlesson);
  		// debug($completedlesson)	;
@@ -65,7 +65,7 @@ function getProgress($lesson){
 	//sanitized
 	$texture_title = wptexturize($lesson);
 	$texture_list = wptexturize($status);
-	$texture_list = rtrim($texture_list,",");
+	$texture_list = trim($texture_list,",");
 	$texture_list = explode(",",$texture_list);
 	// debug($texture_list);
 	// debug(in_array($texture_title,$texture_list));
