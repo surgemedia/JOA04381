@@ -23,10 +23,9 @@
 	        </div>
 	        <div class="modal-body">
 	            <iframe width="100%" height="515" src="<?php the_field('site_video'); ?>" frameborder="0" allowfullscreen></iframe>
-	        </div>
-	        <div class="modal-footer">
-	            
-	            <a href="/register"  class="button">Register Today!</a>
+	            <?php if(!is_user_logged_in()) { ?>
+	            <a href="/register"  class="btn btn-primary clearfix">Register Today!</a>
+	            <?php } ?>
 	        </div>
 	    </div>
 	</div>

@@ -35,7 +35,7 @@
 				display: inline-block;
 			    background: #fff;
 			    padding: 0.4em;
-			    border: 1px solid $pink;
+			    border: 1px solid $grey;
 			    // border-radius: 0.3em;
 			    margin-right:0.5em;
 			    p {
@@ -53,24 +53,24 @@
 			    }
 	    	}
 }
-#module_list{
-	 list-style:none;
-	 margin: 0;
-	 padding: 0;
-	 .module-loop{
+
+@mixin lessson($color) {
 		padding: 1em 1em;
 	    transition: 0.3s all ease;
-	    border-bottom: 1px solid #FFFFFF;
+	    border-bottom: 10px solid $color;
 	    color: #282828;
 	    list-style:none;
-	    //border-bottom: 3px solid $pink;
+	    background:$grey-light;
 	    display:inline-block;
 	    width:100%;
+	    
 	    a {
 	    	    text-decoration: none;
    				font-size: 1.05em;
-   				color:$pink;
+   				color:#000;
+
 	    }
+
 	    h2 {
 	    	    color: #000;
 			    font-size: 1.7em;
@@ -83,30 +83,57 @@
 	    	    color: #282828;
 	    }
 	    &:hover {
-			background:$blue;
-			padding: 1.5em 1em;
-    		// border-radius: 0.5em;
-    		border:0px;
     		h2 {
-    			color:#fff;
+    			color:$color;
+    			text-decoration:underline;
     		}
-    		p {
-    			 color: #4d4d4d;
-    		}
+    		p {	 color: #4d4d4d;	}
     		.each_modules_fields  {
     			li {
-    			background:$red;
-    			border: 3px solid $red;
-    			p {color:#fff;}
+    			background:$color;
+    			border: 3px solid $color;
+    			p {color:$color;}
     			a {color:#fff;}
     			span{color:#fff;}
     			}
     		}
 		}
-	    }
-		
-		}
+		.placeholder {
+		    display: inline-block;
+		    width: 135px;
+		    float: left;
+		    height: 135px;
+		    border-radius: 100%;
+		    background-color: $blue;
+		    color:#fff;
+		    span {
 
+		    text-align: center;
+		    width: 100%;
+		    line-height: 135px;
+		    font-size: 5em;
+			}
+	    }
+	    section.entry-content{
+	 	p {
+	 		line-height: 1.8em;
+	 	}
+	 }
+}
+
+
+
+
+
+
+#module_list{
+	 list-style:none;
+	 margin: 0;
+	 padding: 0;
+	 .module-loop{
+		@include lessson($pink);
+		}
+}
 
 
 #module-lessons{
@@ -115,26 +142,9 @@
     	padding: 2em 1em;
     	border-bottom: 1px solid #efefef;
     	transition: 0.5s all ease;
-    	.placeholder {
-		    display: inline-block;
-		    width: 135px;
-		    float: left;
-		    height: 135px;
-		    border-radius: 100%;
-		    background-color: #d1d1d1;
-		    span {
-		    text-align: center;
-		    width: 100%;
-		    line-height: 135px;
-		    font-size: 5em;
-			}
+    	@include lessson($blue);
 	 }
-	 section.entry-content{
-	 	p {
-	 		line-height: 1.8em;
-	 	}
-	 }
-}
+	 
 }
 .single-lesson {
 	#single-content {

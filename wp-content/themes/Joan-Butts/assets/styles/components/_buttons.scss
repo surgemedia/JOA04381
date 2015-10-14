@@ -9,15 +9,31 @@
 	background: $red;
 	border:0px;
 }
+.btn-default {
+	background:$grey;
+	border:0px;
+}
+.btn-blue {
+	background:$blue;
+	border:0px;
+}
+.btn-yellow {
+	background:$yellow;
+	border:0px;
+}
 
 #submit {
 	background:$red;
 	border:0px;
 	display: inline-block;
-	padding:0.5em 2em;
 	color:#fff;
+	padding:0em;
 	input {
+	padding:0px;
+		display:inline;
 		background:none;
 		border:0px;
+		font-size: 1em;
 	}
 }
+

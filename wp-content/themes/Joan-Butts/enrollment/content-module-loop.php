@@ -11,6 +11,7 @@ echo $GLOBALS['current_course_obj']->slug; ?>">
   <h2>  <?php
 $currentModuleName = $GLOBALS['current_course_obj']->name;
 echo $currentModuleName; ?></h2>
+</a>
   
 	<?php
 $module_lessons = array();
@@ -68,5 +69,5 @@ if (getEnrollment($user_id) == $GLOBALS['current_course_obj']->name) {
     get_template_part('enrollment/message', 'already-enrolled');
 }
 ?>
-    </a>
+             
  </li>

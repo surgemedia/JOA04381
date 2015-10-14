@@ -1,5 +1,7 @@
 .modal-dialog {
 	border-radius:0px;
+	width: 62vw;
+
 	.modal-content {
 	border-radius:0px;
 	box-shadow:none;
@@ -7,5 +9,66 @@
 }
 .modal-backdrop {
 	background:#fff;
-	opacity:0.8;
+	opacity:0.8 !important;
 }
+
+.modal-body {
+  position: relative;
+  padding: $modal-inner-padding;
+  padding-bottom:2em;
+}
+#site-video-modal {
+	.btn {
+		width:100%;
+	}
+}
+
+
+#mylogin { 
+	.modal-body {
+	color:#fff;
+	font-size:0;
+	}
+	ul#login-action {
+		display:inline-block;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		li {
+			display:inline-block;
+			a {
+				padding:1em;
+			}
+		}
+		li:first-child{
+			input { font-weight:bold; }
+		}
+	}
+}
+
+#theme-my-login1 {
+	font-size:14px !important;
+}
+.forgetmenot {
+	color:#000;
+}
+.login {
+	.input-group-addon,input {
+	font-size:1.3em;
+	border-radius:0px;
+	border:1px solid $blue;
+	}
+	ul.tml-action-links {
+		display:none;
+	}
+}
+.input-group-addon {
+	background:$blue;
+	color:#fff;
+	}
+.input-group {
+	margin: 1em 0;
+}
+
+
+

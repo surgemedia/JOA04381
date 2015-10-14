@@ -4,7 +4,8 @@ use Roots\Sage\Config;
 use Roots\Sage\Wrapper;
 
 ?>
-
+<?php //checks if its the game page ?>
+<?php if(basename(get_permalink()) != 'play'): ?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
@@ -42,4 +43,9 @@ use Roots\Sage\Wrapper;
       wp_footer();
     ?>
   </body>
-</html>
+
+<?php else: ?>
+<?php //only gets game page if the slug is play ?>
+
+          <?php include Wrapper\template_path(); ?>
+<?php endif; ?>

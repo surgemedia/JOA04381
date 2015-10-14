@@ -73,12 +73,15 @@
 }
 .site-video {
 	background-color: $theme-blue;
-	padding: 20px 0;
+	// padding: 20px 0;
 	.row {
 		margin: 0 auto;
     	.video-container {
     		position: relative;
     		cursor: pointer;
+    		img {
+    			margin: 4em 0 0 0;
+    		}
 	    	.video-tag {
 	    		text-transform: uppercase;
 			    color: #FFF;
@@ -90,7 +93,8 @@
 			    padding-top: 5px;
 			    position: absolute;
 			    width: 94%;
-			    bottom: 30px;
+			    bottom: 60px;
+			    font-weight:bold;
 	    	}
 	    }
     	.video-title {
@@ -105,10 +109,10 @@
     	text-align: center;
     }
     .row {
-    	&>div:first-child {
+    	&>div:last-child {
     		background-image: url('/wp-content/uploads/2015/10/flower_bg.png');
     	}
-    	&>div:last-child {
+    	&>div:first-child {
     		background-image: url('/wp-content/uploads/2015/10/spade_bg.png');
     	}
     	&>div {
@@ -134,6 +138,7 @@
 .practice-compete {
 	background-color: $blue-dark;
 	position: relative;
+	min-height:35vh;
 	.image-container {
 		padding: 5% 10% 30px;
 		img {

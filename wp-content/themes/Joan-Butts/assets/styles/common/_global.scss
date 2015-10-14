@@ -9,6 +9,14 @@ body {
 	}
 	a {
 		color:$red;
+		&:hover {
+			color:$blue;
+		}
+	}
+	.btn-primary:active, .comment-form input[type=submit]:active,
+	.btn-primary:hover, .comment-form input[type=submit]:hover {
+		background:$blue;
+		border-color:$blue;
 	}
 	input.btn,input[type=submit].btn {
 		background-color:transparent;

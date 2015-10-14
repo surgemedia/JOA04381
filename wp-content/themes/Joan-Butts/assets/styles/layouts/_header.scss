@@ -1,10 +1,13 @@
+
 .page-header {
 	border-bottom: 0;
 	// text-align: center;
 	position: relative;
-    overflow: hidden;
+    // overflow: hidden;
+
     .logo-container {
     	text-align: right;
+    	padding-bottom:2em;
 		a {
 			display: inline-block;
 			float: none;
@@ -50,6 +53,43 @@
 .page-header.text-left {
 		margin-top: 0em;;
 	}
+#header-user {
+	position: relative;
+	display: inline-block;
+	.display-img {
+		position: relative;
+	.crown {
+		background:url('../images/crown.png');
+		z-index:99;
+		height:40px;
+		width:40px;
+		// -webkit-background-size: fill;
+		background-size: 100%;
+		position: absolute;
+		top:-1.7em;
+		right: 32%;
+		}
+	}
+	.actions {
+		margin: 0;
+		margin-top: 1em;
+		padding: 0;
+		display: inline-block;
+		list-style-type: none;
+		width:100%;
+		li {
+			display:inline-block;
+			float:left;
+			width:50%;
+			a {
+				display:inline-block;
+			}
+		}
+	}
+}
+
+
+
 //  NAVIGATION
 
 .navbar-default {
