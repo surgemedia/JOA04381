@@ -13,6 +13,7 @@
         if(isset($_GET['reset'])) {
             resetProgress();
         }
+        resetUser();
     ?>
 <?php endwhile; ?>
                 <article>
@@ -61,36 +62,41 @@
                 // get_template_part('lib/function','update-completed-modules.php' );
                 updateCompletedModules();
                 $completedmodules = xprofile_get_field_data( 'Completed Modules', $user_id, $is_required = false);
-                $completedmodules = explode(',', $completedmodules);
-                // debug(count($modules));
-                for($i=0;$i<count($modules);$i++) {
-                    // debug($i);
-                    if(in_array($modules[$i]->name,$completedmodules)) {
-                        // echo "inside if with i = ".$i."<br>";
-                        if($i>=2) { 
-                            $GLOBALS['level'] =  "Beginner";
-                        // echo "inside if1 with i = ".$i."<br>";
+                if(!empty($completedmodules)) {
+                    $completedmodules = explode(',', $completedmodules);
+                    // debug(empty($completedmodules));
+                    for($i=0;$i<count($modules);$i++) {
+                        debug($i);
+                        if(in_array($modules[$i]->name,$completedmodules)) {
+                            echo "inside if with i = ".$i."<br>";
+                            if($i>=2) { 
+                                $GLOBALS['level'] =  "Beginner";
+                            echo "inside if1 with i = ".$i."<br>";
 
+                            }
+                            if($i>=ceil(count($modules)/2)) {
+                                $GLOBALS['level'] =  "Intermediate";
+                            echo "inside if2 with i = ".$i."<br>";
+
+                            }
+                            if($i>=(count($modules)-1)) {
+                                $GLOBALS['level'] =  "Advanced Player";
+                            echo "inside if3 with i = ".$i."<br>";
+
+                            }
+                            if($i<2) {
+                                $GLOBALS['level'] =  "New Player";
+                            echo "inside if4 with i = ".$i."<br>";
+
+                            }
                         }
-                        if($i>=ceil(count($modules)/2)) {
-                            $GLOBALS['level'] =  "Intermediate";
-                        // echo "inside if2 with i = ".$i."<br>";
-
-                        }
-                        if($i>=(count($modules)-1)) {
-                            $GLOBALS['level'] =  "Advanced Player";
-                        // echo "inside if3 with i = ".$i."<br>";
-
-                        }
-                        if($i<2) {
-                            $GLOBALS['level'] =  "New Player";
-                        // echo "inside if4 with i = ".$i."<br>";
-
+                        else {
+                            break;
                         }
                     }
-                    else {
-                        break;
-                    }
+                }
+                else {
+                    $GLOBALS['level'] =  "New Player";
                 }
                 // debug($GLOBALS['level']);
                 xprofile_set_field_data( 'Bridge Skill', $user_id, $GLOBALS['level'], $is_required = false );

@@ -6,7 +6,6 @@ $GLOBALS['current_course_obj'] = get_term_by('slug',$term_name,'modules');
 			<?php get_template_part('enrollment/content', 'module-meta' ); ?>
 			<p id="each_module_desc"><?php echo category_description(); ?></p>
 			<?php enrollmentButton($GLOBALS['current_course_obj']); ?>
-			
 			<div id="module-lessons">
 				<?php
 				$args = array( 'post_type' => 'lesson','orderby' => 'date','order' => 'ASC','tax_query' => array(
