@@ -24,6 +24,7 @@ $sage_includes = [
   'lib/jbb/addition-sizes.php',    // Admin funcion - legacy
   'post_types/action-post-type-account-types.php',    // Accounts from the home page
   'post_types/action-post-type-modules.php',    // Accounts from the home page
+  'post_types/post-type-videos.php',    // Lesson Videos
   'lib/acf-option-page.php',       // Options Page
   'lib/function-getuserrole.php',  // Get User Role
   'lib/function-enrollment-button.php',  // Get Enrollment
