@@ -1,0 +1,13 @@
+
+.entry-content{
+	.cpt-li{
+		display: block;
+	  float: left;
+	  width: 100%;
+	  border-bottom: 3px solid $pink;
+	  iframe {
+			float: left;
+  		margin: 6px 20px 20px 0;
+	  }
+	}
+}
