@@ -39,7 +39,7 @@ $subscription_ref = bp_get_profile_field_data('field=fsid&amp;user_id='.$the_use
 <div class="radio"><label for="field_2"><strong>Opening 1<span style="color: red;">♥</span> or 1♠ shows:</strong> </label></div>
 </div>
 </form>
-<div id="field_2"><label><input checked="checked" name="field_2" type="radio" value="5 cards" />5 cards</label>
+<div class="radio" id="field_2"><label><input checked="checked" name="field_2" type="radio" value="5 cards" />5 cards</label>
 <label><input checked="checked" name="field_2" type="radio" value="4 cards" />4 cards</label></div>
 <div class="editfield field_15 field_opening-1nt-shows alt field_type_radio">
 <div class="radio"><label for="field_15"><strong>Opening 1NT shows:</strong> </label>
