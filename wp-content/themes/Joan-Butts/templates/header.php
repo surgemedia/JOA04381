@@ -35,7 +35,11 @@
                             ?>
                             <ul class="actions">
                                 <li>
-                                    <a class="btn btn-yellow" href="/upgrade">Upgrade <i class=" dashicons dashicons-awards"></i></a>
+                                    <?php
+                                        $the_user_id = $bp->loggedin_user->userdata->ID;
+                                        $upgradeSub = 'http://sites.fastspring.com/joanbuttsbridge/product/joanbuttsplaybridgeonline?referrer="'.$the_user_id.'"';
+                                    ?>
+                                    <a class="btn btn-yellow" href="<?php echo $upgradeSub ?>">Upgrade <i class=" dashicons dashicons-awards"></i></a>
                                 </li>
                                 <li>
                                     <a class="btn btn-primary" href="<?php echo wp_logout_url(); ?>">Logout <i class=" dashicons dashicons-external"></i></a>
