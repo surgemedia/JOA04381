@@ -8,6 +8,7 @@
 ?>
 			
 					<li class="col-md-2">
+						
 						<a class="link-card" href="<?php the_sub_field('link'); ?>">
 							<span class="link-color <?php echo get_sub_field('color'); ?>"></span>
 							<h3 class="link-text"><?php the_sub_field('link_text'); ?></h3>

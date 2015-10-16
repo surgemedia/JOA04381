@@ -2,7 +2,7 @@
     <div class="container">
         <div class="page-header">
             <div class="logo-container">
-                <a class="brand col-md-4 col-sm-6 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
+                <a class="brand col-md-4 col-sm-5 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
                 <?php
                         $image = get_field('logo','option');
                             if(strlen($image['url']) > 0){
@@ -12,22 +12,22 @@
                 <h1>Joan Butts Bridge</h1>
                 <?php } ?>
                 </a>
-                <div class="user-container col-md-4 col-sm-6 col-xs-12">
+                <div class="user-container col-md-5 col-sm-7 col-xs-12">
                     <?php
                             if(is_user_logged_in()) {
                                 $user = wp_get_current_user();
                                 $user_id = bp_loggedin_user_id();
                                     $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
                     ?>
-                    <div id="header-user" class="col-sm-12">
+                    <div id="header-user" class="">
                        
-                        <div class="display-img col-md-4 col-sm-4 col-xs-4">
+                        <div class="display-img col-md-3 col-sm-4 col-xs-3">
                          <?php if (get_user_role()=='royal' OR get_user_role()=='administrator') { ?>
                         <i class="crown"></i> <!--For Crown-->
                         <?php  } ?>
                             <?php echo $avatarurl; ?>
                         </div>
-                        <div class="current_info col-md-8 col-sm-8 col-xs-8">
+                        <div class="current_info col-md-8 col-sm-8 col-xs-9">
                             <h2><a href="<?php echo site_url().'/login/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></a></h2>
                             <span><?php echo getSkillLevel(); ?></span>
                             <?php
