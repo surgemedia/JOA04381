@@ -23,3 +23,5 @@ local-config.php
 readme.html
 wp-activate.php
 wp-content/uploads/*
+!wp-content/uploads/2015/09
+!wp-content/uploads/2015/10
