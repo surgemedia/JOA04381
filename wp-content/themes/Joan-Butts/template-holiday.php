@@ -72,7 +72,7 @@ Template Name: Holiday Page
                           <?php } else { ?>
                         <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
                         <?php } ?>
-                         <a target="_blank" class="btn pull-right" href="<?php echo get_permalink(); ?>">View Details</a>
+                         <a target="_blank" class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
                     </div>
                 </li>
            

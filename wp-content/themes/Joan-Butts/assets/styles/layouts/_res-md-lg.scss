@@ -154,17 +154,15 @@
 		}
 	}
 }
-/*------------------------------
-		UPCOMING HOLIDAYS
--------------------------------*/
-// #upcoming-events{
-// 	ul {
-// 		li{
-// 			&:hover {
-// 				.holiday-title {
-// 					color: $green;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+
+/*=========================================
+=            Upcoming Holidays            =
+=========================================*/
+.holiday-buttons{
+	.view-details{
+		float:right;
+	}
+}
+
+
+
