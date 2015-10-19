@@ -36,8 +36,9 @@
                             <ul class="actions">
                                 <li>
                                     <?php
+                                        global $bp;
                                         $the_user_id = $bp->loggedin_user->userdata->ID;
-                                        $upgradeSub = 'http://sites.fastspring.com/joanbuttsbridge/product/joanbuttsplaybridgeonline?referrer="'.$the_user_id.'"';
+                                        $upgradeSub = 'http://sites.fastspring.com/joanbuttsbridge/product/joanbuttsplaybridgeonline?action=adds&referrer='.$the_user_id;
                                     ?>
                                     <a class="btn btn-yellow" href="<?php echo $upgradeSub ?>">Upgrade <i class=" dashicons dashicons-awards"></i></a>
                                 </li>
