@@ -33,16 +33,18 @@ if ( $query->have_posts() ) {?>
 					if(!empty(get_user_role())) {
 				?>
 				<section class="entry-content clearfix" itemprop="articleBody">
-				<ul>
+				<ul id="video_list">
 <?php
 	while ( $query->have_posts() ) {
 		$query->the_post();
     // do something
 		?>
 				<li class="cpt-li">
-					<?php the_field('video'); ?>
-					<h2><?php the_title(); ?></h2>
-					<p><?php the_content(); ?></p>
+					<div class="row col-lg-5 pull-left"><?php the_field('video'); ?></div>
+					<div class="col-lg-7 pull-right">
+						<h2><?php the_title(); ?></h2>
+						<p><?php the_content(); ?></p>
+					</div>
 					
 				</li>
 
