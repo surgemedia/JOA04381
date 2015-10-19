@@ -13,6 +13,13 @@ body {
 			color:$blue;
 		}
 	}
+	p {
+		iframe {
+			width:100% !important;
+			min-height:40vh;
+			margin-bottom:1em;
+		}
+	}
 	.btn-primary:active, .comment-form input[type=submit]:active,
 	.btn-primary:hover, .comment-form input[type=submit]:hover {
 		background:$blue;
@@ -58,6 +65,7 @@ body {
 			}
 		}
 	}
+
 }
 
 .pink { background-color: $pink;}

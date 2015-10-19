@@ -20,11 +20,11 @@
 						if($i==0) { //1st item in carousel should be active
 							$activeClass = 'active'; 
 						}
-						if($i % 5 == 0 ) { //5 events should fit in 1 item of carousel
+						if($i % 6 == 0 ) { //6 events should fit in 1 item of carousel
 							$startCarousel = '<div class="item '.$activeClass.'">'; 
 							$endCarousel = '';
 						}
-						elseif (($i+1)%5 == 0) { //after 5 events close the item of carousel
+						elseif (($i+1)%6 == 0) { //after 6 events close the item of carousel
 							$startCarousel = '';
 							$endCarousel = '</div>';
 						}
@@ -35,11 +35,15 @@
 						$the_event = get_post();
 						$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
 			?>
-							<?php echo $startCarousel; ?>	
-								<div class="event-obj">
+							<?php echo $startCarousel; ?>
+							<?php // if( strtotime($text_date) > strtotime('now') ) { ?>
+								<div class="event-obj col-lg-2 col-md-2 col-sm-3">
+								<a href="<?php the_permalink(); ?>">
 									<p><?php the_title(); ?></p>
 									<p><?php echo $text_date ?></p>
+									</a>
 								</div>
+								<?php // } ?>
 							<?php echo $endCarousel; ?>	
 						<?php //debug(get_post());
 						//debug(get_post_meta(get_the_id()));	 ?>
@@ -56,11 +60,11 @@
 			?>
 					</div> <!-- Close of carousel-inner-->
 					<!-- Controls -->
-					<a class="left carousel-control" href="#events-carousel" role="button" data-slide="prev">
+					<a class="left carousel-control hidden-sm hidden-xs" href="#events-carousel" role="button" data-slide="prev">
 					    <span class="icon-chevron" aria-hidden="true"></span>
 					    <span class="sr-only">Previous</span>
 					</a>
-					<a class="right carousel-control" href="#events-carousel" role="button" data-slide="next">
+					<a class="right carousel-control hidden-sm hidden-xs" href="#events-carousel" role="button" data-slide="next">
 					    <span class="icon-chevron right" aria-hidden="true"></span>
 					    <span class="sr-only">Next</span>
 					</a>

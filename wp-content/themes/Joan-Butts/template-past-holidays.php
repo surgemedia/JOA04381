@@ -98,7 +98,7 @@ Template Name: Past Holiday Page
                 <ul class="hide-bullets">
                   <?php for ($i=0; $i < count($images); $i++) { if(strlen($images[$i]['sizes']['thumbnail']) > 0) { ?>
                   
-                   <li class="col-sm-2">
+                   <li class="col-md-2 col-sm-6 col-xs-6">
                         <a class="thumbnail" id="carousel-selector-<?php echo $i; ?>">
                             <img src="<?php echo $images[$i]['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>">
                         </a>
