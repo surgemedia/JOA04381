@@ -1,0 +1,36 @@
+/*====================================
+=            Small Tablet            =
+====================================*/
+.events-carousel {
+    #events-carousel {
+        height: 70px;
+        width:100%;
+        padding:0px;
+        .carousel-inner {
+            width: 100%;
+            margin: 0 auto;
+            .event-obj {
+                font-size:0.9em;
+                float: left;
+                border-right: 1px solid $border-blue;
+                 height: 90px;
+                &:first-child {
+                    border-left: 1px solid $border-blue;
+                }
+                p {
+                    margin: 0;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+        .carousel-control {
+            top:20%;
+            background: none;
+            width: 5%;
+
+        }
+    
+}
+
+

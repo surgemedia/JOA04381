@@ -44,6 +44,11 @@
 .events-carousel {
 	clear: both;
     padding: 30px 0;
+    position: relative;
+
+    a {
+    	color:$blue;
+    }
     #events-carousel {
     	height: 80px;
     	overflow: hidden;
@@ -51,9 +56,10 @@
     		width: 90%;
     		margin: 0 auto;
     		.event-obj {
-    			width: 20%;
+    			font-size:0.9em;
+    			// width: 20%;
     			float: left;
-    			padding: 10px 20px;
+    			// padding: 10px 20px;
     			border-right: 1px solid $border-blue;
     			height: 70px;
     			&:first-child {
@@ -65,11 +71,14 @@
     			}
     		}
     	}
+    }
     	.carousel-control {
+    		top:20%;
     		background: none;
     		width: 5%;
+
     	}
-    }
+    
 }
 .site-video {
 	background-color: $theme-blue;
