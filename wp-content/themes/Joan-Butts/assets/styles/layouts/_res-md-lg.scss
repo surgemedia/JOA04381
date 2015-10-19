@@ -59,11 +59,14 @@
 /*------------------------------
 		HOME PAGE
 -------------------------------*/
+
 .box-nav {
 	ul {
 		li {
+			height: 250px;
 			.link-card {
 				height: 250px;
+				color:$font-color;
 				&:hover {
 					.link-text {
 						color: #fff;
@@ -71,6 +74,12 @@
 					.link-color {
 						height: inherit;
 					}
+				}
+				.link-color{
+					height: 10px;
+				}
+				.link-text{
+					padding: 0 30px;
 				}
 			}
 		}
