@@ -50,12 +50,16 @@ Template Name: Past Holiday Page
 				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
 				 ?>
 				 <?php if( strtotime($text_date) < strtotime('now') ) { ?>
+                  <?php 
+                $images = get_field('gallery'); 
+                
+                if( $images ): ?>
                 <li class="holiday">
                     <!-- <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>"> -->
                     <h3><?php the_title(); ?></h3>
                     <h5 class="date-blue"><?php echo $text_date ?></h5>
                       
-                        
+                       
                 <div class="slider">
                     <!-- Top part of the slider -->
                     <div class="row">
@@ -63,54 +67,20 @@ Template Name: Past Holiday Page
                             <div class="carousel slide" id="myCarousel">
                                 <!-- Carousel items -->
                                 <div class="carousel-inner">
-                                    <div class="active item" data-slide-number="0">
-                                        <img src="http://placehold.it/470x480&text=zero"></div>
-
-                                    <div class="item" data-slide-number="1">
-                                        <img src="http://placehold.it/470x480&text=1"></div>
-
-                                    <div class="item" data-slide-number="2">
-                                        <img src="http://placehold.it/470x480&text=2"></div>
-
-                                    <div class="item" data-slide-number="3">
-                                        <img src="http://placehold.it/470x480&text=3"></div>
-
-                                    <div class="item" data-slide-number="4">
-                                        <img src="http://placehold.it/470x480&text=4"></div>
-
-                                    <div class="item" data-slide-number="5">
-                                        <img src="http://placehold.it/470x480&text=5"></div>
-                                    
-                                    <div class="item" data-slide-number="6">
-                                        <img src="http://placehold.it/470x480&text=6"></div>
-                                    
-                                    <div class="item" data-slide-number="7">
-                                        <img src="http://placehold.it/470x480&text=7"></div>
-                                    
-                                    <div class="item" data-slide-number="8">
-                                        <img src="http://placehold.it/470x480&text=8"></div>
-                                    
-                                    <div class="item" data-slide-number="9">
-                                        <img src="http://placehold.it/470x480&text=9"></div>
-                                    
-                                    <div class="item" data-slide-number="10">
-                                        <img src="http://placehold.it/470x480&text=10"></div>
-                                    
-                                    <div class="item" data-slide-number="11">
-                                        <img src="http://placehold.it/470x480&text=11"></div>
-                                    
-                                    <div class="item" data-slide-number="12">
-                                        <img src="http://placehold.it/470x480&text=12"></div>
-
-                                    <div class="item" data-slide-number="13">
-                                        <img src="http://placehold.it/470x480&text=13"></div>
-
-                                    <div class="item" data-slide-number="14">
-                                        <img src="http://placehold.it/470x480&text=14"></div>
-
-                                    <div class="item" data-slide-number="15">
-                                        <img src="http://placehold.it/470x480&text=15"></div>
-                                </div>
+                                <?php for ($i=0; $i < count($images); $i++) {
+                                    // debug($images[$i]['sizes']);
+                                    if($i == 0) { 
+                                        $active = "active";
+                                    } else {
+                                         $active = "";
+                                    }
+                                   if(strlen($images[$i]['sizes']['thumbnail']) > 0) {
+                                    ?>  
+                                  
+                                    <div class="<?php echo $active; ?> item" data-slide-number="<?php echo $i; ?>">
+                                        <img src="<?php echo $images[$i]['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
+                                    </div>
+                                    <?php  } } ?>
                                 <!-- Carousel nav -->
                                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -126,30 +96,19 @@ Template Name: Past Holiday Page
             <div class="slider-thumbs">
                 <!-- Bottom switcher of slider -->
                 <ul class="hide-bullets">
-                   <li class="col-sm-1">
-                        <a class="thumbnail" id="carousel-selector-0">
-                            <img src="http://placehold.it/150x150&text=zero">
+                  <?php for ($i=0; $i < count($images); $i++) { if(strlen($images[$i]['sizes']['thumbnail']) > 0) { ?>
+                  
+                   <li class="col-sm-2">
+                        <a class="thumbnail" id="carousel-selector-<?php echo $i; ?>">
+                            <img src="<?php echo $images[$i]['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>">
                         </a>
                     </li>
-
-                    <li class="col-sm-1">
-                        <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
-                    </li>
-
-                    <li class="col-sm-1">
-                        <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
-                    </li>
-
+                 <?php } } ?>
                   
                 </ul>
             </div>
-           
-
-           
-           
-                    
                 </li>
-           
+           <?php endif; ?>
 			<?php
 		}	
 			}

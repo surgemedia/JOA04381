@@ -16,7 +16,9 @@
 	
 		.hide-bullets {
 		    list-style:none;
-		    margin-left: -40px;
+		    // margin-left: -40px;
+		    display:block;
+		    margin:0px;
 		    margin-top:20px;
 		}
 
