@@ -1,0 +1,34 @@
+/*------------------------------
+		LEARNSINGLE.PHP
+-------------------------------*/
+#current-product {
+	text-align: center;
+	.woocommerce {
+		ul.products {
+			padding: 0 20%;
+			li.product {
+				width: auto;
+				img {
+					@extend .thumbnail;
+				}
+			}
+		}
+	}
+}
+#module-extras {
+	text-align: center;
+	ul {
+		padding: 0 20%;
+		list-style: none;
+		li {
+			width: 100%;
+			margin-bottom: 5px; 
+			a {
+				color: #fff;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

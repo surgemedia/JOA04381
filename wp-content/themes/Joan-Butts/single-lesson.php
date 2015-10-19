@@ -117,7 +117,7 @@ if(strlen($next_in_module) <= 1){
 				<?php 
 					if(($userRole =='administrator' || $userRole=='royal') && !empty(get_user_role())) {
 				?>
-						<a id="nav-next-button" class="btn nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
+						<a id="nav-next-button" class="btn  btn-primary nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
 						<?php 
 					}
 					if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {

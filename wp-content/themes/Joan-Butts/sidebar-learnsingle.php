@@ -1,11 +1,11 @@
-<div id="sidebar1" class="sidebar fourcol first clearfix sidebar-layout" role="complementary">
+
 	<?php  if ( is_user_logged_in() ) {  ?>
 	<?php
 	$user = wp_get_current_user();
 	$user_id = bp_loggedin_user_id();
 	$avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type' => 'full', ) );
 	?>
-	<div id="current-user">
+	<?php /*<div id="current-user">
 		<?php  if (get_user_role()=='royal') {  ?>
 			<i></i>
 	<?php }  ?>
@@ -18,14 +18,14 @@
 			<a ><?php echo getSkillLevel(); ?></a>
 			
 		</div>
-	</div>
+	</div>*/?>
 	<?php }  else { ?>
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) { ?>
 	<?php dynamic_sidebar( 'sidebar1' ); ?>
 	<?php } ?>
 	<?php } ?>
 	<div id="current-product">
-		<h2>Recommended books</h2>
+		<h3>Recommended books</h3>
 		<?php
 		$terms = get_the_terms( get_the_ID(), 'modules');
 		if( !empty($terms) ) {
@@ -40,17 +40,16 @@
 	</div>
 	
 	<div id="module-extras">
-		<h2>Course Activites</h2>
+		<h3>Course Activites</h3>
 		<ul>
-			<li class="pink button"><span class="dashicons dashicons-groups"></span>
+			<li>
 			<?php $groupslug = $GLOBALS['current_course_obj']->slug ?>
-			<a href="<?php echo site_url(); ?>/groups/<?php echo $GLOBALS['group_single_slug'] ?>">Discuss this</a>
+			<a class="btn btn-primary" href="<?php echo site_url(); ?>/groups/<?php echo $GLOBALS['group_single_slug'] ?>">Discuss this<span class="dashicons dashicons-groups"></span></a>
 		</li>
 		
 
-		<li class="pink button"><span class="dashicons dashicons-awards"></span>
-		<a href="<?php echo site_url(); ?>/upgrade ">Upgrade</a>
-	</li>
+		<li>
+			<?php get_template_part('templates/button','upgrade-user');?>
+		</li>
 	
 </ul>
-</div>

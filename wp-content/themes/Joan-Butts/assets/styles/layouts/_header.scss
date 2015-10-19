@@ -84,6 +84,9 @@
 			a {
 				display:inline-block;
 				width:100%;
+				&.upgrade, &.subscription {
+					@extend .btn-yellow;
+				}
 			}
 		}
 	}

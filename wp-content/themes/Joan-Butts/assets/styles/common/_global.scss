@@ -21,7 +21,8 @@ body {
 		}
 	}
 	.btn-primary:active, .comment-form input[type=submit]:active,
-	.btn-primary:hover, .comment-form input[type=submit]:hover {
+	.btn-primary:hover, .comment-form input[type=submit]:hover,
+	.btn-yellow:active, .btn-yellow:hover, {
 		background:$blue;
 		border-color:$blue;
 	}

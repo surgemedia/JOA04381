@@ -3,7 +3,9 @@ $term_name = get_query_var('modules');
 $GLOBALS['current_course_obj'] = get_term_by('slug',$term_name,'modules');
 ?>
 			<h1 class=""><?php single_cat_title(); ?></h1>
-			<?php get_template_part('enrollment/content', 'module-meta' ); ?>
+			<div class="lesson-controls">
+				<?php get_template_part('enrollment/content', 'module-meta' ); ?>
+			</div>
 			<p id="each_module_desc"><?php echo category_description(); ?></p>
 			<?php enrollmentButton($GLOBALS['current_course_obj']); ?>
 			<div id="module-lessons">

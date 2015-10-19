@@ -154,17 +154,19 @@
 		}
 	}
 }
+
 /*------------------------------
-		UPCOMING HOLIDAYS
+		MODULE LESSONS LIST
 -------------------------------*/
-// #upcoming-events{
-// 	ul {
-// 		li{
-// 			&:hover {
-// 				.holiday-title {
-// 					color: $green;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+.lesson-controls {
+	li {
+		&:hover {
+			background-color: $blue;
+			border-color: $blue;
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+
