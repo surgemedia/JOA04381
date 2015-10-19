@@ -19,15 +19,15 @@
                                 $user_id = bp_loggedin_user_id();
                                     $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
                     ?>
-                    <div id="header-user" class="">
+                    <div id="header-user" class="row">
                        
-                        <div class="display-img col-md-3 col-sm-4 col-xs-3">
+                        <div class="display-img col-md-3 col-sm-4 col-xs-6">
                          <?php if (get_user_role()=='royal' OR get_user_role()=='administrator') { ?>
                         <i class="crown"></i> <!--For Crown-->
                         <?php  } ?>
                             <?php echo $avatarurl; ?>
                         </div>
-                        <div class="current_info col-md-8 col-sm-8 col-xs-9">
+                        <div class="current_info col-md-8 col-sm-8 col-xs-6">
                             <h2><a href="<?php echo site_url().'/login/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></a></h2>
                             <span><?php echo getSkillLevel(); ?></span>
                             <ul class="actions">

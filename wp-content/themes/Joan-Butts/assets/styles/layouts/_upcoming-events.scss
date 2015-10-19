@@ -1,24 +1,5 @@
 @import "online-lessons";
-// #upcoming-events{
-// 	ul {
-// 		margin: 0;
-// 		padding: 0;
-// 		li.holiday {
-// 			list-style:none;
-// 			border-bottom: 6px solid $green;
-// 			padding-bottom: 1em;
-// 			.holiday-title {
-// 				clear: both;
-// 				transition: all 0.3s ease;
-// 			}
-// 			.holiday-buttons{
-// 				a{
-// 					background: $green;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+
 
  #holiday-list{
 	 list-style:none;
@@ -33,7 +14,12 @@
 			}
 		}
 
-	 .holiday-buttons a{
-	 	background:$green;
+	 .holiday-buttons { 
+	 	
+	 	a{
+	 	 background:$green;
+	   margin-bottom: 0.5em;
+     margin-left: .5em;
+	  }
 	 }
 }

@@ -41,7 +41,7 @@ if ( $query->have_posts() ) {?>
 		?>
 				<li class="cpt-li">
 					<div class="row col-lg-5 pull-left"><?php the_field('video'); ?></div>
-					<div class="col-lg-7 pull-right">
+					<div class="col-lg-7 col-lg-push-1">
 						<h2><?php the_title(); ?></h2>
 						<p><?php the_content(); ?></p>
 					</div>
