@@ -1,10 +1,10 @@
 <section class="site-video">
 	<div class="row">
-		<div class="col-md-6 video-container">
+		<div class="col-md-6 col-sm-12 col-xs-12 video-container">
 			<?php
 				$image = get_field('site_video_thumbnail');
 			?>
-			<img class="video-thumbnail" src="<?php echo $image['url']; ?>" alt="Joan Butts Website Tour" height="<?php echo $image['height']; ?>" width="<?php echo $image['width'] ?>" data-toggle="modal" data-target="#site-video-modal">
+			<img class="video-thumbnail" src="<?php echo $image['url']; ?>" alt="Joan Butts Website Tour" data-toggle="modal" data-target="#site-video-modal">
 			<span class="video-tag">Play video now</span>
 		</div>
 		<div class="col-md-6">

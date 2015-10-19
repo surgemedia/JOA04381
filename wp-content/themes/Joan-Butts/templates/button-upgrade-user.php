@@ -29,5 +29,6 @@ if(is_user_logged_in()){
 <?php 
 } else { ?>
  	<a class="btn btn-primary" href="/register/">Register Today!</a>
+
 <?php }; ?>
 

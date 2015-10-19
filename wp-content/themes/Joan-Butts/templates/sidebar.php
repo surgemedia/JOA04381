@@ -17,6 +17,7 @@ $template_file = get_post_type();
 //debug( get_post_meta( get_the_id() ));
 ?>
 <?php switch ($template_file) {
+
 		case 'template-teachers.php':
 			get_sidebar('teacher');
 			break;

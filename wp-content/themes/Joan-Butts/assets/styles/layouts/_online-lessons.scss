@@ -127,7 +127,14 @@
 
 
 
-
+#video_list{
+	 list-style:none;
+	 margin: 0;
+	 padding: 0;
+	 .cpt-li{
+		@include lessson($pink);
+		}
+}
 
 #module_list{
 	 list-style:none;
