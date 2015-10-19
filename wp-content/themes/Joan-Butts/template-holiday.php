@@ -17,12 +17,11 @@ Template Name: Holiday Page
     <header class="article-header">
 
         <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
+        <?php the_content(); ?>
         </header> <!-- end article header -->
 
 
  <section id="upcoming-events" class="entry-content clearfix" itemprop="articleBody">
-            <?php the_content(); ?>
             <ul id="holiday-list">
             <?php // WP_Query arguments
 				$args = array (
@@ -61,8 +60,18 @@ Template Name: Holiday Page
                     <h5 class="date-blue"><?php echo $text_date ?></h5>
                     <p>  <?php the_content(); ?></p>
                     <div class="holiday-buttons">
+                        <?php if(strlen(get_field('flyer_upload'))){ ?>
                         <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
+                        <?php } else { ?>
+                        <a target="_blank" class="btn disabled" href="#">Flyer Coming Soon</a>
+                        <?php } ?>
+
+                        <?php if(strlen(get_field('flyer_upload'))){ ?>
                         <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
+                       
+                          <?php } else { ?>
+                        <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
+                        <?php } ?>
                          <a target="_blank" class="btn pull-right" href="<?php echo get_permalink(); ?>">View Details</a>
                     </div>
                 </li>

@@ -28,3 +28,4 @@ $template_file = get_post_type();
 		break;
 } 
 ?>
+
