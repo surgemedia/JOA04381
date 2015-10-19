@@ -22,6 +22,7 @@ $upgradeSub = 'http://sites.fastspring.com/'.$store_id.'/product/'.$product_id.'
  <?php if(get_user_role()=='administrator' || (get_user_role()=='free_member')){ ?>
  <a class="btn btn-primary" href="<?php echo $upgradeSub ?>">Upgrade</a>
 <?php }; ?>
+
 <?php if( (get_user_role()=='administrator') || ( get_user_role()=='royal') ){ ?>
  <a class="btn btn-primary" href="<?php echo $editSubscription; ?>">Manage Subscription</a>
  <?php }; //is_royal ?>

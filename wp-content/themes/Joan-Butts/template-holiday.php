@@ -28,6 +28,12 @@ Template Name: Holiday Page
 				$args = array (
 					'post_type'              => array( 'tribe_events' ),
 					'posts_per_page'         => '-1',
+                     'tax_query' => array(
+                            'taxonomy' => 'tribe_events_cat',
+                            'field'    => 'slug',
+                            'terms'    => 'bridge-holiday',
+                        ),
+                    
 					// 'order'                  => 'ASC',
 					'orderby'                => 'date'
 					);
@@ -44,22 +50,20 @@ Template Name: Holiday Page
 				$the_event = get_post();
 				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
 				 ?>
+
 				 <?php if( strtotime($text_date) > strtotime('now') ) { ?>
-                <li>
+                <li class="holiday">
                     <?php
-                        if(get_sub_field('holiday_image')) {
-                    ?>
+                        if(get_sub_field('holiday_image')) { ?>
                             <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
-                    <?php
-                        }
-                    ?>
+                    <?php } ?>
                     <h3 class="holiday-title"><?php the_title(); ?></h3>
                     <h5 class="date-blue"><?php echo $text_date ?></h5>
                     <p>  <?php the_content(); ?></p>
                     <div class="holiday-buttons">
                         <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
                         <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
-                        <a target="_blank" class="btn pull-right" href="/holidays/register/">Register your interests</a>
+                         <a target="_blank" class="btn pull-right" href="<?php echo get_permalink(); ?>">View Details</a>
                     </div>
                 </li>
            

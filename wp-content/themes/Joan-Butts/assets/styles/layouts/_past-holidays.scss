@@ -1,7 +1,7 @@
 #holiday-list {
 	list-style: none;
 	padding: 0;
-	li {
+	li.holiday {
 		clear: both;
 		margin-bottom: 20px;
     	overflow: hidden;
@@ -13,5 +13,21 @@
 		    float: left;
 		    margin: 0 15px 15px 0;
 		}
-	}
+	
+		.hide-bullets {
+		    list-style:none;
+		    // margin-left: -40px;
+		    display:block;
+		    margin:0px;
+		    margin-top:20px;
+		}
+
+		.thumbnail {
+		    padding: 0;
+		}
+
+		.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+		    width: 100%;
+		}
+		}
 }
