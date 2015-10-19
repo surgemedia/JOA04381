@@ -50,10 +50,17 @@ Template Name: Holiday Page
 				$the_event = get_post();
 				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
 				 ?>
-				 <?php if( strtotime($text_date) >= strtotime('now') ) { ?>
-                <li class="holiday">
-                    <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
-                    <h3><?php the_title(); ?></h3>
+
+				 <?php if( strtotime($text_date) > strtotime('now') ) { ?>
+                <li>
+                    <?php
+                        if(get_sub_field('holiday_image')) {
+                    ?>
+                            <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
+                    <?php
+                        }
+                    ?>
+                    <h3 class="holiday-title"><?php the_title(); ?></h3>
                     <h5 class="date-blue"><?php echo $text_date ?></h5>
                     <p>  <?php the_content(); ?></p>
                     <div class="holiday-buttons">

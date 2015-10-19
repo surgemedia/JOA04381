@@ -4,6 +4,10 @@
 .btn {
 	color:#fff;
 	border-radius:0px;
+	input {
+		background: transparent;
+    	border: 0;
+	}
 }
 .btn-primary {
 	background: $red;
