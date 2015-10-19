@@ -30,10 +30,11 @@
                         <div class="current_info col-md-8 col-sm-8 col-xs-9">
                             <h2><a href="<?php echo site_url().'/login/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></a></h2>
                             <span><?php echo getSkillLevel(); ?></span>
+                            <ul class="actions">
                             <?php
                                                     if(get_user_role()!='royal') {
                             ?>
-                            <ul class="actions">
+                            
                                 <li>
                                     <?php
                                         global $bp;
@@ -42,13 +43,14 @@
                                     ?>
                                     <a class="btn btn-yellow" href="<?php echo $upgradeSub ?>">Upgrade <i class=" dashicons dashicons-awards"></i></a>
                                 </li>
+                            <?php
+                                                    }
+                            ?>
                                 <li>
                                     <a class="btn btn-primary" href="<?php echo wp_logout_url(); ?>">Logout <i class=" dashicons dashicons-external"></i></a>
                                 </li>
                             </ul>
-                            <?php
-                                                    }
-                            ?>
+                            
 
                         </div>
                     </div>
