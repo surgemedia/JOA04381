@@ -159,3 +159,17 @@
 		}
 	}
 }
+/*------------------------------
+		MODULE LESSONS LIST
+-------------------------------*/
+.lesson-controls {
+	li {
+		&:hover {
+			background-color: $blue;
+			border-color: $blue;
+			a {
+				color: #fff;
+			}
+		}
+	}
+}

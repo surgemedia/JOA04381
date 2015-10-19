@@ -10,21 +10,28 @@ if(is_page()){
 $template_file = get_post_type();
  // echo "Single ".$template_file;
 
+} elseif(is_tax()) {
+	$template_file = get_post_type();
+	// debug($template_file);
 }
 //debug( get_post_meta( get_the_id() ));
 ?>
 <?php switch ($template_file) {
-	case 'template-teachers.php':
-		get_sidebar('teacher');
-		break;
-	case 'template-Leaderboard.php':
-		get_sidebar('leaderboard');
-		break;
-	case 'template-modules.php':
-		get_sidebar('learn');
-		break;
-	default:
-		dynamic_sidebar('sidebar-primary');
-		break;
-} 
+		case 'template-teachers.php':
+			get_sidebar('teacher');
+			break;
+		case 'template-Leaderboard.php':
+			get_sidebar('leaderboard');
+			break;
+		case 'template-modules.php':
+			get_sidebar('learn');
+			break;
+		case 'lesson':
+			get_sidebar('learnsingle');
+			break;
+		default:
+			dynamic_sidebar('sidebar-primary');
+			break;
+	} 
+
 ?>
