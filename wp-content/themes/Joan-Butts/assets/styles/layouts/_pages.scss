@@ -1,0 +1,26 @@
+/*------------------------------
+		The Two-Suiter
+-------------------------------*/
+.mMainDisplay {
+	text-align: center;
+	.mMainDisplayAll {
+		margin: 0 auto;
+	}
+	.divplaybutton {
+		margin: 0;
+		margin-bottom: 20px;
+		a {
+			@extend .btn,.btn-primary;
+			width: 200px;
+		}
+	}
+}
+/*------------------------------
+		GALLERY
+-------------------------------*/
+.holiday-gallery {
+	overflow: hidden;
+	figure {
+		float: left;
+	}
+}

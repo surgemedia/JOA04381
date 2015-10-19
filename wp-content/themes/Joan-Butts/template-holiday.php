@@ -46,8 +46,14 @@ Template Name: Holiday Page
 				 ?>
 				 <?php if( strtotime($text_date) > strtotime('now') ) { ?>
                 <li>
-                    <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
-                    <h3><?php the_title(); ?></h3>
+                    <?php
+                        if(get_sub_field('holiday_image')) {
+                    ?>
+                            <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
+                    <?php
+                        }
+                    ?>
+                    <h3 class="holiday-title"><?php the_title(); ?></h3>
                     <h5 class="date-blue"><?php echo $text_date ?></h5>
                     <p>  <?php the_content(); ?></p>
                     <div class="holiday-buttons">

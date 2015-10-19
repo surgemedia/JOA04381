@@ -135,3 +135,27 @@
 		}
 	}
 }
+/*------------------------------
+		VIDEO LIBRARY PAGE
+-------------------------------*/
+.entry-content{
+	.cpt-li{
+		&:hover {
+			color: $pink;
+		}
+	}
+}
+/*------------------------------
+		UPCOMING HOLIDAYS
+-------------------------------*/
+#upcoming-events{
+	ul {
+		li{
+			&:hover {
+				.holiday-title {
+					color: $green;
+				}
+			}
+		}
+	}
+}
