@@ -146,6 +146,18 @@
     	border-bottom: 1px solid #efefef;
     	transition: 0.5s all ease;
     	@include lessson($blue);
+    	a {
+    		&.btn-primary {
+    			color: #fff;
+    		}
+    	}
+    	section.entry-content {
+    		p {
+    			.btn {
+    				margin-top: 15px;
+    			}
+    		}
+    	}
 	 }
 	 
 }

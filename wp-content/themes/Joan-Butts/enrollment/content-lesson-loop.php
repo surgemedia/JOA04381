@@ -16,34 +16,36 @@
 			?>
 			<h2 class="h2 news-heading">
 				<?php the_title(); ?>
-				<?php
-					if(($userRole!='royal' && !$freeLesson) || empty(get_user_role())) {
-				?>
-						<i class="dashicons dashicons-admin-network"></i>
-				<?php
-					}
-				?>
 			</h2>
 			</header> <!-- end article header -->
 			<section class="entry-content clearfix ">
-				<?php
-				$thumb_id = get_post_thumbnail_id();
-				
-				$thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail', true)[0];
-				
-				if (strpos($thumb_url,'wp-include') < 0) {
-				the_post_thumbnail();
-				} else {
-				echo '<div class="placeholder yellow col-lg-3 col-md-3 col-xs-3 pull-left hidden-xs"><span class="dashicons dashicons-welcome-learn-more"></span></div>';
+				<?php if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {?>
+					<?php
+					$thumb_id = get_post_thumbnail_id();
+					
+					$thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail', true)[0];
+					
+					if (strpos($thumb_url,'wp-include') < 0) {
+					the_post_thumbnail();
+					} else {
+					echo '<div class="placeholder yellow col-lg-3 col-md-3 col-xs-3 pull-left hidden-xs"><span class="dashicons dashicons-welcome-learn-more"></span></div>';
+					}
 				}
-				
-				?>
+				else {
+					echo '<div class="placeholder yellow col-lg-3 col-md-3 col-xs-3 pull-left hidden-xs"><span class="dashicons dashicons-lock"></span></div>';
+				}	
+					?>
+
 				<p class="col-lg-9 col-md-9 col-xs-12 pull-right">
 					<?php $rows = get_field('lessons_repeater');
 					$row = $rows[0]['lesson_overview'];
 					$b4trunk = implode(' ', array_slice(explode(' ', $row), 0, 50)). '... ';
 					$trunk = strip_tags($b4trunk);
 					echo $trunk;
+					?>
+					<br>
+					<?php
+					get_template_part('templates/button','upgrade-user');
 					?>
 				</p>
 				</section> <!-- end article section -->
