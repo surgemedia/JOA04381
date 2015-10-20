@@ -1,6 +1,6 @@
 <footer class="content-info" role="contentinfo">
   <div class="container">
-    <div class="row">
+    <div class="clearfix">
     	<div class="col-md-4 image-container">
     		<?php $image = get_field('footer_image','option'); ?>
     		<img src="<?php echo $image['url']; ?>" height="<?php echo $image['height']; ?>" width="<?php echo $image['width']; ?>">
