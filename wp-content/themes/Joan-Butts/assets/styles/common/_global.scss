@@ -68,7 +68,11 @@ body {
 	}
 
 }
-
+.section-list {
+	background: $grey-light;
+	padding: 1.5em;
+	border-bottom: 6px solid $red;
+}
 .pink { background-color: $pink;}
 .green { background-color: $green;}
 .yellow { background-color: $yellow;}

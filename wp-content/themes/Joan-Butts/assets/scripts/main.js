@@ -84,6 +84,13 @@
       $(this).parent().toggleClass('open');
   });
 
+  /*=============================================
+  = Reopen login modal if incorrect credentials =
+  ===============================================*/
+  if($('#theme-my-login1 .error').text()) {
+      $('#mylogin').modal('show');
+  }
+
 })(jQuery); // Fully reference jQuery after this point.
 
 /*=============================================

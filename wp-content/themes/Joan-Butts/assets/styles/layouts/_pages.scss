@@ -24,3 +24,119 @@
 		float: left;
 	}
 }
+/*------------------------------
+		PROFILE
+-------------------------------*/
+#buddypress {
+	#item-nav {
+		border-bottom: 1px solid $grey;
+    	padding-bottom: 10px;
+	}
+	#item-body {
+		.profile {
+			.bp-widget {
+				@extend .section-list;
+			    .profile-fields {
+			    	margin-top: 15px;
+				    .label {
+				    	color: $font-color;
+				    	font-size: 100%;
+			    		border-right: 0 !important;
+			    		display: inline-block;
+					    width: 200px !important;
+					    text-align: left;
+				    }
+				    .data {
+				    	display: inline-block;
+				    }
+				}
+			}
+		}
+		.button-nav {
+			padding-left: 0;
+		}
+		.field_type_radio {
+			.radio {
+				label:first-child {
+					padding: 0;
+				}
+				div {
+					label:first-child {
+						padding-left: 20px;
+					}
+				}
+			}
+		}
+		.notification-settings {
+			@extend .section-list;
+			display: block;
+		}
+		.profile-settings {
+			@extend .section-list;
+			display: block;
+			thead {
+				tr {
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+/*------------------------------
+		GROUPS
+-------------------------------*/
+#buddypress {
+	ul.item-list {
+		li {
+			background: $grey-light;
+		    padding: 1.5em;
+		    div.action {
+		    	right: 15px;
+		    }
+		}
+	}
+}
+/*------------------------------
+		BOOKS
+-------------------------------*/
+.woocommerce  {
+	.button, a.button, a.button.alt, button.button.alt, input.button.alt {
+		background: $blue;
+		border-color: $blue;
+		color: #fff;
+	}
+	ul.products {
+		li.product {
+			text-align: center;
+			clear: none;
+			h3,.price {
+				color: $font-color;
+			}
+			a.added_to_cart {
+				color: $font-color;
+			}
+			a:first-child {
+				display: block;
+				height: 240px;
+				img {
+					height: 140px;
+				    width: 100px;
+				    margin: 0 auto 20px;
+				    margin-top: 15px;
+				}
+    		}
+		}
+		li.product-category.product {
+			a:first-child {
+				img {
+					height: 100%;
+	    			width: auto;
+	    			margin-top: 0px;
+	    		}
+    		}
+    		&+li.type-product {
+    			clear: both;
+    		}
+		}
+	}
+}
