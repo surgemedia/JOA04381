@@ -100,7 +100,7 @@
 		BOOKS
 -------------------------------*/
 .woocommerce  {
-	.button, a.button, a.button.alt, button.button.alt, input.button.alt {
+	.button, a.button, a.button.alt, button.button.alt, input.button.alt, input.button[type=submit] {
 		background: $blue;
 		border-color: $blue;
 		color: #fff;
@@ -137,6 +137,34 @@
     		&+li.type-product {
     			clear: both;
     		}
+		}
+	}
+}
+/*------------------------------
+		CART
+-------------------------------*/
+.woocommerce {
+	.shop_table {
+		.cart_item {
+			a {
+				color: $blue;
+			}
+		}
+	}
+	.cart-collaterals {
+		.cart_totals {
+			text-align: right;
+			table {
+				width: 100%;
+				tr {
+					th {
+						padding: 10px 0;
+					}
+					&+tr {
+						border-top: 1px solid $grey;
+					}
+				}
+			}
 		}
 	}
 }
