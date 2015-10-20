@@ -185,7 +185,7 @@
 		BOOKS
 -------------------------------*/
 .woocommerce  {
-	.button, a.button, a.button.alt, button.button.alt, input.button.alt {
+	.button, a.button, a.button.alt, button.button.alt, input.button.alt, input.button[type=submit] {
 		&:hover {
 			background: $border-blue;
 			border-color: $border-blue;
@@ -202,6 +202,20 @@
 			&:hover {
 				h3,.price {
 					color: $blue;
+				}
+			}
+		}
+	}
+}
+/*------------------------------
+		CART
+-------------------------------*/
+.woocommerce {
+	.shop_table {
+		.cart_item {
+			a {
+				&:hover {
+					color: $border-blue;
 				}
 			}
 		}
