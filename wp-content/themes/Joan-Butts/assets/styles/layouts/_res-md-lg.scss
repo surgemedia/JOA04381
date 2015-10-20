@@ -181,5 +181,29 @@
 		float:right;
 	}
 }
-
-
+/*------------------------------
+		BOOKS
+-------------------------------*/
+.woocommerce  {
+	.button, a.button, a.button.alt, button.button.alt, input.button.alt {
+		&:hover {
+			background: $border-blue;
+			border-color: $border-blue;
+			color: #fff;
+		}
+	}
+	ul.products {
+		li.product.type-product {
+			a.added_to_cart {
+				&:hover {
+					color: $blue;
+				}
+			}
+			&:hover {
+				h3,.price {
+					color: $blue;
+				}
+			}
+		}
+	}
+}
