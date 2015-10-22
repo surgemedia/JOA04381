@@ -23,18 +23,22 @@ Template Name: Past Holiday Page
 
  <section id="upcoming-events" class="entry-content clearfix" itemprop="articleBody">
             <?php the_content(); ?>
+
+
+
             <ul id="holiday-list">
             <?php // WP_Query arguments
 				$args = array (
 					'post_type'              => array( 'tribe_events' ),
-					'posts_per_page'         => '-1',
+					'posts_per_page'         => 25,
+                    'eventDisplay'=>        'past',
                     'tax_query' => array(
                             'taxonomy' => 'tribe_events_cat',
                             'field'    => 'slug',
                             'terms'    => 'bridge-holiday',
                         ),
 					// 'order'                  => 'ASC',
-					'orderby'                => 'date'
+					'orderby'                => 'ASC'
 					);
 
 				// The Query
@@ -49,11 +53,15 @@ Template Name: Past Holiday Page
 				$the_event = get_post();
 				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
 				 ?>
-				 <?php if( strtotime($text_date) < strtotime('now') ) { ?>
+				 <?php //if( strtotime($text_date) < strtotime('now') ) { ?>
                   <?php 
                 $images = get_field('gallery'); 
-                
-                if( $images ): ?>
+
+
+               // debug( get_post_meta( get_the_id() ) );
+               // debug(date("Y-m-d", strtotime($the_event->EventStartDate) ));
+               // debug(date('Y-m-d'));
+                if( $images AND strtotime($the_event->EventEndDate) < strtotime('now') ): ?>
                 <li class="holiday">
                     <!-- <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>"> -->
                     <h3><?php the_title(); ?></h3>
@@ -63,8 +71,8 @@ Template Name: Past Holiday Page
                 <div class="slider">
                     <!-- Top part of the slider -->
                     <div class="row">
-                        <div class="col-sm-12" id="carousel-bounding-box">
-                            <div class="carousel slide" id="myCarousel">
+                        <div class="col-sm-12" >
+                            <div class="carousel slide galleryCarousel">
                                 <!-- Carousel items -->
                                 <div class="carousel-inner">
                                 <?php for ($i=0; $i < count($images); $i++) {
@@ -82,10 +90,10 @@ Template Name: Past Holiday Page
                                     </div>
                                     <?php  } } ?>
                                 <!-- Carousel nav -->
-                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <a class="left carousel-control" href="#sliderGallery-<?php echo get_the_id(); ?>" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left"></span>
                                 </a>
-                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <a class="right carousel-control" href="#sliderGallery-<?php echo get_the_id(); ?>" role="button" data-slide="next">
                                     <span class="glyphicon glyphicon-chevron-right"></span>
                                 </a>
                             </div>
@@ -110,7 +118,7 @@ Template Name: Past Holiday Page
                 </li>
            <?php endif; ?>
 			<?php
-		}	
+		// }	
 			}
 
 				} else {
@@ -122,27 +130,28 @@ Template Name: Past Holiday Page
 
 			?>
 			 </ul>
-             <script>  jQuery(document).ready(function($) {
- 
-        $('#myCarousel').carousel({
-                interval: 5000
-        });
- 
+             <script> 
+    jQuery(document).ready(function($) {
+        var sliderGallery = $('.galleryCarousel');
+         sliderGallery.carousel({ interval: 5000 });
         //Handles the carousel thumbnails
         $('[id^=carousel-selector-]').click(function () {
         var id_selector = $(this).attr("id");
+        var carousel_id = $($("#"+id_selector))[0].closest('.slider');
+        carousel_id = $(carousel_id).find('.galleryCarousel');
         try {
             var id = /-(\d+)$/.exec(id_selector)[1];
-            console.log(id_selector, id);
-            jQuery('#myCarousel').carousel(parseInt(id));
+            // console.log(id_selector, id);
+            console.log(carousel_id);
+           $(carousel_id).carousel(parseInt(id));
         } catch (e) {
             console.log('Regex failed!', e);
         }
     });
         // When the carousel slides, auto update the text
-        $('#myCarousel').on('slid.bs.carousel', function (e) {
-                 var id = $('.item.active').data('slide-number');
-                $('#carousel-text').html($('#slide-content-'+id).html());
+        sliderGallery.on('slid.bs.carousel', function (e) {
+         var id = $('.item.active').data('slide-number');
+        sliderGallery.closest( ".carousel-text" ).html($('#slide-content-'+id).html());
         });
 });
              </script>
