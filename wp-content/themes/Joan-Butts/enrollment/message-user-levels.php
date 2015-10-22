@@ -8,6 +8,12 @@
 <p>You have completed more than half the modules.</p>
 <h4>Advanced Player</h4>
 <p>You have completed all the modules!</p>
-<button class="btn btn-primary" onclick="resetProgressConfirmation();">
-    Reset Progress <i class=" dashicons dashicons-update"></i>
-</button>
+<?php
+	if(strlen(get_user_role())>0) {
+?>
+	<button class="btn btn-primary" onclick="resetProgressConfirmation();">
+	    Reset Progress <i class=" dashicons dashicons-update"></i>
+	</button>
+<?php
+	} 
+?>
