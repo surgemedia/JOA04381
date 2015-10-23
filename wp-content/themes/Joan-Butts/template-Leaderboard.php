@@ -10,7 +10,7 @@
 <?php 
  get_template_part('templates/button', 'upgrade-user');
  ?>
- <?php if((get_user_role() =='administrator' || get_user_role()=='royal') && !empty(get_user_role())): ?>
+ <?php if((get_user_role() =='administrator' || get_user_role()=='royal') && strlen(get_user_role())>0): ?>
 <a class="btn btn-primary play-online" href="/play/?game=set&amp;val=0">Practice Online</a>
 <a class="btn btn-primary play-online" href="/play/?game=set&amp;val=1">Compete Online</a>
 <?php endif; ?>
@@ -30,39 +30,45 @@ print "<script>var mydomain='joanbuttsbridge.com'; var username='" . $the_user_n
 $subscription_ref = bp_get_profile_field_data('field=fsid&amp;user_id='.$the_user_id);
  ?>
 
+<?php
+	if(strlen(get_user_role())>0) {
+?>
 
 
-
-<h2>Select your bidding preferences and click 'save'.</h2>
-<form id="profile-edit-form" class="standard-form about-me" action="http://www.joanbuttsbridge.com/php/sbc_edit_bidding_system.php" method="post">
-<div class="editfield field_2 field_opening-1M-shows alt field_type_radio">
-<div class="radio"><label for="field_2"><strong>Opening 1<span style="color: red;">♥</span> or 1♠ shows:</strong> </label></div>
-</div>
-</form>
-<div class="radio" id="field_2"><label><input checked="checked" name="field_2" type="radio" value="5 cards" />5 cards</label>
-<label><input checked="checked" name="field_2" type="radio" value="4 cards" />4 cards</label></div>
-<div class="editfield field_15 field_opening-1nt-shows alt field_type_radio">
-<div class="radio"><label for="field_15"><strong>Opening 1NT shows:</strong> </label>
-<div id="field_15"><label><input checked="checked" name="field_15" type="radio" value="15-17 hcp" />15-17 hcp</label>
-<label><input checked="checked" name="field_15" type="radio" value="12-14 hcp" />12-14 hcp</label></div>
-</div>
-</div>
-<div class="editfield field_18 field_opening-2x-shows alt field_type_radio">
-<div class="radio"><label for="field_18"><strong>Opening 2<span style="color: red;">♦</span>, 2<span style="color: red;">♥</span>, or 2♠ shows:</strong> </label>
-<div id="field_18"><label><input checked="checked" name="field_18" type="radio" value="Weak" />weak</label>
-<label><input checked="checked" name="field_18" type="radio" value="Strong" />strong</label></div>
-</div>
-</div>
-<div class="editfield field_6 field_xfers-shows alt field_type_radio">
-<div class="radio"><label for="field_6"><strong>Do you play transfers?</strong> </label>
-<div id="field_6"><label><input checked="checked" name="field_6" type="radio" value="Yes" />yes</label>
-<label><input checked="checked" name="field_6" type="radio" value="No" />no</label></div>
-</div>
-</div>
-<div class="btn btn-primary"><input id="profile-group-edit-submit" name="profile-group-edit-submit" type="submit" value="Save Changes " /></div>
+		<h2>Select your bidding preferences and click 'save'.</h2>
+		<form id="profile-edit-form" class="standard-form about-me" action="http://www.joanbuttsbridge.com/php/sbc_edit_bidding_system.php" method="post">
+		<div class="editfield field_2 field_opening-1M-shows alt field_type_radio">
+		<div class="radio"><label for="field_2"><strong>Opening 1<span style="color: red;">♥</span> or 1♠ shows:</strong> </label></div>
+		</div>
+		</form>
+		<div class="radio" id="field_2"><label><input checked="checked" name="field_2" type="radio" value="5 cards" />5 cards</label>
+		<label><input checked="checked" name="field_2" type="radio" value="4 cards" />4 cards</label></div>
+		<div class="editfield field_15 field_opening-1nt-shows alt field_type_radio">
+		<div class="radio"><label for="field_15"><strong>Opening 1NT shows:</strong> </label>
+		<div id="field_15"><label><input checked="checked" name="field_15" type="radio" value="15-17 hcp" />15-17 hcp</label>
+		<label><input checked="checked" name="field_15" type="radio" value="12-14 hcp" />12-14 hcp</label></div>
+		</div>
+		</div>
+		<div class="editfield field_18 field_opening-2x-shows alt field_type_radio">
+		<div class="radio"><label for="field_18"><strong>Opening 2<span style="color: red;">♦</span>, 2<span style="color: red;">♥</span>, or 2♠ shows:</strong> </label>
+		<div id="field_18"><label><input checked="checked" name="field_18" type="radio" value="Weak" />weak</label>
+		<label><input checked="checked" name="field_18" type="radio" value="Strong" />strong</label></div>
+		</div>
+		</div>
+		<div class="editfield field_6 field_xfers-shows alt field_type_radio">
+		<div class="radio"><label for="field_6"><strong>Do you play transfers?</strong> </label>
+		<div id="field_6"><label><input checked="checked" name="field_6" type="radio" value="Yes" />yes</label>
+		<label><input checked="checked" name="field_6" type="radio" value="No" />no</label></div>
+		</div>
+		</div>
+		<div class="btn btn-primary"><input id="profile-group-edit-submit" name="profile-group-edit-submit" type="submit" value="Save Changes " /></div>
 
 <?php 
-
-
- ?>
+	}
+	else {
+?>
+		<h4>Register to Play Bridge</h4>
+<?php
+	}
+?>
 <?php endwhile; ?>

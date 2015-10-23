@@ -22,7 +22,9 @@ $template_file = get_post_type();
 			get_sidebar('teacher');
 			break;
 		case 'template-Leaderboard.php':
-			get_sidebar('leaderboard');
+			if(strlen(get_user_role())>0) {
+				get_sidebar('leaderboard');
+			}
 			break;
 		case 'template-modules.php':
 			get_sidebar('learn');

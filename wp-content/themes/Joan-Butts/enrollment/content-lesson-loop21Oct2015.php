@@ -2,7 +2,7 @@
 	<?php
 		$userRole = get_user_role();
 		$freeLesson = get_field('free_lesson');
-		if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {
+		if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {
 			$lessonHref = get_the_permalink();
 		}
 		else {
@@ -19,7 +19,7 @@
 			</h2>
 			</header> <!-- end article header -->
 			<section class="entry-content clearfix ">
-				<?php if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {?>
+				<?php if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {?>
 					<?php
 					$thumb_id = get_post_thumbnail_id();
 					
