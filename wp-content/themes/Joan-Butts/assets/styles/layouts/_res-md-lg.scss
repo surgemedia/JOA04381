@@ -15,6 +15,11 @@
 		// position: absolute;
 	 //    top: 0;
 	 //    right: 0;
+		.header-link {
+			&:hover,&:focus {
+				text-decoration: none;
+			}	
+		}
 	}
 	.login-container {
 		a {
