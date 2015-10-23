@@ -22,6 +22,7 @@ license.txt
 local-config.php
 readme.html
 wp-activate.php
+wp-content/updraft
 !wp-content/uploads
 wp-content/uploads/2015/07
 wp-content/uploads/2015/03
