@@ -6,10 +6,10 @@
 	 margin: 0;
 	 padding: 0;
 	 .news{
-		@include lessson($yellow);
+		@include lessson($blue);
 		&:hover {
 				.news-title {
-					color: $yellow;
+					color: $blue;
 				}
 			}
 		}
@@ -18,9 +18,24 @@
 	 	
 	 	a{
 	 	 color: #fff;
-	 	 background:$yellow;
+	 	 background:$blue;
 	   margin-bottom: 0.5em;
      margin-left: .5em;
 	  }
 	 }
 }
+/*---------------------------------------------------
+				AUTHOR POSTS
+---------------------------------------------------*/
+article.type-post {
+	@include lessson($blue);
+	&:hover {
+		.entry-title {
+			a {
+				color: $blue;
+			}
+		}
+	}
+}
+
+		

@@ -30,7 +30,7 @@ if ( $query->have_posts() ) {?>
 					
 				</header> <!-- end article header -->
 				<?php 
-					if(!empty(get_user_role())) {
+					if(strlen(get_user_role())>0) {
 				?>
 				<section class="entry-content clearfix" itemprop="articleBody">
 				<ul id="video_list">
