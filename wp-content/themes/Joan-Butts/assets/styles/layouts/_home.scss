@@ -90,13 +90,11 @@
 		margin: 0 auto;
     	.video-container {
     		position: relative;
-    		cursor: pointer;
     		text-align: center;
     		img {
-    			margin: 4em 0 0 0;
+    			// margin: 4em 0 0 0;
     			width:100%;
     			max-width: 32em;
-
     		}
 	    	.video-tag {
 	    		text-transform: uppercase;
@@ -111,6 +109,7 @@
 			    width: 94%;
 			    bottom: 60px;
 			    font-weight:bold;
+			    cursor: pointer;
 	    	}
 	    }
     	.video-title {
@@ -147,6 +146,9 @@
 				list-style: none;
 				margin-bottom: 15px;
 			    padding: 0;
+			}
+			.theme-button {
+				width: 100%;
 			}
 		}
 	}
@@ -238,22 +240,26 @@
     	background: 0 0;
 	    opacity: 1;
 	    width: 16.4%;
-    	.more {
-    		background-color: $theme-black;
-    		color: #fff;
-    		display: block;
-		    position: absolute;
-		    bottom: 10px;
-		    width: 100%;
-		    text-transform: uppercase;
-		    font-weight: normal;
-		    font-size: 14px;
-		    padding: 6px 0;
-    	}
+    	
     	.icon-chevron {
     		color: $grey;
 		    font-size: 80px;
 		    top: 15%;
     	}
     }
+    .more {
+   		background-color: $theme-black;
+   		color: #fff;
+   		display: block;
+    	position: absolute;
+    	bottom: 10px;
+    	right: 0; 
+    	width: 16.4%;
+    	text-transform: uppercase;
+    	font-weight: normal;
+    	font-size: 14px;
+    	padding: 6px 0;
+    	cursor: pointer;
+    	text-align: center;
+   	}
 }

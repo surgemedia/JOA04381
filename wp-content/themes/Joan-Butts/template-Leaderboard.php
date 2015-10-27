@@ -65,10 +65,5 @@ $subscription_ref = bp_get_profile_field_data('field=fsid&amp;user_id='.$the_use
 
 <?php 
 	}
-	else {
-?>
-		<h4>Register to Play Bridge</h4>
-<?php
-	}
 ?>
 <?php endwhile; ?>

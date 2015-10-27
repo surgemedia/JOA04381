@@ -1,4 +1,4 @@
-<h3 class="section-title">Lessons at a bridge club</h3>
+<h3 class="section-title">Play Bridge Online</h3>
 <section class="practice-compete">
 	<div class="clearfix">
 		<div class="col-md-6 image-container">
@@ -9,5 +9,29 @@
 			<?php the_field('pratice_and_compete'); ?>
 		</div>
 	</div>
-	<a href="<?php the_field('practice_and_compete_link'); ?>" class="button register-button"><?php the_field('practice_and_compete_link_text'); ?></a>
+	<?php
+		switch(get_user_role()) {
+        	case 'royal':
+    ?>
+    			<a href="/play/?game=set&val=0" class="theme-button">Play</a>
+    <?php
+        		break;
+        	case 'administrator':
+    ?>
+    			<a href="/play/?game=set&val=0" class="theme-button">Play</a>
+    <?php
+        		break;
+        	case 'free_member':
+        		$the_user_id = $bp->loggedin_user->userdata->ID;
+    ?>
+    			<a href="http://sites.fastspring.com/joanbuttsbridge/product/joanbuttsplaybridgeonline?action=adds&referrer=<?php echo $the_user_id ?>" class="theme-button">Upgrade</a>
+    <?php    		
+        		break;
+        	default :
+    ?>
+    			<a class="theme-button" href="/register/">Register Today!</a>
+    <?php
+        		break;
+        }
+	?>
 </section>

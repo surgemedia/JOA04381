@@ -21,5 +21,13 @@
 		</div>
 		<div class="col-md-6"></div>
 	</div>
-	<a href="<?php the_field('bridge_holidays_link'); ?>" class="button register-button"><?php the_field('bridge_holidays_link_text'); ?></a>
+	<?php
+		$post_object_url = get_permalink(get_field('bridge_holiday')->ID);
+		if($post_object_url) {
+	?>
+			<a href="<?php echo $post_object_url ?>" class="button theme-button">View More</a>
+	<?php
+		}
+	?>
+	
 </section>

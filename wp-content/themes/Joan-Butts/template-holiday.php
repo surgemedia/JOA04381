@@ -26,15 +26,14 @@ Template Name: Holiday Page
             <?php // WP_Query arguments
 				$args = array (
 					'post_type'              => array( 'tribe_events' ),
-					'posts_per_page'         => '-1',
-                     'tax_query' => array(
+                    'posts_per_page'         => 25,
+                    'eventDisplay'=>        'present',
+                    'tax_query' => array(
                             'taxonomy' => 'tribe_events_cat',
                             'field'    => 'slug',
                             'terms'    => 'bridge-holiday',
                         ),
-                    
-					// 'order'                  => 'ASC',
-					'orderby'                => 'date'
+                    'orderby'                => 'ASC'
 					);
 
 				// The Query
@@ -50,7 +49,7 @@ Template Name: Holiday Page
 				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
 				 ?>
 
-				 <?php if( strtotime($text_date) > strtotime('now') ) { ?>
+				 <?php /*if( strtotime($text_date) > strtotime('now') ) {*/ ?>
                 <li class="holiday">
                     <?php
                         if(get_sub_field('holiday_image')) { ?>
@@ -72,12 +71,12 @@ Template Name: Holiday Page
                           <?php } else { ?>
                         <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
                         <?php } ?>
-                         <a target="_blank" class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
+                         <a class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
                     </div>
                 </li>
            
 			<?php
-		}	
+		// }	
 			}
 
 				} else {

@@ -21,12 +21,12 @@ if(is_user_logged_in()){
 	?>
 	 <?php 
 	 if(get_user_role()=='administrator' || (get_user_role()=='free_member')){ ?>
-	 	<a class="header-link" href="<?php echo $upgradeSub ?>"><i class="icon-heart"></i>Upgrade</a>
+	 	<a class="header-link" href="<?php echo $upgradeSub ?>"><i class="icon-spade"></i>Upgrade</a>
 	<?php }; 
 	if( (get_user_role()=='administrator') || ( get_user_role()=='royal') ){ ?>
-	 	<a class="header-link" href="<?php echo $editSubscription; ?>"><i class="icon-heart"></i>Manage Subscription</a>
+	 	<a class="header-link" href="<?php echo $editSubscription; ?>"><i class="icon-spade"></i>Manage Subscription</a>
 	 <?php }; //is_royal ?>
-	 	<a class="header-link" href="<?php echo wp_logout_url(); ?>"><i class="icon-club"></i>Logout</a>
+	 	<a class="header-link" href="<?php echo wp_logout_url(home_url()); ?>"><i class="icon-club"></i>Logout</a>
 <?php 
 	$user = wp_get_current_user();
     $user_id = bp_loggedin_user_id();

@@ -45,7 +45,9 @@
 					?>
 					<br>
 					<?php
-					get_template_part('templates/button','upgrade-user');
+					if(!(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0)) {
+						get_template_part('templates/button','upgrade-user');
+					}
 					?>
 				</p>
 				</section> <!-- end article section -->

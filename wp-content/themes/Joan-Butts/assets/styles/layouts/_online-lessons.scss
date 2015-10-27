@@ -154,13 +154,13 @@
     	transition: 0.5s all ease;
     	@include lessson($blue);
     	a {
-    		&.btn-primary {
+    		&.theme-button {
     			color: #fff;
     		}
     	}
     	section.entry-content {
     		p {
-    			.btn {
+    			.theme-button {
     				margin-top: 15px;
     			}
     		}

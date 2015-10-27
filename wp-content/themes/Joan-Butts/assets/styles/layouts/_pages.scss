@@ -45,6 +45,7 @@
 			    		display: inline-block;
 					    width: 200px !important;
 					    text-align: left;
+					    white-space: normal;
 				    }
 				    .data {
 				    	display: inline-block;
@@ -80,6 +81,9 @@
 				}
 			}
 		}
+	}
+	.field-visibility-settings-toggle, .field-visibility-settings-notoggle {
+		display: none;
 	}
 }
 /*------------------------------

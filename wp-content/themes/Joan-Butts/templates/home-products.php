@@ -61,8 +61,8 @@
 					<a class="right carousel-control" href="#products-carousel" role="button" data-slide="next">
 					    <span class="icon-chevron right" aria-hidden="true"></span>
 					    <span class="sr-only">Next</span>
-					    <span class="more">More</span>
 					</a>
+					<span class="more" onclick="location.href='/shop'">More</span>
 			<?php
 				} else {
 					// no posts found

@@ -50,9 +50,13 @@
 		    display: inline-block;
 		    margin-right: 10px;
 		    text-transform: uppercase;
+		    cursor: pointer;
 		    i {
 		    	color: $red;
     			margin-right: 10px;
+    			&.icon-spade, &.icon-club {
+    				color: $font-color;
+    			}
 		    }
 		}
 	}
