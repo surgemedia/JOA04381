@@ -37,10 +37,40 @@
 			?>
 							<?php echo $startCarousel; ?>
 							<?php // if( strtotime($text_date) > strtotime('now') ) { ?>
-								<div class="event-obj col-lg-2 col-md-2 col-sm-3">
+								<?php 
+									$taxonomySlug = get_the_terms( get_the_id(), 'tribe_events_cat')[0]->slug;
+									switch ($taxonomySlug) {
+										case 'bridge-holiday':
+											$classColor = 'bg-green';
+											break;
+										case 'game':
+											$classColor = 'bg-blue';
+											break;
+										case 'live-lessons':
+											$classColor = 'bg-blue';
+											break;
+										case 'live-lessons-at-other-clubs':
+											$classColor = 'bg-blue';
+											break;
+										case 'past-holidays':
+											$classColor = 'bg-green';
+											break;
+										case 'professional-development-day':
+											$classColor = 'bg-blue';
+											break;
+										case 'abf-teacher-training-programmes':
+											$classColor = 'bg-blue';
+											break;
+										default:
+											$classColor = '';
+											break;
+									}
+								?>
+								<div class="event-obj col-lg-2 col-md-2 col-sm-3 <?php echo $classColor; ?>">
+								
 								<a href="<?php the_permalink(); ?>">
 									<p><?php the_title(); ?></p>
-									<p><?php echo $text_date ?></p>
+									<p><?php echo $text_date ?><i class="dashicons dashicons-visibility pull-right"></i></p>
 									</a>
 								</div>
 								<?php // } ?>

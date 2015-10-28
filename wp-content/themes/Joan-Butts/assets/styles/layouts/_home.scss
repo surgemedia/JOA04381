@@ -49,7 +49,15 @@
     position: relative;
 
     a {
-    	color:$blue;
+    	color:$font-color;
+    	i {
+    		margin: 0 3px;
+    		vertical-align: bottom;
+    		color: $grey-medium;
+    		position: absolute;
+		    bottom: 0;
+		    right: 15px;
+    	}
     }
     #events-carousel {
     	height: 80px;
@@ -62,7 +70,7 @@
     			font-size:0.9em;
     			// width: 20%;
     			float: left;
-    			// padding: 10px 20px;
+    			padding: 10px 15px;
     			border-right: 1px solid $border-blue;
     			height: 70px;
     			&:first-child {

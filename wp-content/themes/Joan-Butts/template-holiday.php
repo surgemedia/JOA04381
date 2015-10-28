@@ -19,19 +19,30 @@ Template Name: Holiday Page
         <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
         <?php the_content(); ?>
         </header> <!-- end article header -->
-
-
  <section id="upcoming-events" class="entry-content clearfix" itemprop="articleBody">
             <ul id="holiday-list">
             <?php // WP_Query arguments
-				$args = array (
+                $page = $post->post_name;
+                switch ($page) {
+                    case 'upcoming-holdiays':
+                        $terms = 'bridge-holiday';
+                        break;
+                    case 'timetable':
+                        $terms = array('live-lessons','live-lessons-at-other-clubs');
+                        break;
+                    default:
+                        $terms = '';
+                        break;
+                }
+                $args = array (
 					'post_type'              => array( 'tribe_events' ),
-                    'posts_per_page'         => 25,
+                    'posts_per_page'         => -1,
                     'eventDisplay'=>        'present',
-                    'tax_query' => array(
+                    'tax_query' => array( array (
                             'taxonomy' => 'tribe_events_cat',
                             'field'    => 'slug',
-                            'terms'    => 'bridge-holiday',
+                            'terms'    => $terms,
+                            ),
                         ),
                     'orderby'                => 'ASC'
 					);

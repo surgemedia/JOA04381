@@ -2,7 +2,7 @@
     <div class="container">
         <div class="page-header">
             <div class="logo-container">
-                <a class="brand col-md-4 col-sm-5 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
+                <a class="brand col-md-6 col-sm-5 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
                 <?php
                         $image = get_field('logo','option');
                             if(strlen($image['url']) > 0){
