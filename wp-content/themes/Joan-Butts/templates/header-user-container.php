@@ -14,16 +14,21 @@ if(is_user_logged_in()){
 	$product_id 		= "joanbuttsplaybridgeonline";
 	$api_username 		= "apiuser";
 	$api_password 		= "bustleable";
+	echo '<!--';
 	$response = new DOMDocument();
-	$response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$subscription_ref.'?user=apiuser&pass=bustleable');
-	$editSubscription = $response->getElementsByTagName("customerUrl")->item(0)->nodeValue;
+	if((get_user_role()=='administrator') || ( get_user_role()=='royal')) {
+		$response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$subscription_ref.'?user=apiuser&pass=bustleable');
+		$editSubscription = $response->getElementsByTagName("customerUrl")->item(0)->nodeValue;
+	}
 	$upgradeSub = 'http://sites.fastspring.com/'.$store_id.'/product/'.$product_id.'?action=adds&referrer='.$the_user_id;
+	debug($response);
+	echo "-->";
 	?>
 	 <?php 
 	 if(get_user_role()=='administrator' || (get_user_role()=='free_member')){ ?>
 	 	<a class="header-link" href="<?php echo $upgradeSub ?>"><i class="icon-spade"></i>Upgrade</a>
 	<?php }; 
-	if( (get_user_role()=='administrator') || ( get_user_role()=='royal') ){ ?>
+	if( ((get_user_role()=='administrator') || ( get_user_role()=='royal')) && strlen($editSubscription)>0){ ?>
 	 	<a class="header-link" href="<?php echo $editSubscription; ?>"><i class="icon-spade"></i>Manage Subscription</a>
 	 <?php }; //is_royal ?>
 	 	<a class="header-link" href="<?php echo wp_logout_url(home_url()); ?>"><i class="icon-club"></i>Logout</a>

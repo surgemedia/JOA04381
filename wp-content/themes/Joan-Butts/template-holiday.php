@@ -22,16 +22,23 @@ Template Name: Holiday Page
  <section id="upcoming-events" class="entry-content clearfix" itemprop="articleBody">
             <ul id="holiday-list">
             <?php // WP_Query arguments
-                $page = $post->post_name;
-                switch ($page) {
+                $GLOBAL['page'] = $post->post_name;
+                switch ($GLOBAL['page']) {
                     case 'upcoming-holdiays':
                         $terms = 'bridge-holiday';
+                        $class = 'bridge-holiday';
                         break;
                     case 'timetable':
                         $terms = array('live-lessons','live-lessons-at-other-clubs');
+                        $class = 'live-lessons';
+                        break;
+                    case 'events':
+                        $terms = array('abf-teacher-training-programmes');
+                        $class = 'teacher-education';
                         break;
                     default:
                         $terms = '';
+                        $class = 'default';
                         break;
                 }
                 $args = array (
@@ -61,7 +68,7 @@ Template Name: Holiday Page
 				 ?>
 
 				 <?php /*if( strtotime($text_date) > strtotime('now') ) {*/ ?>
-                <li class="holiday">
+                <li class="holiday <?php echo $class ?>">
                     <?php
                         if(get_sub_field('holiday_image')) { ?>
                             <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
@@ -70,19 +77,21 @@ Template Name: Holiday Page
                     <h5 class="date-blue"><?php echo $text_date ?></h5>
                     <p>  <?php the_content(); ?></p>
                     <div class="holiday-buttons">
-                        <?php if(strlen(get_field('flyer_upload'))){ ?>
-                        <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
-                        <?php } else { ?>
-                        <a target="_blank" class="btn disabled" href="#">Flyer Coming Soon</a>
-                        <?php } ?>
+                        <?php if($GLOBAL['page']=='upcoming-holdiays') {?>
+                            <?php if(strlen(get_field('flyer_upload'))){ ?>
+                            <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
+                            <?php } else { ?>
+                            <a target="_blank" class="btn disabled" href="#">Flyer Coming Soon</a>
+                            <?php } ?>
 
-                        <?php if(strlen(get_field('flyer_upload'))){ ?>
-                        <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
-                       
-                          <?php } else { ?>
-                        <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
-                        <?php } ?>
-                         <a class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
+                            <?php if(strlen(get_field('flyer_upload'))){ ?>
+                            <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
+                           
+                              <?php } else { ?>
+                            <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
+                            <?php } ?>
+                        <?php }?>
+                        <a class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
                     </div>
                 </li>
            

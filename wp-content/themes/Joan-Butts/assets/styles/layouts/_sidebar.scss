@@ -87,3 +87,17 @@ aside.sidebar {
 		}
 	}
 }
+/*===============================
+=     Recommended Books          =
+===============================*/
+aside {
+	#current-product {
+		.woocommerce {
+			ul.products {
+				li.product {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
