@@ -7,14 +7,14 @@
 		    $upgradeSub = 'http://sites.fastspring.com/joanbuttsbridge/product/joanbuttsplaybridgeonline?action=adds&referrer='.$the_user_id;
 		?>
 		<p>
-			<a class="button btn-primary" href="<?php echo $upgradeSub; ?>"><?php
+			<a class="button theme-button" href="<?php echo $upgradeSub; ?>"><?php
 		    _e('UPGRADE TO PLAY LESSON HANDS') ?></a>
 		</p>
 	<?php
 	} 
 	else { ?>
 		<p>
-			<a class="button btn-primary" href="/register"><?php
+			<a class="button theme-button" href="/register"><?php
 		    _e('Please Login to play hands') ?></a>
 		</p>
 <?php

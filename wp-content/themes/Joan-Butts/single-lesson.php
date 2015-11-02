@@ -70,7 +70,7 @@ if(strlen($next_in_module) <= 1){
 					<?php 
 						$userRole = get_user_role();
 						$freeLesson = get_field('free_lesson');
-						if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {
+						if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {
 							$rows = get_field('lessons_repeater');
 							for ($i=0; $i <sizeof($rows) ; $i++) {
 								// Should wrapped in a tag?
@@ -85,7 +85,7 @@ if(strlen($next_in_module) <= 1){
 								<div class="actions">
 								<?php
 									$hands = $rows[$i]["lesson_hand"];
-									if((get_user_role()=='administrator') || (get_user_role()=='royal') ){
+									if((get_user_role()=='administrator' || get_user_role()=='royal' || get_field('free_lesson')) && strlen(get_user_role())>0){
 										echo apply_filters( 'the_content',$hands); 
 									} else {
 										if(strlen($rows[$i]["lesson_hand"]) > 0){
@@ -113,14 +113,14 @@ if(strlen($next_in_module) <= 1){
 						
 			<div class="two_buttons">
 				<?php $GLOBALS['group_single_slug'] = $terms[0]->slug ; ?>
-				<a id="button1" class="btn btn-primary float-left" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
+				<a id="button1" class="theme-button float-left" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
 				<?php 
-					if(($userRole =='administrator' || $userRole=='royal') && !empty(get_user_role())) {
+					if(($userRole =='administrator' || $userRole=='royal') && strlen(get_user_role())>0) {
 				?>
-						<a id="nav-next-button" class="btn  btn-primary nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
+						<a id="nav-next-button" class="theme-button nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
 						<?php 
 					}
-					if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && !empty(get_user_role())) {
+					if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {
 							$the_title = get_the_title();
 							completeLessonButton( $the_title );
 						?>

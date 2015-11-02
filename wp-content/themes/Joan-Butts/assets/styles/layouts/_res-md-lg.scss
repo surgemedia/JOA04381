@@ -1,12 +1,15 @@
 /*------------------------------
 		GLOBAL
 -------------------------------*/
-.register-button {
+.theme-button {
 	&:hover,&:focus {
 		text-decoration: none;
+		color: #fff;
+		background-color: $blue;
 	}
 }
-
+.bg-green:hover { background-color: $green;}
+.bg-blue:hover { background-color: $blue;}
 /*------------------------------
 		PAGE-HEADER
 -------------------------------*/
@@ -15,6 +18,11 @@
 		// position: absolute;
 	 //    top: 0;
 	 //    right: 0;
+		.header-link {
+			&:hover,&:focus {
+				text-decoration: none;
+			}	
+		}
 	}
 	.login-container {
 		a {
@@ -88,6 +96,17 @@
 		}
 	}
 }
+.events-carousel {
+	.event-obj {
+		transition: all 0.3s ease;
+		&:hover {
+			a, a:hover, a:focus {
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+}
 .site-video {
 	.row {
 		width: 90%;
@@ -111,7 +130,7 @@
   .content{
   	padding: 5% 5% 0 0;
   }
-	.register-button {
+	.theme-button {
 		position: absolute;
 		bottom: 0;
 		left: 50%;
@@ -119,7 +138,7 @@
 }
 .lessons {
     min-height: 370px;
-	.register-button {
+	.theme-button {
 		position: absolute;
 		bottom: 0;
 		left: 50%;
@@ -127,10 +146,17 @@
 }
 .bridge-holidays {
     min-height: 370px;
-	.register-button {
+	.theme-button {
 		position: absolute;
 		bottom: 0;
 		left: 9%;
+	}
+	.content {
+		a {
+			&:hover,&:focus {
+				text-decoration: none;
+			}
+		}
 	}
 }
 /*------------------------------

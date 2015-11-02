@@ -2,7 +2,7 @@
     <div class="container">
         <div class="page-header">
             <div class="logo-container">
-                <a class="brand col-md-4 col-sm-5 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
+                <a class="brand col-md-6 col-sm-5 col-xs-12" href="<?= esc_url(home_url('/')); ?>">
                 <?php
                         $image = get_field('logo','option');
                             if(strlen($image['url']) > 0){
@@ -13,62 +13,7 @@
                 <?php } ?>
                 </a>
                 <div class="user-container col-md-5 col-sm-7 col-xs-12">
-                    <?php
-                            if(is_user_logged_in()) {
-                                $user = wp_get_current_user();
-                                $user_id = bp_loggedin_user_id();
-                                    $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
-                    ?>
-                    <div id="header-user" class="row">
-                       
-                        <div class="display-img col-md-3 col-sm-4 col-xs-6">
-                         <?php if (get_user_role()=='royal' OR get_user_role()=='administrator') { ?>
-                        <i class="crown"></i> <!--For Crown-->
-                        <?php  } ?>
-                            <?php echo $avatarurl; ?>
-                        </div>
-                        <div class="current_info col-md-8 col-sm-8 col-xs-6">
-                            <h2><a href="<?php echo site_url().'/login/'.$user->user_login; ?>"> <?php echo $user->display_name; ?></a></h2>
-                            <span><?php echo getSkillLevel(); ?></span>
-                            <ul class="actions">
-                            <?php
-                                                    if(get_user_role()!='royal') {
-                            ?>
-                            
-                                <li>
-
-                                    <?php /*<?php
-                                        global $bp;
-                                        $the_user_id = $bp->loggedin_user->userdata->ID;
-                                        $upgradeSub = 'http://sites.fastspring.com/joanbuttsbridge/product/joanbuttsplaybridgeonline?action=adds&referrer='.$the_user_id;
-
-                                    ?>
-                                    <a class="btn btn-yellow" href="<?php echo $upgradeSub ?>">Upgrade <i class=" dashicons dashicons-awards"></i></a>
-                                    */?>
-                                    <?php get_template_part('templates/button','upgrade-user');?>
-                                </li>
-                            <?php
-                                                    }
-                            ?>
-                                <li>
-                                    <a class="btn btn-primary" href="<?php echo wp_logout_url(); ?>">Logout <i class=" dashicons dashicons-external"></i></a>
-                                </li>
-                            </ul>
-                            
-
-                        </div>
-                    </div>
-                    <?php
-                            }
-                            else {
-                    ?>
-                    <div class="login-container text-right">
-                        <a class="button" href="/register"><i class="icon-heart"></i>Register</a>
-                        <a class="button" data-toggle="modal" data-target="#mylogin" ><i class="icon-spade" ></i> Login</i></a>
-                    </div>
-                    <?php
-                            }
-                    ?>
+                    <?php get_template_part('templates/header','user-container');?>
                 </div>
             </div>
 

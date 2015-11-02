@@ -20,6 +20,11 @@
 					font-weight: bold; 
 					margin-right: 5px;
 				}
+				&.theme-button {
+					display: inline-block;
+				    color: #fff;
+				    margin-top: 1em;
+				}
 			}
 		}
 		.social-links {
@@ -46,4 +51,23 @@ footer.content-info {
     display: inline-block;
     width: 100%;
 
+}
+#newsletter-modal {
+	.modal-content {
+		.modal-header {
+			.modal-title {
+				color: $blue;
+				text-align: center;
+			}
+		}
+		input {
+			border: 1px solid $blue;
+	    	border-radius: 0;
+		}
+		.theme-button {
+			display: inline-block;
+			color: #fff;
+			border: 0;
+		}
+	}
 }

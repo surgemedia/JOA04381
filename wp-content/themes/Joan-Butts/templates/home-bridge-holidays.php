@@ -12,8 +12,9 @@
 
 					$the_event = get_post();
 					$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
+					$post_object_url = get_permalink(get_field('bridge_holiday')->ID);
 			?>
-				    	<h3><?php the_title(); ?></h3>
+				    	<a href="<?php echo $post_object_url ?>"><h3><?php the_title(); ?></h3></a>
 						<h3 class="date"><?php echo $text_date ?></h3>
 				    	<?php the_content(); ?>
 				    <?php wp_reset_postdata(); ?>
@@ -21,5 +22,5 @@
 		</div>
 		<div class="col-md-6"></div>
 	</div>
-	<a href="<?php the_field('bridge_holidays_link'); ?>" class="button register-button"><?php the_field('bridge_holidays_link_text'); ?></a>
+	<a href="/upcoming-holdiays" class="button theme-button">View Upcoming Holidays</a>
 </section>

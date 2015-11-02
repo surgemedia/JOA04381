@@ -19,22 +19,39 @@ Template Name: Holiday Page
         <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
         <?php the_content(); ?>
         </header> <!-- end article header -->
-
-
  <section id="upcoming-events" class="entry-content clearfix" itemprop="articleBody">
             <ul id="holiday-list">
             <?php // WP_Query arguments
-				$args = array (
+                $GLOBAL['page'] = $post->post_name;
+                switch ($GLOBAL['page']) {
+                    case 'upcoming-holdiays':
+                        $terms = 'bridge-holiday';
+                        $class = 'bridge-holiday';
+                        break;
+                    case 'timetable':
+                        $terms = array('live-lessons','live-lessons-at-other-clubs');
+                        $class = 'live-lessons';
+                        break;
+                    case 'events':
+                        $terms = array('abf-teacher-training-programmes');
+                        $class = 'teacher-education';
+                        break;
+                    default:
+                        $terms = '';
+                        $class = 'default';
+                        break;
+                }
+                $args = array (
 					'post_type'              => array( 'tribe_events' ),
-					'posts_per_page'         => '-1',
-                     'tax_query' => array(
+                    'posts_per_page'         => -1,
+                    'eventDisplay'=>        'present',
+                    'tax_query' => array( array (
                             'taxonomy' => 'tribe_events_cat',
                             'field'    => 'slug',
-                            'terms'    => 'bridge-holiday',
+                            'terms'    => $terms,
+                            ),
                         ),
-                    
-					// 'order'                  => 'ASC',
-					'orderby'                => 'date'
+                    'orderby'                => 'ASC'
 					);
 
 				// The Query
@@ -50,8 +67,8 @@ Template Name: Holiday Page
 				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
 				 ?>
 
-				 <?php if( strtotime($text_date) > strtotime('now') ) { ?>
-                <li class="holiday">
+				 <?php /*if( strtotime($text_date) > strtotime('now') ) {*/ ?>
+                <li class="holiday <?php echo $class ?>">
                     <?php
                         if(get_sub_field('holiday_image')) { ?>
                             <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
@@ -60,24 +77,26 @@ Template Name: Holiday Page
                     <h5 class="date-blue"><?php echo $text_date ?></h5>
                     <p>  <?php the_content(); ?></p>
                     <div class="holiday-buttons">
-                        <?php if(strlen(get_field('flyer_upload'))){ ?>
-                        <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
-                        <?php } else { ?>
-                        <a target="_blank" class="btn disabled" href="#">Flyer Coming Soon</a>
-                        <?php } ?>
+                        <?php if($GLOBAL['page']=='upcoming-holdiays') {?>
+                            <?php if(strlen(get_field('flyer_upload'))){ ?>
+                            <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
+                            <?php } else { ?>
+                            <a target="_blank" class="btn disabled" href="#">Flyer Coming Soon</a>
+                            <?php } ?>
 
-                        <?php if(strlen(get_field('flyer_upload'))){ ?>
-                        <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
-                       
-                          <?php } else { ?>
-                        <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
-                        <?php } ?>
-                         <a target="_blank" class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
+                            <?php if(strlen(get_field('flyer_upload'))){ ?>
+                            <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
+                           
+                              <?php } else { ?>
+                            <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
+                            <?php } ?>
+                        <?php }?>
+                        <a class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
                     </div>
                 </li>
            
 			<?php
-		}	
+		// }	
 			}
 
 				} else {

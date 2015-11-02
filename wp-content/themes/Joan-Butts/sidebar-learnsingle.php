@@ -43,8 +43,10 @@
 		<h3>Course Activites</h3>
 		<ul>
 			<li>
-			<?php $groupslug = $GLOBALS['current_course_obj']->slug ?>
-			<a class="btn btn-primary" href="<?php echo site_url(); ?>/groups/<?php echo $GLOBALS['group_single_slug'] ?>">Discuss this<span class="dashicons dashicons-groups"></span></a>
+				<?php if(strlen(get_user_role())>0) { ?>
+				<?php $groupslug = $GLOBALS['current_course_obj']->slug ?>
+				<a class="theme-button" href="<?php echo site_url(); ?>/groups/<?php echo $GLOBALS['group_single_slug'] ?>">Discuss this</a>
+				<?php }?>
 		</li>
 		
 

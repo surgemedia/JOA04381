@@ -14,21 +14,25 @@ if(is_user_logged_in()){
 	$product_id 		= "joanbuttsplaybridgeonline";
 	$api_username 		= "apiuser";
 	$api_password 		= "bustleable";
+	echo '<!--';
+
 	$response = new DOMDocument();
 	$response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$subscription_ref.'?user=apiuser&pass=bustleable');
 	$editSubscription = $response->getElementsByTagName("customerUrl")->item(0)->nodeValue;
 	$upgradeSub = 'http://sites.fastspring.com/'.$store_id.'/product/'.$product_id.'?action=adds&referrer='.$the_user_id;
+	debug($response);
+	echo "-->";
 	?>
 	 <?php 
 	 if(get_user_role()=='administrator' || (get_user_role()=='free_member')){ ?>
-	 	<a class="btn btn-primary upgrade" href="<?php echo $upgradeSub ?>">Upgrade<i class=" dashicons dashicons-awards"></i></a>
+	 	<a class="theme-button" href="<?php echo $upgradeSub ?>">Upgrade</a>
 	<?php }; 
 	if( (get_user_role()=='administrator') || ( get_user_role()=='royal') ){ ?>
-	 	<a class="btn btn-primary subscription" href="<?php echo $editSubscription; ?>">Manage Subscription<i class=" dashicons dashicons-welcome-write-blog"></i></a>
+	 	<a class="theme-button pad-5" href="<?php echo $editSubscription; ?>">Manage Subscription</a>
 	 <?php }; //is_royal ?>
 <?php 
 } else { ?>
- 	<a class="btn btn-primary" href="/register/">Register Today!</a>
+ 	<a class="theme-button" href="/register/">Register Today!</a>
 
 <?php }; ?>
 

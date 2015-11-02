@@ -6,7 +6,7 @@
     // overflow: hidden;
 
     .logo-container {
-    	text-align: right;
+    	text-align: left;
     	padding-bottom:2em;
 		a {
 			display: inline-block;
@@ -21,19 +21,43 @@
 	.user-container {
 		position:relative;
 		float:right;
-		display:inline-block;;
+		display:inline-block;
+		text-align: right;
 		.display-img {
 			img {
-				max-width: 100%;
+				max-width: 80%;
 			    height: auto;
 			    border-radius: 50%;
+			    border: 3px solid $blue;
 			}
 		}
 		.current_info {
-			text-align: left;
-			h2 {
-				margin: 0;
+			text-align: right;
+			padding-right: 0;
+			.username {
+				margin: 10px 0 5px;
+				a {
+					color: $blue;
+				}
 			}
+			i {
+				font-size: 11px;
+				margin: 0 2px 0 5px;
+			}
+		}
+		.header-link {
+			color: $theme-black;
+		    display: inline-block;
+		    margin-right: 10px;
+		    text-transform: uppercase;
+		    cursor: pointer;
+		    i {
+		    	color: $red;
+    			margin-right: 10px;
+    			&.icon-spade, &.icon-club {
+    				color: $font-color;
+    			}
+		    }
 		}
 	}
 
@@ -55,20 +79,27 @@
 	}
 #header-user {
 	position: relative;
-	display: inline-block;
+	display: flex;
+	margin-top: 10px;
 	.display-img {
 		position: relative;
-	.crown {
-		background:url('../images/crown.png');
-		z-index:99;
-		height:40px;
-		width:40px;
-		// -webkit-background-size: fill;
-		background-size: 100%;
-		position: absolute;
-		top:-1.7em;
-		right: 32%;
+		.crown {
+			background:url('../images/crown.png');
+			z-index:99;
+			height:40px;
+			width:40px;
+			// -webkit-background-size: fill;
+			background-size: 100%;
+			position: absolute;
+			// top:-1.7em;
+			// right: 32%;
+			bottom: -8px;
+			right: 8px;
+			&+.avatar {
+				border: 3px solid $yellow;
+			}
 		}
+		
 	}
 	.actions {
 		margin: 0;

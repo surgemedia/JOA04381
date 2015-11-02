@@ -1,5 +1,5 @@
-<h3 class="section-title">Books: Learn from the experts</h3>
-<section class="products-carousel">
+<h3 class="section-title hidden-xs">Books: Learn from the experts</h3>
+<section class="products-carousel hidden-xs">
 	<div id="products-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 		<div class="carousel-inner" role="listbox">
 			<?php 
@@ -61,8 +61,8 @@
 					<a class="right carousel-control" href="#products-carousel" role="button" data-slide="next">
 					    <span class="icon-chevron right" aria-hidden="true"></span>
 					    <span class="sr-only">Next</span>
-					    <span class="more">More</span>
 					</a>
+					<span class="more" onclick="location.href='/shop'">More</span>
 			<?php
 				} else {
 					// no posts found

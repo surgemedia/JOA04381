@@ -1,4 +1,4 @@
-<div id="buddypress" class="buddypress">
+<div id="buddypress" class="buddypress register-page">
 	<?php get_template_part('templates/home','loop-account-types'); ?>
 	<?php
 

@@ -33,18 +33,21 @@ body {
     .container {
     	background-color: #fff;
     }
-    .register-button {
-	    display: block;
+    .theme-button {
+	    display: inline-block;
 	    background-color: #ed4946;
 	    color: #fff;
 	    text-transform: uppercase;
 	    padding: 5px 20px;
 	    text-align: center;
-	}
-	.register-button {
+	    border: 0;
 	    &:before, &:after {
 		    content: "\2013";
 		    margin: 0 8px;
+		}
+		input {
+			background: transparent;
+			border: 0;
 		}
 	}
 	.section-title {
@@ -66,7 +69,19 @@ body {
 			}
 		}
 	}
-
+	.woocommerce-breadcrumb {
+		display: none;
+	}
+	.register-page {
+		.account-card {
+			.theme-button {
+				display: none;
+			}
+		}
+	}
+	.pad-5 {
+		padding: 5px;
+	}
 }
 .pdf-icon {
     background: url(../images/pdf-icon.png) no-repeat 0 0;

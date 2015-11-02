@@ -1,14 +1,15 @@
 
 .entry-content{
 	.cpt-li{
-	  transition: .3s all ease;
+	    transition: .3s all ease;
 		display: block;
-	  float: left;
-	  width: 100%;
-	  border-bottom: 3px solid $pink;
-	  iframe {
+	  	float: left;
+	  	width: 100%;
+	  	border-bottom: 3px solid $pink;
+	  	iframe {
 			float: left;
-  		margin: 6px 20px 20px 0;
-	  }
+  		 	margin: 6px 20px 20px 0;
+  		 	max-width: 100%;
+	  	}
 	}
 }

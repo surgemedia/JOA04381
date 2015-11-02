@@ -36,6 +36,15 @@
 =            Sidebar            =
 ===============================*/
 aside.sidebar {
+	.track-skills {
+		.sidebar-title {
+			margin-bottom: 39px;
+		}
+		.content {
+			background-color: $grey-light;
+			padding: 24px 15px 15px;
+		}
+	}
 	ul {
 		list-style:none;
 		margin:0;
@@ -75,6 +84,20 @@ aside.sidebar {
 			width:100%;
 			margin:1em 0 0 0;
 			font-weight:bold;
+		}
+	}
+}
+/*===============================
+=     Recommended Books          =
+===============================*/
+aside {
+	#current-product {
+		.woocommerce {
+			ul.products {
+				li.product {
+					width: 100%;
+				}
+			}
 		}
 	}
 }

@@ -14,7 +14,7 @@
     <h5 class="date-blue"><?php echo $text_date ?></h5>
     <p>  <?php the_content(); ?></p>
     <div class="news-buttons">
-      <a target="_blank" class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
+      <a class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
     </div>
 
 

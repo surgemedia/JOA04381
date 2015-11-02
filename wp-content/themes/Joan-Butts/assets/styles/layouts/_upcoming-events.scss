@@ -1,25 +1,68 @@
 @import "online-lessons";
 
 
- #holiday-list{
-	 list-style:none;
-	 margin: 0;
-	 padding: 0;
-	 .holiday{
+#holiday-list{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	.holiday.bridge-holiday{
 		@include lessson($green);
 		&:hover {
-				.holiday-title {
-					color: $green;
-				}
+			.holiday-title {
+				color: $green;
 			}
 		}
+		.holiday-buttons {
+			a {
+				background:$green;
+			}
+		}
+	}
+	.holiday.live-lessons{
+		@include lessson($theme-black);
+		&:hover {
+			.holiday-title {
+				color: $theme-black;
+			}
+		}
+		.holiday-buttons {
+			a {
+				background: $theme-black;
+			}
+		}
+	}
+	.holiday.teacher-education{
+		@include lessson($blue);
+		&:hover {
+			.holiday-title {
+				color: $blue;
+			}
+		}
+		.holiday-buttons {
+			a {
+				background:$blue;
+			}
+		}
+	}
+	.holiday.default{
+		@include lessson($blue);
+		&:hover {
+			.holiday-title {
+				color: $blue;
+			}
+		}
+		.holiday-buttons {
+			a {
+				background:$blue;
+			}
+		}
+	}
 
-	 .holiday-buttons { 
-	 	
-	 	a{
-	 	 background:$green;
-	   margin-bottom: 0.5em;
-     margin-left: .5em;
-	  }
-	 }
+	.holiday-buttons { 
+	 	a {
+	 		margin-bottom: 0.5em;
+     		margin-left: .5em;
+     		color: #fff !important;
+	  	}
+	}
 }
