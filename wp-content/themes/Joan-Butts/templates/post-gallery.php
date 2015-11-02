@@ -52,7 +52,7 @@
 <?php
                     foreach($images as $key=>$image):
 ?>
-                        <li class="col-sm-3">
+                        <li class="col-xs-6 col-sm-3">
                             <a class="thumbnail" id="carousel-selector-<?php echo $key; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" height="<?php echo $image['sizes']['thumbnail-height']; ?>" width="<?php echo $image['sizes']['thumbnail-width']; ?>"></a>
                         </li>
 <?php

@@ -14,8 +14,8 @@
 		<?php
 			if(strlen(get_user_role())>0) {
 		?>
-			<button class="btn btn-primary" onclick="resetProgressConfirmation();">
-			    Reset Skill <i class=" dashicons dashicons-update"></i>
+			<button class="theme-button" onclick="resetProgressConfirmation();">
+			    Reset Skill
 			</button>
 		<?php
 			} 

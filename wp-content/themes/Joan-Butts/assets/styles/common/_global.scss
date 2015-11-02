@@ -40,9 +40,14 @@ body {
 	    text-transform: uppercase;
 	    padding: 5px 20px;
 	    text-align: center;
+	    border: 0;
 	    &:before, &:after {
 		    content: "\2013";
 		    margin: 0 8px;
+		}
+		input {
+			background: transparent;
+			border: 0;
 		}
 	}
 	.section-title {

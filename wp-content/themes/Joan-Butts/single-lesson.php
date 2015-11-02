@@ -113,11 +113,11 @@ if(strlen($next_in_module) <= 1){
 						
 			<div class="two_buttons">
 				<?php $GLOBALS['group_single_slug'] = $terms[0]->slug ; ?>
-				<a id="button1" class="btn btn-primary float-left" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
+				<a id="button1" class="theme-button float-left" href="<?php echo site_url(); ?>/modules/<?php echo $GLOBALS['group_single_slug']; ?>">Back to Current Module</a>
 				<?php 
 					if(($userRole =='administrator' || $userRole=='royal') && strlen(get_user_role())>0) {
 				?>
-						<a id="nav-next-button" class="btn  btn-primary nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
+						<a id="nav-next-button" class="theme-button nav-next" href="<?php echo site_url(); ?><?php echo $next_in_module_link; ?>"><?php echo $next_in_module_text; ?></a>
 						<?php 
 					}
 					if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {

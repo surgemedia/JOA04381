@@ -38,7 +38,7 @@ if(is_user_logged_in()){
     $avatarurl = bp_core_fetch_avatar( array( 'item_id' => $user_id,'type'     => 'full', ) );
 ?>
 	<div id="header-user" class="row">
-        <div class="current_info col-md-9 col-sm-8 col-xs-6">
+        <div class="current_info col-md-9 col-sm-8 col-xs-9">
             <h3 class="username"><a href="<?php echo site_url().'/login/'.$user->user_login; ?>"> <?php echo $user->user_login; ?></a></h3>
             <span><?php echo getSkillLevel(); ?></span><i class="icon-diamond"></i>
             <span><?php 
@@ -59,7 +59,7 @@ if(is_user_logged_in()){
             	?>
             </span>
         </div>
-        <div class="display-img col-md-3 col-sm-4 col-xs-6">
+        <div class="display-img col-md-3 col-sm-4 col-xs-3">
          	<?php if (get_user_role()=='royal' OR get_user_role()=='administrator') { ?>
         		<i class="crown"></i> <!--For Crown-->
         	<?php  } ?>

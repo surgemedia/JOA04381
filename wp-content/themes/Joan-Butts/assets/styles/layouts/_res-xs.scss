@@ -1,14 +1,70 @@
+ /*========================================
+=            Global            =
+========================================*/
+.theme-button {
+    margin-bottom: 5px;
+}
 /*=============================================
 =           User Section        =
 =============================================*/
-#header-user {
-	margin: 2em 0 0 0;
-} 
-
+.page-header {
+    .logo-container {
+        a {
+            img {
+                max-width: 100%; 
+            }
+        }
+    }
+    .user-container {
+        margin-top: 1em;
+        .header-link {
+            float: left;
+        }
+        .current_info {
+            text-align: left;
+            padding: 0;
+        }
+    }
+    #header-user {
+        margin: 2em 0 0 0;
+        clear: both;
+        .display-img {
+            padding: 0;
+            .crown {
+                height: 30px;
+                width: 30px;
+                bottom: -1px;
+                right: -8px;
+            }   
+        }
+    }
+}
+ /*========================================
+=            Navigation            =
+========================================*/
+.navbar-default {
+    #primary-navigation {
+        >div {
+            width: 100%;
+            .dropdown-menu {
+                text-align: center;
+            }
+        }
+    }
+}
 
 /*========================================
 =            Home Page Events            =
 ========================================*/
+.box-nav {
+    ul {
+        li {
+            height: auto;
+            text-align: left;
+        }
+    }
+}
+
 .events-carousel {
     #events-carousel {
         height: 70px;
@@ -40,7 +96,16 @@
         }
     
 }
-
+.lessons {
+    .content {
+        padding: 20px;
+    }
+}
+.bridge-holidays {
+    .content {
+        padding: 20px; 
+    }
+}
 /*============================
 =            Avatar          =
 ============================*/
@@ -66,5 +131,48 @@
 .each_modules_fields li{
     margin-bottom: 0.5em;
 }
-
-
+.two_buttons {
+    a {
+        margin-bottom: 5px;
+    }
+}
+button.theme-button.enrollnow.pull-right {
+    float: left !important;
+    margin-bottom: 5px;
+}
+/*======================================
+=            Woocommerce            =
+======================================*/
+.woocommerce {
+    ul.products {
+        li.product-category {
+            width: 100%;
+        }
+    }
+}
+/*======================================
+=            Posts            =
+======================================*/
+#myCarousel {
+    margin-bottom: 10px;
+}
+/*======================================
+=            Sidebars            =
+======================================*/
+#module-extras {
+    ul {
+        padding: 0; 
+    }
+}
+/*======================================
+=                 Footer               =
+======================================*/
+.content-info {
+    .container {
+        .contact-details {
+            a.theme-button {
+                padding: 5px;
+            }
+        }
+    }
+}

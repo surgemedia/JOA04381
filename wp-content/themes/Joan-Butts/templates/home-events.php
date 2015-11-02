@@ -1,4 +1,4 @@
-<section class="events-carousel">
+<section class="events-carousel hidden-xs">
 	<div id="events-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 		<div class="carousel-inner" role="listbox">
 			<?php 

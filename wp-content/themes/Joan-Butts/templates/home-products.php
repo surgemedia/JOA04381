@@ -1,5 +1,5 @@
-<h3 class="section-title">Books: Learn from the experts</h3>
-<section class="products-carousel">
+<h3 class="section-title hidden-xs">Books: Learn from the experts</h3>
+<section class="products-carousel hidden-xs">
 	<div id="products-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
 		<div class="carousel-inner" role="listbox">
 			<?php 
