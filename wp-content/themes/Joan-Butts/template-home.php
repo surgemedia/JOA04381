@@ -5,6 +5,7 @@
 ?>
 
 <?php while (have_posts()) : the_post(); ?> 
+	<?php checkMembershipRedirectFastspring(); ?>
 	<?php resetUser(); ?>
 	<?php get_template_part('templates/home','box-nav') ?>
 	<?php get_template_part('templates/home', 'events'); ?>

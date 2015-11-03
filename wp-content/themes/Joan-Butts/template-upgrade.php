@@ -16,7 +16,9 @@ echo do_shortcode('[theme-my-login login_template="theme-my-login/login-form.php
 <?php 
 	$customer_ref 	= $_GET["SubscriptionReferrer"];
 	$subscription_ref 	= $_GET["SubscriptionReference"];
+	// debug($subscription_ref);
 	xprofile_set_field_data( "fsid", $customer_ref, $subscription_ref, $is_required = false );
+	xprofile_set_field_data( 'Membership', $customer_ref, getRoyalId(), $is_required = false );
 	wp_update_user(array('ID'=>$customer_ref,'role'=>'royal'));
 ?>
 <h3>Congratulations! Royal Member of Joanbutts Bridge</h3>

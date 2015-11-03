@@ -10,4 +10,11 @@
 			display: none;
 		}
 	}
+	&.register-page {
+		.standard-form {
+			.field_membership {
+				display: block;
+			}
+		}
+	}
 }

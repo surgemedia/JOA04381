@@ -16,18 +16,20 @@ if(is_user_logged_in()){
 	$api_password 		= "bustleable";
 	echo '<!--';
 	$response = new DOMDocument();
-	if((get_user_role()=='administrator') || ( get_user_role()=='royal')) {
+	if((get_user_role()=='administrator') || (get_user_role()=='royal')) {
 		$response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$subscription_ref.'?user=apiuser&pass=bustleable');
 		$editSubscription = $response->getElementsByTagName("customerUrl")->item(0)->nodeValue;
+		// debug(get_user_role());
 	}
 	$upgradeSub = 'http://sites.fastspring.com/'.$store_id.'/product/'.$product_id.'?action=adds&referrer='.$the_user_id;
-	debug($response);
+	// debug($response);
 	echo "-->";
 	?>
 	 <?php 
 	 if(get_user_role()=='administrator' || (get_user_role()=='free_member')){ ?>
 	 	<a class="header-link" href="<?php echo $upgradeSub ?>"><i class="icon-spade"></i>Upgrade</a>
 	<?php }; 
+	// debug($editSubscription);
 	if( ((get_user_role()=='administrator') || ( get_user_role()=='royal')) && strlen($editSubscription)>0){ ?>
 	 	<a class="header-link" href="<?php echo $editSubscription; ?>"><i class="icon-spade"></i>Manage Subscription</a>
 	 <?php }; //is_royal ?>

@@ -5,119 +5,35 @@ Template Name: Bridge Centre Page
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <?php the_post_thumbnail( 'single-post-thumbnail', array('class' => 'home-intro-img')); ?>
-
-    <header class="article-header">
-
-        <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-        <?php the_content(); ?>
-        </header> <!-- end article header -->
-
-
- <section id="upcoming-events" class="entry-content clearfix" itemprop="articleBody">
-            <ul id="holiday-list">
-            <?php // WP_Query arguments
-				$args = array (
-					'post_type'              => array( 'tribe_events' ),
-					'posts_per_page'         => '-1',
-                    'eventDisplay'=>        'present',
-                     'tax_query' => array(
-                            'taxonomy' => 'tribe_events_cat',
-                            'field'    => 'slug',
-                            'terms'    => 'game',
-                        ),
-                    'posts_per_page'         => 5,
-					// 'order'                  => 'ASC',
-					'orderby'                => 'date'
-					);
-
-				// The Query
-				$event_query = new WP_Query( $args );
-			
-				
-				// The Loop
-				if ( $event_query->have_posts() ) {
-					while ( $event_query->have_posts() ) {
-						$event_query->the_post();  ?>
-					<?php 
-				$the_event = get_post();
-				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
-				 ?>
-
-				 <?php if( strtotime($text_date) > strtotime('now') ) { ?>
-                <li class="holiday">
-                    <?php
-                        if(get_sub_field('holiday_image')) { ?>
-                            <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
-                    <?php } ?>
-                    <h3 class="holiday-title"><?php the_title(); ?></h3>
-                    <h5 class="date-blue"><?php echo $text_date ?></h5>
-                    <p>  <?php the_content(); ?></p>
-                    <div class="holiday-buttons">
-                        <?php if(strlen(get_field('flyer_upload'))){ ?>
-                        <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
-                        <?php } else { ?>
-                        <a target="_blank" class="btn disabled" href="#">Flyer Coming Soon</a>
-                        <?php } ?>
-
-                        <?php if(strlen(get_field('flyer_upload'))){ ?>
-                        <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
-                       
-                          <?php } else { ?>
-                        <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
-                        <?php } ?>
-                         <a target="_blank" class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
-                    </div>
-                </li>
-           
-			<?php
-		}	
-			}
-
-				} else {
-					// no posts found
-				}
-
-				// Restore original Post Data
-				wp_reset_postdata();
-
-			?>
-			 </ul>
-            </section> <!-- end article section -->
-<?php /* ?>
-        <section class="entry-content clearfix" itemprop="articleBody">
+        <header class="article-header">
+            <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
             <?php the_content(); ?>
-
-            <?php if(get_field('holidays')): ?>
-
-            <ul id="holiday-list">
-
-                <?php while(has_sub_field('holidays')): ?>
-
-                <li>
-                    <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>">
-                    <h2><?php the_sub_field('holiday_name'); ?></h2>
-                    <h3 class="date-blue"><?php the_sub_field('holiday_date'); ?></h3>
-                    <p><?php the_sub_field('holiday_description'); ?></p>
-                    <div class="holiday-buttons">
-                        <a class="gray-button button-margin" href="<?php the_sub_field('flyer_upload'); ?>">Flyer</a>
-                        <a class="gray-button" href="<?php the_sub_field('schedule_upload'); ?>">Schedule</a>
-                        <a class="button float-right-clean" href="/holidays/register/">Register your interests</a>
-                        <?php //the_sub_field('current_past'); ?>
-                    </div>
-                </li>
-
-                <?php endwhile; ?>
-
-            </ul>
-
-            <?php endif; ?>
-            </section> <!-- end article section -->
-<?php */ ?>
-           
-                </article> <!-- end article -->
-                <?php endwhile; else : ?>
+        </header> <!-- end article header -->
+        <section class="bridge-center-lessons">
+            <h2>Lessons</h2>
+            <p>Joan give all lessons, from beginner to advanced. Next courses are:</p>
+            <?php get_template_part('templates/bridge-center','lessons'); ?>
+        </section>
+        <section class="duplicate-games">
+            <h2>Duplicate Games</h2>
+            <p>Regular masterpointed games are offered three times a week. Contact us if you need a partner. Pam Schoen's number is: 0422378016</p>
+            <?php get_template_part('templates/bridge-center','duplicate-games'); ?>
+        </section>
+        <section class="supervised-sessions">
+            <h2>Supervised Sessions</h2>
+            <p>Ask for advice from your tutor. Each session starts with a practice hand with Joan. No need to come with a partner.</p>
+            <?php get_template_part('templates/bridge-center','supervised-sessions'); ?>
+        </section>
+        <section class="static-iframes">
+            <iframe src="https://maps.google.com.au/maps?q=3+Amy+St,+Albion+QLD&amp;ie=UTF8&amp;hq=&amp;hnear=3+Amy+St,+Albion+Queensland+4010&amp;gl=au&amp;t=m&amp;ll=-27.469897,153.049507&amp;spn=0.011423,0.036392&amp;z=14&amp;iwloc=A&amp;output=embed" width="1081" height="380" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            <small><a style="color: #0000ff; text-align: left;" href="https://maps.google.com.au/maps?q=3+Amy+St,+Albion+QLD&amp;ie=UTF8&amp;hq=&amp;hnear=3+Amt+St,+Albion+Queensland+4010&amp;gl=au&amp;t=m&amp;ll=-27.469897,153.049507&amp;spn=0.011423,0.036392&amp;z=14&amp;iwloc=A&amp;source=embed">View Larger Map</a></small>
+            <h2>Results</h2>
+            <iframe class="results-iframe" style="border: 0px;" src="http://www.cards.bridgeaustralia.org/resultslistbm.asp" width="1083" height="800"></iframe>
+        </section>
+    </article> <!-- end article -->
+<?php endwhile; else : ?>
                 
-                <?php endif; ?>
-                <?php //get_sidebar(); ?>
+<?php endif; ?>
+<?php //get_sidebar(); ?>
