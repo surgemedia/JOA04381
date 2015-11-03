@@ -1,5 +1,12 @@
 @import "online-lessons";
-
+.bridge-center-lessons {
+	color: $font-color;
+}
+.static-iframes {
+	iframe {
+		max-width: 100%;
+	}
+}
 
 #holiday-list{
 	list-style:none;

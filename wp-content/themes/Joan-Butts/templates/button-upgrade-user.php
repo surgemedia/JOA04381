@@ -17,8 +17,10 @@ if(is_user_logged_in()){
 	echo '<!--';
 
 	$response = new DOMDocument();
-	$response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$subscription_ref.'?user=apiuser&pass=bustleable');
-	$editSubscription = $response->getElementsByTagName("customerUrl")->item(0)->nodeValue;
+	if((get_user_role()=='administrator') || ( get_user_role()=='royal')) {
+		$response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$subscription_ref.'?user=apiuser&pass=bustleable');
+		$editSubscription = $response->getElementsByTagName("customerUrl")->item(0)->nodeValue;
+	}
 	$upgradeSub = 'http://sites.fastspring.com/'.$store_id.'/product/'.$product_id.'?action=adds&referrer='.$the_user_id;
 	debug($response);
 	echo "-->";
