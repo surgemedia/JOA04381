@@ -26,15 +26,15 @@
 		}
 	}
 	.holiday.live-lessons{
-		@include lessson($theme-black);
+		@include lessson($blue-darkest);
 		&:hover {
 			.holiday-title {
-				color: $theme-black;
+				color: $blue-darkest;
 			}
 		}
 		.holiday-buttons {
 			a {
-				background: $theme-black;
+				background: $blue-darkest;
 			}
 		}
 	}
