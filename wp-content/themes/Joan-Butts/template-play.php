@@ -85,36 +85,44 @@ html,
 <body>
 	
 
-
-
-<div id='gamebody'>Please wait a moment...</div>
-
-<div id='saveshare'></div>
-
-<div id='gamecomments'></div>
-
-<!-- <div id="actions">
-  <a href="javascript:history.go(-1);" class="button">
-    Exit Game
-  </a>
-</div> -->
-<?
-/*
-    
-*/
+<?php 
+  if(is_user_logged_in()) {
 ?>
-<script src='http://bridge2go.com/Live/JavaScripts/Game/bridgeapi1.js'></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div id='gamebody'>Please wait a moment...</div>
 
-  ga('create', 'UA-306711-17', 'auto');
-  ga('send', 'pageview');
+    <div id='saveshare'></div>
 
-</script>
+    <div id='gamecomments'></div>
+
+    <!-- <div id="actions">
+      <a href="javascript:history.go(-1);" class="button">
+        Exit Game
+      </a>
+    </div> -->
+    <?
+    /*
+        
+    */
+    ?>
+    <script src='http://bridge2go.com/Live/JavaScripts/Game/bridgeapi1.js'></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-306711-17', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+<?php 
+  }
+  else {
+    header("Location: /register");
+  }
+?>
 
 </body>
 </html>

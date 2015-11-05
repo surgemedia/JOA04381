@@ -1,7 +1,15 @@
 <div class="col-md-6">
 	<div class="account-card">
 		<h4 class="account-title"><?php the_title(); ?></h4>
-		<p class="account-price">$ <?php the_field('price'); ?> / month</p>
+		<?php 
+			if(!get_field('price')) {
+				$style="style='visibility:hidden'";
+			}
+			else {
+				$style ='';
+			}
+		?>
+		<p class="account-price" <?php echo $style ?>>$ <?php the_field('price'); ?> / month</p>
 		<ul> 
 			<?php 
 				$feature_list = get_field('features'); 

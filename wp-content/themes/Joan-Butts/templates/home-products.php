@@ -8,7 +8,9 @@
 					'post_type'              => array( 'product' ),
 					// 'posts_per_page'         => '6',
 					// 'order'                  => 'ASC',
-					'orderby'                => 'date'
+					'orderby'                => 'date',
+					'meta_key' => '_featured',  
+    				'meta_value' => 'yes',
 					);
 
 				// The Query
