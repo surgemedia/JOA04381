@@ -40,7 +40,7 @@
 			?>
 							<?php echo $startCarousel; ?>	
 								<div class="product-obj col-md-2">
-									<div class="image-container"><?php the_post_thumbnail(); ?></div>
+									<div class="image-container"><img src="<?php echo aq_resize(wp_get_attachment_url( get_post_thumbnail_id($post->ID)),150,205); ?>" width="150" height="205" alt="<?php the_title(); ?>"></div>
 									<div class="title-container"><p class="title"><?php the_title(); ?></p></div>
 									<?php echo do_shortcode('[add_to_cart  id="'.get_the_ID().'"]') ?>
 								</div>

@@ -45,4 +45,21 @@
             }
         }
     }
+    .added_to_cart {
+        background:$red !important;
+        padding:1em !important;
+        position:absolute !important;
+        top:0px !important;
+        left:0px !important;
+        width:100% !important;
+        display:inline-block  !important;;
+        color:#fff  !important;
+        text-align:center;
+        a {
+        width:100%  !important;;
+        display:inline-block  !important;;
+        color:#fff  !important;
+        text-align:center;
+        }
+    }
 }

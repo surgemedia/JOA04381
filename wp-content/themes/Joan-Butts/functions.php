@@ -32,6 +32,9 @@ $sage_includes = [
   'lib/fastspring.php',  // Fast Spring Class
   'lib/function-update-completed-modules.php',  // Update completed modules
   'lib/function-check-membership-redirect-fastspring.php',
+  'lib/function-disable-member-listing.php',
+
+  'lib/aq_resizer.php',
 ];
 
 foreach ($sage_includes as $file) {

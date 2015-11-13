@@ -3,8 +3,9 @@
 		<div class="col-md-6 col-sm-12 col-xs-12 video-container">
 			<?php
 				$image = get_field('site_video_thumbnail');
+				// debug($image);
 			?>
-			<img class="video-thumbnail" src="<?php echo $image['url']; ?>" alt="Joan Butts Website Tour" >
+			<img class="video-thumbnail" src="<?php echo $image['url']; ?>" alt="Joan Butts Website Tour" height="<?php echo $image['height'] ?>" width="<?php echo $image['width'] ?>" >
 			<span class="video-tag" data-toggle="modal" data-target="#site-video-modal">Play video now</span>
 		</div>
 		<div class="col-md-6">

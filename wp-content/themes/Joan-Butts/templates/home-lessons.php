@@ -4,5 +4,5 @@
 		<div class="col-md-6"></div>
 		<div class="col-md-6 content"><?php the_field('lessons_at_club'); ?></div>
 	</div>
-	<a href="/cards-bridge-centre" class="theme-button">Joanbutts Bridge Center</a>
+	<a href="/cards-bridge-centre" class="theme-button">Joanbutts Bridge Centre</a>
 </section>
