@@ -20,8 +20,6 @@
 		if ( $event_query->have_posts() ) {
 			?>
 			<section class="duplicate-games">
-				<h2>Duplicate Games</h2>
-				<p>Regular masterpointed games are offered three times a week. Contact us if you need a partner. Pam Schoen's number is: 0422378016</p>
 				<ul id="holiday-list">
 					<?php
 					while ( $event_query->have_posts() ) {

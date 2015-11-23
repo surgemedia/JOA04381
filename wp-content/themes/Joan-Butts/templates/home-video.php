@@ -6,7 +6,10 @@
 				// debug($image);
 			?>
 			<img class="video-thumbnail" src="<?php echo $image['url']; ?>" alt="Joan Butts Website Tour" height="<?php echo $image['height'] ?>" width="<?php echo $image['width'] ?>" >
+			<?php if(get_field('site_video')){ ?>
 			<span class="video-tag" data-toggle="modal" data-target="#site-video-modal">Play video now</span>
+			<?php } ?>
+
 		</div>
 		<div class="col-md-6">
 			<h4 class="video-title"><?php the_field('site_video_title'); ?></h4>

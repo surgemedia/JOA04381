@@ -15,4 +15,6 @@ function resetUser() {
         wp_update_user(array('ID'=>getUser(),'role'=>'free_member'));
     }
 }
+
+
 ?>

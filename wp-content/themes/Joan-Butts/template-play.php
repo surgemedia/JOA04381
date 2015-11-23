@@ -11,6 +11,8 @@ require_once('wp-includes/pluggable.php');
 require_once('wp-load.php');
 require_once('wp-includes/registration.php');
 
+checkMembershipRedirectFastspring();
+
 global $userdata;
 global $current_user;
 global $wpdb, $wp_roles;
@@ -38,25 +40,25 @@ if ( is_user_logged_in() ) {
 $bidsys = "";
 
 $str = bp_get_profile_field_data('field=2&user_id='.$current_user->ID);
-if ($str == "5 cards") {
+if ($str == "5 cards" OR strlen($str) <= 0) {
 	$bidsys .= "y";
 } else {
 	$bidsys .= "n";
 }
 $str = bp_get_profile_field_data('field=15&user_id='.$current_user->ID);
-if ($str == "15-17 hcp") {
+if ($str == "15-17 hcp" OR strlen($str) <= 0) {
 	$bidsys .= "y";
 } else {
 	$bidsys .= "n";
 }
-$str = bp_get_profile_field_data('field=18&user_id='.$current_user->ID);
-if ($str == "Weak") {
+$str = bp_get_profile_field_data('field=11&user_id='.$current_user->ID);
+if ($str == "Weak" OR strlen($str) <= 0 ) {
 	$bidsys .= "y";
 } else {
 	$bidsys .= "n";
 }
 $str = bp_get_profile_field_data('field=6&user_id='.$current_user->ID);
-if ($str == "Yes") {
+if ($str == "Yes" OR strlen($str) <= 0) {
 	$bidsys .= "y";
 } else {
 	$bidsys .= "n";

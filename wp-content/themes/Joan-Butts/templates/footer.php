@@ -7,8 +7,11 @@
     	</div>
     	<div class="col-md-4 contact-details">
     		<h4>Contact Joan</h4>
-    		<a href="mailto:<?php the_field('phone','option') ?>"><span>E</span><?php the_field('phone','option') ?></a>
-    		<a href="tel:<?php the_field('email','option') ?>"><span>P</span><?php the_field('email','option') ?></a>
+    		<a href="phone:<?php the_field('phone','option') ?>"><span>P</span><?php the_field('phone','option') ?></a>
+        <strong>Bridge Enquiries</strong>
+    		<a href="mailto:<?php the_field('email','option') ?>"><span>E</span><?php the_field('email','option') ?></a>
+        <strong>Website support enquiries</strong>
+        <a href="mailto:<?php the_field('support_email','option') ?>"><span>E</span><?php the_field('support_email','option') ?></a>
     	   <a class="theme-button" href="#" data-toggle="modal" data-target="#newsletter-modal">Sign up for my free newsletter</a>
         </div>
     	<div class="col-md-4 social-links">

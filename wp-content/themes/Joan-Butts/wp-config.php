@@ -27,20 +27,20 @@
 
 
 
-	define('WP_HOME','http://joanbutts.localwp');
-	define('WP_SITEURL','http://joanbutts.localwp');
+	define('WP_HOME','http://joanbutts.surgehost.com.au');
+	define('WP_SITEURL','http://joanbutts.surgehost.com.au/');
 // Global DB config
 if (!defined('DB_NAME')) {
-	define('DB_NAME', 'joanbutt_jbstagin_wpdb');
+	define('DB_NAME', 'joanbutt_ickyboat57');
 }
 if (!defined('DB_USER')) {
-	define('DB_USER', 'joanbutts_user');
+	define('DB_USER', 'joanbutt_l40i76');
 }
 if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', 'local');
+	define('DB_PASSWORD', 'ku6sruzzxv8yt7w33wchg7u446sl64');
 }
 if (!defined('DB_HOST')) {
-	define('DB_HOST', '192.168.0.51');
+	define('DB_HOST', 'localhost');
 }
 
 /** Database Charset to use in creating database tables. */
@@ -58,18 +58,18 @@ if (!defined('DB_COLLATE')) {
  *
  * Change these to different unique phrases!
  * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
-* You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '@FrFv<j}m}t%[vuh)JRM2<ao-.C^%5y@0(@|VeF-)$Lw=j35JY]b77NT9Y;9qP[d');
-define('SECURE_AUTH_KEY',  'O@$ [-+W0a6%URfo1SFy5+B9<YJM~6cqL-9-45myvcNF1)+Dh+c[hPC>fth:YX:-');
-define('LOGGED_IN_KEY',    ';JLb|JjBfKc`hfiN`YH[.AbbJ@S|<~d#Tq6*v3Ie|B>%)L1nlZeT!K(31hO0#-NR');
-define('NONCE_KEY',        ';j?$|yW5/TK{8W?BROqo*4x4;5kCXNK+H^Y[dMqjc`tlZkcH=%X!s/e3vb)naK;/');
-define('AUTH_SALT',        '.st.].GN1S=PRe)+|m Q!73E`bO/QLs3uQPM%hIi%fy(=%zX<{|-wnK8zyBBn?`^');
-define('SECURE_AUTH_SALT', 'F6LqSNu4*S/c-VR,`?WMyr$,s {N{n[KE,fAP_b 2{~@G`sZkZ]GU>D,[_YX3qJr');
-define('LOGGED_IN_SALT',   '{]OI(Y)M};6Zo9}DwPY8zd&<KrTB>F|M9:183Xj$3yBS,B5:$l-l3hsP8h$qH$j]');
-define('NONCE_SALT',       'CVo0q}Feg/K2GA756iQw*-d*0)=nAGEang<t=[0/,6on{uMf,H(Kt.Q8v+iX75F#');
+define('AUTH_KEY',         'jZ|1{j8d#~D-@iC+bG=HVJfIc-YmhRvZC^Mz9~-xb%MH>~<D#<wg.W<qkXIL.,,0');
+define('SECURE_AUTH_KEY',  '1{f4!ms(%w<pR|2Z%Lk/}#v]+S>%4 O{vlmP3-:`rRTOJ9AFJN`fkWo[Hu/C+RQ|');
+define('LOGGED_IN_KEY',    '(a91#G:-xcIgP$5U6o^)<r2x&`CjHYrkSN<S=|7.l}.pbY4#Fb}?sCk^|wcw-J-`');
+define('NONCE_KEY',        '}5vl~-f+OmVtgs~aUI^OY;<Pl$jp+HDr;N0nYlA7BS-O5dY}OC;h*u@T|ItjpnhX');
+define('AUTH_SALT',        'J?QSC+AJRa1~+[# [V8XnRnQ+UPJ]k1Uk|f::<l[Xr)^(IK&|1Q,%hr@:7*ye,8-');
+define('SECURE_AUTH_SALT', '}1dnu4BH]4Jye@.O}cq|lXNktEQ:Ta^7>|rK-`cQgI,m8%]%m(a:pW>74||opB81');
+define('LOGGED_IN_SALT',   '0/waYleJ|Zw4-&PC -q!y,T?~+u2Ls 9e3{Jy2cDV;KLrxjQ|UKVPD>K|4+Kc|A ');
+define('NONCE_SALT',       'Dh3,+=~~y~stLvX|?Fgh<,a*kkmQR/tLs@}=@= *?n]g=jo|_ st0D]bgNk2|-ol');
 
 /**#@-*/
 
@@ -79,7 +79,7 @@ define('NONCE_SALT',       'CVo0q}Feg/K2GA756iQw*-d*0)=nAGEang<t=[0/,6on{uMf,H(K
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'zjcvuc_';
 
 /**
  * WordPress Localized Language, defaults to English.
