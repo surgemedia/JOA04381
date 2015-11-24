@@ -10,14 +10,13 @@ require_once('wp-includes/wp-db.php');
 require_once('wp-includes/pluggable.php');
 require_once('wp-load.php');
 require_once('wp-includes/registration.php');
-
+if(is_user_logged_in()) {
 checkMembershipRedirectFastspring();
 
 global $userdata;
 global $current_user;
 global $wpdb, $wp_roles;
-get_currentuserinfo();
-		
+
 $role = $wpdb->prefix . 'capabilities';
 $current_user->role = array_keys($current_user->$role);
 
@@ -68,7 +67,7 @@ if ($str == "Yes" OR strlen($str) <= 0) {
 
 $txt = '<script>var confirmation = "' . $confirmation . '"; var role = "' . $myRole . '"; var mydomain = "joanbuttsbridge.com"; var userid = ' . $current_user->ID . '; var username = "' . $current_user->user_login . '"; var bidsys = "'.$bidsys.'"; var gamebg = "http://bridge2go.com/Live/Images/play-screen-empty-room.jpg"; var cardstyle = "none"; var characters = "http://skybridgeclub.com/images/play-screen.png"; </script>';
 print $txt;
-
+}
 ?>
 <html>
 <head>
@@ -120,9 +119,8 @@ html,
 
     </script>
 <?php 
-  }
-  else {
-    header("Location: /register");
+  } else {
+    echo '<script> window.location.replace("http://joanbuttsbridge.com/register");</script>';
   }
 ?>
 

@@ -4,10 +4,14 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 ?>
-adsjkhfdsahklafdskljfadsklj
+
 <div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
-	<?php $template->the_action_template_message( 'lostpassword' ); ?>
+
+	<?php //$template->the_action_template_message( 'lostpassword' ); ?>
 	<?php $template->the_errors(); ?>
+	<p class="">
+		Please Enter Your Username Or Email Address. You Will Receive A Link To Create A New Password Via Email.
+	</p>
 	<form name="lostpasswordform" id="lostpasswordform<?php $template->the_instance(); ?>" action="<?php $template->the_action_url( 'lostpassword' ); ?>" method="post">
 		<p>
 			<label for="user_login<?php $template->the_instance(); ?>"><?php _e( 'Username or E-mail:', 'theme-my-login' ); ?></label>
@@ -16,12 +20,12 @@ adsjkhfdsahklafdskljfadsklj
 
 		<?php do_action( 'lostpassword_form' ); ?>
 
-		<p class="submit">
+		<p class="btn btn-blue">
 			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Get New Password', 'theme-my-login' ); ?>" />
 			<input type="hidden" name="redirect_to" value="<?php $template->the_redirect_url( 'lostpassword' ); ?>" />
 			<input type="hidden" name="instance" value="<?php $template->the_instance(); ?>" />
 			<input type="hidden" name="action" value="lostpassword" />
 		</p>
 	</form>
-	<?php $template->the_action_links( array( 'lostpassword' => false ) ); ?>
+	<?php //$template->the_action_links( array( 'lostpassword' => false ) ); ?>
 </div>

@@ -59,7 +59,7 @@
 	border-radius:0px;
 	border:1px solid $blue;
 	}
-	ul.tml-action-links {
+	ul.tml-action-links li:first-child {
 		display:none;
 	}
 }
