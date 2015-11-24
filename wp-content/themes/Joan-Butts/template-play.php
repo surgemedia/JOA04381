@@ -18,15 +18,18 @@ global $userdata;
 global $current_user;
 global $wpdb, $wp_roles;
 
-$role = $wpdb->prefix . 'capabilities';
-$current_user->role = array_keys($current_user->$role);
+// $role = $wpdb->prefix . 'capabilities';
+// $current_user->role = array_keys($current_user->$role);
 
-$myRole = "none";
-foreach($current_user->role as $role => $Role) {
-    if ($Role == "royal" || $Role == "administrator" || $Role == "administrator") {
-	$myRole = $Role;
-    }
-}
+// $myRole = "none";
+// foreach($current_user->role as $role => $Role) {
+//     if ($Role == "royal" || $Role == "administrator" || $Role == "administrator") {
+// 	$myRole = $Role;
+//     }
+// }
+
+$myRole = get_user_role();
+
 
 $confirmation = "CONFIRM";
 
@@ -92,7 +95,7 @@ if(!is_user_logged_in()){
   echo '<script> window.location.replace("http://joanbuttsbridge.com/register");</script>';
   };
 
-  if( get_user_role()!='free_member') {
+  if( get_user_role() =='free_member' && $_GET['val'] != 4 ) {
   echo '<script> window.location.replace("http://joanbuttsbridge.com/almost-there");</script>';
   };
 
