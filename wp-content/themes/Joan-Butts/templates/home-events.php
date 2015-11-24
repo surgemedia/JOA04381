@@ -5,8 +5,7 @@
 				// WP_Query arguments
 				$args = array (
 					'post_type'              => array( 'tribe_events' ),
-					// 'posts_per_page'         => '6',
-					// 'order'                  => 'ASC',
+					'posts_per_page'         => '-1',
 					'orderby'                => 'date'
 					);
 

@@ -19,10 +19,14 @@ Theme My Login will always look in your theme's directory first, before using th
             <input type="password" name="pwd" id="user_pass<?php $template->the_instance(); ?>" class="form-control" value="" size="20" autocomplete="off" />
         </div>
         <?php do_action( 'login_form' ); ?>
-        <p class="forgetmenot">
+      <?php //$template->the_action_links( array( 'login' => false ) ); ?>
+    
+        <p class="forgetmenot pull-left col-lg-8">
         <input name="rememberme" type="checkbox" id="rememberme<?php $template->the_instance(); ?>" value="forever" />
         <label for="rememberme<?php $template->the_instance(); ?>"><?php esc_attr_e( 'Remember Me', 'theme-my-login' ); ?></label>
+        
         </p>
+
         <ul id="login-action">
             <li class="pull-right"><a id="submit" class="btn btn-primary" >
                 <input class="" type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Login', 'theme-my-login' ); ?>" />
@@ -34,8 +38,10 @@ Theme My Login will always look in your theme's directory first, before using th
                 <span>Sign up for an Account</span>
             </a></li>
         </ul>
-
+        <p>
+<a href="/wp-login.php?action=lostpassword" class="pull-left">
+        <span>Reset your Password</span>
+        </a></p>
 
     </form>
-    <?php $template->the_action_links( array( 'login' => false ) ); ?>
 </div>

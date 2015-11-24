@@ -1,7 +1,79 @@
-
-
 .tml-action-links {
 	list-style:none;
 	margin: 0;
 	padding: 0;
+}
+.field_16,
+#field_16 {
+	display:none;
+}
+
+#almost_there {
+	width:90%;
+	
+	.account-card ul {
+		height:115px;
+	}
+	.theme-button {
+		margin: 3em 0 0 0;
+	}
+}
+
+#pass-strength-result {
+	background-color: #eee;
+	border: 1px solid #ddd;
+	color: #23282d;
+	font-weight: 600;
+	margin: 0;
+	padding: 3px 5px;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+}
+
+#pass-strength-result.short {
+	background-color: #f1adad;
+	border-color: #e35b5b;
+	opacity: 1;
+}
+
+#pass-strength-result.bad {
+	background-color: #fbc5a9;
+	border-color: #f78b53;
+	opacity: 1;
+}
+
+#pass-strength-result.good {
+	background-color: #ffe399;
+	border-color: #ffc733;
+	opacity: 1;
+}
+
+#pass-strength-result.strong {
+	background-color: #c1e1b9;
+	border-color: #83c373;
+	opacity: 1;
+}
+
+.pw-weak {
+	display:none;
+}
+
+.indicator-hint {
+	padding-top: 8px;
+}
+
+#pass1,
+#pass1-text {
+	width: 100%;
+}
+
+#pass1-text,
+.show-password #pass1 {
+	display: none;
+}
+
+.show-password #pass1-text
+{
+	display: inline-block;
 }

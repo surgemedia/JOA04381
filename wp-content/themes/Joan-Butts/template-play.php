@@ -10,6 +10,7 @@ require_once('wp-includes/wp-db.php');
 require_once('wp-includes/pluggable.php');
 require_once('wp-load.php');
 require_once('wp-includes/registration.php');
+
 if(is_user_logged_in()) {
 checkMembershipRedirectFastspring();
 
@@ -87,6 +88,14 @@ html,
 	
 
 <?php 
+if(!is_user_logged_in()){
+  echo '<script> window.location.replace("http://joanbuttsbridge.com/register");</script>';
+  };
+
+  if( get_user_role()!='free_member') {
+  echo '<script> window.location.replace("http://joanbuttsbridge.com/almost-there");</script>';
+  };
+
   if(is_user_logged_in()) {
 ?>
 
@@ -119,9 +128,7 @@ html,
 
     </script>
 <?php 
-  } else {
-    echo '<script> window.location.replace("http://joanbuttsbridge.com/register");</script>';
-  }
+  } 
 ?>
 
 </body>
