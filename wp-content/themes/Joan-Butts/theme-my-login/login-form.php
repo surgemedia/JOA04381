@@ -19,6 +19,7 @@ Theme My Login will always look in your theme's directory first, before using th
             <input type="password" name="pwd" id="user_pass<?php $template->the_instance(); ?>" class="form-control" value="" size="20" autocomplete="off" />
         </div>
         <?php do_action( 'login_form' ); ?>
+        <!-- TODO - RESET PASSOWRD UNCOMMENT -->
       <?php //$template->the_action_links( array( 'login' => false ) ); ?>
     
         <p class="forgetmenot pull-left col-lg-8">
