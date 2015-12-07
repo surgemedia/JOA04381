@@ -28,7 +28,6 @@ function checkMembershipRedirectFastspring() {
 	elseif($membership=='Royal Member' && strlen($fsid)>0 && get_user_role()!='administrator') { //executes if user cancels his subscripition
 		$response = new DOMDocument();
 		$response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$fsid.'?user=apiuser&pass=bustleable');
-		debug($response);
 		if(strpos($response->textContent,'inactive')>=0) {
 			xprofile_set_field_data( 'Membership', $user, getFreeTrialId(), $is_required = false );
 			wp_update_user(array('ID'=>getUser(),'role'=>'free_member'));
@@ -41,9 +40,6 @@ function checkMembershipRedirectFastspring() {
 	}
 	//wp_update_user(array('ID'=>getUser(),'role'=>'administrator'));
 }
-
-
-
 
 //Get IDs of Account Types
 function getFreeTrialId() {

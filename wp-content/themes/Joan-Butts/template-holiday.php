@@ -24,7 +24,7 @@ Template Name: Holiday Page
             <?php // WP_Query arguments
                 $GLOBAL['page'] = $post->post_name;
                 switch ($GLOBAL['page']) {
-                    case 'upcoming-holidays':
+                    case 'upcoming-holdiays':
                         $terms = 'bridge-holiday';
                         $class = 'bridge-holiday';
                         break;
@@ -100,7 +100,7 @@ Template Name: Holiday Page
 			}
 
 				} else {
-					echo "no post";// no posts found
+					// no posts found
 				}
 
 				// Restore original Post Data

@@ -17,13 +17,14 @@ checkMembershipRedirectFastspring();
 global $userdata;
 global $current_user;
 global $wpdb, $wp_roles;
+
 // $role = $wpdb->prefix . 'capabilities';
 // $current_user->role = array_keys($current_user->$role);
 
 // $myRole = "none";
 // foreach($current_user->role as $role => $Role) {
 //     if ($Role == "royal" || $Role == "administrator" || $Role == "administrator") {
-//  $myRole = $Role;
+// 	$myRole = $Role;
 //     }
 // }
 
@@ -43,30 +44,30 @@ $bidsys = "";
 
 $str = bp_get_profile_field_data('field=2&user_id='.$current_user->ID);
 if ($str == "5 cards" OR strlen($str) <= 0) {
-  $bidsys .= "y";
+	$bidsys .= "y";
 } else {
-  $bidsys .= "n";
+	$bidsys .= "n";
 }
 $str = bp_get_profile_field_data('field=15&user_id='.$current_user->ID);
 if ($str == "15-17 hcp" OR strlen($str) <= 0) {
-  $bidsys .= "y";
+	$bidsys .= "y";
 } else {
-  $bidsys .= "n";
+	$bidsys .= "n";
 }
 $str = bp_get_profile_field_data('field=11&user_id='.$current_user->ID);
 if ($str == "Weak" OR strlen($str) <= 0 ) {
-  $bidsys .= "y";
+	$bidsys .= "y";
 } else {
-  $bidsys .= "n";
+	$bidsys .= "n";
 }
 $str = bp_get_profile_field_data('field=6&user_id='.$current_user->ID);
 if ($str == "Yes" OR strlen($str) <= 0) {
-  $bidsys .= "y";
+	$bidsys .= "y";
 } else {
-  $bidsys .= "n";
+	$bidsys .= "n";
 }
 
-  $bidsys .= "n";
+	$bidsys .= "n";
 
 $txt = '<script>var confirmation = "' . $confirmation . '"; var role = "' . $myRole . '"; var mydomain = "joanbuttsbridge.com"; var userid = ' . $current_user->ID . '; var username = "' . $current_user->user_login . '"; var bidsys = "'.$bidsys.'"; var gamebg = "http://bridge2go.com/Live/Images/play-screen-empty-room.jpg"; var cardstyle = "none"; var characters = "http://skybridgeclub.com/images/play-screen.png"; </script>';
 print $txt;
@@ -87,22 +88,16 @@ html,
 
 </head>
 <body>
-  
+	
 
 <?php 
 if(!is_user_logged_in()){
   echo '<script> window.location.replace("http://joanbuttsbridge.com/register");</script>';
   };
 
-  // if( get_user_role() =='free_member' && $_GET['val'] != 4 ) {
-  // echo '<script>
-  // if (confirm("Would you like to upgrade?")) {
-  //   window.location.replace("http://joanbuttsbridge.com/almost-there");
-  // } else {
-   
-  // }
-  // </script>';
-  // };
+  if( get_user_role() =='free_member' && $_GET['val'] != 4 ) {
+  echo '<script> window.location.replace("http://joanbuttsbridge.com/almost-there");</script>';
+  };
 
   if(is_user_logged_in()) {
 ?>

@@ -10,28 +10,11 @@
 			display: none;
 		}
 	}
-	/* &.register-page {
+	&.register-page {
 		.standard-form {
 			.field_membership {
 				display: block;
 			}
 		}
-	} */
-}
-#buddypress .standard-form #basic-details-section,
-#buddypress .standard-form #profile-details-section {
-    float: left;
-    width: 55%;
-}
-#buddypress .standard-form#signup_form div.submit {
-    float: left;
-    margin-top:2em;
-    width: 55%;
-    input[type="submit"]{
-		background: $blue;
-		border:none;
-		color:#fff;
-		padding:1em;
-    }
-
+	}
 }
