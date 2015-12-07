@@ -11,14 +11,16 @@ function updateCompletedModules() {
 		// WP_Query arguments
 			$post_type = 'lesson';
 			$tax = 'modules';
-			$tax_terms = get_terms($tax);
+			$tax_terms[] = get_terms($tax);
+			// debug($tax_terms);
 			$tax_terms['remaining'] = array();
 			if ($tax_terms) {
 				// debug($tax_terms);
  			    foreach ($tax_terms  as $tax_term) {
  			        $args=array(
  			           'post_type' => $post_type,
- 			           "$tax" => $tax_term->slug,
+ 			           //"$tax" => $tax_term->slug,
+ 			           "tax" => $tax_term->slug,
  			           'post_status' => 'publish',
  			           'posts_per_page' => -1,
  			           'caller_get_posts'=> 1
@@ -28,9 +30,9 @@ function updateCompletedModules() {
  			        $my_query = new WP_Query($args);
  			        if( $my_query->have_posts() ) {
  			            // echo 'List of '.$post_type . ' where the taxonomy '. $tax . '  is '. $tax_term->name;
- 			            $tax_terms['remaining'].array_push($tax_terms['remaining'][$tax_term->name]);
- 			            // $tax_terms['completed'].array_push($tax_terms['completed'][$tax_term->name]);
- 			            // $tax_terms['total'][$tax_term->name]=0;
+ 			            // array_push($tax_terms['remaining'],$tax_terms['remaining'][$tax_term->name]);
+ 			            array_push($tax_terms['completed'],$tax_terms['completed'][$tax_term->name]);
+ 			            $tax_terms['total'][$tax_term->name]=0;
  			            $tax_terms['remaining'][$tax_term->name]=0;
  			            while ($my_query->have_posts()) : $my_query->the_post();
  			            	$tax_terms['remaining'][$tax_term->name]++;
@@ -48,11 +50,13 @@ function updateCompletedModules() {
  			        }
  			        wp_reset_query();
  			    }
+ 			    
  			    foreach ($tax_terms['remaining'] as $remaining => $value) {
  			    	if($value==0) {
  			    		$completedModule = xprofile_get_field_data( 'Completed Modules', $user_id);
- 			    		$completedModule = trim($completedModule,",");
- 			    		$completedModule = explode(",",$completedModule);
+ 			    		// debug($completedModule)	;
+ 			    		// $completedModule = trim($completedModule,",");
+ 			    		// $completedModule = explode(",",$completedModule);
  			    		if(!in_array($remaining, $completedModule)) {
  			    			$completedModule = implode(",", $completedModule);
 							$completedModule .= ",".$remaining;

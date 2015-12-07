@@ -29,11 +29,11 @@ function basic_content_replace_buttons ($text)
     $lessonhandsstart = "";
     $lessonhandsend = "";
 
-	$sethandsfreestart = "<a target='_blank' class='btn btn-primary icon-play button_filled button_blue' href='/play/?game=hands&val=";
+	$sethandsfreestart = "<a target='' class='btn btn-primary icon-play button_filled button_blue' href='/play/?game=hands&val=";
 	$sethandsfreeend = "'>PLAY LESSON HANDS</a>";
 	$sethandstipsfreestart = "<a target='_blank' class='btn btn-primary icon-play button_filled button_blue' href='/play/?game=hands&level=0&val=";
 	$sethandstipsfreeend = "'>PLAY TIPS HANDS</a>";
-    $lessonhandsstart = "<a target='_blank' class='btn btn-primary icon-play button_filled button_blue' href='/play/?game=coffee&val=";
+    $lessonhandsstart = "<a target='' class='btn btn-primary icon-play button_filled button_blue' href='/play/?game=coffee&val=";
     $lessonhandsend = "'>PLAY LESSON HANDS</a>";
 	
 	$text = str_replace("[sethands]",$sethandsstart,$text);

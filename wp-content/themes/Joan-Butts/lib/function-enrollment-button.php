@@ -14,7 +14,9 @@ function completeLessonButton($lesson) {
 	$url_var = $_GET['finished-lesson'];
 	} else { $url_var = false;}
 	$user_id = getUser();
+	
 	$completedlesson = xprofile_get_field_data( 'Completed Lessons', $user_id, $is_required = false);	
+	
 	// debug($completedlesson);
 	//echo "<br><br><hr>";
 	$texture_title = wptexturize($lesson);

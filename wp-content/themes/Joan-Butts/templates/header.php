@@ -32,6 +32,8 @@
                                 wp_nav_menu(['theme_location' => 'primary_navigation','depth'=> 7,'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
                             endif;
                 ?>
+        
+
             </div>
         </nav>
     </div>

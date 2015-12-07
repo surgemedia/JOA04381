@@ -143,6 +143,13 @@
     $('#site-video-modal iframe').attr('src',$('#site-video-modal iframe').attr('src'));
   })
 
+  /*=====================================
+  =            Captcha Label            =
+  =====================================*/
+  $("label[for='rs_captcha']").append('   (please enter below code in the input field)');
+  
+  
+
 })(jQuery); // Fully reference jQuery after this point.
 
 /*=============================================

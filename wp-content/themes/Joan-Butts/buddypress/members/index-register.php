@@ -1,5 +1,6 @@
 <div id="buddypress" class="buddypress register-page">
-	<?php get_template_part('templates/home','loop-account-types'); ?>
+	<!--<?php get_template_part('templates/home','loop-account-types'); ?>-->
+	<h1 class="page-title">Register</h1>
 	<?php
 
 	/**
@@ -48,6 +49,110 @@
 
 			<p><?php _e( 'Registering for this site is easy. Just fill in the fields below, and we\'ll get a new account set up for you in no time.', 'buddypress' ); ?></p>
 
+		<?php
+
+			/**
+			 * Fires after the display of member registration account details fields.
+			 *
+			 * @since BuddyPress (1.1.0)
+			 */
+			do_action( 'bp_after_account_details_fields' ); ?>
+
+			<?php /***** Extra Profile Details ******/ ?>
+
+			<?php if ( bp_is_active( 'xprofile' ) ) : ?>
+
+				<?php
+
+				/**
+				 * Fires before the display of member registration xprofile fields.
+				 *
+				 * @since BuddyPress (1.2.4)
+				 */
+				do_action( 'bp_before_signup_profile_fields' ); ?>
+
+				<div class="register-section" id="profile-details-section">
+
+					<h4><?php _e( 'Profile Details', 'buddypress' ); ?></h4>
+
+					<?php /* Use the profile field loop to render input fields for the 'base' profile field group */ ?>
+					<?php if ( bp_is_active( 'xprofile' ) ) : if ( bp_has_profile( array( 'profile_group_id' => 1, 'fetch_field_data' => false ) ) ) : 
+
+					while ( bp_profile_groups() ) : bp_the_profile_group(); ?>
+
+					<?php while ( bp_profile_fields() ) : bp_the_profile_field(); ?>
+
+						<div<?php bp_field_css_class( 'editfield' ); ?>>
+
+							<?php
+							$field_type = bp_xprofile_create_field_type( bp_get_the_profile_field_type() );
+							$field_type->edit_field_html();
+
+							/**
+							 * Fires before the display of the visibility options for xprofile fields.
+							 *
+							 * @since BuddyPress (1.7.0)
+							 */
+							do_action( 'bp_custom_profile_edit_fields_pre_visibility' );
+
+							if ( bp_current_user_can( 'bp_xprofile_change_field_visibility' ) ) : ?>
+								<p class="field-visibility-settings-toggle" id="field-visibility-settings-toggle-<?php bp_the_profile_field_id() ?>">
+									<?php printf( __( 'This field can be seen by: <span class="current-visibility-level">%s</span>', 'buddypress' ), bp_get_the_profile_field_visibility_level_label() ) ?> <a href="#" class="visibility-toggle-link"><?php _ex( 'Change', 'Change profile field visibility level', 'buddypress' ); ?></a>
+								</p>
+
+								<div class="field-visibility-settings" id="field-visibility-settings-<?php bp_the_profile_field_id() ?>">
+									<fieldset>
+										<legend><?php _e( 'Who can see this field?', 'buddypress' ) ?></legend>
+
+										<?php bp_profile_visibility_radio_buttons() ?>
+
+									</fieldset>
+									<a class="field-visibility-settings-close" href="#"><?php _e( 'Close', 'buddypress' ) ?></a>
+
+								</div>
+							<?php else : ?>
+								<p class="field-visibility-settings-notoggle" id="field-visibility-settings-toggle-<?php bp_the_profile_field_id() ?>">
+									<?php printf( __( 'This field can be seen by: <span class="current-visibility-level">%s</span>', 'buddypress' ), bp_get_the_profile_field_visibility_level_label() ) ?>
+								</p>
+							<?php endif ?>
+
+							<?php
+
+							/**
+							 * Fires after the display of the visibility options for xprofile fields.
+							 *
+							 * @since BuddyPress (1.1.0)
+							 */
+							do_action( 'bp_custom_profile_edit_fields' ); ?>
+
+							<p class="description"><?php bp_the_profile_field_description(); ?></p>
+
+						</div>
+
+					<?php endwhile; ?>
+
+					<input type="hidden" name="signup_profile_field_ids" id="signup_profile_field_ids" value="<?php bp_the_profile_field_ids(); ?>" />
+
+				<?php endwhile; 
+
+					   endif; 
+
+
+			endif; ?>
+
+					<?php
+
+					/**
+					 * Fires and displays any extra member registration xprofile fields.
+					 *
+					 * @since BuddyPress (1.9.0)
+					 */
+					do_action( 'bp_signup_profile_fields' ); ?>
+
+				</div><!-- #profile-details-section -->
+
+
+
 			<?php
 
 			/**
@@ -61,7 +166,7 @@
 
 				<?php /***** Basic Account Details ******/ ?>
 
-				<h4><?php _e( 'Account Details', 'buddypress' ); ?></h4>
+				<h4><?php _e( 'Login Details', 'buddypress' ); ?></h4>
 
 				<label for="signup_username"><?php _e( 'Username', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 				<?php
@@ -119,101 +224,7 @@
 
 			</div><!-- #basic-details-section -->
 
-			<?php
-
-			/**
-			 * Fires after the display of member registration account details fields.
-			 *
-			 * @since BuddyPress (1.1.0)
-			 */
-			do_action( 'bp_after_account_details_fields' ); ?>
-
-			<?php /***** Extra Profile Details ******/ ?>
-
-			<?php if ( bp_is_active( 'xprofile' ) ) : ?>
-
-				<?php
-
-				/**
-				 * Fires before the display of member registration xprofile fields.
-				 *
-				 * @since BuddyPress (1.2.4)
-				 */
-				do_action( 'bp_before_signup_profile_fields' ); ?>
-
-				<div class="register-section" id="profile-details-section">
-
-					<h4><?php _e( 'Profile Details', 'buddypress' ); ?></h4>
-
-					<?php /* Use the profile field loop to render input fields for the 'base' profile field group */ ?>
-					<?php if ( bp_is_active( 'xprofile' ) ) : if ( bp_has_profile( array( 'profile_group_id' => 1, 'fetch_field_data' => false ) ) ) : while ( bp_profile_groups() ) : bp_the_profile_group(); ?>
-
-					<?php while ( bp_profile_fields() ) : bp_the_profile_field(); ?>
-
-						<div<?php bp_field_css_class( 'editfield' ); ?>>
-
-							<?php
-							$field_type = bp_xprofile_create_field_type( bp_get_the_profile_field_type() );
-							$field_type->edit_field_html();
-
-							/**
-							 * Fires before the display of the visibility options for xprofile fields.
-							 *
-							 * @since BuddyPress (1.7.0)
-							 */
-							do_action( 'bp_custom_profile_edit_fields_pre_visibility' );
-
-							if ( bp_current_user_can( 'bp_xprofile_change_field_visibility' ) ) : ?>
-								<p class="field-visibility-settings-toggle" id="field-visibility-settings-toggle-<?php bp_the_profile_field_id() ?>">
-									<?php printf( __( 'This field can be seen by: <span class="current-visibility-level">%s</span>', 'buddypress' ), bp_get_the_profile_field_visibility_level_label() ) ?> <a href="#" class="visibility-toggle-link"><?php _ex( 'Change', 'Change profile field visibility level', 'buddypress' ); ?></a>
-								</p>
-
-								<div class="field-visibility-settings" id="field-visibility-settings-<?php bp_the_profile_field_id() ?>">
-									<fieldset>
-										<legend><?php _e( 'Who can see this field?', 'buddypress' ) ?></legend>
-
-										<?php bp_profile_visibility_radio_buttons() ?>
-
-									</fieldset>
-									<a class="field-visibility-settings-close" href="#"><?php _e( 'Close', 'buddypress' ) ?></a>
-
-								</div>
-							<?php else : ?>
-								<p class="field-visibility-settings-notoggle" id="field-visibility-settings-toggle-<?php bp_the_profile_field_id() ?>">
-									<?php printf( __( 'This field can be seen by: <span class="current-visibility-level">%s</span>', 'buddypress' ), bp_get_the_profile_field_visibility_level_label() ) ?>
-								</p>
-							<?php endif ?>
-
-							<?php
-
-							/**
-							 * Fires after the display of the visibility options for xprofile fields.
-							 *
-							 * @since BuddyPress (1.1.0)
-							 */
-							do_action( 'bp_custom_profile_edit_fields' ); ?>
-
-							<p class="description"><?php bp_the_profile_field_description(); ?></p>
-
-						</div>
-
-					<?php endwhile; ?>
-
-					<input type="hidden" name="signup_profile_field_ids" id="signup_profile_field_ids" value="<?php bp_the_profile_field_ids(); ?>" />
-
-					<?php endwhile; endif; endif; ?>
-
-					<?php
-
-					/**
-					 * Fires and displays any extra member registration xprofile fields.
-					 *
-					 * @since BuddyPress (1.9.0)
-					 */
-					do_action( 'bp_signup_profile_fields' ); ?>
-
-				</div><!-- #profile-details-section -->
-
+	
 				<?php
 
 				/**
@@ -223,7 +234,7 @@
 				 */
 				do_action( 'bp_after_signup_profile_fields' ); ?>
 
-			<?php endif; ?>
+	<?php endif; ?>
 
 			<?php if ( bp_get_blog_signup_allowed() ) : ?>
 

@@ -24,10 +24,32 @@
     			<?php
     				}
     			?>
+
     		</ul>
     	</div>
     </div>
   </div>
+  <?php 
+        function autoUpgrade(){
+        $user = bp_loggedin_user_id();
+        $fsid = xprofile_get_field_data( 'fsid', $user);
+        if(strlen($fsid)>0){
+        echo $fsid;
+        $response = new DOMDocument();
+        $response->load('https://api.fastspring.com/company/skybridgeclub/subscription/'.$fsid.'?user=apiuser&pass=bustleable');
+        echo '<pre>';
+        print_r($response);
+        echo '</pre>';
+        echo get_user_role();
+        //  if(strpos($response->textContent,'inactive')>=0) {
+        //     xprofile_set_field_data( 'Membership', $user, getFreeTrialId(), $is_required = false );
+        //     wp_update_user(array('ID'=>getUser(),'role'=>'free_member'));
+        // }
+
+        } 
+        }  
+        autoUpgrade();
+ ?>
 </footer>
 <!-- Modal -->
 <div class="modal fade" id="newsletter-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

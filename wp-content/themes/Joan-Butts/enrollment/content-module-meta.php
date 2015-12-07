@@ -18,12 +18,12 @@
         <p><?php the_field('text', $GLOBALS['current_course_obj']); ?></p>
     </li >
     <?php endif ?>
-    <?php if ((get_field('forum', $GLOBALS['current_course_obj'])) && strlen(get_user_role())>0): ?>
+<!--     <?php if ((get_field('forum', $GLOBALS['current_course_obj'])) && strlen(get_user_role())>0): ?>
     <li class="col-lg-2 col-md-3 col-sm-4 col-xs-5">
         <a href="<?php echo get_field('forum', $GLOBALS['current_course_obj']); ?>">
         <span class="dashicons dashicons-admin-comments"></span>
         <span>Discuss this</span>
         </a>
     </li>
-    <?php endif ?>
+    <?php endif ?> -->
 </ul>

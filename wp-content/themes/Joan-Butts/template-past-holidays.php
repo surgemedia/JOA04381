@@ -32,10 +32,11 @@ Template Name: Past Holiday Page
 					'post_type'              => array( 'tribe_events' ),
 					'posts_per_page'         => 25,
                     'eventDisplay'=>        'past',
-                    'tax_query' => array(
+                    'tax_query' => array( array (
                             'taxonomy' => 'tribe_events_cat',
                             'field'    => 'slug',
                             'terms'    => 'bridge-holiday',
+                            ),
                         ),
 					// 'order'                  => 'ASC',
 					'orderby'                => 'ASC'
@@ -47,21 +48,24 @@ Template Name: Past Holiday Page
 				
 				// The Loop
 				if ( $event_query->have_posts() ) {
-					while ( $event_query->have_posts() ) {
+					
+                    while ( $event_query->have_posts() ) {
 						$event_query->the_post();  ?>
 					<?php 
 				$the_event = get_post();
-				$text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
+                $text_date = date("M jS, Y", strtotime($the_event->EventStartDate));
 				 ?>
 				 <?php //if( strtotime($text_date) < strtotime('now') ) { ?>
                   <?php 
                 $images = get_field('gallery'); 
-
+                 
+                
 
                // debug( get_post_meta( get_the_id() ) );
                // debug(date("Y-m-d", strtotime($the_event->EventStartDate) ));
                // debug(date('Y-m-d'));
                 if( $images AND strtotime($the_event->EventEndDate) < strtotime('now') ): ?>
+                
                 <li class="holiday">
                     <!-- <img class="holiday-img" src="<?php the_sub_field('holiday_image'); ?>"> -->
                     <h3><?php the_title(); ?></h3>

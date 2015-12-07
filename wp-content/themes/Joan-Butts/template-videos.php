@@ -7,11 +7,13 @@ Template Name: Videos Page
 // WP_Query arguments
 $args = array (
     'post_type'              => array( 'video' ),
+    'order'                  => "ASC",
+    'posts_per_page'         => '-1',
 );
 
 // The Query
 $query = new WP_Query( $args );
-
+// debug(sizeof($query->posts));
 // The Loop
 if ( $query->have_posts() ) {?>
             <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
