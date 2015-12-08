@@ -52,7 +52,9 @@ function completeLessonButton($lesson) {
 			// debug($completedModule)	;
 		}	
 		// debug($completedlesson);
+		echo '<p class="hide">';
 		updateCompletedModules(); //function to update completed modules in buddypress fields
+		echo '</p>';
 		get_template_part('enrollment/message', 'currently-completed' ); //"Congrats,You completed the lesson";
 
 	}

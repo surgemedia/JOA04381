@@ -13,12 +13,12 @@
 		switch(get_user_role()) {
         	case 'royal':
     ?>
-    			<a href="/play/?game=set&val=0" class="theme-button">Play</a>
+    			<a href="/play-bridge-online/" class="theme-button">Start Today!</a>
     <?php
         		break;
         	case 'administrator':
     ?>
-    			<a href="/play/?game=set&val=0" class="theme-button">Play</a>
+    			<a href="/play-bridge-online/" class="theme-button">Start Today!</a>
     <?php
         		break;
         	case 'free_member':

@@ -50,3 +50,6 @@
         </div>
     </div>
 </div>
+<p class="hide">
+<?php autoUpgrade(); ?>
+</p>

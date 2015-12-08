@@ -24,7 +24,7 @@ Template Name: Holiday Page
             <?php // WP_Query arguments
                 $GLOBAL['page'] = $post->post_name;
                 switch ($GLOBAL['page']) {
-                    case 'upcoming-holdiays':
+                    case 'upcoming-holidays':
                         $terms = 'bridge-holiday';
                         $class = 'bridge-holiday';
                         break;
@@ -77,20 +77,20 @@ Template Name: Holiday Page
                     <h5 class="date-blue"><?php echo $text_date ?></h5>
                     <p>  <?php the_content(); ?></p>
                     <div class="holiday-buttons">
-                        <?php if($GLOBAL['page']=='upcoming-holdiays') {?>
-                            <?php if(strlen(get_field('flyer_upload'))){ ?>
-                            <a target="_blank" class="btn" href="<?php the_field('flyer_upload'); ?>">Flyer</a>
+                        
+                            <?php if(get_field('flyer')){ ?>
+                            <a target="_blank" class="btn" href="<?php the_field('flyer'); ?>">Flyer</a>
                             <?php } else { ?>
                             <a target="_blank" class="btn disabled" href="#">Flyer Coming Soon</a>
                             <?php } ?>
 
-                            <?php if(strlen(get_field('flyer_upload'))){ ?>
+                            <?php if(strlen(get_field('schedule'))){ ?>
                             <a target="_blank" class="btn" href="<?php the_field('schedule'); ?>">Schedule</a>
                            
                               <?php } else { ?>
                             <a target="_blank" class="btn disabled" href="#">Schedule Coming Soon</a>
                             <?php } ?>
-                        <?php }?>
+                       
                         <a class="btn view-details" href="<?php echo get_permalink(); ?>">View Details</a>
                     </div>
                 </li>
@@ -100,7 +100,7 @@ Template Name: Holiday Page
 			}
 
 				} else {
-					// no posts found
+					echo "no post";// no posts found
 				}
 
 				// Restore original Post Data
