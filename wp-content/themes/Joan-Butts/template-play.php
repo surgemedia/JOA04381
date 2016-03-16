@@ -12,7 +12,7 @@ require_once('wp-load.php');
 require_once('wp-includes/registration.php');
 
 if(is_user_logged_in()) {
-autoUpgrade();
+//autoUpgrade();
 
 global $userdata;
 global $current_user;
@@ -88,10 +88,10 @@ html,
 }
 </style>
 <?php 
-$lesson_id = $_GET['id'];
-// echo $lesson_id;
-$lesson_post = get_post($_GET['id']);
-$lesson_meta = get_post_meta($_GET['id'])['free_lesson'][0];
+// $lesson_id = $_GET['id'];
+// // echo $lesson_id;
+// $lesson_post = get_post($_GET['id']);
+// $lesson_meta = get_post_meta($_GET['id'])['free_lesson'][0];
 
 ?>
 </head>
@@ -100,14 +100,14 @@ $lesson_meta = get_post_meta($_GET['id'])['free_lesson'][0];
 <?php 
 
 
-if(!is_user_logged_in()){
-  echo '<script> window.location.replace("http://joanbuttsbridge.com/register");</script>';
-  };
+// if(!is_user_logged_in()){
+//   echo '<script> window.location.replace("http://joanbuttsbridge.com/register");</script>';
+//   };
 
 
-  if( get_user_role() =='free_member' && $_GET['val'] != 4 && $lesson_meta != 1) {
-  echo '<script> window.location.replace("http://joanbuttsbridge.com/almost-there");</script>';
-  };
+//   if( get_user_role() =='free_member' && $_GET['val'] != 4 && $lesson_meta != 1) {
+//   echo '<script> window.location.replace("http://joanbuttsbridge.com/almost-there");</script>';
+//   };
 
   if(is_user_logged_in()) {
 ?>

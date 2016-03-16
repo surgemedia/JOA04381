@@ -1,3 +1,4 @@
+<?php /* ?>
 <div class="track-skills">
 	<h1 class="sidebar-title">Track Your Skills</h1>
 	<div class="content">
@@ -22,3 +23,4 @@
 		?>
 	</div>
 </div>
+<?php */ ?>

@@ -70,7 +70,7 @@ if(strlen($next_in_module) <= 1){
 					<?php 
 						$userRole = get_user_role();
 						$freeLesson = get_field('free_lesson');
-						if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {
+						//if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {//
 							$rows = get_field('lessons_repeater');
 							for ($i=0; $i <sizeof($rows) ; $i++) {
 								// Should wrapped in a tag?
@@ -85,27 +85,27 @@ if(strlen($next_in_module) <= 1){
 								<div class="actions">
 								<?php
 									$hands = $rows[$i]["lesson_hand"];
-									if((get_user_role()=='administrator' || get_user_role()=='royal' || get_field('free_lesson')) && strlen(get_user_role())>0){
+									//if((get_user_role()=='administrator' || get_user_role()=='royal' || get_field('free_lesson')) && strlen(get_user_role())>0){
 										echo apply_filters( 'the_content',$hands); 
-									} else {
-										if(strlen($rows[$i]["lesson_hand"]) > 0){
-											get_template_part('enrollment/message', 'please-login-hands' );
-										}
-									}
+									// } else {
+									// 	if(strlen($rows[$i]["lesson_hand"]) > 0){
+									// 		get_template_part('enrollment/message', 'please-login-hands' );
+									// 	}
+									// }
 								?>
 								<!-- <p><a class="button" href="<?php //echo get_permalink($book_id); ?>">Purchase book for more help</a></p> -->
 								</div>
 								<?php echo $rows[$i]['lesson_content'];  ?>
 							<?php }
-						} 
-						else {
+						// } 
+						// else {
 					?>
-							<p>Lesson available only for Royal Members</p>
+							<!-- <p>Lesson available only for Royal Members</p>
 							<button class="btn btn-primary" onclick="location.href = '/upgrade'">
                               	Upgrade Now! <i class=" dashicons dashicons-welcome-learn-more"></i>
-                          	</button>
+                          	</button> -->
 					<?php
-						}
+						// }
 					?>	
 						
 				</section> <!-- end article section -->

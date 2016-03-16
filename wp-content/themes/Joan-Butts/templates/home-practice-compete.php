@@ -10,6 +10,7 @@
 		</div>
 	</div>
 	<?php
+    /*
 		switch(get_user_role()) {
         	case 'royal':
     ?>
@@ -29,9 +30,11 @@
         		break;
         	default :
     ?>
-    			<a class="theme-button" href="/register/">Register Today!</a>
     <?php
         		break;
         }
+        */
 	?>
+                <a class="theme-button" href="http://skybridgeclub.com/jbb/?ref=jbb">Register Today!</a>
+
 </section>

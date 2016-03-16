@@ -2,12 +2,12 @@
 	<?php
 		$userRole = get_user_role();
 		$freeLesson = get_field('free_lesson');
-		if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {
+		// if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {
 			$lessonHref = get_the_permalink();
-		}
-		else {
-			$lessonHref = 'javascript:void(0);';
-		}
+		// }
+		// else {
+		// 	$lessonHref = 'javascript:void(0);';
+		// }
 	?>
 	<a href="<?php echo $lessonHref ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 		<header class="article-header">
@@ -19,7 +19,7 @@
 			</h2>
 			</header> <!-- end article header -->
 			<section class="entry-content clearfix ">
-				<?php if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) {?>
+				<?php //if(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0) { ?>
 					<?php
 					$thumb_id = get_post_thumbnail_id();
 					
@@ -30,10 +30,9 @@
 					} else {
 					echo '<div class="placeholder yellow col-lg-3 col-md-3 col-xs-3 pull-left hidden-xs"><span class="dashicons dashicons-welcome-learn-more"></span></div>';
 					}
-				}
-				else {
-					echo '<div class="placeholder yellow col-lg-3 col-md-3 col-xs-3 pull-left hidden-xs"><span class="dashicons dashicons-lock"></span></div>';
-				}	
+				// } else {
+				// 	echo '<div class="placeholder yellow col-lg-3 col-md-3 col-xs-3 pull-left hidden-xs"><span class="dashicons dashicons-lock"></span></div>';
+				// }	
 					?>
 
 				<p class="col-lg-9 col-md-9 col-xs-12 pull-right">
@@ -45,9 +44,9 @@
 					?>
 					<br>
 					<?php
-					if(!(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0)) {
-						get_template_part('templates/button','upgrade-user');
-					}
+					//if(!(($userRole =='administrator' || $userRole=='royal' || $freeLesson) && strlen(get_user_role())>0)) {
+						//get_template_part('templates/button','upgrade-user');
+					//}
 					?>
 				</p>
 				</section> <!-- end article section -->

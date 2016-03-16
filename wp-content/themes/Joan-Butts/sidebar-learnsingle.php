@@ -34,12 +34,13 @@
 			for ($i=0; $i < count($custom_field); $i++) { 
 				echo do_shortcode('[product id="'.$custom_field[$i].'"]');
 			}
-			
+		
 		}
 	?>	
 	</div>
 	
 	<div id="module-extras">
+	<?php /* ?>
 		<h3>Course Activites</h3>
 		<ul>
 			<li>
@@ -53,5 +54,5 @@
 		<li>
 			<?php get_template_part('templates/button','upgrade-user');?>
 		</li>
-	
+	<?php */ ?>
 </ul>

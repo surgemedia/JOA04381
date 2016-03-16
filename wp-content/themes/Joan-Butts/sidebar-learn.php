@@ -24,7 +24,7 @@
 	</div>
 
 
-	<div id="module-extras">
+	<!-- <div id="module-extras">
 		<h2>Course Activites</h2>
 		<ul>
 			<li class="pink button"><span class="dashicons dashicons-groups"></span>
@@ -37,7 +37,7 @@
 
 			
 		</ul>
-	</div>
+	</div> -->
 	<?Php } else {
-			 get_template_part('enrollment/message', 'user-levels' );	
+			 //get_template_part('enrollment/message', 'user-levels' );	
 		}?>
